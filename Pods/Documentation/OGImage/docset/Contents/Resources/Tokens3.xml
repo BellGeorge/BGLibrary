@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGImageCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGImageCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGImageCache.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGImageCache/shared</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGImageCache.h</DeclaredIn>			
+			
+			<Declaration>+ (OGImageCache *)shared</Declaration>
+			
+			
+			<Anchor>//api/name/shared</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGImageCache/MD5:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGImageCache.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)MD5:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/MD5:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGImageCache/imageForKey:block:</TokenIdentifier>
+			<Abstract type="html">Check in-memory and on-disk caches for image corresponding to key. block
+called on main queue when check is complete. If image parameter is nil,
+no image corresponding to key was found.</Abstract>
+			<DeclaredIn>OGImageCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)imageForKey:(NSString *)key block:(OGImageCacheCompletionBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/imageForKey:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGImageCache/setImage:forKey:</TokenIdentifier>
+			<Abstract type="html">Store image in-memory and on disk. Image will be serialized as PNG.</Abstract>
+			<DeclaredIn>OGImageCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)setImage:(UIImage *)image forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/setImage:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGImageCache/setImage:forKey:format:</TokenIdentifier>
+			<Abstract type="html">Store image in-memory and on disk. Image will be serialized as format.</Abstract>
+			<DeclaredIn>OGImageCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)setImage:(UIImage *)image forKey:(NSString *)key format:(OGImageFileFormat)format</Declaration>
+			
+			
+			<Anchor>//api/name/setImage:forKey:format:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGImageCache/purgeCache:</TokenIdentifier>
+			<Abstract type="html">Remove all cached images from in-memory and on-disk caches. If wait is YES
+this will block the calling thread until the purge is complete.</Abstract>
+			<DeclaredIn>OGImageCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)purgeCache:(BOOL)wait</Declaration>
+			
+			
+			<Anchor>//api/name/purgeCache:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

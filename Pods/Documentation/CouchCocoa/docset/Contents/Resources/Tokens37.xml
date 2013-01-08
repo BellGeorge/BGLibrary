@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CouchbaseDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CouchbaseDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CouchbaseDelegate/couchbaseMobile:didStart:</TokenIdentifier>
+			<Abstract type="html">Called after a CouchbaseMobile instance finishes starting up.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>- (void)couchbaseMobile:(CouchbaseMobile *)couchbase didStart:(NSURL *)serverURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>couchbase</Name>
+					<Abstract type="html">The instance of CouchbaseMobile.</Abstract>
+				</Parameter><Parameter>
+					<Name>serverURL</Name>
+					<Abstract type="html">The URL at which the Couchbase server is listening. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/couchbaseMobile:didStart:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CouchbaseDelegate/couchbaseMobile:failedToStart:</TokenIdentifier>
+			<Abstract type="html">Called after a CouchbaseMobile instance fails to start up.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>- (void)couchbaseMobile:(CouchbaseMobile *)couchbase failedToStart:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>couchbase</Name>
+					<Abstract type="html">The instance of CouchbaseMobile.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error that occurred. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/couchbaseMobile:failedToStart:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

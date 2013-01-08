@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OARequestParameter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OARequestParameter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OARequestParameter.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OARequestParameter/setName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OARequestParameter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, readwrite) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OARequestParameter/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OARequestParameter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, readwrite) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OARequestParameter/setValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OARequestParameter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, readwrite) NSString *value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OARequestParameter/value</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OARequestParameter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, readwrite) NSString *value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OARequestParameter/initWithName:value:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OARequestParameter.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithName:(NSString *)aName value:(NSString *)aValue</Declaration>
+			
+			
+			<Anchor>//api/name/initWithName:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OARequestParameter/URLEncodedName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OARequestParameter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)URLEncodedName</Declaration>
+			
+			
+			<Anchor>//api/name/URLEncodedName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OARequestParameter/URLEncodedValue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OARequestParameter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)URLEncodedValue</Declaration>
+			
+			
+			<Anchor>//api/name/URLEncodedValue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OARequestParameter/URLEncodedNameValuePair</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OARequestParameter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)URLEncodedNameValuePair</Declaration>
+			
+			
+			<Anchor>//api/name/URLEncodedNameValuePair</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OARequestParameter/isEqualToRequestParameter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OARequestParameter.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isEqualToRequestParameter:(OARequestParameter *)parameter</Declaration>
+			
+			
+			<Anchor>//api/name/isEqualToRequestParameter:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OARequestParameter/requestParameter:value:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OARequestParameter.h</DeclaredIn>			
+			
+			<Declaration>+ (id)requestParameter:(NSString *)aName value:(NSString *)aValue</Declaration>
+			
+			
+			<Anchor>//api/name/requestParameter:value:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

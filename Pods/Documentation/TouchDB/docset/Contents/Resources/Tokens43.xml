@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDReplicator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDReplicator</TokenIdentifier>
+			<Abstract type="html">Abstract base class for push or pull replications.</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>
+			
+			<NodeRef refid="43"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDReplicator/progressChangedNotification</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)progressChangedNotification</Declaration>
+			
+			
+			<Anchor>//api/name/progressChangedNotification</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDReplicator/stoppedNotification</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)stoppedNotification</Declaration>
+			
+			
+			<Anchor>//api/name/stoppedNotification</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/initWithDB:remote:push:continuous:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDB:(TDDatabase *)db remote:(NSURL *)remote push:(BOOL)push continuous:(BOOL)continuous</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDB:remote:push:continuous:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setDb:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDDatabase *db</Declaration>
+			
+			
+			<Anchor>//api/name/db</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/db</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDDatabase *db</Declaration>
+			
+			
+			<Anchor>//api/name/db</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setRemote:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *remote</Declaration>
+			
+			
+			<Anchor>//api/name/remote</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/remote</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *remote</Declaration>
+			
+			
+			<Anchor>//api/name/remote</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setIsPush:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isPush</Declaration>
+			
+			
+			<Anchor>//api/name/isPush</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/isPush</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isPush</Declaration>
+			
+			
+			<Anchor>//api/name/isPush</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setContinuous:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL continuous</Declaration>
+			
+			
+			<Anchor>//api/name/continuous</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/continuous</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL continuous</Declaration>
+			
+			
+			<Anchor>//api/name/continuous</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setFilterName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *filterName</Declaration>
+			
+			
+			<Anchor>//api/name/filterName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/filterName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *filterName</Declaration>
+			
+			
+			<Anchor>//api/name/filterName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setFilterParameters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *filterParameters</Declaration>
+			
+			
+			<Anchor>//api/name/filterParameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/filterParameters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *filterParameters</Declaration>
+			
+			
+			<Anchor>//api/name/filterParameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/options</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setRequestHeaders:</TokenIdentifier>
+			<Abstract type="html">Optional dictionary of headers to be added to all requests to remote servers.</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *requestHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/requestHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/requestHeaders</TokenIdentifier>
+			<Abstract type="html">Optional dictionary of headers to be added to all requests to remote servers.</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *requestHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/requestHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setAuthorizer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) id&lt;TDAuthorizer&gt; authorizer</Declaration>
+			
+			
+			<Anchor>//api/name/authorizer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/authorizer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) id&lt;TDAuthorizer&gt; authorizer</Declaration>
+			
+			
+			<Anchor>//api/name/authorizer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/start</TokenIdentifier>
+			<Abstract type="html">Starts the replicator.
+    Replicators run asynchronously so nothing will happen until later.
+    A replicator can only be started once; don&apos;t reuse it after it stops. </Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/stop</TokenIdentifier>
+			<Abstract type="html">Request to stop the replicator.
+    Any pending asynchronous operations will be canceled.
+    TDReplicatorStoppedNotification will be posted when it finally stops. </Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setRunning:</TokenIdentifier>
+			<Abstract type="html">Is the replicator running? (Observable)</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) BOOL running</Declaration>
+			
+			
+			<Anchor>//api/name/running</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/running</TokenIdentifier>
+			<Abstract type="html">Is the replicator running? (Observable)</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) BOOL running</Declaration>
+			
+			
+			<Anchor>//api/name/running</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setOnline:</TokenIdentifier>
+			<Abstract type="html">Is the replicator able to connect to the remote host?</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) BOOL online</Declaration>
+			
+			
+			<Anchor>//api/name/online</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/online</TokenIdentifier>
+			<Abstract type="html">Is the replicator able to connect to the remote host?</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) BOOL online</Declaration>
+			
+			
+			<Anchor>//api/name/online</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setActive:</TokenIdentifier>
+			<Abstract type="html">Is the replicator actively sending/receiving revisions? (Observable)</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/active</TokenIdentifier>
+			<Abstract type="html">Is the replicator actively sending/receiving revisions? (Observable)</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setError:</TokenIdentifier>
+			<Abstract type="html">Latest error encountered while replicating.
+    This is set to nil when starting. It may also be set to nil by the client if desired.
+    Not all errors are fatal; if .running is still true, the replicator will retry. </Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/error</TokenIdentifier>
+			<Abstract type="html">Latest error encountered while replicating.
+    This is set to nil when starting. It may also be set to nil by the client if desired.
+    Not all errors are fatal; if .running is still true, the replicator will retry. </Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setSessionID:</TokenIdentifier>
+			<Abstract type="html">A unique-per-process string identifying this replicator instance.</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, nonatomic) NSString *sessionID</Declaration>
+			
+			
+			<Anchor>//api/name/sessionID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/sessionID</TokenIdentifier>
+			<Abstract type="html">A unique-per-process string identifying this replicator instance.</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, nonatomic) NSString *sessionID</Declaration>
+			
+			
+			<Anchor>//api/name/sessionID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setChangesProcessed:</TokenIdentifier>
+			<Abstract type="html">Number of changes (docs or other metadata) transferred so far.</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSUInteger changesProcessed</Declaration>
+			
+			
+			<Anchor>//api/name/changesProcessed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/changesProcessed</TokenIdentifier>
+			<Abstract type="html">Number of changes (docs or other metadata) transferred so far.</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSUInteger changesProcessed</Declaration>
+			
+			
+			<Anchor>//api/name/changesProcessed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setChangesTotal:</TokenIdentifier>
+			<Abstract type="html">Approximate total number of changes to transfer.
+    This is only an estimate and its value will change during replication. It starts at zero and returns to zero when replication stops. </Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSUInteger changesTotal</Declaration>
+			
+			
+			<Anchor>//api/name/changesTotal</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/changesTotal</TokenIdentifier>
+			<Abstract type="html">Approximate total number of changes to transfer.
+    This is only an estimate and its value will change during replication. It starts at zero and returns to zero when replication stops. </Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSUInteger changesTotal</Declaration>
+			
+			
+			<Anchor>//api/name/changesTotal</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setActiveRequestsStatus:</TokenIdentifier>
+			<Abstract type="html">JSON-compatible array of status info about active remote HTTP requests.</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *activeRequestsStatus</Declaration>
+			
+			
+			<Anchor>//api/name/activeRequestsStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/activeRequestsStatus</TokenIdentifier>
+			<Abstract type="html">JSON-compatible array of status info about active remote HTTP requests.</Abstract>
+			<DeclaredIn>TDReplicator.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *activeRequestsStatus</Declaration>
+			
+			
+			<Anchor>//api/name/activeRequestsStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setLastSequence:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *lastSequence</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/lastSequence</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *lastSequence</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/maybeCreateRemoteDB</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)maybeCreateRemoteDB</Declaration>
+			
+			
+			<Anchor>//api/name/maybeCreateRemoteDB</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/beginReplicating</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginReplicating</Declaration>
+			
+			
+			<Anchor>//api/name/beginReplicating</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/addToInbox:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)addToInbox:(TDRevision *)rev</Declaration>
+			
+			
+			<Anchor>//api/name/addToInbox:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/addRevsToInbox:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRevsToInbox:(TDRevisionList *)revs</Declaration>
+			
+			
+			<Anchor>//api/name/addRevsToInbox:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/processInbox:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)processInbox:(TDRevisionList *)inbox</Declaration>
+			
+			
+			<Anchor>//api/name/processInbox:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/sendAsyncRequest:path:body:onCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (TDRemoteJSONRequest *)sendAsyncRequest:(NSString *)method path:(NSString *)relativePath body:(id)body onCompletion:(TDRemoteRequestCompletionBlock)onCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/sendAsyncRequest:path:body:onCompletion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/addRemoteRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRemoteRequest:(TDRemoteRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/addRemoteRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/removeRemoteRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeRemoteRequest:(TDRemoteRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/removeRemoteRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/asyncTaskStarted</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)asyncTaskStarted</Declaration>
+			
+			
+			<Anchor>//api/name/asyncTaskStarted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/asyncTasksFinished:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)asyncTasksFinished:(NSUInteger)numTasks</Declaration>
+			
+			
+			<Anchor>//api/name/asyncTasksFinished:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/stopped</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopped</Declaration>
+			
+			
+			<Anchor>//api/name/stopped</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/databaseClosing</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)databaseClosing</Declaration>
+			
+			
+			<Anchor>//api/name/databaseClosing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/revisionFailed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)revisionFailed</Declaration>
+			
+			
+			<Anchor>//api/name/revisionFailed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/retry</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)retry</Declaration>
+			
+			
+			<Anchor>//api/name/retry</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/reachabilityChanged:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)reachabilityChanged:(TDReachability *)host</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityChanged:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/goOffline</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)goOffline</Declaration>
+			
+			
+			<Anchor>//api/name/goOffline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/goOnline</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)goOnline</Declaration>
+			
+			
+			<Anchor>//api/name/goOnline</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicator/setSavingCheckpoint:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL savingCheckpoint</Declaration>
+			
+			
+			<Anchor>//api/name/savingCheckpoint</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReplicator/savingCheckpoint</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL savingCheckpoint</Declaration>
+			
+			
+			<Anchor>//api/name/savingCheckpoint</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

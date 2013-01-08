@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TDChangeTrackerClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TDChangeTrackerClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>
+			
+			<NodeRef refid="60"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDChangeTrackerClient/changeTrackerReceivedChange:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)changeTrackerReceivedChange:(NSDictionary *)change</Declaration>
+			
+			
+			<Anchor>//api/name/changeTrackerReceivedChange:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDChangeTrackerClient/changeTrackerReceivedChanges:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)changeTrackerReceivedChanges:(NSArray *)changes</Declaration>
+			
+			
+			<Anchor>//api/name/changeTrackerReceivedChanges:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDChangeTrackerClient/changeTrackerStopped:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)changeTrackerStopped:(TDChangeTracker *)tracker</Declaration>
+			
+			
+			<Anchor>//api/name/changeTrackerStopped:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

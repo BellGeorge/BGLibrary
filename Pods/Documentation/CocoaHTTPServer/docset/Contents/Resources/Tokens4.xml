@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/HTTPAsyncFileResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/HTTPAsyncFileResponse</TokenIdentifier>
+			<Abstract type="html">This is an asynchronous version of HTTPFileResponse.
+It reads data from the given file asynchronously via GCD.</Abstract>
+			<DeclaredIn>HTTPAsyncFileResponse.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAsyncFileResponse/initWithFilePath:forConnection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAsyncFileResponse.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFilePath:(NSString *)filePath forConnection:(HTTPConnection *)connection</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFilePath:forConnection:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAsyncFileResponse/filePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAsyncFileResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)filePath</Declaration>
+			
+			
+			<Anchor>//api/name/filePath</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

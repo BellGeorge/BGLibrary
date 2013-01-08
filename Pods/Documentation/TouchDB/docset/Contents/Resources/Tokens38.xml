@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDPuller.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDPuller</TokenIdentifier>
+			<Abstract type="html">Replicator that pulls from a remote CouchDB.</Abstract>
+			<DeclaredIn>TDPuller.h</DeclaredIn>
+			
+			<NodeRef refid="38"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

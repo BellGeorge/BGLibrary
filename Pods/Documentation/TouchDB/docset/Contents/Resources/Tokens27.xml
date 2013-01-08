@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDDatabaseManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDDatabaseManager</TokenIdentifier>
+			<Abstract type="html">Manages a directory containing TDDatabases.</Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDDatabaseManager/isValidDatabaseName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isValidDatabaseName:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/isValidDatabaseName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabaseManager/initWithDirectory:options:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDirectory:(NSString *)dirPath options:(const TDDatabaseManagerOptions *)options error:(NSError **)outError</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDirectory:options:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabaseManager/setDirectory:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *directory</Declaration>
+			
+			
+			<Anchor>//api/name/directory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabaseManager/directory</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *directory</Declaration>
+			
+			
+			<Anchor>//api/name/directory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabaseManager/databaseNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>- (TDDatabase *)databaseNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/databaseNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabaseManager/existingDatabaseNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>- (TDDatabase *)existingDatabaseNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/existingDatabaseNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabaseManager/deleteDatabaseNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)deleteDatabaseNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/deleteDatabaseNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabaseManager/setAllDatabaseNames:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allDatabaseNames</Declaration>
+			
+			
+			<Anchor>//api/name/allDatabaseNames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabaseManager/allDatabaseNames</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allDatabaseNames</Declaration>
+			
+			
+			<Anchor>//api/name/allDatabaseNames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabaseManager/setAllOpenDatabases:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allOpenDatabases</Declaration>
+			
+			
+			<Anchor>//api/name/allOpenDatabases</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabaseManager/allOpenDatabases</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allOpenDatabases</Declaration>
+			
+			
+			<Anchor>//api/name/allOpenDatabases</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabaseManager/close</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabaseManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabaseManager/setReplicatorManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) TDReplicatorManager *replicatorManager</Declaration>
+			
+			
+			<Anchor>//api/name/replicatorManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabaseManager/replicatorManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) TDReplicatorManager *replicatorManager</Declaration>
+			
+			
+			<Anchor>//api/name/replicatorManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDDatabaseManager/createEmptyAtPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>+ (TDDatabaseManager *)createEmptyAtPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/createEmptyAtPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDDatabaseManager/createEmptyAtTemporaryPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>+ (TDDatabaseManager *)createEmptyAtTemporaryPath:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/createEmptyAtTemporaryPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

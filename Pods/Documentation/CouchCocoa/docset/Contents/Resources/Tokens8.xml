@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchEmbeddedServer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchEmbeddedServer</TokenIdentifier>
+			<Abstract type="html">A convenience class that glues Couchbase Mobile into CouchCocoa -- this is ONLY for use with the older Couchbase Mobile, NOT with TouchDB!
+    On creation, starts up an instance of Couchbase Mobile.
+    This object will have a placeholder URL until the embedded server has started up, so you can&apos;t access it (i.e. creating any databases) until then. </Abstract>
+			<DeclaredIn>CouchEmbeddedServer.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchEmbeddedServer/sharedInstance</TokenIdentifier>
+			<Abstract type="html">A shared per-process instance. Remember that CouchCocoa is not thread-safe so you can&apos;t
+    use this shared instance among multiple threads. </Abstract>
+			<DeclaredIn>CouchEmbeddedServer.h</DeclaredIn>			
+			
+			<Declaration>+ (CouchEmbeddedServer *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchEmbeddedServer/init</TokenIdentifier>
+			<Abstract type="html">Preferred initializer. Starts up an in-process server.</Abstract>
+			<DeclaredIn>CouchEmbeddedServer.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchEmbeddedServer/initWithURL:</TokenIdentifier>
+			<Abstract type="html">Inherited initializer, if you want to connect to a remote server for debugging purposes.
+    (If you call start:, the block will still be called.) </Abstract>
+			<DeclaredIn>CouchEmbeddedServer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchEmbeddedServer/setCouchbase:</TokenIdentifier>
+			<Abstract type="html">The underlying CouchbaseMobile object that manages the embedded server.</Abstract>
+			<DeclaredIn>CouchEmbeddedServer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchbaseMobile *couchbase</Declaration>
+			
+			
+			<Anchor>//api/name/couchbase</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchEmbeddedServer/couchbase</TokenIdentifier>
+			<Abstract type="html">The underlying CouchbaseMobile object that manages the embedded server.</Abstract>
+			<DeclaredIn>CouchEmbeddedServer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchbaseMobile *couchbase</Declaration>
+			
+			
+			<Anchor>//api/name/couchbase</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchEmbeddedServer/start:</TokenIdentifier>
+			<Abstract type="html">Starts the server, asynchronously.</Abstract>
+			<DeclaredIn>CouchEmbeddedServer.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)start:(void ( ^ ) ( ))onStartBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>onStartBlock</Name>
+					<Abstract type="html">A block to be called when the server finishes starting up (or fails to). At that point you can start to access databases, etc.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if startup began, NO if a fatal error occurred. </Abstract></ReturnValue>
+			<Anchor>//api/name/start:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchEmbeddedServer/setRunning:</TokenIdentifier>
+			<Abstract type="html">Is the embedded Couchbase server running?</Abstract>
+			<DeclaredIn>CouchEmbeddedServer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL running</Declaration>
+			
+			
+			<Anchor>//api/name/running</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchEmbeddedServer/running</TokenIdentifier>
+			<Abstract type="html">Is the embedded Couchbase server running?</Abstract>
+			<DeclaredIn>CouchEmbeddedServer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL running</Declaration>
+			
+			
+			<Anchor>//api/name/running</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchEmbeddedServer/setError:</TokenIdentifier>
+			<Abstract type="html">If the server fails to start up, this will give the reason why.</Abstract>
+			<DeclaredIn>CouchEmbeddedServer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchEmbeddedServer/error</TokenIdentifier>
+			<Abstract type="html">If the server fails to start up, this will give the reason why.</Abstract>
+			<DeclaredIn>CouchEmbeddedServer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

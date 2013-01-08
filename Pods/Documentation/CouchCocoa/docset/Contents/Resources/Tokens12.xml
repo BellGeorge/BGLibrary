@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchModelFactory.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchModelFactory</TokenIdentifier>
+			<Abstract type="html">A configurable mapping from CouchDocument to CouchModel.
+    It associates a model class with a value of the document&apos;s &quot;type&quot; property. </Abstract>
+			<DeclaredIn>CouchModelFactory.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchModelFactory/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Returns a global shared CouchModelFactory that&apos;s consulted by all databases.
+    Mappings registered in this instance will be used as a fallback by all other instances if they don&apos;t have their own. </Abstract>
+			<DeclaredIn>CouchModelFactory.h</DeclaredIn>			
+			
+			<Declaration>+ (CouchModelFactory *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchModelFactory/modelForDocument:</TokenIdentifier>
+			<Abstract type="html">Given a document, attempts to return a CouchModel for it.
+    If the document&apos;s modelObject property is set, it returns that value.
+    If the document&apos;s &quot;type&quot; property has been registered, instantiates the associated class.
+    Otherwise returns nil. </Abstract>
+			<DeclaredIn>CouchModelFactory.h</DeclaredIn>			
+			
+			<Declaration>- (id)modelForDocument:(CouchDocument *)document</Declaration>
+			
+			
+			<Anchor>//api/name/modelForDocument:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchModelFactory/registerClass:forDocumentType:</TokenIdentifier>
+			<Abstract type="html">Associates a value of the &quot;type&quot; property with a CouchModel subclass.</Abstract>
+			<DeclaredIn>CouchModelFactory.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerClass:(id)classOrName forDocumentType:(NSString *)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>classOrName</Name>
+					<Abstract type="html">Either a CouchModel subclass, or its class name as an NSString.</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">The value value of a document&apos;s &quot;type&quot; property that should indicate this class. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerClass:forDocumentType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchModelFactory/classForDocument:</TokenIdentifier>
+			<Abstract type="html">Returns the appropriate CouchModel subclass for this document.
+    The default implementation just passes the document&apos;s &quot;type&quot; property value to classForDocumentType:, but subclasses could override this to use different properties (or even the document ID) to decide. </Abstract>
+			<DeclaredIn>CouchModelFactory.h</DeclaredIn>			
+			
+			<Declaration>- (Class)classForDocument:(CouchDocument *)document</Declaration>
+			
+			
+			<Anchor>//api/name/classForDocument:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchModelFactory/classForDocumentType:</TokenIdentifier>
+			<Abstract type="html">Looks up the CouchModel subclass that&apos;s been registered for a document type.</Abstract>
+			<DeclaredIn>CouchModelFactory.h</DeclaredIn>			
+			
+			<Declaration>- (Class)classForDocumentType:(NSString *)type</Declaration>
+			
+			
+			<Anchor>//api/name/classForDocumentType:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

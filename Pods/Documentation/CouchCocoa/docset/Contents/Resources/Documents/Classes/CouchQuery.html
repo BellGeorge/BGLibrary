@@ -1,0 +1,1298 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CouchQuery Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CouchCocoa 0.961beta6 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CouchQuery Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/descending">&nbsp;&nbsp;&nbsp;&nbsp;descending</option>
+	
+	<option value="//api/name/designDocument">&nbsp;&nbsp;&nbsp;&nbsp;designDocument</option>
+	
+	<option value="//api/name/endKey">&nbsp;&nbsp;&nbsp;&nbsp;endKey</option>
+	
+	<option value="//api/name/endKeyDocID">&nbsp;&nbsp;&nbsp;&nbsp;endKeyDocID</option>
+	
+	<option value="//api/name/error">&nbsp;&nbsp;&nbsp;&nbsp;error</option>
+	
+	<option value="//api/name/groupLevel">&nbsp;&nbsp;&nbsp;&nbsp;groupLevel</option>
+	
+	<option value="//api/name/includeDeleted">&nbsp;&nbsp;&nbsp;&nbsp;includeDeleted</option>
+	
+	<option value="//api/name/keys">&nbsp;&nbsp;&nbsp;&nbsp;keys</option>
+	
+	<option value="//api/name/limit">&nbsp;&nbsp;&nbsp;&nbsp;limit</option>
+	
+	<option value="//api/name/prefetch">&nbsp;&nbsp;&nbsp;&nbsp;prefetch</option>
+	
+	<option value="//api/name/sequences">&nbsp;&nbsp;&nbsp;&nbsp;sequences</option>
+	
+	<option value="//api/name/skip">&nbsp;&nbsp;&nbsp;&nbsp;skip</option>
+	
+	<option value="//api/name/stale">&nbsp;&nbsp;&nbsp;&nbsp;stale</option>
+	
+	<option value="//api/name/startKey">&nbsp;&nbsp;&nbsp;&nbsp;startKey</option>
+	
+	<option value="//api/name/startKeyDocID">&nbsp;&nbsp;&nbsp;&nbsp;startKeyDocID</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/asLiveQuery">&nbsp;&nbsp;&nbsp;&nbsp;- asLiveQuery</option>
+	
+	<option value="//api/name/rows">&nbsp;&nbsp;&nbsp;&nbsp;- rows</option>
+	
+	<option value="//api/name/rowsIfChanged">&nbsp;&nbsp;&nbsp;&nbsp;- rowsIfChanged</option>
+	
+	<option value="//api/name/start">&nbsp;&nbsp;&nbsp;&nbsp;- start</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/descending">descending</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/designDocument">designDocument</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endKey">endKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endKeyDocID">endKeyDocID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/error">error</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/groupLevel">groupLevel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/includeDeleted">includeDeleted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keys">keys</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/limit">limit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prefetch">prefetch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sequences">sequences</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/skip">skip</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stale">stale</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startKey">startKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startKeyDocID">startKeyDocID</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asLiveQuery">asLiveQuery</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rows">rows</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rowsIfChanged">rowsIfChanged</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start">start</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CouchQuery Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CouchQuery Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CouchResource.html">CouchResource</a> : <a href="../Classes/RESTResource.html">RESTResource</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CouchQuery.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Represents a CouchDB &lsquo;view&rsquo;, or a view-like resource like _all_documents.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/designDocument">&nbsp;&nbsp;designDocument</a></code>
+		<span class="tooltip"><p>The design document that contains this view.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/limit">&nbsp;&nbsp;limit</a></code>
+		<span class="tooltip"><p>The maximum number of <a href="#//api/name/rows">rows</a> to return. Default value is 0, meaning &lsquo;unlimited&rsquo;.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/skip">&nbsp;&nbsp;skip</a></code>
+		<span class="tooltip"><p>The number of initial <a href="#//api/name/rows">rows</a> to skip. Default value is 0.</p>
+
+<pre><code>Should only be used with small values. For efficient paging, use startkey and limit.
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/descending">&nbsp;&nbsp;descending</a></code>
+		<span class="tooltip"><p>Should the <a href="#//api/name/rows">rows</a> be returned in descending key order? Default value is NO.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startKey">&nbsp;&nbsp;startKey</a></code>
+		<span class="tooltip"><p>If non-nil, the key value to <a href="#//api/name/start">start</a> at.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endKey">&nbsp;&nbsp;endKey</a></code>
+		<span class="tooltip"><p>If non-nil, the key value to end after.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startKeyDocID">&nbsp;&nbsp;startKeyDocID</a></code>
+		<span class="tooltip"><p>If non-nil, the document ID to <a href="#//api/name/start">start</a> at.</p>
+
+<pre><code>(Useful if the view contains multiple identical keys, making .startKey ambiguous.) 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endKeyDocID">&nbsp;&nbsp;endKeyDocID</a></code>
+		<span class="tooltip"><p>If non-nil, the document ID to end at.</p>
+
+<pre><code>(Useful if the view contains multiple identical keys, making .endKey ambiguous.) 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stale">&nbsp;&nbsp;stale</a></code>
+		<span class="tooltip"><p>If set, allows faster results at the expense of returning possibly out-of-date data.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keys">&nbsp;&nbsp;keys</a></code>
+		<span class="tooltip"><p>If non-nil, the query will fetch only the <a href="#//api/name/rows">rows</a> with the given keys.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/groupLevel">&nbsp;&nbsp;groupLevel</a></code>
+		<span class="tooltip"><p>If non-zero, enables grouping of results, in views that have reduce functions.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prefetch">&nbsp;&nbsp;prefetch</a></code>
+		<span class="tooltip"><p>If set to YES, the results will include the entire document contents of the associated <a href="#//api/name/rows">rows</a>.</p>
+
+<pre><code>These can be accessed via CouchQueryRow's -documentProperties property.
+This can be a good optimization if you know you'll need the entire contents of each document.
+(This property is equivalent to "include_docs" in the CouchDB API.) 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sequences">&nbsp;&nbsp;sequences</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/includeDeleted">&nbsp;&nbsp;includeDeleted</a></code>
+		<span class="tooltip"><p>If set to YES, deleted documents are included in a getAllDocuments query.</p>
+
+<pre><code>This has NO EFFECT in view queries, and it's only supported on TouchDB, not CouchDB. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/error">&nbsp;&nbsp;error</a></code>
+		<span class="tooltip"><p>If non-nil, the error of the last execution of the query.</p>
+
+<pre><code>If nil, the last exexution of the query was successful 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+		<span class="tooltip"><p>Starts an asynchronous query of the CouchDB view.</p>
+
+<pre><code>When complete, the operation's resultObject will be the CouchQueryEnumerator. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rows">&ndash;&nbsp;rows</a></code>
+		<span class="tooltip"><p>Sends the query to the server and returns an enumerator over the result rows (Synchronous).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rowsIfChanged">&ndash;&nbsp;rowsIfChanged</a></code>
+		<span class="tooltip"><p>Same as <a href="#//api/name/rows">rows</a>, except returns nil if the query results have not changed since the last time it was evaluated (Synchronous).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asLiveQuery">&ndash;&nbsp;asLiveQuery</a></code>
+		<span class="tooltip"><p>Returns a live query with the same parameters.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/descending" title="descending"></a>
+	<h3 class="subsubtitle method-title">descending</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Should the <a href="#//api/name/rows">rows</a> be returned in descending key order? Default value is NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property BOOL descending</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Should the <a href="#//api/name/rows">rows</a> be returned in descending key order? Default value is NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/designDocument" title="designDocument"></a>
+	<h3 class="subsubtitle method-title">designDocument</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The design document that contains this view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CouchDesignDocument *designDocument</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The design document that contains this view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endKey" title="endKey"></a>
+	<h3 class="subsubtitle method-title">endKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If non-nil, the key value to end after.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy) id endKey</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If non-nil, the key value to end after.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endKeyDocID" title="endKeyDocID"></a>
+	<h3 class="subsubtitle method-title">endKeyDocID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If non-nil, the document ID to end at.</p>
+
+<pre><code>(Useful if the view contains multiple identical keys, making .endKey ambiguous.) 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *endKeyDocID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If non-nil, the document ID to end at.</p>
+
+<pre><code>(Useful if the view contains multiple identical keys, making .endKey ambiguous.) 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/error" title="error"></a>
+	<h3 class="subsubtitle method-title">error</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If non-nil, the error of the last execution of the query.</p>
+
+<pre><code>If nil, the last exexution of the query was successful 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, retain) NSError *error</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If non-nil, the error of the last execution of the query.</p>
+
+<pre><code>If nil, the last exexution of the query was successful 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/groupLevel" title="groupLevel"></a>
+	<h3 class="subsubtitle method-title">groupLevel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If non-zero, enables grouping of results, in views that have reduce functions.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSUInteger groupLevel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If non-zero, enables grouping of results, in views that have reduce functions.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/includeDeleted" title="includeDeleted"></a>
+	<h3 class="subsubtitle method-title">includeDeleted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If set to YES, deleted documents are included in a getAllDocuments query.</p>
+
+<pre><code>This has NO EFFECT in view queries, and it's only supported on TouchDB, not CouchDB. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property BOOL includeDeleted</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If set to YES, deleted documents are included in a getAllDocuments query.</p>
+
+<pre><code>This has NO EFFECT in view queries, and it's only supported on TouchDB, not CouchDB. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keys" title="keys"></a>
+	<h3 class="subsubtitle method-title">keys</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If non-nil, the query will fetch only the <a href="#//api/name/rows">rows</a> with the given keys.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSArray *keys</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If non-nil, the query will fetch only the <a href="#//api/name/rows">rows</a> with the given keys.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/limit" title="limit"></a>
+	<h3 class="subsubtitle method-title">limit</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The maximum number of <a href="#//api/name/rows">rows</a> to return. Default value is 0, meaning &lsquo;unlimited&rsquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSUInteger limit</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The maximum number of <a href="#//api/name/rows">rows</a> to return. Default value is 0, meaning &lsquo;unlimited&rsquo;.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prefetch" title="prefetch"></a>
+	<h3 class="subsubtitle method-title">prefetch</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If set to YES, the results will include the entire document contents of the associated <a href="#//api/name/rows">rows</a>.</p>
+
+<pre><code>These can be accessed via CouchQueryRow's -documentProperties property.
+This can be a good optimization if you know you'll need the entire contents of each document.
+(This property is equivalent to "include_docs" in the CouchDB API.) 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property BOOL prefetch</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If set to YES, the results will include the entire document contents of the associated <a href="#//api/name/rows">rows</a>.</p>
+
+<pre><code>These can be accessed via CouchQueryRow's -documentProperties property.
+This can be a good optimization if you know you'll need the entire contents of each document.
+(This property is equivalent to "include_docs" in the CouchDB API.) 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sequences" title="sequences"></a>
+	<h3 class="subsubtitle method-title">sequences</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property BOOL sequences</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/skip" title="skip"></a>
+	<h3 class="subsubtitle method-title">skip</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of initial <a href="#//api/name/rows">rows</a> to skip. Default value is 0.</p>
+
+<pre><code>Should only be used with small values. For efficient paging, use startkey and limit.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSUInteger skip</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The number of initial <a href="#//api/name/rows">rows</a> to skip. Default value is 0.</p>
+
+<pre><code>Should only be used with small values. For efficient paging, use startkey and limit.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stale" title="stale"></a>
+	<h3 class="subsubtitle method-title">stale</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If set, allows faster results at the expense of returning possibly out-of-date data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property CouchStaleness stale</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If set, allows faster results at the expense of returning possibly out-of-date data.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startKey" title="startKey"></a>
+	<h3 class="subsubtitle method-title">startKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If non-nil, the key value to <a href="#//api/name/start">start</a> at.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy) id startKey</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If non-nil, the key value to <a href="#//api/name/start">start</a> at.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startKeyDocID" title="startKeyDocID"></a>
+	<h3 class="subsubtitle method-title">startKeyDocID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If non-nil, the document ID to <a href="#//api/name/start">start</a> at.</p>
+
+<pre><code>(Useful if the view contains multiple identical keys, making .startKey ambiguous.) 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *startKeyDocID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If non-nil, the document ID to <a href="#//api/name/start">start</a> at.</p>
+
+<pre><code>(Useful if the view contains multiple identical keys, making .startKey ambiguous.) 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/asLiveQuery" title="asLiveQuery"></a>
+	<h3 class="subsubtitle method-title">asLiveQuery</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a live query with the same parameters.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CouchLiveQuery *)asLiveQuery</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a live query with the same parameters.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rows" title="rows"></a>
+	<h3 class="subsubtitle method-title">rows</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends the query to the server and returns an enumerator over the result rows (Synchronous).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CouchQueryEnumerator *)rows</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sends the query to the server and returns an enumerator over the result rows (Synchronous).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rowsIfChanged" title="rowsIfChanged"></a>
+	<h3 class="subsubtitle method-title">rowsIfChanged</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Same as <a href="#//api/name/rows">rows</a>, except returns nil if the query results have not changed since the last time it was evaluated (Synchronous).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CouchQueryEnumerator *)rowsIfChanged</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Same as <a href="#//api/name/rows">rows</a>, except returns nil if the query results have not changed since the last time it was evaluated (Synchronous).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="subsubtitle method-title">start</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts an asynchronous query of the CouchDB view.</p>
+
+<pre><code>When complete, the operation's resultObject will be the CouchQueryEnumerator. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)start</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Starts an asynchronous query of the CouchDB view.</p>
+
+<pre><code>When complete, the operation's resultObject will be the CouchQueryEnumerator. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchQuery.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

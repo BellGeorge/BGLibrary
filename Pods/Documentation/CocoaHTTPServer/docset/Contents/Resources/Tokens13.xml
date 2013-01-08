@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/HTTPServer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/HTTPServer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/documentRoot</TokenIdentifier>
+			<Abstract type="html">Specifies the document root to serve files from.
+For example, if you set this to &quot;/Users/&lt;your_username/Sites&quot;,
+then it will serve files out of the local Sites directory (including subdirectories).</Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)documentRoot</Declaration>
+			
+			
+			<Anchor>//api/name/documentRoot</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/setDocumentRoot:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDocumentRoot:(NSString *)value</Declaration>
+			
+			
+			<Anchor>//api/name/setDocumentRoot:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/connectionClass</TokenIdentifier>
+			<Abstract type="html">The connection class is the class used to handle incoming HTTP connections.</Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (Class)connectionClass</Declaration>
+			
+			
+			<Anchor>//api/name/connectionClass</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/setConnectionClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)setConnectionClass:(Class)value</Declaration>
+			
+			
+			<Anchor>//api/name/setConnectionClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/interface</TokenIdentifier>
+			<Abstract type="html">Set what interface you&apos;d like the server to listen on.
+By default this is nil, which causes the server to listen on all available interfaces like en1, wifi etc.</Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)interface</Declaration>
+			
+			
+			<Anchor>//api/name/interface</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/setInterface:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)setInterface:(NSString *)value</Declaration>
+			
+			
+			<Anchor>//api/name/setInterface:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/port</TokenIdentifier>
+			<Abstract type="html">The port number to run the HTTP server on.</Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (UInt16)port</Declaration>
+			
+			
+			<Anchor>//api/name/port</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/listeningPort</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (UInt16)listeningPort</Declaration>
+			
+			
+			<Anchor>//api/name/listeningPort</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/setPort:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPort:(UInt16)value</Declaration>
+			
+			
+			<Anchor>//api/name/setPort:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/domain</TokenIdentifier>
+			<Abstract type="html">Bonjour domain for publishing the service.
+The default value is &quot;local.&quot;.</Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)domain</Declaration>
+			
+			
+			<Anchor>//api/name/domain</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/setDomain:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDomain:(NSString *)value</Declaration>
+			
+			
+			<Anchor>//api/name/setDomain:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/name</TokenIdentifier>
+			<Abstract type="html">Bonjour name for publishing the service.
+The default value is &quot;&quot;.</Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/publishedName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)publishedName</Declaration>
+			
+			
+			<Anchor>//api/name/publishedName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/setName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)setName:(NSString *)value</Declaration>
+			
+			
+			<Anchor>//api/name/setName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/type</TokenIdentifier>
+			<Abstract type="html">Bonjour type for publishing the service.
+The default value is nil.
+The service will not be published via bonjour unless the type is set.</Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/setType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)setType:(NSString *)value</Declaration>
+			
+			
+			<Anchor>//api/name/setType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/republishBonjour</TokenIdentifier>
+			<Abstract type="html">Republishes the service via bonjour if the server is running.
+If the service was not previously published, this method will publish it (if the server is running).</Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)republishBonjour</Declaration>
+			
+			
+			<Anchor>//api/name/republishBonjour</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/TXTRecordDictionary</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)TXTRecordDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/TXTRecordDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/setTXTRecordDictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)setTXTRecordDictionary:(NSDictionary *)dict</Declaration>
+			
+			
+			<Anchor>//api/name/setTXTRecordDictionary:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/start:</TokenIdentifier>
+			<Abstract type="html">Attempts to starts the server on the configured port, interface, etc.</Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)start:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/start:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/stop</TokenIdentifier>
+			<Abstract type="html">Stops the server, preventing it from accepting any new connections.
+You may specify whether or not you want to close the existing client connections.</Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/stop:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop:(BOOL)keepExistingConnections</Declaration>
+			
+			
+			<Anchor>//api/name/stop:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/isRunning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isRunning</Declaration>
+			
+			
+			<Anchor>//api/name/isRunning</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/addWebSocket:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)addWebSocket:(WebSocket *)ws</Declaration>
+			
+			
+			<Anchor>//api/name/addWebSocket:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/numberOfHTTPConnections</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)numberOfHTTPConnections</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfHTTPConnections</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPServer/numberOfWebSocketConnections</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPServer.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)numberOfWebSocketConnections</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfWebSocketConnections</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/HTTPDynamicFileResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/HTTPDynamicFileResponse</TokenIdentifier>
+			<Abstract type="html">This class is designed to assist with dynamic content.
+Imagine you have a file that you want to make dynamic:</Abstract>
+			<DeclaredIn>HTTPDynamicFileResponse.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPDynamicFileResponse/initWithFilePath:forConnection:separator:replacementDictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPDynamicFileResponse.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFilePath:(NSString *)filePath forConnection:(HTTPConnection *)connection separator:(NSString *)separatorStr replacementDictionary:(NSDictionary *)dictionary</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFilePath:forConnection:separator:replacementDictionary:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

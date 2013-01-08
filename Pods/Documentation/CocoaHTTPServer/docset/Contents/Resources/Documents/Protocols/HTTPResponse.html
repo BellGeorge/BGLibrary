@@ -1,0 +1,795 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>HTTPResponse Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CocoaHTTPServer 2.2.1 </a></h1>
+				<a id="developerHome" href="../index.html">Robbie Hanson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">HTTPResponse Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/connectionDidClose">&nbsp;&nbsp;&nbsp;&nbsp;- connectionDidClose</option>
+	
+	<option value="//api/name/contentLength">&nbsp;&nbsp;&nbsp;&nbsp;- contentLength</option>
+	
+	<option value="//api/name/delayResponeHeaders">&nbsp;&nbsp;&nbsp;&nbsp;- delayResponeHeaders</option>
+	
+	<option value="//api/name/httpHeaders">&nbsp;&nbsp;&nbsp;&nbsp;- httpHeaders</option>
+	
+	<option value="//api/name/isChunked">&nbsp;&nbsp;&nbsp;&nbsp;- isChunked</option>
+	
+	<option value="//api/name/isDone">&nbsp;&nbsp;&nbsp;&nbsp;- isDone</option>
+	
+	<option value="//api/name/offset">&nbsp;&nbsp;&nbsp;&nbsp;- offset</option>
+	
+	<option value="//api/name/readDataOfLength:">&nbsp;&nbsp;&nbsp;&nbsp;- readDataOfLength:</option>
+	
+	<option value="//api/name/setOffset:">&nbsp;&nbsp;&nbsp;&nbsp;- setOffset:</option>
+	
+	<option value="//api/name/status">&nbsp;&nbsp;&nbsp;&nbsp;- status</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionDidClose">connectionDidClose</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentLength">contentLength</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delayResponeHeaders">delayResponeHeaders</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/httpHeaders">httpHeaders</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isChunked">isChunked</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isDone">isDone</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/offset">offset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readDataOfLength:">readDataOfLength:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setOffset:">setOffset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/status">status</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="HTTPResponse Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">HTTPResponse Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">HTTPResponse.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentLength">&ndash;&nbsp;contentLength</a></code>
+		<span class="tooltip"><p>Returns the length of the data in bytes.
+If you don&rsquo;t know the length in advance, implement the <a href="#//api/name/isChunked">isChunked</a> method and have it return YES.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/offset">&ndash;&nbsp;offset</a></code>
+		<span class="tooltip"><p>The HTTP server supports range requests in order to allow things like
+file download resumption and optimized streaming on mobile devices.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setOffset:">&ndash;&nbsp;setOffset:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readDataOfLength:">&ndash;&nbsp;readDataOfLength:</a></code>
+		<span class="tooltip"><p>Returns the data for the response.
+You do not have to return data of the exact length that is given.
+You may optionally return data of a lesser length.
+However, you must never return data of a greater length than requested.
+Doing so could disrupt proper support for range requests.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isDone">&ndash;&nbsp;isDone</a></code>
+		<span class="tooltip"><p>Should only return YES after the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> has read all available data.
+That is, all data for the response has been returned to the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> via the readDataOfLength method.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delayResponeHeaders">&ndash;&nbsp;delayResponeHeaders</a></code>
+		<span class="tooltip"><p>If you need time to calculate any part of the HTTP response headers (<a href="#//api/name/status">status</a> code or header fields),
+this method allows you to delay sending the headers so that you may asynchronously execute the calculations.
+Simply implement this method and return YES until you have everything you need concerning the headers.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/status">&ndash;&nbsp;status</a></code>
+		<span class="tooltip"><p>Status code for response.
+Allows for responses such as redirect (301), etc.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/httpHeaders">&ndash;&nbsp;httpHeaders</a></code>
+		<span class="tooltip"><p>If you want to add any extra HTTP headers to the response,
+simply return them in a dictionary in this method.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isChunked">&ndash;&nbsp;isChunked</a></code>
+		<span class="tooltip"><p>If you don&rsquo;t know the content-length in advance,
+implement this method in your custom response class and return YES.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionDidClose">&ndash;&nbsp;connectionDidClose</a></code>
+		<span class="tooltip"><p>This method is called from the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> class when the connection is closed,
+or when the connection is finished with the response.
+If your response is asynchronous, you should implement this method so you know not to
+invoke any methods on the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> after this method is called (as the connection may be deallocated).</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionDidClose" title="connectionDidClose"></a>
+	<h3 class="subsubtitle method-title">connectionDidClose</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is called from the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> class when the connection is closed,
+or when the connection is finished with the response.
+If your response is asynchronous, you should implement this method so you know not to
+invoke any methods on the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> after this method is called (as the connection may be deallocated).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)connectionDidClose</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is called from the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> class when the connection is closed,
+or when the connection is finished with the response.
+If your response is asynchronous, you should implement this method so you know not to
+invoke any methods on the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> after this method is called (as the connection may be deallocated).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPResponse.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentLength" title="contentLength"></a>
+	<h3 class="subsubtitle method-title">contentLength</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the length of the data in bytes.
+If you don&rsquo;t know the length in advance, implement the <a href="#//api/name/isChunked">isChunked</a> method and have it return YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UInt64)contentLength</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the length of the data in bytes.
+If you don&rsquo;t know the length in advance, implement the <a href="#//api/name/isChunked">isChunked</a> method and have it return YES.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPResponse.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delayResponeHeaders" title="delayResponeHeaders"></a>
+	<h3 class="subsubtitle method-title">delayResponeHeaders</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If you need time to calculate any part of the HTTP response headers (<a href="#//api/name/status">status</a> code or header fields),
+this method allows you to delay sending the headers so that you may asynchronously execute the calculations.
+Simply implement this method and return YES until you have everything you need concerning the headers.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)delayResponeHeaders</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you need time to calculate any part of the HTTP response headers (<a href="#//api/name/status">status</a> code or header fields),
+this method allows you to delay sending the headers so that you may asynchronously execute the calculations.
+Simply implement this method and return YES until you have everything you need concerning the headers.</p>
+
+<p>This method ties into the asynchronous response architecture of the <a href="../Classes/HTTPConnection.html">HTTPConnection</a>.
+You should read the full discussion at the bottom of this header.</p>
+
+<p>If you return YES from this method,
+the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> will wait for you to invoke the responseHasAvailableData method.
+After you do, the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> will again invoke this method to see if the response is ready to send the headers.</p>
+
+<p>You should only delay sending the headers until you have everything you need concerning just the headers.
+Asynchronously generating the body of the response is not an excuse to delay sending the headers.
+Instead you should tie into the asynchronous response architecture, and use techniques such as the <a href="#//api/name/isChunked">isChunked</a> method.</p>
+
+<p>Important: You should read the discussion at the bottom of this header.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPResponse.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/httpHeaders" title="httpHeaders"></a>
+	<h3 class="subsubtitle method-title">httpHeaders</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If you want to add any extra HTTP headers to the response,
+simply return them in a dictionary in this method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)httpHeaders</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you want to add any extra HTTP headers to the response,
+simply return them in a dictionary in this method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPResponse.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isChunked" title="isChunked"></a>
+	<h3 class="subsubtitle method-title">isChunked</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If you don&rsquo;t know the content-length in advance,
+implement this method in your custom response class and return YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isChunked</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you don&rsquo;t know the content-length in advance,
+implement this method in your custom response class and return YES.</p>
+
+<p>Important: You should read the discussion at the bottom of this header.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPResponse.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isDone" title="isDone"></a>
+	<h3 class="subsubtitle method-title">isDone</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Should only return YES after the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> has read all available data.
+That is, all data for the response has been returned to the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> via the readDataOfLength method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isDone</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Should only return YES after the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> has read all available data.
+That is, all data for the response has been returned to the <a href="../Classes/HTTPConnection.html">HTTPConnection</a> via the readDataOfLength method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPResponse.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/offset" title="offset"></a>
+	<h3 class="subsubtitle method-title">offset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The HTTP server supports range requests in order to allow things like
+file download resumption and optimized streaming on mobile devices.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UInt64)offset</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The HTTP server supports range requests in order to allow things like
+file download resumption and optimized streaming on mobile devices.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPResponse.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readDataOfLength:" title="readDataOfLength:"></a>
+	<h3 class="subsubtitle method-title">readDataOfLength:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the data for the response.
+You do not have to return data of the exact length that is given.
+You may optionally return data of a lesser length.
+However, you must never return data of a greater length than requested.
+Doing so could disrupt proper support for range requests.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)readDataOfLength:(NSUInteger)<em>length</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the data for the response.
+You do not have to return data of the exact length that is given.
+You may optionally return data of a lesser length.
+However, you must never return data of a greater length than requested.
+Doing so could disrupt proper support for range requests.</p>
+
+<p>To support asynchronous responses, read the discussion at the bottom of this header.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPResponse.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setOffset:" title="setOffset:"></a>
+	<h3 class="subsubtitle method-title">setOffset:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setOffset:(UInt64)<em>offset</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/status" title="status"></a>
+	<h3 class="subsubtitle method-title">status</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Status code for response.
+Allows for responses such as redirect (301), etc.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)status</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Status code for response.
+Allows for responses such as redirect (301), etc.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPResponse.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Robbie Hanson. All rights reserved. (Last updated: 2012-11-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

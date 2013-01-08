@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDURLProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDURLProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDURLProtocol.h</DeclaredIn>
+			
+			<NodeRef refid="51"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDURLProtocol/rootURL</TokenIdentifier>
+			<Abstract type="html">&quot;. */</Abstract>
+			<DeclaredIn>TDURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)rootURL</Declaration>
+			
+			
+			<Anchor>//api/name/rootURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDURLProtocol/HTTPURLForServerURL:</TokenIdentifier>
+			<Abstract type="html">An alternate root URL with HTTP scheme; use this for CouchApps in UIWebViews.
+    (This URL will have the hostname of the touchdb: URL with &quot;.touchdb.&quot; appended.) </Abstract>
+			<DeclaredIn>TDURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)HTTPURLForServerURL:(NSURL *)serverURL</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPURLForServerURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDURLProtocol/registerServer:forHostname:</TokenIdentifier>
+			<Abstract type="html">Registers a TDServer instance with a URL hostname.
+    &apos;touchdb:&apos; URLs with that hostname will be routed to that server.
+    If the server is nil, that hostname is unregistered, and URLs with that hostname will cause a host-not-found error.
+    If the hostname is nil or an empty string, &quot;localhost&quot; is substituted. </Abstract>
+			<DeclaredIn>TDURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)registerServer:(TDServer *)server forHostname:(NSString *)hostname</Declaration>
+			
+			
+			<Anchor>//api/name/registerServer:forHostname:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDURLProtocol/serverForHostname:</TokenIdentifier>
+			<Abstract type="html">Returns the TDServer instance that&apos;s been registered with a specific hostname.</Abstract>
+			<DeclaredIn>TDURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (TDServer *)serverForHostname:(NSString *)hostname</Declaration>
+			
+			
+			<Anchor>//api/name/serverForHostname:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDURLProtocol/registerServer:</TokenIdentifier>
+			<Abstract type="html">Registers a TDServer instance with a new unique hostname, and returns the root URL at which the server can now be reached.</Abstract>
+			<DeclaredIn>TDURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)registerServer:(TDServer *)server</Declaration>
+			
+			
+			<Anchor>//api/name/registerServer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDURLProtocol/unregisterServer:</TokenIdentifier>
+			<Abstract type="html">Unregisters a TDServer. After this, the server can be safely closed.</Abstract>
+			<DeclaredIn>TDURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (void)unregisterServer:(TDServer *)server</Declaration>
+			
+			
+			<Anchor>//api/name/unregisterServer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDURLProtocol/setServer:</TokenIdentifier>
+			<Abstract type="html">A convenience to register a server with the default hostname &quot;localhost&quot;.</Abstract>
+			<DeclaredIn>TDURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setServer:(TDServer *)server</Declaration>
+			
+			
+			<Anchor>//api/name/setServer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDURLProtocol/server</TokenIdentifier>
+			<Abstract type="html">Returns the server registered with the hostname &quot;localhost&quot;.</Abstract>
+			<DeclaredIn>TDURLProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (TDServer *)server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

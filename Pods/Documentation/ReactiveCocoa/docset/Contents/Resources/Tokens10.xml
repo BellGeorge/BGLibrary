@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RACConnectableSignal.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RACConnectableSignal</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACConnectableSignal.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACConnectableSignal/connect</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACConnectableSignal.h</DeclaredIn>			
+			
+			<Declaration>- (RACDisposable *)connect</Declaration>
+			
+			
+			<Anchor>//api/name/connect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACConnectableSignal/autoconnect</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACConnectableSignal.h</DeclaredIn>			
+			
+			<Declaration>- (RACSignal *)autoconnect</Declaration>
+			
+			
+			<Anchor>//api/name/autoconnect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACConnectableSignal/connectableSignalWithSourceSignal:subject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACConnectableSignal+Private.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)connectableSignalWithSourceSignal:(id&lt;RACSignal&gt;)source subject:(RACSubject *)subject</Declaration>
+			
+			
+			<Anchor>//api/name/connectableSignalWithSourceSignal:subject:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

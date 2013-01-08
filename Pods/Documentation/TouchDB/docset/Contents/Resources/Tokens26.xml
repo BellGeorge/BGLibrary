@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDDatabase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDDatabase</TokenIdentifier>
+			<Abstract type="html">A TouchDB database.
+Types of encoding/compression of stored attachments.
+Validation block, used to approve revisions being added to the database.</Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/initWithPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/open</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/close</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/deleteDatabase:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)deleteDatabase:(NSError **)outError</Declaration>
+			
+			
+			<Anchor>//api/name/deleteDatabase:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDDatabase/createEmptyDBAtPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>+ (TDDatabase *)createEmptyDBAtPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/createEmptyDBAtPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setReadOnly:</TokenIdentifier>
+			<Abstract type="html">Should the database file be opened in read-only mode?</Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL readOnly</Declaration>
+			
+			
+			<Anchor>//api/name/readOnly</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/readOnly</TokenIdentifier>
+			<Abstract type="html">Should the database file be opened in read-only mode?</Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL readOnly</Declaration>
+			
+			
+			<Anchor>//api/name/readOnly</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/replaceWithDatabaseFile:withAttachments:error:</TokenIdentifier>
+			<Abstract type="html">Replaces the database with a copy of another database.
+    This is primarily used to install a canned database on first launch of an app, in which case you should first check .exists to avoid replacing the database if it exists already. The canned database would have been copied into your app bundle at build time.</Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)replaceWithDatabaseFile:(NSString *)databasePath withAttachments:(NSString *)attachmentsPath error:(NSError **)outError</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>databasePath</Name>
+					<Abstract type="html">Path of the database file that should replace this one.</Abstract>
+				</Parameter><Parameter>
+					<Name>attachmentsPath</Name>
+					<Abstract type="html">Path of the associated attachments directory, or nil if there are no attachments.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">If an error occurs, it will be stored into this parameter on return.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the database was copied, NO if an error occurred. </Abstract></ReturnValue>
+			<Anchor>//api/name/replaceWithDatabaseFile:withAttachments:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/path</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setExists:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL exists</Declaration>
+			
+			
+			<Anchor>//api/name/exists</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/exists</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL exists</Declaration>
+			
+			
+			<Anchor>//api/name/exists</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setTotalDataSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) UInt64 totalDataSize</Declaration>
+			
+			
+			<Anchor>//api/name/totalDataSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/totalDataSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) UInt64 totalDataSize</Declaration>
+			
+			
+			<Anchor>//api/name/totalDataSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setDocumentCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger documentCount</Declaration>
+			
+			
+			<Anchor>//api/name/documentCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/documentCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger documentCount</Declaration>
+			
+			
+			<Anchor>//api/name/documentCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setLastSequence:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) SequenceNumber lastSequence</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/lastSequence</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) SequenceNumber lastSequence</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setPrivateUUID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *privateUUID</Declaration>
+			
+			
+			<Anchor>//api/name/privateUUID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/privateUUID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *privateUUID</Declaration>
+			
+			
+			<Anchor>//api/name/privateUUID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setPublicUUID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *publicUUID</Declaration>
+			
+			
+			<Anchor>//api/name/publicUUID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/publicUUID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *publicUUID</Declaration>
+			
+			
+			<Anchor>//api/name/publicUUID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/beginTransaction</TokenIdentifier>
+			<Abstract type="html">Begins a database transaction. Transactions can nest. Every -beginTransaction must be balanced by a later endTransaction:.</Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)beginTransaction</Declaration>
+			
+			
+			<Anchor>//api/name/beginTransaction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/endTransaction:</TokenIdentifier>
+			<Abstract type="html">Commits or aborts (rolls back) a transaction.</Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)endTransaction:(BOOL)commit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commit</Name>
+					<Abstract type="html">If YES, commits; if NO, aborts and rolls back, undoing all changes made since the matching beginTransaction call, including any committed nested transactions. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/endTransaction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/inTransaction:</TokenIdentifier>
+			<Abstract type="html">Executes the block within a database transaction.
+    If the block returns a non-OK status, the transaction is aborted/rolled back.
+    Any exception raised by the block will be caught and treated as kTDStatusException. </Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)inTransaction:(TDStatus ( ^ ) ( ))block</Declaration>
+			
+			
+			<Anchor>//api/name/inTransaction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getDocumentWithID:revisionID:options:status:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevision *)getDocumentWithID:(NSString *)docID revisionID:(NSString *)revID options:(TDContentOptions)options status:(TDStatus *)outStatus</Declaration>
+			
+			
+			<Anchor>//api/name/getDocumentWithID:revisionID:options:status:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getDocumentWithID:revisionID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevision *)getDocumentWithID:(NSString *)docID revisionID:(NSString *)revID</Declaration>
+			
+			
+			<Anchor>//api/name/getDocumentWithID:revisionID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/existsDocumentWithID:revisionID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)existsDocumentWithID:(NSString *)docID revisionID:(NSString *)revID</Declaration>
+			
+			
+			<Anchor>//api/name/existsDocumentWithID:revisionID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/loadRevisionBody:options:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)loadRevisionBody:(TDRevision *)rev options:(TDContentOptions)options</Declaration>
+			
+			
+			<Anchor>//api/name/loadRevisionBody:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getRevisionHistory:</TokenIdentifier>
+			<Abstract type="html">Returns an array of TDRevs in reverse chronological order,
+    starting with the given revision. </Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)getRevisionHistory:(TDRevision *)rev</Declaration>
+			
+			
+			<Anchor>//api/name/getRevisionHistory:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getRevisionHistoryDict:</TokenIdentifier>
+			<Abstract type="html">Returns the revision history as a _revisions dictionary, as returned by the REST API&apos;s ?revs=true option.</Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)getRevisionHistoryDict:(TDRevision *)rev</Declaration>
+			
+			
+			<Anchor>//api/name/getRevisionHistoryDict:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getAllRevisionsOfDocumentID:onlyCurrent:</TokenIdentifier>
+			<Abstract type="html">Returns all the known revisions (or all current/conflicting revisions) of a document.</Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevisionList *)getAllRevisionsOfDocumentID:(NSString *)docID onlyCurrent:(BOOL)onlyCurrent</Declaration>
+			
+			
+			<Anchor>//api/name/getAllRevisionsOfDocumentID:onlyCurrent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getPossibleAncestorRevisionIDs:limit:</TokenIdentifier>
+			<Abstract type="html">Returns IDs of local revisions of the same document, that have a lower generation number.
+    Does not return revisions whose bodies have been compacted away, or deletion markers. </Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)getPossibleAncestorRevisionIDs:(TDRevision *)rev limit:(unsigned)limit</Declaration>
+			
+			
+			<Anchor>//api/name/getPossibleAncestorRevisionIDs:limit:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/findCommonAncestorOf:withRevIDs:</TokenIdentifier>
+			<Abstract type="html">Returns the most recent member of revIDs that appears in rev&apos;s ancestry.</Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)findCommonAncestorOf:(TDRevision *)rev withRevIDs:(NSArray *)revIDs</Declaration>
+			
+			
+			<Anchor>//api/name/findCommonAncestorOf:withRevIDs:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getAllDocs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)getAllDocs:(const struct TDQueryOptions *)options</Declaration>
+			
+			
+			<Anchor>//api/name/getAllDocs:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getDocsWithIDs:options:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)getDocsWithIDs:(NSArray *)docIDs options:(const struct TDQueryOptions *)options</Declaration>
+			
+			
+			<Anchor>//api/name/getDocsWithIDs:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/viewNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (TDView *)viewNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/viewNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/existingViewNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (TDView *)existingViewNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/existingViewNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setAllViews:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allViews</Declaration>
+			
+			
+			<Anchor>//api/name/allViews</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/allViews</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allViews</Declaration>
+			
+			
+			<Anchor>//api/name/allViews</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/changesSinceSequence:options:filter:params:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevisionList *)changesSinceSequence:(SequenceNumber)lastSequence options:(const TDChangesOptions *)options filter:(TDFilterBlock)filter params:(NSDictionary *)filterParams</Declaration>
+			
+			
+			<Anchor>//api/name/changesSinceSequence:options:filter:params:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/defineFilter:asBlock:</TokenIdentifier>
+			<Abstract type="html">Define or clear a named filter function. These aren&apos;t used directly by TDDatabase, but they&apos;re looked up by TDRouter when a _changes request has a ?filter parameter.</Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (void)defineFilter:(NSString *)filterName asBlock:(TDFilterBlock)filterBlock</Declaration>
+			
+			
+			<Anchor>//api/name/defineFilter:asBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/filterNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (TDFilterBlock)filterNamed:(NSString *)filterName</Declaration>
+			
+			
+			<Anchor>//api/name/filterNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setFmdb:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) FMDatabase *fmdb</Declaration>
+			
+			
+			<Anchor>//api/name/fmdb</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/fmdb</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) FMDatabase *fmdb</Declaration>
+			
+			
+			<Anchor>//api/name/fmdb</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setAttachmentStore:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDBlobStore *attachmentStore</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/attachmentStore</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDBlobStore *attachmentStore</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getDocNumericID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (SInt64)getDocNumericID:(NSString *)docID</Declaration>
+			
+			
+			<Anchor>//api/name/getDocNumericID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getAllRevisionsOfDocumentID:numericID:onlyCurrent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevisionList *)getAllRevisionsOfDocumentID:(NSString *)docID numericID:(SInt64)docNumericID onlyCurrent:(BOOL)onlyCurrent</Declaration>
+			
+			
+			<Anchor>//api/name/getAllRevisionsOfDocumentID:numericID:onlyCurrent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/deleteViewNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)deleteViewNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/deleteViewNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/documentPropertiesFromJSON:docID:revID:deleted:sequence:options:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableDictionary *)documentPropertiesFromJSON:(NSData *)json docID:(NSString *)docID revID:(NSString *)revID deleted:(BOOL)deleted sequence:(SequenceNumber)sequence options:(TDContentOptions)options</Declaration>
+			
+			
+			<Anchor>//api/name/documentPropertiesFromJSON:docID:revID:deleted:sequence:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/winningRevIDOfDocNumericID:isDeleted:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)winningRevIDOfDocNumericID:(SInt64)docNumericID isDeleted:(BOOL *)outIsDeleted</Declaration>
+			
+			
+			<Anchor>//api/name/winningRevIDOfDocNumericID:isDeleted:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/stopAndForgetReplicator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopAndForgetReplicator:(TDReplicator *)repl</Declaration>
+			
+			
+			<Anchor>//api/name/stopAndForgetReplicator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/lastSequenceWithCheckpointID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)lastSequenceWithCheckpointID:(NSString *)checkpointID</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequenceWithCheckpointID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setLastSequence:withCheckpointID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)setLastSequence:(NSString *)lastSequence withCheckpointID:(NSString *)checkpointID</Declaration>
+			
+			
+			<Anchor>//api/name/setLastSequence:withCheckpointID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDDatabase/joinQuotedStrings:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)joinQuotedStrings:(NSArray *)strings</Declaration>
+			
+			
+			<Anchor>//api/name/joinQuotedStrings:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/attachmentWriter</TokenIdentifier>
+			<Abstract type="html">Creates a TDBlobStoreWriter object that can be used to stream an attachment to the store.</Abstract>
+			<DeclaredIn>TDDatabase+Attachments.h</DeclaredIn>			
+			
+			<Declaration>- (TDBlobStoreWriter *)attachmentWriter</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentWriter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/attachmentsFromRevision:status:</TokenIdentifier>
+			<Abstract type="html">Creates TDAttachment objects from the revision&apos;s &apos;_attachments&apos; property.</Abstract>
+			<DeclaredIn>TDDatabase+Attachments.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)attachmentsFromRevision:(TDRevision *)rev status:(TDStatus *)outStatus</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentsFromRevision:status:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/processAttachments:forRevision:withParentSequence:</TokenIdentifier>
+			<Abstract type="html">Given a newly-added revision, adds the necessary attachment rows to the database and stores inline attachments into the blob store.</Abstract>
+			<DeclaredIn>TDDatabase+Attachments.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)processAttachments:(NSDictionary *)attachments forRevision:(TDRevision *)rev withParentSequence:(SequenceNumber)parentSequence</Declaration>
+			
+			
+			<Anchor>//api/name/processAttachments:forRevision:withParentSequence:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getAttachmentDictForSequence:options:</TokenIdentifier>
+			<Abstract type="html">Constructs an &quot;_attachments&quot; dictionary for a revision, to be inserted in its JSON body.</Abstract>
+			<DeclaredIn>TDDatabase+Attachments.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)getAttachmentDictForSequence:(SequenceNumber)sequence options:(TDContentOptions)options</Declaration>
+			
+			
+			<Anchor>//api/name/getAttachmentDictForSequence:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDDatabase/stubOutAttachmentsIn:beforeRevPos:attachmentsFollow:</TokenIdentifier>
+			<Abstract type="html">Modifies a TDRevision&apos;s attachments dictionary by changing all attachments with revpos &lt; minRevPos into stubs; and if &apos;attachmentsFollow&apos; is true, the remaining attachments will be modified to not_ be stubs but include a &quot;follows&quot; key instead of a body.</Abstract>
+			<DeclaredIn>TDDatabase+Attachments.h</DeclaredIn>			
+			
+			<Declaration>+ (void)stubOutAttachmentsIn:(TDRevision *)rev beforeRevPos:(int)minRevPos attachmentsFollow:(BOOL)attachmentsFollow</Declaration>
+			
+			
+			<Anchor>//api/name/stubOutAttachmentsIn:beforeRevPos:attachmentsFollow:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/multipartWriterForRevision:contentType:</TokenIdentifier>
+			<Abstract type="html">Generates a MIME multipart writer for a revision, with separate body parts for each attachment whose &quot;follows&quot; property is set.</Abstract>
+			<DeclaredIn>TDDatabase+Attachments.h</DeclaredIn>			
+			
+			<Declaration>- (TDMultipartWriter *)multipartWriterForRevision:(TDRevision *)rev contentType:(NSString *)contentType</Declaration>
+			
+			
+			<Anchor>//api/name/multipartWriterForRevision:contentType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getAttachmentForSequence:named:type:encoding:status:</TokenIdentifier>
+			<Abstract type="html">Returns the content and metadata of an attachment.
+    If you pass NULL for the &apos;outEncoding&apos; parameter, it signifies that you don&apos;t care about encodings and just want the &apos;real&apos; data, so it&apos;ll be decoded for you. </Abstract>
+			<DeclaredIn>TDDatabase+Attachments.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)getAttachmentForSequence:(SequenceNumber)sequence named:(NSString *)filename type:(NSString **)outType encoding:(TDAttachmentEncoding *)outEncoding status:(TDStatus *)outStatus</Declaration>
+			
+			
+			<Anchor>//api/name/getAttachmentForSequence:named:type:encoding:status:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getAttachmentPathForSequence:named:type:encoding:status:</TokenIdentifier>
+			<Abstract type="html">Returns the location of an attachment&apos;s file in the blob store.</Abstract>
+			<DeclaredIn>TDDatabase+Attachments.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)getAttachmentPathForSequence:(SequenceNumber)sequence named:(NSString *)filename type:(NSString **)outType encoding:(TDAttachmentEncoding *)outEncoding status:(TDStatus *)outStatus</Declaration>
+			
+			
+			<Anchor>//api/name/getAttachmentPathForSequence:named:type:encoding:status:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/fileForAttachmentDict:</TokenIdentifier>
+			<Abstract type="html">Uses the &quot;digest&quot; field of the attachment dict to look up the attachment in the store and return a file URL to it. DO NOT MODIFY THIS FILE!</Abstract>
+			<DeclaredIn>TDDatabase+Attachments.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)fileForAttachmentDict:(NSDictionary *)attachmentDict</Declaration>
+			
+			
+			<Anchor>//api/name/fileForAttachmentDict:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/garbageCollectAttachments</TokenIdentifier>
+			<Abstract type="html">Deletes obsolete attachments from the database and blob store.</Abstract>
+			<DeclaredIn>TDDatabase+Attachments.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)garbageCollectAttachments</Declaration>
+			
+			
+			<Anchor>//api/name/garbageCollectAttachments</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/updateAttachment:body:type:encoding:ofDocID:revID:status:</TokenIdentifier>
+			<Abstract type="html">Updates or deletes an attachment, creating a new document revision in the process.
+    Used by the PUT / DELETE methods called on attachment URLs. </Abstract>
+			<DeclaredIn>TDDatabase+Attachments.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevision *)updateAttachment:(NSString *)filename body:(NSData *)body type:(NSString *)contentType encoding:(TDAttachmentEncoding)encoding ofDocID:(NSString *)docID revID:(NSString *)oldRevID status:(TDStatus *)outStatus</Declaration>
+			
+			
+			<Anchor>//api/name/updateAttachment:body:type:encoding:ofDocID:revID:status:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/rememberAttachmentWritersForDigests:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)rememberAttachmentWritersForDigests:(NSDictionary *)writersByDigests</Declaration>
+			
+			
+			<Anchor>//api/name/rememberAttachmentWritersForDigests:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/attachmentWriterForAttachment:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (id)attachmentWriterForAttachment:(NSDictionary *)attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentWriterForAttachment:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/storeBlob:creatingKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)storeBlob:(NSData *)blob creatingKey:(TDBlobKey *)outKey</Declaration>
+			
+			
+			<Anchor>//api/name/storeBlob:creatingKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/insertAttachment:forSequence:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)insertAttachment:(TDAttachment *)attachment forSequence:(SequenceNumber)sequence</Declaration>
+			
+			
+			<Anchor>//api/name/insertAttachment:forSequence:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/copyAttachmentNamed:fromSequence:toSequence:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)copyAttachmentNamed:(NSString *)name fromSequence:(SequenceNumber)fromSequence toSequence:(SequenceNumber)toSequence</Declaration>
+			
+			
+			<Anchor>//api/name/copyAttachmentNamed:fromSequence:toSequence:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/inlineFollowingAttachmentsIn:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)inlineFollowingAttachmentsIn:(TDRevision *)rev error:(NSError **)outError</Declaration>
+			
+			
+			<Anchor>//api/name/inlineFollowingAttachmentsIn:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/setActiveReplicators:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase+Replication.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *activeReplicators</Declaration>
+			
+			
+			<Anchor>//api/name/activeReplicators</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDDatabase/activeReplicators</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase+Replication.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *activeReplicators</Declaration>
+			
+			
+			<Anchor>//api/name/activeReplicators</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/activeReplicatorWithRemoteURL:push:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase+Replication.h</DeclaredIn>			
+			
+			<Declaration>- (TDReplicator *)activeReplicatorWithRemoteURL:(NSURL *)remote push:(BOOL)push</Declaration>
+			
+			
+			<Anchor>//api/name/activeReplicatorWithRemoteURL:push:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/replicatorWithRemoteURL:push:continuous:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase+Replication.h</DeclaredIn>			
+			
+			<Declaration>- (TDReplicator *)replicatorWithRemoteURL:(NSURL *)remote push:(BOOL)push continuous:(BOOL)continuous</Declaration>
+			
+			
+			<Anchor>//api/name/replicatorWithRemoteURL:push:continuous:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/findMissingRevisions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase+Replication.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)findMissingRevisions:(TDRevisionList *)revs</Declaration>
+			
+			
+			<Anchor>//api/name/findMissingRevisions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDDatabase/isValidDocumentID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isValidDocumentID:(NSString *)str</Declaration>
+			
+			
+			<Anchor>//api/name/isValidDocumentID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDDatabase/generateDocumentID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)generateDocumentID</Declaration>
+			
+			
+			<Anchor>//api/name/generateDocumentID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/putRevision:prevRevisionID:allowConflict:status:</TokenIdentifier>
+			<Abstract type="html">Stores a new (or initial) revision of a document. This is what&apos;s invoked by a PUT or POST. As with those, the previous revision ID must be supplied when necessary and the call will fail if it doesn&apos;t match.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevision *)putRevision:(TDRevision *)revision prevRevisionID:(NSString *)prevRevID allowConflict:(BOOL)allowConflict status:(TDStatus *)outStatus</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>revision</Name>
+					<Abstract type="html">The revision to add. If the docID is nil, a new UUID will be assigned. Its revID must be nil. It must have a JSON body.</Abstract>
+				</Parameter><Parameter>
+					<Name>prevRevID</Name>
+					<Abstract type="html">The ID of the revision to replace (same as the &quot;?rev=&quot; parameter to a PUT), or nil if this is a new document.</Abstract>
+				</Parameter><Parameter>
+					<Name>allowConflict</Name>
+					<Abstract type="html">If NO, an error status kTDStatusConflict will be returned if the insertion would create a conflict, i.e. if the previous revision already has a child.</Abstract>
+				</Parameter><Parameter>
+					<Name>status</Name>
+					<Abstract type="html">On return, an HTTP status code indicating success or failure.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new TDRevision with the docID, revID and sequence filled in (but no body). </Abstract></ReturnValue>
+			<Anchor>//api/name/putRevision:prevRevisionID:allowConflict:status:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/forceInsert:revisionHistory:source:</TokenIdentifier>
+			<Abstract type="html">Inserts an already-existing revision replicated from a remote database. It must already have a revision ID. This may create a conflict! The revision&apos;s history must be given; ancestor revision IDs that don&apos;t already exist locally will create phantom revisions with no content.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)forceInsert:(TDRevision *)rev revisionHistory:(NSArray *)history source:(NSURL *)source</Declaration>
+			
+			
+			<Anchor>//api/name/forceInsert:revisionHistory:source:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDDatabase/parseCouchDBRevisionHistory:</TokenIdentifier>
+			<Abstract type="html">Parses the _revisions dict from a document into an array of revision ID strings</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)parseCouchDBRevisionHistory:(NSDictionary *)docProperties</Declaration>
+			
+			
+			<Anchor>//api/name/parseCouchDBRevisionHistory:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/defineValidation:asBlock:</TokenIdentifier>
+			<Abstract type="html">Define or clear a named document validation function.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>- (void)defineValidation:(NSString *)validationName asBlock:(TDValidationBlock)validationBlock</Declaration>
+			
+			
+			<Anchor>//api/name/defineValidation:asBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/validationNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>- (TDValidationBlock)validationNamed:(NSString *)validationName</Declaration>
+			
+			
+			<Anchor>//api/name/validationNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/compact</TokenIdentifier>
+			<Abstract type="html">Compacts the database storage by removing the bodies and attachments of obsolete revisions.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)compact</Declaration>
+			
+			
+			<Anchor>//api/name/compact</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/purgeRevisions:result:</TokenIdentifier>
+			<Abstract type="html">Purges specific revisions, which deletes them completely from the local database without adding a &quot;tombstone&quot; revision. It&apos;s as though they were never there.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)purgeRevisions:(NSDictionary *)docsToRevs result:(NSDictionary **)outResult</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>docsToRevs</Name>
+					<Abstract type="html">A dictionary mapping document IDs to arrays of revision IDs.</Abstract>
+				</Parameter><Parameter>
+					<Name>outResult</Name>
+					<Abstract type="html">On success will point to an NSDictionary with the same form as docsToRev, containing the doc/revision IDs that were actually removed. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/purgeRevisions:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/encodeDocumentJSON:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)encodeDocumentJSON:(TDRevision *)rev</Declaration>
+			
+			
+			<Anchor>//api/name/encodeDocumentJSON:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/validateRevision:previousRevision:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)validateRevision:(TDRevision *)newRev previousRevision:(TDRevision *)oldRev</Declaration>
+			
+			
+			<Anchor>//api/name/validateRevision:previousRevision:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/getLocalDocumentWithID:revisionID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase+LocalDocs.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevision *)getLocalDocumentWithID:(NSString *)docID revisionID:(NSString *)revID</Declaration>
+			
+			
+			<Anchor>//api/name/getLocalDocumentWithID:revisionID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/putLocalRevision:prevRevisionID:status:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase+LocalDocs.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevision *)putLocalRevision:(TDRevision *)revision prevRevisionID:(NSString *)prevRevID status:(TDStatus *)outStatus</Declaration>
+			
+			
+			<Anchor>//api/name/putLocalRevision:prevRevisionID:status:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDDatabase/deleteLocalDocumentWithID:revisionID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDDatabase+LocalDocs.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)deleteLocalDocumentWithID:(NSString *)docID revisionID:(NSString *)revID</Declaration>
+			
+			
+			<Anchor>//api/name/deleteLocalDocumentWithID:revisionID:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

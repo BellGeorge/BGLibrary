@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/WebSocketDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/WebSocketDelegate</TokenIdentifier>
+			<Abstract type="html">There are two ways to create your own custom WebSocket:</Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WebSocketDelegate/webSocketDidOpen:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>- (void)webSocketDidOpen:(WebSocket *)ws</Declaration>
+			
+			
+			<Anchor>//api/name/webSocketDidOpen:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WebSocketDelegate/webSocket:didReceiveMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>- (void)webSocket:(WebSocket *)ws didReceiveMessage:(NSString *)msg</Declaration>
+			
+			
+			<Anchor>//api/name/webSocket:didReceiveMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/WebSocketDelegate/webSocketDidClose:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>- (void)webSocketDidClose:(WebSocket *)ws</Declaration>
+			
+			
+			<Anchor>//api/name/webSocketDidClose:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

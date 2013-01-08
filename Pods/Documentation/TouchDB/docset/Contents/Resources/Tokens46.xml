@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDRevision.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDRevision</TokenIdentifier>
+			<Abstract type="html">Stores information about a revision -- its docID, revID, and whether it&apos;s deleted. It can also store the sequence number and document contents (they can be added after creation).</Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>
+			
+			<NodeRef refid="46"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/initWithDocID:revID:deleted:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDocID:(NSString *)docID revID:(NSString *)revID deleted:(BOOL)deleted</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDocID:revID:deleted:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/initWithBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithBody:(TDBody *)body</Declaration>
+			
+			
+			<Anchor>//api/name/initWithBody:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/initWithProperties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithProperties:(NSDictionary *)properties</Declaration>
+			
+			
+			<Anchor>//api/name/initWithProperties:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDRevision/revisionWithProperties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>+ (TDRevision *)revisionWithProperties:(NSDictionary *)properties</Declaration>
+			
+			
+			<Anchor>//api/name/revisionWithProperties:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/setDocID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *docID</Declaration>
+			
+			
+			<Anchor>//api/name/docID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevision/docID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *docID</Declaration>
+			
+			
+			<Anchor>//api/name/docID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/setRevID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *revID</Declaration>
+			
+			
+			<Anchor>//api/name/revID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevision/revID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *revID</Declaration>
+			
+			
+			<Anchor>//api/name/revID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/setDeleted:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) bool deleted</Declaration>
+			
+			
+			<Anchor>//api/name/deleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevision/deleted</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) bool deleted</Declaration>
+			
+			
+			<Anchor>//api/name/deleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/setMissing:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property bool missing</Declaration>
+			
+			
+			<Anchor>//api/name/missing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevision/missing</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property bool missing</Declaration>
+			
+			
+			<Anchor>//api/name/missing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/setBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) TDBody *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevision/body</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) TDBody *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/setProperties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevision/properties</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/setAsJSON:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSData *asJSON</Declaration>
+			
+			
+			<Anchor>//api/name/asJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevision/asJSON</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSData *asJSON</Declaration>
+			
+			
+			<Anchor>//api/name/asJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/objectForKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectForKeyedSubscript:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/objectForKeyedSubscript:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/setSequence:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property SequenceNumber sequence</Declaration>
+			
+			
+			<Anchor>//api/name/sequence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevision/sequence</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property SequenceNumber sequence</Declaration>
+			
+			
+			<Anchor>//api/name/sequence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/compareSequences:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (NSComparisonResult)compareSequences:(TDRevision *)rev</Declaration>
+			
+			
+			<Anchor>//api/name/compareSequences:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/setGeneration:</TokenIdentifier>
+			<Abstract type="html">Generation number: 1 for a new document, 2 for the 2nd revision, ...
+    Extracted from the numeric prefix of the revID. </Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) unsigned generation</Declaration>
+			
+			
+			<Anchor>//api/name/generation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevision/generation</TokenIdentifier>
+			<Abstract type="html">Generation number: 1 for a new document, 2 for the 2nd revision, ...
+    Extracted from the numeric prefix of the revID. </Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) unsigned generation</Declaration>
+			
+			
+			<Anchor>//api/name/generation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDRevision/generationFromRevID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>+ (unsigned)generationFromRevID:(NSString *)revID</Declaration>
+			
+			
+			<Anchor>//api/name/generationFromRevID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDRevision/parseRevID:intoGeneration:andSuffix:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)parseRevID:(NSString *)revID intoGeneration:(int *)outNum andSuffix:(NSString **)outSuffix</Declaration>
+			
+			
+			<Anchor>//api/name/parseRevID:intoGeneration:andSuffix:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevision/copyWithDocID:revID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevision *)copyWithDocID:(NSString *)docID revID:(NSString *)revID</Declaration>
+			
+			
+			<Anchor>//api/name/copyWithDocID:revID:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

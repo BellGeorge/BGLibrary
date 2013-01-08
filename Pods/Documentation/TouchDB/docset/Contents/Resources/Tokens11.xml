@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OAProblem.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OAProblem</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAProblem/setProblem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *problem</Declaration>
+			
+			
+			<Anchor>//api/name/problem</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OAProblem/problem</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *problem</Declaration>
+			
+			
+			<Anchor>//api/name/problem</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAProblem/initWithProblem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithProblem:(NSString *)aProblem</Declaration>
+			
+			
+			<Anchor>//api/name/initWithProblem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAProblem/initWithResponseBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithResponseBody:(NSString *)response</Declaration>
+			
+			
+			<Anchor>//api/name/initWithResponseBody:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAProblem/isEqualToProblem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isEqualToProblem:(OAProblem *)aProblem</Declaration>
+			
+			
+			<Anchor>//api/name/isEqualToProblem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAProblem/isEqualToString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isEqualToString:(NSString *)aProblem</Declaration>
+			
+			
+			<Anchor>//api/name/isEqualToString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAProblem/isEqualTo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isEqualTo:(id)aProblem</Declaration>
+			
+			
+			<Anchor>//api/name/isEqualTo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAProblem/code</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>- (int)code</Declaration>
+			
+			
+			<Anchor>//api/name/code</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/problemWithResponseBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (OAProblem *)problemWithResponseBody:(NSString *)response</Declaration>
+			
+			
+			<Anchor>//api/name/problemWithResponseBody:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/validProblems</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)validProblems</Declaration>
+			
+			
+			<Anchor>//api/name/validProblems</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/SignatureMethodRejected</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (OAProblem *)SignatureMethodRejected</Declaration>
+			
+			
+			<Anchor>//api/name/SignatureMethodRejected</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/ParameterAbsent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (OAProblem *)ParameterAbsent</Declaration>
+			
+			
+			<Anchor>//api/name/ParameterAbsent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/VersionRejected</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (OAProblem *)VersionRejected</Declaration>
+			
+			
+			<Anchor>//api/name/VersionRejected</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/ConsumerKeyUnknown</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (OAProblem *)ConsumerKeyUnknown</Declaration>
+			
+			
+			<Anchor>//api/name/ConsumerKeyUnknown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/TokenRejected</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (OAProblem *)TokenRejected</Declaration>
+			
+			
+			<Anchor>//api/name/TokenRejected</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/SignatureInvalid</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (OAProblem *)SignatureInvalid</Declaration>
+			
+			
+			<Anchor>//api/name/SignatureInvalid</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/NonceUsed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (OAProblem *)NonceUsed</Declaration>
+			
+			
+			<Anchor>//api/name/NonceUsed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/TimestampRefused</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (OAProblem *)TimestampRefused</Declaration>
+			
+			
+			<Anchor>//api/name/TimestampRefused</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/TokenExpired</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (OAProblem *)TokenExpired</Declaration>
+			
+			
+			<Anchor>//api/name/TokenExpired</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OAProblem/TokenNotRenewable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAProblem.h</DeclaredIn>			
+			
+			<Declaration>+ (OAProblem *)TokenNotRenewable</Declaration>
+			
+			
+			<Anchor>//api/name/TokenNotRenewable</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

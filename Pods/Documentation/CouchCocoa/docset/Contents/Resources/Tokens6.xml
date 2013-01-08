@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchDocument.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchDocument</TokenIdentifier>
+			<Abstract type="html">A CouchDB document, aka &quot;record&quot; aka &quot;row&quot;.
+    Note: Never alloc/init a CouchDocument directly. Instead get it from the database by calling -documentWithID: or -untitledDocument. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/setDocumentID:</TokenIdentifier>
+			<Abstract type="html">The unique ID of this document; its key in the database.</Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *documentID</Declaration>
+			
+			
+			<Anchor>//api/name/documentID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDocument/documentID</TokenIdentifier>
+			<Abstract type="html">The unique ID of this document; its key in the database.</Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *documentID</Declaration>
+			
+			
+			<Anchor>//api/name/documentID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/setAbbreviatedID:</TokenIdentifier>
+			<Abstract type="html">The document ID abbreviated to a maximum of 10 characters including &quot;..&quot; in the middle.
+    Useful for logging or debugging. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *abbreviatedID</Declaration>
+			
+			
+			<Anchor>//api/name/abbreviatedID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDocument/abbreviatedID</TokenIdentifier>
+			<Abstract type="html">The document ID abbreviated to a maximum of 10 characters including &quot;..&quot; in the middle.
+    Useful for logging or debugging. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *abbreviatedID</Declaration>
+			
+			
+			<Anchor>//api/name/abbreviatedID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/setIsDeleted:</TokenIdentifier>
+			<Abstract type="html">YES if the document has been deleted from the database.</Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isDeleted</Declaration>
+			
+			
+			<Anchor>//api/name/isDeleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDocument/isDeleted</TokenIdentifier>
+			<Abstract type="html">YES if the document has been deleted from the database.</Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isDeleted</Declaration>
+			
+			
+			<Anchor>//api/name/isDeleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/setModelObject:</TokenIdentifier>
+			<Abstract type="html">Optional reference to an application-defined model object representing this document.
+    This property is unused and uninterpreted by CouchCocoa; use it for whatever you want.
+    Note that this is not a strong/retained reference. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id modelObject</Declaration>
+			
+			
+			<Anchor>//api/name/modelObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDocument/modelObject</TokenIdentifier>
+			<Abstract type="html">Optional reference to an application-defined model object representing this document.
+    This property is unused and uninterpreted by CouchCocoa; use it for whatever you want.
+    Note that this is not a strong/retained reference. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id modelObject</Declaration>
+			
+			
+			<Anchor>//api/name/modelObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/setCurrentRevisionID:</TokenIdentifier>
+			<Abstract type="html">The ID of the current revision (if known; else nil).</Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSString *currentRevisionID</Declaration>
+			
+			
+			<Anchor>//api/name/currentRevisionID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDocument/currentRevisionID</TokenIdentifier>
+			<Abstract type="html">The ID of the current revision (if known; else nil).</Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSString *currentRevisionID</Declaration>
+			
+			
+			<Anchor>//api/name/currentRevisionID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/currentRevision</TokenIdentifier>
+			<Abstract type="html">The current/latest revision. This object is cached.
+    This method may need to make a synchronous call to the server to fetch the revision, if its revision ID is not yet known. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>- (CouchRevision *)currentRevision</Declaration>
+			
+			
+			<Anchor>//api/name/currentRevision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/revisionWithID:</TokenIdentifier>
+			<Abstract type="html">The revision with the specified ID.
+    This is merely a factory method that doesn&apos;t fetch anything from the server,
+    or even verify that the ID is valid. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>- (CouchRevision *)revisionWithID:(NSString *)revisionID</Declaration>
+			
+			
+			<Anchor>//api/name/revisionWithID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/getRevisionHistory</TokenIdentifier>
+			<Abstract type="html">Returns an array of available revisions.
+    The ordering is essentially arbitrary, but usually chronological (unless there has been merging with changes from another server.)
+    The number of historical revisions available may vary; it depends on how recently the database has been compacted. You should not rely on earlier revisions being available, except for those representing unresolved conflicts. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)getRevisionHistory</Declaration>
+			
+			
+			<Anchor>//api/name/getRevisionHistory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/getLeafRevisions</TokenIdentifier>
+			<Abstract type="html">Returns all the leaf revisions in the document&apos;s revision tree.
+    With TouchDB, this includes deleted revisions (i.e. previously-resolved conflicts.)
+    With CouchDB, deleted revisions are NOT included, so this method acts identically to getConflictingRevisions. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)getLeafRevisions</Declaration>
+			
+			
+			<Anchor>//api/name/getLeafRevisions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/setProperties:</TokenIdentifier>
+			<Abstract type="html">The contents of the current revision of the document.
+    This is shorthand for self.currentRevision.properties.
+    Any keys in the dictionary that begin with &quot;&quot;, such as &quot;id&quot; and &quot;_rev&quot;, contain CouchDB metadata. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDocument/properties</TokenIdentifier>
+			<Abstract type="html">The contents of the current revision of the document.
+    This is shorthand for self.currentRevision.properties.
+    Any keys in the dictionary that begin with &quot;&quot;, such as &quot;id&quot; and &quot;_rev&quot;, contain CouchDB metadata. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/setUserProperties:</TokenIdentifier>
+			<Abstract type="html">The user-defined properties, without the ones reserved by CouchDB.
+    This is based on properties, with every key whose name starts with &quot;_&quot; removed. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSDictionary *userProperties</Declaration>
+			
+			
+			<Anchor>//api/name/userProperties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDocument/userProperties</TokenIdentifier>
+			<Abstract type="html">The user-defined properties, without the ones reserved by CouchDB.
+    This is based on properties, with every key whose name starts with &quot;_&quot; removed. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSDictionary *userProperties</Declaration>
+			
+			
+			<Anchor>//api/name/userProperties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/propertyForKey:</TokenIdentifier>
+			<Abstract type="html">Shorthand for self.[properties objectForKey: key].</Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>- (id)propertyForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/propertyForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/objectForKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html">Same as propertyForKey:. Enables &quot;[]&quot; access in Xcode 4.4+</Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectForKeyedSubscript:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/objectForKeyedSubscript:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/putProperties:</TokenIdentifier>
+			<Abstract type="html">Updates the document with new properties, creating a new revision (Asynchronous.)
+    The properties dictionary needs to contain a &quot;rev&quot; key whose value is the current revision&apos;s ID; the dictionary returned by properties will already have this, so if you modify that dictionary you&apos;re OK. The exception is if this is a new document, as there is no current revision, so no &quot;rev&quot; key is needed.
+    If the PUT succeeds, the operation&apos;s resultObject will be set to the new CouchRevision.
+    You should be prepared for the operation to fail with a 412 status, indicating that a newer revision has already been added by another client.
+    In this case you need to call currentRevision again, to get that newer revision, incorporate any changes into your properties dictionary, and try again. (This is not the same as a conflict resulting from synchronization. Those conflicts result in multiple versions of a document appearing in the database; but in this case, you were prevented from creating a conflict.) </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)putProperties:(NSDictionary *)properties</Declaration>
+			
+			
+			<Anchor>//api/name/putProperties:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/getConflictingRevisions</TokenIdentifier>
+			<Abstract type="html">Returns an array of revisions that are currently in conflict, in no particular order.
+    If there is no conflict, returns an array of length 1 containing only the current revision.
+    Returns nil if an error occurs. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)getConflictingRevisions</Declaration>
+			
+			
+			<Anchor>//api/name/getConflictingRevisions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/resolveConflictingRevisions:withRevision:</TokenIdentifier>
+			<Abstract type="html">Resolves a conflict by choosing one existing revision as the winner.
+    (This is the same as calling resolveConflictingRevisions:withProperties:, passing in
+    winningRevision.properties</Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)resolveConflictingRevisions:(NSArray *)conflicts withRevision:(CouchRevision *)winningRevision</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>conflicts</Name>
+					<Abstract type="html">The array of conflicting revisions as returned by getConflictingRevisions.</Abstract>
+				</Parameter><Parameter>
+					<Name>winningRevision</Name>
+					<Abstract type="html">The revision from &apos;conflicts&apos; whose properties should be used. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resolveConflictingRevisions:withRevision:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/resolveConflictingRevisions:withProperties:</TokenIdentifier>
+			<Abstract type="html">Resolves a conflict by creating a new winning revision from the given properties.</Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)resolveConflictingRevisions:(NSArray *)conflicts withProperties:(NSDictionary *)properties</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>conflicts</Name>
+					<Abstract type="html">The array of conflicting revisions as returned by getConflictingRevisions.</Abstract>
+				</Parameter><Parameter>
+					<Name>properties</Name>
+					<Abstract type="html">The properties to store into the document to resolve the conflict. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resolveConflictingRevisions:withProperties:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/initWithParent:relativePath:documentID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithParent:(RESTResource *)parent relativePath:(NSString *)path documentID:(NSString *)documentID</Declaration>
+			
+			
+			<Anchor>//api/name/initWithParent:relativePath:documentID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/loadCurrentRevisionFrom:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadCurrentRevisionFrom:(CouchQueryRow *)row</Declaration>
+			
+			
+			<Anchor>//api/name/loadCurrentRevisionFrom:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/bulkSaveCompleted:forProperties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)bulkSaveCompleted:(NSDictionary *)result forProperties:(NSDictionary *)properties</Declaration>
+			
+			
+			<Anchor>//api/name/bulkSaveCompleted:forProperties:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDocument/notifyChanged:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)notifyChanged:(NSDictionary *)change</Declaration>
+			
+			
+			<Anchor>//api/name/notifyChanged:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

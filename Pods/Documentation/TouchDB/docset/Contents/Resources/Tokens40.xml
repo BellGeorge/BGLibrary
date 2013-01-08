@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDReachability.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDReachability</TokenIdentifier>
+			<Abstract type="html">Asynchronously tracks the reachability of an Internet host, using the SystemConfiguration framework&apos;s reachability API.
+    You can get called when reachability changes by either KV-observing the properties, or setting an &quot;onChange&quot; block.
+    &quot;Reachable&quot; means simply that the local IP stack has resolved the host&apos;s DNS name and knows how to route packets toward its IP address. It does NOT guarantee that you can successfully connect. Generally it just means that you have an Internet connection. </Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>
+			
+			<NodeRef refid="40"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReachability/initWithHostName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithHostName:(NSString *)hostName</Declaration>
+			
+			
+			<Anchor>//api/name/initWithHostName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReachability/setHostName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSString *hostName</Declaration>
+			
+			
+			<Anchor>//api/name/hostName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReachability/hostName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSString *hostName</Declaration>
+			
+			
+			<Anchor>//api/name/hostName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReachability/start</TokenIdentifier>
+			<Abstract type="html">Starts tracking reachability.
+    You have to call this after creating the object, or none of its properties will change. The current thread must have a runloop.</Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)start</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if tracking started, or NO if there was an error. </Abstract></ReturnValue>
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReachability/stop</TokenIdentifier>
+			<Abstract type="html">Stops tracking reachability.
+    This is called automatically by -dealloc, but to be safe you can call it when you release your TDReachability instance, to make sure that in case of a leak it isn&apos;t left running forever. </Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReachability/setReachabilityKnown:</TokenIdentifier>
+			<Abstract type="html">YES if the host&apos;s reachability has been determined, NO if it hasn&apos;t yet or if there was an error.</Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) BOOL reachabilityKnown</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityKnown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReachability/reachabilityKnown</TokenIdentifier>
+			<Abstract type="html">YES if the host&apos;s reachability has been determined, NO if it hasn&apos;t yet or if there was an error.</Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) BOOL reachabilityKnown</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityKnown</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReachability/setReachabilityFlags:</TokenIdentifier>
+			<Abstract type="html">The exact reachability flags; see Apple docs for the meanings of the bits.</Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) SCNetworkReachabilityFlags reachabilityFlags</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityFlags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReachability/reachabilityFlags</TokenIdentifier>
+			<Abstract type="html">The exact reachability flags; see Apple docs for the meanings of the bits.</Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) SCNetworkReachabilityFlags reachabilityFlags</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityFlags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReachability/setReachable:</TokenIdentifier>
+			<Abstract type="html">Is this host reachable via a currently active network interface?</Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL reachable</Declaration>
+			
+			
+			<Anchor>//api/name/reachable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReachability/reachable</TokenIdentifier>
+			<Abstract type="html">Is this host reachable via a currently active network interface?</Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL reachable</Declaration>
+			
+			
+			<Anchor>//api/name/reachable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReachability/setReachableByWiFi:</TokenIdentifier>
+			<Abstract type="html">Is this host reachable by WiFi (or wired Ethernet)?</Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL reachableByWiFi</Declaration>
+			
+			
+			<Anchor>//api/name/reachableByWiFi</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReachability/reachableByWiFi</TokenIdentifier>
+			<Abstract type="html">Is this host reachable by WiFi (or wired Ethernet)?</Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL reachableByWiFi</Declaration>
+			
+			
+			<Anchor>//api/name/reachableByWiFi</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReachability/setOnChange:</TokenIdentifier>
+			<Abstract type="html">If you set this, the block will be called whenever the reachability related properties change.</Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) TDReachabilityOnChangeBlock onChange</Declaration>
+			
+			
+			<Anchor>//api/name/onChange</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDReachability/onChange</TokenIdentifier>
+			<Abstract type="html">If you set this, the block will be called whenever the reachability related properties change.</Abstract>
+			<DeclaredIn>TDReachability.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) TDReachabilityOnChangeBlock onChange</Declaration>
+			
+			
+			<Anchor>//api/name/onChange</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

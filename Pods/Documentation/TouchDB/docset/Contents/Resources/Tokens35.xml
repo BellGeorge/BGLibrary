@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDMultipartWriter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDMultipartWriter</TokenIdentifier>
+			<Abstract type="html">A streaming MIME multipart body generator, suitable for use with an NSURLRequest.
+    Reads from a sequence of input streams (or data blobs) and inserts boundary strings between them. Can keep track of the total MIME body length so you can set it as the request&apos;s Content-Length, for servers that have trouble with chunked encodings. </Abstract>
+			<DeclaredIn>TDMultipartWriter.h</DeclaredIn>
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartWriter/initWithContentType:boundary:</TokenIdentifier>
+			<Abstract type="html">Initializes an instance.</Abstract>
+			<DeclaredIn>TDMultipartWriter.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithContentType:(NSString *)type boundary:(NSString *)boundary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">The base content type, e.g. &quot;application/json&quot;.</Abstract>
+				</Parameter><Parameter>
+					<Name>boundary</Name>
+					<Abstract type="html">The MIME part boundary to use, or nil to automatically generate one (a long random string). If you specify a boundary, you have to ensure that it appears nowhere in any of the input data! </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithContentType:boundary:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartWriter/setContentType:</TokenIdentifier>
+			<Abstract type="html">The full MIME Content-Type header value, including the boundary parameter.</Abstract>
+			<DeclaredIn>TDMultipartWriter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultipartWriter/contentType</TokenIdentifier>
+			<Abstract type="html">The full MIME Content-Type header value, including the boundary parameter.</Abstract>
+			<DeclaredIn>TDMultipartWriter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartWriter/setBoundary:</TokenIdentifier>
+			<Abstract type="html">The boundary string.</Abstract>
+			<DeclaredIn>TDMultipartWriter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *boundary</Declaration>
+			
+			
+			<Anchor>//api/name/boundary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultipartWriter/boundary</TokenIdentifier>
+			<Abstract type="html">The boundary string.</Abstract>
+			<DeclaredIn>TDMultipartWriter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *boundary</Declaration>
+			
+			
+			<Anchor>//api/name/boundary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartWriter/setNextPartsHeaders:</TokenIdentifier>
+			<Abstract type="html">Call this before adding a new stream/data/file to specify the MIME headers that should go with it.</Abstract>
+			<DeclaredIn>TDMultipartWriter.h</DeclaredIn>			
+			
+			<Declaration>- (void)setNextPartsHeaders:(NSDictionary *)headers</Declaration>
+			
+			
+			<Anchor>//api/name/setNextPartsHeaders:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartWriter/openForURLRequest:</TokenIdentifier>
+			<Abstract type="html">Attaches the writer to the URL request.
+    This calls -openForInputStream and sets the resulting input stream as the HTTPBodyStream of the request. It also sets the Content-Type header of the request. </Abstract>
+			<DeclaredIn>TDMultipartWriter.h</DeclaredIn>			
+			
+			<Declaration>- (void)openForURLRequest:(NSMutableURLRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/openForURLRequest:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RACSignal.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RACSignal</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACSignal/setName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RACSignal/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACSignal/createSignal:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)createSignal:(RACDisposable *( ^ ) ( id&lt;RACSubscriber&gt; subscriber ))didSubscribe</Declaration>
+			
+			
+			<Anchor>//api/name/createSignal:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACSignal/return:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)return:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/return:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACSignal/error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)error:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACSignal/empty</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)empty</Declaration>
+			
+			
+			<Anchor>//api/name/empty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACSignal/never</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)never</Declaration>
+			
+			
+			<Anchor>//api/name/never</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACSignal/start:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>			
+			
+			<Declaration>+ (RACSignal *)start:(id ( ^ ) ( BOOL *success , NSError **error ))block</Declaration>
+			
+			
+			<Anchor>//api/name/start:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACSignal/startWithScheduler:block:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>			
+			
+			<Declaration>+ (RACSignal *)startWithScheduler:(RACScheduler *)scheduler block:(id ( ^ ) ( BOOL *success , NSError **error ))block</Declaration>
+			
+			
+			<Anchor>//api/name/startWithScheduler:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACSignal/startWithScheduler:subjectBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>			
+			
+			<Declaration>+ (RACSignal *)startWithScheduler:(RACScheduler *)scheduler subjectBlock:(void ( ^ ) ( RACSubject *subject ))block</Declaration>
+			
+			
+			<Anchor>//api/name/startWithScheduler:subjectBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACSignal/concat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal.h</DeclaredIn>			
+			
+			<Declaration>- (RACSignal *)concat:(id&lt;RACSignal&gt;)signal</Declaration>
+			
+			
+			<Anchor>//api/name/concat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACSignal/setDidSubscribe:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal+Private.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RACDisposable *^ ) ( id&lt;RACSubscriber&gt; subscriber ) didSubscribe</Declaration>
+			
+			
+			<Anchor>//api/name/didSubscribe</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RACSignal/didSubscribe</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal+Private.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) RACDisposable *^ ) ( id&lt;RACSubscriber&gt; subscriber ) didSubscribe</Declaration>
+			
+			
+			<Anchor>//api/name/didSubscribe</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACSignal/setSubscribers:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal+Private.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *subscribers</Declaration>
+			
+			
+			<Anchor>//api/name/subscribers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RACSignal/subscribers</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal+Private.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *subscribers</Declaration>
+			
+			
+			<Anchor>//api/name/subscribers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACSignal/performBlockOnEachSubscriber:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal+Private.h</DeclaredIn>			
+			
+			<Declaration>- (void)performBlockOnEachSubscriber:(void ( ^ ) ( id&lt;RACSubscriber&gt; subscriber ))block</Declaration>
+			
+			
+			<Anchor>//api/name/performBlockOnEachSubscriber:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACSignal/tearDown</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignal+Private.h</DeclaredIn>			
+			
+			<Declaration>- (void)tearDown</Declaration>
+			
+			
+			<Anchor>//api/name/tearDown</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGImageLoader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGImageLoader</TokenIdentifier>
+			<Abstract type="html">This block is called when an image is loaded or fails to load. If error is
+nil, image should be valid.</Abstract>
+			<DeclaredIn>OGImageLoader.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OGImageLoader/shared</TokenIdentifier>
+			<Abstract type="html">OGImageLoader is intended to be used as a singleton.</Abstract>
+			<DeclaredIn>OGImageLoader.h</DeclaredIn>			
+			
+			<Declaration>+ (OGImageLoader *)shared</Declaration>
+			
+			
+			<Anchor>//api/name/shared</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGImageLoader/enqueueImageRequest:completionBlock:</TokenIdentifier>
+			<Abstract type="html">Enqueues a request to load the image at imageURL. completionBlock will always
+be called on the main queue.</Abstract>
+			<DeclaredIn>OGImageLoader.h</DeclaredIn>			
+			
+			<Declaration>- (void)enqueueImageRequest:(NSURL *)imageURL completionBlock:(OGImageLoaderCompletionBlock)completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/enqueueImageRequest:completionBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGImageLoader/setMaxConcurrentNetworkRequests:</TokenIdentifier>
+			<Abstract type="html">The maximum number of concurrent network requests that can be in-flight at
+any one time. (Default: 4)</Abstract>
+			<DeclaredIn>OGImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSInteger maxConcurrentNetworkRequests</Declaration>
+			
+			
+			<Anchor>//api/name/maxConcurrentNetworkRequests</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGImageLoader/maxConcurrentNetworkRequests</TokenIdentifier>
+			<Abstract type="html">The maximum number of concurrent network requests that can be in-flight at
+any one time. (Default: 4)</Abstract>
+			<DeclaredIn>OGImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSInteger maxConcurrentNetworkRequests</Declaration>
+			
+			
+			<Anchor>//api/name/maxConcurrentNetworkRequests</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGImageLoader/setPriority:</TokenIdentifier>
+			<Abstract type="html">The priority of the image loader request queue. Default: OGImageLoaderPriority_Low</Abstract>
+			<DeclaredIn>OGImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) OGImageLoaderPriority priority</Declaration>
+			
+			
+			<Anchor>//api/name/priority</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGImageLoader/priority</TokenIdentifier>
+			<Abstract type="html">The priority of the image loader request queue. Default: OGImageLoaderPriority_Low</Abstract>
+			<DeclaredIn>OGImageLoader.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) OGImageLoaderPriority priority</Declaration>
+			
+			
+			<Anchor>//api/name/priority</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

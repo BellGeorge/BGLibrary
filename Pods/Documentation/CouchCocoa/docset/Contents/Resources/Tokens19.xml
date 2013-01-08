@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchRevision.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchRevision</TokenIdentifier>
+			<Abstract type="html">A single revision of a CouchDocument.</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/setDocument:</TokenIdentifier>
+			<Abstract type="html">The document this is a revision of.</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchDocument *document</Declaration>
+			
+			
+			<Anchor>//api/name/document</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchRevision/document</TokenIdentifier>
+			<Abstract type="html">The document this is a revision of.</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchDocument *document</Declaration>
+			
+			
+			<Anchor>//api/name/document</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/setDocumentID:</TokenIdentifier>
+			<Abstract type="html">The document&apos;s ID.</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *documentID</Declaration>
+			
+			
+			<Anchor>//api/name/documentID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchRevision/documentID</TokenIdentifier>
+			<Abstract type="html">The document&apos;s ID.</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *documentID</Declaration>
+			
+			
+			<Anchor>//api/name/documentID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/setRevisionID:</TokenIdentifier>
+			<Abstract type="html">The ID of this revision.</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *revisionID</Declaration>
+			
+			
+			<Anchor>//api/name/revisionID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchRevision/revisionID</TokenIdentifier>
+			<Abstract type="html">The ID of this revision.</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *revisionID</Declaration>
+			
+			
+			<Anchor>//api/name/revisionID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/setIsCurrent:</TokenIdentifier>
+			<Abstract type="html">Is this the current/latest revision of its document?</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isCurrent</Declaration>
+			
+			
+			<Anchor>//api/name/isCurrent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchRevision/isCurrent</TokenIdentifier>
+			<Abstract type="html">Is this the current/latest revision of its document?</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isCurrent</Declaration>
+			
+			
+			<Anchor>//api/name/isCurrent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/setIsDeleted:</TokenIdentifier>
+			<Abstract type="html">Does this revision mark the deletion of its document?</Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isDeleted</Declaration>
+			
+			
+			<Anchor>//api/name/isDeleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchRevision/isDeleted</TokenIdentifier>
+			<Abstract type="html">Does this revision mark the deletion of its document?</Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isDeleted</Declaration>
+			
+			
+			<Anchor>//api/name/isDeleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/setProperties:</TokenIdentifier>
+			<Abstract type="html">The document as returned from the server and parsed from JSON. (Synchronous)
+    Keys beginning with &quot;_&quot; are defined and reserved by CouchDB; others are app-specific.
+    The properties are cached for the lifespan of this object, so subsequent calls after the first are cheap.
+    (This accessor is synchronous.) </Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchRevision/properties</TokenIdentifier>
+			<Abstract type="html">The document as returned from the server and parsed from JSON. (Synchronous)
+    Keys beginning with &quot;_&quot; are defined and reserved by CouchDB; others are app-specific.
+    The properties are cached for the lifespan of this object, so subsequent calls after the first are cheap.
+    (This accessor is synchronous.) </Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/setUserProperties:</TokenIdentifier>
+			<Abstract type="html">The user-defined properties, without the ones reserved by CouchDB.
+    This is based on properties, with every key whose name starts with &quot;_&quot; removed. </Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSDictionary *userProperties</Declaration>
+			
+			
+			<Anchor>//api/name/userProperties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchRevision/userProperties</TokenIdentifier>
+			<Abstract type="html">The user-defined properties, without the ones reserved by CouchDB.
+    This is based on properties, with every key whose name starts with &quot;_&quot; removed. </Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy) NSDictionary *userProperties</Declaration>
+			
+			
+			<Anchor>//api/name/userProperties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/propertyForKey:</TokenIdentifier>
+			<Abstract type="html">Shorthand for self.[properties objectForKey: key]. (Synchronous)</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>- (id)propertyForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/propertyForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/objectForKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html">Same as propertyForKey:. Enables &quot;[]&quot; access in Xcode 4.4+</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectForKeyedSubscript:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/objectForKeyedSubscript:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/setPropertiesAreLoaded:</TokenIdentifier>
+			<Abstract type="html">Has this object fetched its contents from the server yet?</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL propertiesAreLoaded</Declaration>
+			
+			
+			<Anchor>//api/name/propertiesAreLoaded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchRevision/propertiesAreLoaded</TokenIdentifier>
+			<Abstract type="html">Has this object fetched its contents from the server yet?</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL propertiesAreLoaded</Declaration>
+			
+			
+			<Anchor>//api/name/propertiesAreLoaded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/putProperties:</TokenIdentifier>
+			<Abstract type="html">Creates a new revision with the given properties.
+    This is asynchronous. Watch response for conflict errors!
+    If successful, the new CouchRevision will be available as the operation&apos;s resultObject. </Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)putProperties:(NSDictionary *)properties</Declaration>
+			
+			
+			<Anchor>//api/name/putProperties:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/setAttachmentNames:</TokenIdentifier>
+			<Abstract type="html">The names of all attachments (array of strings).</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *attachmentNames</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentNames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchRevision/attachmentNames</TokenIdentifier>
+			<Abstract type="html">The names of all attachments (array of strings).</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *attachmentNames</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentNames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/attachmentNamed:</TokenIdentifier>
+			<Abstract type="html">Looks up the attachment with the given name (without fetching its contents).</Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>- (CouchAttachment *)attachmentNamed:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/createAttachmentWithName:type:</TokenIdentifier>
+			<Abstract type="html">Creates a new attachment object, but doesn&apos;t write it to the database yet.
+    To actually create the attachment, you&apos;ll need to call -PUT on the CouchAttachment.
+    It&apos;s OK to call this with an attachment name that already exists; saving will overwrite the old attachment contents. </Abstract>
+			<DeclaredIn>CouchRevision.h</DeclaredIn>			
+			
+			<Declaration>- (CouchAttachment *)createAttachmentWithName:(NSString *)name type:(NSString *)contentType</Declaration>
+			
+			
+			<Anchor>//api/name/createAttachmentWithName:type:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/initWithDocument:revisionID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDocument:(CouchDocument *)document revisionID:(NSString *)revisionID</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDocument:revisionID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/initWithDocument:properties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDocument:(CouchDocument *)document properties:(NSDictionary *)contents</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDocument:properties:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchRevision/initWithOperation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithOperation:(RESTOperation *)operation</Declaration>
+			
+			
+			<Anchor>//api/name/initWithOperation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

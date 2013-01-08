@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>ReactiveCocoa 0.9.0 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">ReactiveCocoa 0.9.0 </a></h1>
+				<a id="developerHome" href="index.html">Josh Abernathy</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ReactiveCocoa 0.9.0 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ReactiveCocoa 0.9.0 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>ReactiveCocoa</h1>
+
+<p>ReactiveCocoa (RAC) is a framework for <strong>composing and transforming sequences of values</strong>.</p>
+
+<h2>No seriously, what is it?</h2>
+
+<p>Check out the <a href="https://github.com/blog/1107-reactivecocoa-is-now-open-source">announcement blog post</a> for a ton more info.</p>
+
+<h2>Getting Started</h2>
+
+<p>RAC uses some submodules. Once you&rsquo;ve cloned the repository, be sure to run <code>git submodule update --recursive --init</code> to pull them all down.</p>
+
+<p>Then checkout the <a href="https://github.com/github/ReactiveCocoa/tree/master/GHAPIDemo">Mac</a> or <a href="https://github.com/github/ReactiveCocoa/tree/master/RACiOSDemo">iOS</a> demos.</p>
+
+<h2>Examples</h2>
+
+<p>Observe changes to properties:
+```objc
+[RACAble(self.username) subscribeNext:^(NSString *newName) {</p>
+
+<pre><code>NSLog(@"%@", newName);
+</code></pre>
+
+<p>}];
+```</p>
+
+<p>Filter changes:
+```objc
+[[[[RACAble(self.username) distinctUntilChanged]</p>
+
+<pre><code>take:3] 
+filter:^(NSString *newUsername) {
+    return [newUsername isEqualToString:@"joshaber"];
+}] 
+subscribeNext:^(id _) {
+    NSLog(@"Hi me!");
+}];
+</code></pre>
+
+<p>```</p>
+
+<p>Derive properties:
+```objc
+RAC(self.createEnabled) = [<a href="Classes/RACSignal.html">RACSignal</a></p>
+
+<pre><code>combineLatest:@[ RACAble(self.password), RACAble(self.passwordConfirmation) ] 
+reduce:^(NSString *password, NSString *passwordConfirm) {
+    return @([passwordConfirm isEqualToString:password]);
+}];
+</code></pre>
+
+<p>```</p>
+
+<p>Chain asynchronous calls:
+```objc
+[[RACSignal</p>
+
+<pre><code>flatten:@[ [client fetchUserRepos], [client fetchOrgRepos] ]] 
+subscribeCompleted:^{
+    NSLog(@"They're both done!");
+}];
+</code></pre>
+
+<p>```</p>
+
+<p>```objc
+[[[[client loginUser]</p>
+
+<pre><code>flattenMap:^(User *user) {
+    return [client loadCachedMessagesForUser:user];
+}]
+flattenMap:^(NSArray *messages) {
+    return [client fetchMessagesAfterMessage:messages.lastObject];
+}]
+subscribeCompleted:^{
+    NSLog(@"Fetched all messages.");
+}];
+</code></pre>
+
+<p>```</p>
+
+<p>Easily move between different queues:
+```objc
+RAC(self.imageView.image) = [[[[client fetchUserWithUsername:@&ldquo;joshaber&rdquo;]</p>
+
+<pre><code>deliverOn:RACScheduler.backgroundScheduler]
+map:^(User *user) {
+    // This is on a background queue.
+    return [[NSImage alloc] initWithContentsOfURL:user.avatarURL];
+}]
+// Now the assignment will be done on the main queue.
+deliverOn:RACSheduler.mainQueueScheduler]
+</code></pre>
+
+<p>```</p>
+
+<h2>Foundation Support</h2>
+
+<p>There are a number of categories that provide RAC-based bridges to standard Foundation classes. They&rsquo;re not included as part of the framework proper in order to keep the framework size down.</p>
+
+<p>You can find them in <a href="https://github.com/github/ReactiveCocoa/tree/master/RACExtensions">RACExtensions</a>. To use them, simply add them directly to your project as needed.</p>
+
+<h2>License</h2>
+
+<p>Simplified BSD License</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/RACArraySequence.html">RACArraySequence</a></li>
+							
+							<li><a href="Classes/RACAsyncCommand.html">RACAsyncCommand</a></li>
+							
+							<li><a href="Classes/RACAsyncSubject.html">RACAsyncSubject</a></li>
+							
+							<li><a href="Classes/RACBacktrace.html">RACBacktrace</a></li>
+							
+							<li><a href="Classes/RACBehaviorSubject.html">RACBehaviorSubject</a></li>
+							
+							<li><a href="Classes/RACBlockTrampoline.html">RACBlockTrampoline</a></li>
+							
+							<li><a href="Classes/RACCancelableSignal.html">RACCancelableSignal</a></li>
+							
+							<li><a href="Classes/RACCollection.html">RACCollection</a></li>
+							
+							<li><a href="Classes/RACCommand.html">RACCommand</a></li>
+							
+							<li><a href="Classes/RACConnectableSignal.html">RACConnectableSignal</a></li>
+							
+							<li><a href="Classes/RACDelegateProxy.html">RACDelegateProxy</a></li>
+							
+							<li><a href="Classes/RACDisposable.html">RACDisposable</a></li>
+							
+							<li><a href="Classes/RACDynamicSequence.html">RACDynamicSequence</a></li>
+							
+							<li><a href="Classes/RACEmptySequence.html">RACEmptySequence</a></li>
+							
+							<li><a href="Classes/RACEventTrampoline.html">RACEventTrampoline</a></li>
+							
+							<li><a href="Classes/RACGroupedSignal.html">RACGroupedSignal</a></li>
+							
+							<li><a href="Classes/RACMaybe.html">RACMaybe</a></li>
+							
+							<li><a href="Classes/RACObjCRuntime.html">RACObjCRuntime</a></li>
+							
+							<li><a href="Classes/RACReplaySubject.html">RACReplaySubject</a></li>
+							
+							<li><a href="Classes/RACScheduler.html">RACScheduler</a></li>
+							
+							<li><a href="Classes/RACScopedDisposable.html">RACScopedDisposable</a></li>
+							
+							<li><a href="Classes/RACSequence.html">RACSequence</a></li>
+							
+							<li><a href="Classes/RACSignal.html">RACSignal</a></li>
+							
+							<li><a href="Classes/RACSignalSequence.html">RACSignalSequence</a></li>
+							
+							<li><a href="Classes/RACStringSequence.html">RACStringSequence</a></li>
+							
+							<li><a href="Classes/RACSubject.html">RACSubject</a></li>
+							
+							<li><a href="Classes/RACSubscriber.html">RACSubscriber</a></li>
+							
+							<li><a href="Classes/RACSubscriptingAssignmentObjectKeyPathPair.html">RACSubscriptingAssignmentObjectKeyPathPair</a></li>
+							
+							<li><a href="Classes/RACSubscriptingAssignmentTrampoline.html">RACSubscriptingAssignmentTrampoline</a></li>
+							
+							<li><a href="Classes/RACTuple.html">RACTuple</a></li>
+							
+							<li><a href="Classes/RACTupleNil.html">RACTupleNil</a></li>
+							
+							<li><a href="Classes/RACUnit.html">RACUnit</a></li>
+							
+							<li><a href="Classes/RACValueTransformer.html">RACValueTransformer</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/RACSignal.html">RACSignal</a></li>
+							
+							<li><a href="Protocols/RACStream.html">RACStream</a></li>
+							
+							<li><a href="Protocols/RACSubscriber.html">RACSubscriber</a></li>
+							
+						</ul>
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSArray+RACExtensions.html">NSArray(RACExtensions)</a></li>
+							
+							<li><a href="Categories/NSArray+RACSequenceAdditions.html">NSArray(RACSequenceAdditions)</a></li>
+							
+							<li><a href="Categories/NSData+RACSupport.html">NSData(RACSupport)</a></li>
+							
+							<li><a href="Categories/NSDictionary+RACSequenceAdditions.html">NSDictionary(RACSequenceAdditions)</a></li>
+							
+							<li><a href="Categories/NSFileHandle+RACSupport.html">NSFileHandle(RACSupport)</a></li>
+							
+							<li><a href="Categories/NSFileManager+RACSupport.html">NSFileManager(RACSupport)</a></li>
+							
+							<li><a href="Categories/NSInvocation+RACTypeParsing.html">NSInvocation(RACTypeParsing)</a></li>
+							
+							<li><a href="Categories/NSNotificationCenter+RACSupport.html">NSNotificationCenter(RACSupport)</a></li>
+							
+							<li><a href="Categories/NSObject+RACBindings.html">NSObject(RACBindings)</a></li>
+							
+							<li><a href="Categories/NSObject+RACExtensions.html">NSObject(RACExtensions)</a></li>
+							
+							<li><a href="Categories/NSObject+RACFastEnumeration.html">NSObject(RACFastEnumeration)</a></li>
+							
+							<li><a href="Categories/NSObject+RACKVOWrapper.html">NSObject(RACKVOWrapper)</a></li>
+							
+							<li><a href="Categories/NSObject+RACLifting.html">NSObject(RACLifting)</a></li>
+							
+							<li><a href="Categories/NSObject+RACPropertySubscribing.html">NSObject(RACPropertySubscribing)</a></li>
+							
+							<li><a href="Categories/NSOrderedSet+RACSequenceAdditions.html">NSOrderedSet(RACSequenceAdditions)</a></li>
+							
+							<li><a href="Categories/NSSet+RACSequenceAdditions.html">NSSet(RACSequenceAdditions)</a></li>
+							
+							<li><a href="Categories/NSString+RACSequenceAdditions.html">NSString(RACSequenceAdditions)</a></li>
+							
+							<li><a href="Categories/NSString+RACSupport.html">NSString(RACSupport)</a></li>
+							
+							<li><a href="Categories/UIControl+RACSignalSupport.html">UIControl(RACSignalSupport)</a></li>
+							
+							<li><a href="Categories/UITextField+RACSignalSupport.html">UITextField(RACSignalSupport)</a></li>
+							
+							<li><a href="Categories/UITextView+RACSignalSupport.html">UITextView(RACSignalSupport)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Josh Abernathy. All rights reserved. (Last updated: 2012-11-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

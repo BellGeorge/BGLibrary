@@ -1,0 +1,1752 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CouchModel Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CouchCocoa 0.961beta6 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CouchModel Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/attachmentNames">&nbsp;&nbsp;&nbsp;&nbsp;attachmentNames</option>
+	
+	<option value="//api/name/autosaves">&nbsp;&nbsp;&nbsp;&nbsp;autosaves</option>
+	
+	<option value="//api/name/database">&nbsp;&nbsp;&nbsp;&nbsp;database</option>
+	
+	<option value="//api/name/document">&nbsp;&nbsp;&nbsp;&nbsp;document</option>
+	
+	<option value="//api/name/isNew">&nbsp;&nbsp;&nbsp;&nbsp;isNew</option>
+	
+	<option value="//api/name/needsSave">&nbsp;&nbsp;&nbsp;&nbsp;needsSave</option>
+	
+	<option value="//api/name/timeSinceExternallyChanged">&nbsp;&nbsp;&nbsp;&nbsp;timeSinceExternallyChanged</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/modelForDocument:">&nbsp;&nbsp;&nbsp;&nbsp;+ modelForDocument:</option>
+	
+	<option value="//api/name/saveModels:">&nbsp;&nbsp;&nbsp;&nbsp;+ saveModels:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/attachmentNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- attachmentNamed:</option>
+	
+	<option value="//api/name/createAttachmentWithName:type:body:">&nbsp;&nbsp;&nbsp;&nbsp;- createAttachmentWithName:type:body:</option>
+	
+	<option value="//api/name/databaseForModelProperty:">&nbsp;&nbsp;&nbsp;&nbsp;- databaseForModelProperty:</option>
+	
+	<option value="//api/name/deleteDocument">&nbsp;&nbsp;&nbsp;&nbsp;- deleteDocument</option>
+	
+	<option value="//api/name/didLoadFromDocument">&nbsp;&nbsp;&nbsp;&nbsp;- didLoadFromDocument</option>
+	
+	<option value="//api/name/getValueOfProperty:">&nbsp;&nbsp;&nbsp;&nbsp;- getValueOfProperty:</option>
+	
+	<option value="//api/name/idForNewDocumentInDatabase:">&nbsp;&nbsp;&nbsp;&nbsp;- idForNewDocumentInDatabase:</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/initWithDocument:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDocument:</option>
+	
+	<option value="//api/name/initWithNewDocumentInDatabase:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithNewDocumentInDatabase:</option>
+	
+	<option value="//api/name/markExternallyChanged">&nbsp;&nbsp;&nbsp;&nbsp;- markExternallyChanged</option>
+	
+	<option value="//api/name/propertiesToSave">&nbsp;&nbsp;&nbsp;&nbsp;- propertiesToSave</option>
+	
+	<option value="//api/name/removeAttachmentNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- removeAttachmentNamed:</option>
+	
+	<option value="//api/name/save">&nbsp;&nbsp;&nbsp;&nbsp;- save</option>
+	
+	<option value="//api/name/setValue:ofProperty:">&nbsp;&nbsp;&nbsp;&nbsp;- setValue:ofProperty:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachmentNames">attachmentNames</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autosaves">autosaves</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/database">database</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/document">document</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isNew">isNew</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/needsSave">needsSave</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeSinceExternallyChanged">timeSinceExternallyChanged</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/modelForDocument:">modelForDocument:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveModels:">saveModels:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachmentNamed:">attachmentNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createAttachmentWithName:type:body:">createAttachmentWithName:type:body:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/databaseForModelProperty:">databaseForModelProperty:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteDocument">deleteDocument</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didLoadFromDocument">didLoadFromDocument</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getValueOfProperty:">getValueOfProperty:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/idForNewDocumentInDatabase:">idForNewDocumentInDatabase:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDocument:">initWithDocument:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithNewDocumentInDatabase:">initWithNewDocumentInDatabase:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/markExternallyChanged">markExternallyChanged</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertiesToSave">propertiesToSave</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAttachmentNamed:">removeAttachmentNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/save">save</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValue:ofProperty:">setValue:ofProperty:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CouchModel Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CouchModel Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CouchDynamicObject.html">CouchDynamicObject</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CouchModel.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Generic model class for Couch documents.</p>
+
+<pre><code>There's a 1::1 mapping between these and CouchDocuments; call modelForDocument: to get (or create) a model object for a document, and .document to get the document of a model.
+You should subclass this and declare properties in the subclass's @@interface. As with NSManagedObject, you don't need to implement their accessor methods or declare instance variables; simply note them as '@@dynamic' in the class @@implementation. The property value will automatically be fetched from or stored to the document, using the same name.
+Supported scalar types are bool, char, short, int, double. These map to JSON numbers, except 'bool' which maps to JSON 'true' and 'false'. (Use bool instead of BOOL.)
+Supported object types are NSString, NSNumber, NSData, NSDate, NSArray, NSDictionary. (NSData and NSDate are not native JSON; they will be automatically converted to/from strings in base64 and ISO date formats, respectively.)
+Additionally, a property's type can be a pointer to a CouchModel subclass. This provides references between model objects. The raw property value in the document must be a string whose value is interpreted as a document ID. 
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/modelForDocument:">+&nbsp;modelForDocument:</a></code>
+		<span class="tooltip"><p>Returns the CouchModel associated with a <a href="../Classes/CouchDocument.html">CouchDocument</a>, or creates &amp; assigns one if necessary.</p>
+
+<pre><code>If the CouchDocument already has an associated model, it's returned. Otherwise a new one is instantiated.
+If you call this on CouchModel itself, it'll delegate to the CouchModelFactory to decide what class to instantiate; this lets you map different classes to different "type" property values, for instance.
+If you call this method on a CouchModel subclass, it will always instantiate an instance of that class; e.g. [MyWidgetModel modelForDocument: doc] always creates a MyWidgetModel. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithNewDocumentInDatabase:">&ndash;&nbsp;initWithNewDocumentInDatabase:</a></code>
+		<span class="tooltip"><p>Creates a new &ldquo;untitled&rdquo; model with a new unsaved <a href="#//api/name/document">document</a>.</p>
+
+<pre><code>The document won't be written to the database until save is called. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		<span class="tooltip"><p>Creates a new &ldquo;untitled&rdquo; model object with no <a href="#//api/name/document">document</a> or <a href="#//api/name/database">database</a> at all yet.</p>
+
+<pre><code>Setting its .database property will cause it to create a CouchDocument.
+(This method is mostly here so that NSController objects can create CouchModels.) 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/document">&nbsp;&nbsp;document</a></code>
+		<span class="tooltip"><p>The document this item is associated with. Will be nil if it&rsquo;s new and unsaved.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/database">&nbsp;&nbsp;database</a></code>
+		<span class="tooltip"><p>The database the item&rsquo;s <a href="#//api/name/document">document</a> belongs to.</p>
+
+<pre><code>Setting this property will assign the item to a database, creating a document.
+Setting it to nil will delete its document from its database. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isNew">&nbsp;&nbsp;isNew</a></code>
+		<span class="tooltip"><p>Is this model new, never before saved?</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/save">&ndash;&nbsp;save</a></code>
+		<span class="tooltip"><p>Writes any changes to a new revision of the <a href="#//api/name/document">document</a>, asynchronously.</p>
+
+<pre><code>Does nothing and returns nil if no changes have been made. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autosaves">&nbsp;&nbsp;autosaves</a></code>
+		<span class="tooltip"><p>Should changes be saved back to the <a href="#//api/name/database">database</a> automatically?</p>
+
+<pre><code>Defaults to NO, requiring you to call save manually. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/needsSave">&nbsp;&nbsp;needsSave</a></code>
+		<span class="tooltip"><p>Does this model have unsaved changes?</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertiesToSave">&ndash;&nbsp;propertiesToSave</a></code>
+		<span class="tooltip"><p>The document&rsquo;s current properties, in externalized JSON format.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteDocument">&ndash;&nbsp;deleteDocument</a></code>
+		<span class="tooltip"><p>Deletes the <a href="#//api/name/document">document</a> from the <a href="#//api/name/database">database</a>.</p>
+
+<pre><code>You can still use the model object afterwards, but it will refer to the deleted revision. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeSinceExternallyChanged">&nbsp;&nbsp;timeSinceExternallyChanged</a></code>
+		<span class="tooltip"><p>The time interval since the <a href="#//api/name/document">document</a> was last changed externally (e.g. by a &ldquo;pull&rdquo; replication.</p>
+
+<pre><code>This value can be used to highlight recently-changed objects in the UI. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveModels:">+&nbsp;saveModels:</a></code>
+		<span class="tooltip"><p>Bulk-saves changes to multiple model objects (which must all be in the same database).</p>
+
+<pre><code>This invokes [CouchDatabase putChanges:], which sends a single request to _bulk_docs.
+Any unchanged models in the array are ignored.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/markExternallyChanged">&ndash;&nbsp;markExternallyChanged</a></code>
+		<span class="tooltip"><p>Resets the <a href="#//api/name/timeSinceExternallyChanged">timeSinceExternallyChanged</a> property to zero.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getValueOfProperty:">&ndash;&nbsp;getValueOfProperty:</a></code>
+		<span class="tooltip"><p>Gets a property by name.</p>
+
+<pre><code>You can use this for document properties that you haven't added @@property declarations for. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setValue:ofProperty:">&ndash;&nbsp;setValue:ofProperty:</a></code>
+		<span class="tooltip"><p>Sets a property by name.</p>
+
+<pre><code>You can use this for document properties that you haven't added @@property declarations for. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachmentNames">&nbsp;&nbsp;attachmentNames</a></code>
+		<span class="tooltip"><p>The names of all attachments (array of strings).</p>
+
+<pre><code>This reflects unsaved changes made by creating or deleting attachments. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachmentNamed:">&ndash;&nbsp;attachmentNamed:</a></code>
+		<span class="tooltip"><p>Looks up the attachment with the given name (without fetching its contents).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createAttachmentWithName:type:body:">&ndash;&nbsp;createAttachmentWithName:type:body:</a></code>
+		<span class="tooltip"><p>Creates or updates an attachment (in memory).</p>
+
+<pre><code>The attachment data will be written to the database at the same time as property changes are saved.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAttachmentNamed:">&ndash;&nbsp;removeAttachmentNamed:</a></code>
+		<span class="tooltip"><p>Deletes (in memory) any existing attachment with the given name.</p>
+
+<pre><code>The attachment will be deleted from the database at the same time as property changes are saved. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDocument:">&ndash;&nbsp;initWithDocument:</a></code>
+		<span class="tooltip"><p>Designated initializer. Do not call directly except from subclass initializers; to create a new instance call <a href="#//api/name/modelForDocument:">modelForDocument:</a> instead.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/idForNewDocumentInDatabase:">&ndash;&nbsp;idForNewDocumentInDatabase:</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/document">document</a> ID to use when creating a new <a href="#//api/name/document">document</a>.</p>
+
+<pre><code>Default is nil, which means to assign no ID (the server will assign one). 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didLoadFromDocument">&ndash;&nbsp;didLoadFromDocument</a></code>
+		<span class="tooltip"><p>Called when the model&rsquo;s properties are reloaded from the <a href="#//api/name/document">document</a>.</p>
+
+<pre><code>This happens both when initialized from a document, and after an external change. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/databaseForModelProperty:">&ndash;&nbsp;databaseForModelProperty:</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/database">database</a> in which to look up the <a href="#//api/name/document">document</a> ID of a model-valued property.</p>
+
+<pre><code>Defaults to the same database as the receiver's document. You should override this if a document property contains the ID of a document in a different database. 
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attachmentNames" title="attachmentNames"></a>
+	<h3 class="subsubtitle method-title">attachmentNames</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The names of all attachments (array of strings).</p>
+
+<pre><code>This reflects unsaved changes made by creating or deleting attachments. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *attachmentNames</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The names of all attachments (array of strings).</p>
+
+<pre><code>This reflects unsaved changes made by creating or deleting attachments. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/autosaves" title="autosaves"></a>
+	<h3 class="subsubtitle method-title">autosaves</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Should changes be saved back to the <a href="#//api/name/database">database</a> automatically?</p>
+
+<pre><code>Defaults to NO, requiring you to call save manually. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) bool autosaves</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Should changes be saved back to the <a href="#//api/name/database">database</a> automatically?</p>
+
+<pre><code>Defaults to NO, requiring you to call save manually. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/database" title="database"></a>
+	<h3 class="subsubtitle method-title">database</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The database the item&rsquo;s <a href="#//api/name/document">document</a> belongs to.</p>
+
+<pre><code>Setting this property will assign the item to a database, creating a document.
+Setting it to nil will delete its document from its database. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain) CouchDatabase *database</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The database the item&rsquo;s <a href="#//api/name/document">document</a> belongs to.</p>
+
+<pre><code>Setting this property will assign the item to a database, creating a document.
+Setting it to nil will delete its document from its database. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/document" title="document"></a>
+	<h3 class="subsubtitle method-title">document</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The document this item is associated with. Will be nil if it&rsquo;s new and unsaved.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, retain) CouchDocument *document</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The document this item is associated with. Will be nil if it&rsquo;s new and unsaved.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isNew" title="isNew"></a>
+	<h3 class="subsubtitle method-title">isNew</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Is this model new, never before saved?</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) bool isNew</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Is this model new, never before saved?</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/needsSave" title="needsSave"></a>
+	<h3 class="subsubtitle method-title">needsSave</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Does this model have unsaved changes?</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) bool needsSave</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Does this model have unsaved changes?</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeSinceExternallyChanged" title="timeSinceExternallyChanged"></a>
+	<h3 class="subsubtitle method-title">timeSinceExternallyChanged</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The time interval since the <a href="#//api/name/document">document</a> was last changed externally (e.g. by a &ldquo;pull&rdquo; replication.</p>
+
+<pre><code>This value can be used to highlight recently-changed objects in the UI. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSTimeInterval timeSinceExternallyChanged</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The time interval since the <a href="#//api/name/document">document</a> was last changed externally (e.g. by a &ldquo;pull&rdquo; replication.</p>
+
+<pre><code>This value can be used to highlight recently-changed objects in the UI. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/modelForDocument:" title="modelForDocument:"></a>
+	<h3 class="subsubtitle method-title">modelForDocument:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the CouchModel associated with a <a href="../Classes/CouchDocument.html">CouchDocument</a>, or creates &amp; assigns one if necessary.</p>
+
+<pre><code>If the CouchDocument already has an associated model, it's returned. Otherwise a new one is instantiated.
+If you call this on CouchModel itself, it'll delegate to the CouchModelFactory to decide what class to instantiate; this lets you map different classes to different "type" property values, for instance.
+If you call this method on a CouchModel subclass, it will always instantiate an instance of that class; e.g. [MyWidgetModel modelForDocument: doc] always creates a MyWidgetModel. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)modelForDocument:(CouchDocument *)<em>document</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the CouchModel associated with a <a href="../Classes/CouchDocument.html">CouchDocument</a>, or creates &amp; assigns one if necessary.</p>
+
+<pre><code>If the CouchDocument already has an associated model, it's returned. Otherwise a new one is instantiated.
+If you call this on CouchModel itself, it'll delegate to the CouchModelFactory to decide what class to instantiate; this lets you map different classes to different "type" property values, for instance.
+If you call this method on a CouchModel subclass, it will always instantiate an instance of that class; e.g. [MyWidgetModel modelForDocument: doc] always creates a MyWidgetModel. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveModels:" title="saveModels:"></a>
+	<h3 class="subsubtitle method-title">saveModels:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Bulk-saves changes to multiple model objects (which must all be in the same database).</p>
+
+<pre><code>This invokes [CouchDatabase putChanges:], which sends a single request to _bulk_docs.
+Any unchanged models in the array are ignored.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (RESTOperation *)saveModels:(NSArray *)<em>models</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>models</em></dt>
+			<dd><p>An array of CouchModel objects, which must all be in the same <a href="#//api/name/database">database</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/RESTOperation.html">RESTOperation</a> that saves all changes, or nil if none of the models need saving.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Bulk-saves changes to multiple model objects (which must all be in the same database).</p>
+
+<pre><code>This invokes [CouchDatabase putChanges:], which sends a single request to _bulk_docs.
+Any unchanged models in the array are ignored.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attachmentNamed:" title="attachmentNamed:"></a>
+	<h3 class="subsubtitle method-title">attachmentNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Looks up the attachment with the given name (without fetching its contents).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CouchAttachment *)attachmentNamed:(NSString *)<em>name</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Looks up the attachment with the given name (without fetching its contents).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createAttachmentWithName:type:body:" title="createAttachmentWithName:type:body:"></a>
+	<h3 class="subsubtitle method-title">createAttachmentWithName:type:body:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates or updates an attachment (in memory).</p>
+
+<pre><code>The attachment data will be written to the database at the same time as property changes are saved.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CouchAttachment *)createAttachmentWithName:(NSString *)<em>name</em> type:(NSString *)<em>contentType</em> body:(NSData *)<em>body</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The attachment name.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>contentType</em></dt>
+			<dd><p>The MIME type of the body.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>body</em></dt>
+			<dd><p>The raw attachment data, or nil to delete the attachment.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates or updates an attachment (in memory).</p>
+
+<pre><code>The attachment data will be written to the database at the same time as property changes are saved.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/databaseForModelProperty:" title="databaseForModelProperty:"></a>
+	<h3 class="subsubtitle method-title">databaseForModelProperty:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/database">database</a> in which to look up the <a href="#//api/name/document">document</a> ID of a model-valued property.</p>
+
+<pre><code>Defaults to the same database as the receiver's document. You should override this if a document property contains the ID of a document in a different database. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CouchDatabase *)databaseForModelProperty:(NSString *)<em>propertyName</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="#//api/name/database">database</a> in which to look up the <a href="#//api/name/document">document</a> ID of a model-valued property.</p>
+
+<pre><code>Defaults to the same database as the receiver's document. You should override this if a document property contains the ID of a document in a different database. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteDocument" title="deleteDocument"></a>
+	<h3 class="subsubtitle method-title">deleteDocument</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deletes the <a href="#//api/name/document">document</a> from the <a href="#//api/name/database">database</a>.</p>
+
+<pre><code>You can still use the model object afterwards, but it will refer to the deleted revision. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)deleteDocument</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Deletes the <a href="#//api/name/document">document</a> from the <a href="#//api/name/database">database</a>.</p>
+
+<pre><code>You can still use the model object afterwards, but it will refer to the deleted revision. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didLoadFromDocument" title="didLoadFromDocument"></a>
+	<h3 class="subsubtitle method-title">didLoadFromDocument</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the model&rsquo;s properties are reloaded from the <a href="#//api/name/document">document</a>.</p>
+
+<pre><code>This happens both when initialized from a document, and after an external change. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didLoadFromDocument</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the model&rsquo;s properties are reloaded from the <a href="#//api/name/document">document</a>.</p>
+
+<pre><code>This happens both when initialized from a document, and after an external change. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getValueOfProperty:" title="getValueOfProperty:"></a>
+	<h3 class="subsubtitle method-title">getValueOfProperty:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets a property by name.</p>
+
+<pre><code>You can use this for document properties that you haven't added @@property declarations for. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getValueOfProperty:(NSString *)<em>property</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Gets a property by name.</p>
+
+<pre><code>You can use this for document properties that you haven't added @@property declarations for. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/idForNewDocumentInDatabase:" title="idForNewDocumentInDatabase:"></a>
+	<h3 class="subsubtitle method-title">idForNewDocumentInDatabase:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/document">document</a> ID to use when creating a new <a href="#//api/name/document">document</a>.</p>
+
+<pre><code>Default is nil, which means to assign no ID (the server will assign one). 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)idForNewDocumentInDatabase:(CouchDatabase *)<em>db</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="#//api/name/document">document</a> ID to use when creating a new <a href="#//api/name/document">document</a>.</p>
+
+<pre><code>Default is nil, which means to assign no ID (the server will assign one). 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new &ldquo;untitled&rdquo; model object with no <a href="#//api/name/document">document</a> or <a href="#//api/name/database">database</a> at all yet.</p>
+
+<pre><code>Setting its .database property will cause it to create a CouchDocument.
+(This method is mostly here so that NSController objects can create CouchModels.) 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new &ldquo;untitled&rdquo; model object with no <a href="#//api/name/document">document</a> or <a href="#//api/name/database">database</a> at all yet.</p>
+
+<pre><code>Setting its .database property will cause it to create a CouchDocument.
+(This method is mostly here so that NSController objects can create CouchModels.) 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDocument:" title="initWithDocument:"></a>
+	<h3 class="subsubtitle method-title">initWithDocument:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Designated initializer. Do not call directly except from subclass initializers; to create a new instance call <a href="#//api/name/modelForDocument:">modelForDocument:</a> instead.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDocument:(CouchDocument *)<em>document</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>document</em></dt>
+			<dd><p>The <a href="#//api/name/document">document</a>. Nil if this is created new (<a href="#//api/name/init">init</a> was called).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Designated initializer. Do not call directly except from subclass initializers; to create a new instance call <a href="#//api/name/modelForDocument:">modelForDocument:</a> instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithNewDocumentInDatabase:" title="initWithNewDocumentInDatabase:"></a>
+	<h3 class="subsubtitle method-title">initWithNewDocumentInDatabase:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new &ldquo;untitled&rdquo; model with a new unsaved <a href="#//api/name/document">document</a>.</p>
+
+<pre><code>The document won't be written to the database until save is called. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithNewDocumentInDatabase:(CouchDatabase *)<em>database</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new &ldquo;untitled&rdquo; model with a new unsaved <a href="#//api/name/document">document</a>.</p>
+
+<pre><code>The document won't be written to the database until save is called. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/markExternallyChanged" title="markExternallyChanged"></a>
+	<h3 class="subsubtitle method-title">markExternallyChanged</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Resets the <a href="#//api/name/timeSinceExternallyChanged">timeSinceExternallyChanged</a> property to zero.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)markExternallyChanged</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Resets the <a href="#//api/name/timeSinceExternallyChanged">timeSinceExternallyChanged</a> property to zero.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertiesToSave" title="propertiesToSave"></a>
+	<h3 class="subsubtitle method-title">propertiesToSave</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The document&rsquo;s current properties, in externalized JSON format.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)propertiesToSave</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The document&rsquo;s current properties, in externalized JSON format.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAttachmentNamed:" title="removeAttachmentNamed:"></a>
+	<h3 class="subsubtitle method-title">removeAttachmentNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deletes (in memory) any existing attachment with the given name.</p>
+
+<pre><code>The attachment will be deleted from the database at the same time as property changes are saved. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeAttachmentNamed:(NSString *)<em>name</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Deletes (in memory) any existing attachment with the given name.</p>
+
+<pre><code>The attachment will be deleted from the database at the same time as property changes are saved. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/save" title="save"></a>
+	<h3 class="subsubtitle method-title">save</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Writes any changes to a new revision of the <a href="#//api/name/document">document</a>, asynchronously.</p>
+
+<pre><code>Does nothing and returns nil if no changes have been made. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)save</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Writes any changes to a new revision of the <a href="#//api/name/document">document</a>, asynchronously.</p>
+
+<pre><code>Does nothing and returns nil if no changes have been made. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setValue:ofProperty:" title="setValue:ofProperty:"></a>
+	<h3 class="subsubtitle method-title">setValue:ofProperty:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a property by name.</p>
+
+<pre><code>You can use this for document properties that you haven't added @@property declarations for. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setValue:(id)<em>value</em> ofProperty:(NSString *)<em>property</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets a property by name.</p>
+
+<pre><code>You can use this for document properties that you haven't added @@property declarations for. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchModel.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

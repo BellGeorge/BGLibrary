@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchChangeTracker.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchChangeTracker</TokenIdentifier>
+			<Abstract type="html">Reads the continuousmode _changes feed of a database, and sends the individual change entries to its client&apos;s -changeTrackerReceivedChange:.
+    This class is used internally by CouchDatabase and you shouldn&apos;t need to use it yourself. </Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/initWithDatabaseURL:mode:lastSequence:client:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDatabaseURL:(NSURL *)databaseURL mode:(CouchChangeTrackerMode)mode lastSequence:(NSUInteger)lastSequence client:(id&lt;CouchChangeTrackerClient&gt;)client</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDatabaseURL:mode:lastSequence:client:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/setDatabaseURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSURL *databaseURL</Declaration>
+			
+			
+			<Anchor>//api/name/databaseURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchChangeTracker/databaseURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSURL *databaseURL</Declaration>
+			
+			
+			<Anchor>//api/name/databaseURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/setDatabaseName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSString *databaseName</Declaration>
+			
+			
+			<Anchor>//api/name/databaseName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchChangeTracker/databaseName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSString *databaseName</Declaration>
+			
+			
+			<Anchor>//api/name/databaseName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/setMode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) CouchChangeTrackerMode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchChangeTracker/mode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) CouchChangeTrackerMode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/setLastSequenceNumber:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSUInteger lastSequenceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequenceNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchChangeTracker/lastSequenceNumber</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSUInteger lastSequenceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequenceNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/start</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/stop</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/setAuthCredential:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURLCredential *authCredential</Declaration>
+			
+			
+			<Anchor>//api/name/authCredential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchChangeTracker/authCredential</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURLCredential *authCredential</Declaration>
+			
+			
+			<Anchor>//api/name/authCredential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/setChangesFeedURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *changesFeedURL</Declaration>
+			
+			
+			<Anchor>//api/name/changesFeedURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchChangeTracker/changesFeedURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *changesFeedURL</Declaration>
+			
+			
+			<Anchor>//api/name/changesFeedURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/setChangesFeedPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *changesFeedPath</Declaration>
+			
+			
+			<Anchor>//api/name/changesFeedPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchChangeTracker/changesFeedPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *changesFeedPath</Declaration>
+			
+			
+			<Anchor>//api/name/changesFeedPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/receivedChunk:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)receivedChunk:(NSData *)chunk</Declaration>
+			
+			
+			<Anchor>//api/name/receivedChunk:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/receivedPollResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)receivedPollResponse:(NSData *)body</Declaration>
+			
+			
+			<Anchor>//api/name/receivedPollResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchChangeTracker/stopped</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopped</Declaration>
+			
+			
+			<Anchor>//api/name/stopped</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

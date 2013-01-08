@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/HTTPAuthenticationRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/HTTPAuthenticationRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/initWithRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithRequest:(HTTPMessage *)request</Declaration>
+			
+			
+			<Anchor>//api/name/initWithRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/isBasic</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isBasic</Declaration>
+			
+			
+			<Anchor>//api/name/isBasic</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/isDigest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isDigest</Declaration>
+			
+			
+			<Anchor>//api/name/isDigest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/base64Credentials</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)base64Credentials</Declaration>
+			
+			
+			<Anchor>//api/name/base64Credentials</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/username</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/realm</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)realm</Declaration>
+			
+			
+			<Anchor>//api/name/realm</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/nonce</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)nonce</Declaration>
+			
+			
+			<Anchor>//api/name/nonce</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/uri</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)uri</Declaration>
+			
+			
+			<Anchor>//api/name/uri</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/qop</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)qop</Declaration>
+			
+			
+			<Anchor>//api/name/qop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/nc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)nc</Declaration>
+			
+			
+			<Anchor>//api/name/nc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/cnonce</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)cnonce</Declaration>
+			
+			
+			<Anchor>//api/name/cnonce</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPAuthenticationRequest/response</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPAuthenticationRequest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

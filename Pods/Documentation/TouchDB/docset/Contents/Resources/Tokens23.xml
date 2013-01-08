@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDCanonicalJSON.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDCanonicalJSON</TokenIdentifier>
+			<Abstract type="html">Generates a canonical JSON form of an object tree, suitable for signing.
+    See algorithm at http://wiki.apache.org/couchdb/SignedDocuments. </Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDCanonicalJSON/initWithObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithObject:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/initWithObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDCanonicalJSON/setIgnoreKeyPrefix:</TokenIdentifier>
+			<Abstract type="html">If non-nil, dictionary keys beginning with this prefix will be ignored.</Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *ignoreKeyPrefix</Declaration>
+			
+			
+			<Anchor>//api/name/ignoreKeyPrefix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDCanonicalJSON/ignoreKeyPrefix</TokenIdentifier>
+			<Abstract type="html">If non-nil, dictionary keys beginning with this prefix will be ignored.</Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *ignoreKeyPrefix</Declaration>
+			
+			
+			<Anchor>//api/name/ignoreKeyPrefix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDCanonicalJSON/setWhitelistedKeys:</TokenIdentifier>
+			<Abstract type="html">Keys to include even if they begin with the ignorePrefix.</Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSArray *whitelistedKeys</Declaration>
+			
+			
+			<Anchor>//api/name/whitelistedKeys</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDCanonicalJSON/whitelistedKeys</TokenIdentifier>
+			<Abstract type="html">Keys to include even if they begin with the ignorePrefix.</Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSArray *whitelistedKeys</Declaration>
+			
+			
+			<Anchor>//api/name/whitelistedKeys</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDCanonicalJSON/setCanonicalString:</TokenIdentifier>
+			<Abstract type="html">Canonical JSON string from the input object tree.
+    This isn&apos;t directly useful for tasks like signing or generating digests; you probably want to use .canonicalData instead for that. </Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *canonicalString</Declaration>
+			
+			
+			<Anchor>//api/name/canonicalString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDCanonicalJSON/canonicalString</TokenIdentifier>
+			<Abstract type="html">Canonical JSON string from the input object tree.
+    This isn&apos;t directly useful for tasks like signing or generating digests; you probably want to use .canonicalData instead for that. </Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *canonicalString</Declaration>
+			
+			
+			<Anchor>//api/name/canonicalString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDCanonicalJSON/setCanonicalData:</TokenIdentifier>
+			<Abstract type="html">Canonical form of UTF-8 encoded JSON data from the input object tree.</Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSData *canonicalData</Declaration>
+			
+			
+			<Anchor>//api/name/canonicalData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDCanonicalJSON/canonicalData</TokenIdentifier>
+			<Abstract type="html">Canonical form of UTF-8 encoded JSON data from the input object tree.</Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSData *canonicalData</Declaration>
+			
+			
+			<Anchor>//api/name/canonicalData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDCanonicalJSON/canonicalData:</TokenIdentifier>
+			<Abstract type="html">Convenience method that instantiates a TDCanonicalJSON object and uses it to encode the object.</Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)canonicalData:(id)rootObject</Declaration>
+			
+			
+			<Anchor>//api/name/canonicalData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDCanonicalJSON/canonicalString:</TokenIdentifier>
+			<Abstract type="html">Convenience method that instantiates a TDCanonicalJSON object and uses it to encode the object, returning a string.</Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)canonicalString:(id)rootObject</Declaration>
+			
+			
+			<Anchor>//api/name/canonicalString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDCanonicalJSON/orderedKeys:</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary&apos;s keys in the same order in which they would be written out in canonical JSON.</Abstract>
+			<DeclaredIn>TDCanonicalJSON.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)orderedKeys:(NSDictionary *)dict</Declaration>
+			
+			
+			<Anchor>//api/name/orderedKeys:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

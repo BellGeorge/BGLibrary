@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OAMutableURLRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OAMutableURLRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAMutableURLRequest.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAMutableURLRequest/setSignature:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAMutableURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *signature</Declaration>
+			
+			
+			<Anchor>//api/name/signature</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OAMutableURLRequest/signature</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAMutableURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *signature</Declaration>
+			
+			
+			<Anchor>//api/name/signature</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAMutableURLRequest/setNonce:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAMutableURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *nonce</Declaration>
+			
+			
+			<Anchor>//api/name/nonce</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OAMutableURLRequest/nonce</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAMutableURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *nonce</Declaration>
+			
+			
+			<Anchor>//api/name/nonce</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAMutableURLRequest/initWithURL:consumer:token:realm:signatureProvider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAMutableURLRequest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)aUrl consumer:(OAConsumer *)aConsumer token:(OAToken *)aToken realm:(NSString *)aRealm signatureProvider:(id&lt;OASignatureProviding&gt;)aProvider</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:consumer:token:realm:signatureProvider:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAMutableURLRequest/initWithURL:consumer:token:realm:signatureProvider:nonce:timestamp:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAMutableURLRequest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)aUrl consumer:(OAConsumer *)aConsumer token:(OAToken *)aToken realm:(NSString *)aRealm signatureProvider:(id&lt;OASignatureProviding&gt;)aProvider nonce:(NSString *)aNonce timestamp:(NSString *)aTimestamp</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:consumer:token:realm:signatureProvider:nonce:timestamp:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAMutableURLRequest/prepare</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAMutableURLRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)prepare</Declaration>
+			
+			
+			<Anchor>//api/name/prepare</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

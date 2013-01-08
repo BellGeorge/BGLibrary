@@ -1,0 +1,5 @@
+// CocoaPods config needed
+#include "../Pods/Pods.xcconfig"
+
+// Get the warnings configuration
+#include "./BGLibraryWarnings.xcconfig"

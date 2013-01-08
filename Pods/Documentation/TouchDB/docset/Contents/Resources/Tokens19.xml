@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDBatcher.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDBatcher</TokenIdentifier>
+			<Abstract type="html">Utility that queues up objects until the queue fills up or a time interval elapses,
+    then passes objects, in groups of its capacity, to a client-supplied processor block. </Abstract>
+			<DeclaredIn>TDBatcher.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBatcher/initWithCapacity:delay:processor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBatcher.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCapacity:(NSUInteger)capacity delay:(NSTimeInterval)delay processor:(void ( ^ ) ( NSArray *))block</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCapacity:delay:processor:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBatcher/setCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBatcher.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBatcher/count</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBatcher.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBatcher/queueObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBatcher.h</DeclaredIn>			
+			
+			<Declaration>- (void)queueObject:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/queueObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBatcher/queueObjects:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBatcher.h</DeclaredIn>			
+			
+			<Declaration>- (void)queueObjects:(NSArray *)objects</Declaration>
+			
+			
+			<Anchor>//api/name/queueObjects:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBatcher/flush</TokenIdentifier>
+			<Abstract type="html">Sends queued objects to the processor block (up to the capacity).</Abstract>
+			<DeclaredIn>TDBatcher.h</DeclaredIn>			
+			
+			<Declaration>- (void)flush</Declaration>
+			
+			
+			<Anchor>//api/name/flush</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBatcher/flushAll</TokenIdentifier>
+			<Abstract type="html">Sends all the queued objects at once to the processor block.
+    After this method returns, all the queued objects will have been processed.</Abstract>
+			<DeclaredIn>TDBatcher.h</DeclaredIn>			
+			
+			<Declaration>- (void)flushAll</Declaration>
+			
+			
+			<Anchor>//api/name/flushAll</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

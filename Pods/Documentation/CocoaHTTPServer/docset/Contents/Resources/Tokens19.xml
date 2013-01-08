@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/HTTPResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/HTTPResponse</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPResponse.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/HTTPResponse/contentLength</TokenIdentifier>
+			<Abstract type="html">Returns the length of the data in bytes.
+If you don&apos;t know the length in advance, implement the isChunked method and have it return YES.</Abstract>
+			<DeclaredIn>HTTPResponse.h</DeclaredIn>			
+			
+			<Declaration>- (UInt64)contentLength</Declaration>
+			
+			
+			<Anchor>//api/name/contentLength</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/HTTPResponse/offset</TokenIdentifier>
+			<Abstract type="html">The HTTP server supports range requests in order to allow things like
+file download resumption and optimized streaming on mobile devices.</Abstract>
+			<DeclaredIn>HTTPResponse.h</DeclaredIn>			
+			
+			<Declaration>- (UInt64)offset</Declaration>
+			
+			
+			<Anchor>//api/name/offset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/HTTPResponse/setOffset:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPResponse.h</DeclaredIn>			
+			
+			<Declaration>- (void)setOffset:(UInt64)offset</Declaration>
+			
+			
+			<Anchor>//api/name/setOffset:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/HTTPResponse/readDataOfLength:</TokenIdentifier>
+			<Abstract type="html">Returns the data for the response.
+You do not have to return data of the exact length that is given.
+You may optionally return data of a lesser length.
+However, you must never return data of a greater length than requested.
+Doing so could disrupt proper support for range requests.</Abstract>
+			<DeclaredIn>HTTPResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)readDataOfLength:(NSUInteger)length</Declaration>
+			
+			
+			<Anchor>//api/name/readDataOfLength:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/HTTPResponse/isDone</TokenIdentifier>
+			<Abstract type="html">Should only return YES after the HTTPConnection has read all available data.
+That is, all data for the response has been returned to the HTTPConnection via the readDataOfLength method.</Abstract>
+			<DeclaredIn>HTTPResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isDone</Declaration>
+			
+			
+			<Anchor>//api/name/isDone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/HTTPResponse/delayResponeHeaders</TokenIdentifier>
+			<Abstract type="html">If you need time to calculate any part of the HTTP response headers (status code or header fields),
+this method allows you to delay sending the headers so that you may asynchronously execute the calculations.
+Simply implement this method and return YES until you have everything you need concerning the headers.</Abstract>
+			<DeclaredIn>HTTPResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)delayResponeHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/delayResponeHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/HTTPResponse/status</TokenIdentifier>
+			<Abstract type="html">Status code for response.
+Allows for responses such as redirect (301), etc.</Abstract>
+			<DeclaredIn>HTTPResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/HTTPResponse/httpHeaders</TokenIdentifier>
+			<Abstract type="html">If you want to add any extra HTTP headers to the response,
+simply return them in a dictionary in this method.</Abstract>
+			<DeclaredIn>HTTPResponse.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)httpHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/httpHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/HTTPResponse/isChunked</TokenIdentifier>
+			<Abstract type="html">If you don&apos;t know the content-length in advance,
+implement this method in your custom response class and return YES.</Abstract>
+			<DeclaredIn>HTTPResponse.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isChunked</Declaration>
+			
+			
+			<Anchor>//api/name/isChunked</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/HTTPResponse/connectionDidClose</TokenIdentifier>
+			<Abstract type="html">This method is called from the HTTPConnection class when the connection is closed,
+or when the connection is finished with the response.
+If your response is asynchronous, you should implement this method so you know not to
+invoke any methods on the HTTPConnection after this method is called (as the connection may be deallocated).</Abstract>
+			<DeclaredIn>HTTPResponse.h</DeclaredIn>			
+			
+			<Declaration>- (void)connectionDidClose</Declaration>
+			
+			
+			<Anchor>//api/name/connectionDidClose</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

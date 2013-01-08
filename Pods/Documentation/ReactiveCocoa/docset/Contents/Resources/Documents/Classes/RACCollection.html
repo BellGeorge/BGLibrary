@@ -1,0 +1,649 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RACCollection Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ReactiveCocoa 0.9.0 </a></h1>
+				<a id="developerHome" href="../index.html">Josh Abernathy</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RACCollection Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/changeNotificationsEnabled">&nbsp;&nbsp;&nbsp;&nbsp;changeNotificationsEnabled</option>
+	
+	<option value="//api/name/count">&nbsp;&nbsp;&nbsp;&nbsp;count</option>
+	
+	<option value="//api/name/countChanged">&nbsp;&nbsp;&nbsp;&nbsp;countChanged</option>
+	
+	<option value="//api/name/objectsAdded">&nbsp;&nbsp;&nbsp;&nbsp;objectsAdded</option>
+	
+	<option value="//api/name/objectsRemoved">&nbsp;&nbsp;&nbsp;&nbsp;objectsRemoved</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/collectionWithObjects:">&nbsp;&nbsp;&nbsp;&nbsp;+ collectionWithObjects:</option>
+	
+	<option value="//api/name/collectionWithObjectsInArray:">&nbsp;&nbsp;&nbsp;&nbsp;+ collectionWithObjectsInArray:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addObject:">&nbsp;&nbsp;&nbsp;&nbsp;- addObject:</option>
+	
+	<option value="//api/name/addObjectsFromArray:">&nbsp;&nbsp;&nbsp;&nbsp;- addObjectsFromArray:</option>
+	
+	<option value="//api/name/allObjects">&nbsp;&nbsp;&nbsp;&nbsp;- allObjects</option>
+	
+	<option value="//api/name/indexOfObject:">&nbsp;&nbsp;&nbsp;&nbsp;- indexOfObject:</option>
+	
+	<option value="//api/name/insertObject:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- insertObject:atIndex:</option>
+	
+	<option value="//api/name/objectAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- objectAtIndex:</option>
+	
+	<option value="//api/name/removeAllObjects">&nbsp;&nbsp;&nbsp;&nbsp;- removeAllObjects</option>
+	
+	<option value="//api/name/removeObject:">&nbsp;&nbsp;&nbsp;&nbsp;- removeObject:</option>
+	
+	<option value="//api/name/removeObjectAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- removeObjectAtIndex:</option>
+	
+	<option value="//api/name/withChangeNotificationsSuppressed:">&nbsp;&nbsp;&nbsp;&nbsp;- withChangeNotificationsSuppressed:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeNotificationsEnabled">changeNotificationsEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/count">count</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/countChanged">countChanged</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectsAdded">objectsAdded</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectsRemoved">objectsRemoved</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collectionWithObjects:">collectionWithObjects:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collectionWithObjectsInArray:">collectionWithObjectsInArray:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObject:">addObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addObjectsFromArray:">addObjectsFromArray:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allObjects">allObjects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/indexOfObject:">indexOfObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertObject:atIndex:">insertObject:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectAtIndex:">objectAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAllObjects">removeAllObjects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeObject:">removeObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeObjectAtIndex:">removeObjectAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/withChangeNotificationsSuppressed:">withChangeNotificationsSuppressed:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RACCollection Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RACCollection Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCopying<br />NSFastEnumeration</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RACCollection.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/count">&nbsp;&nbsp;count</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectsAdded">&nbsp;&nbsp;objectsAdded</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectsRemoved">&nbsp;&nbsp;objectsRemoved</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/countChanged">&nbsp;&nbsp;countChanged</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeNotificationsEnabled">&nbsp;&nbsp;changeNotificationsEnabled</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collectionWithObjectsInArray:">+&nbsp;collectionWithObjectsInArray:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collectionWithObjects:">+&nbsp;collectionWithObjects:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addObject:">&ndash;&nbsp;addObject:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addObjectsFromArray:">&ndash;&nbsp;addObjectsFromArray:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertObject:atIndex:">&ndash;&nbsp;insertObject:atIndex:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeObject:">&ndash;&nbsp;removeObject:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeObjectAtIndex:">&ndash;&nbsp;removeObjectAtIndex:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAllObjects">&ndash;&nbsp;removeAllObjects</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectAtIndex:">&ndash;&nbsp;objectAtIndex:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/indexOfObject:">&ndash;&nbsp;indexOfObject:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allObjects">&ndash;&nbsp;allObjects</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/withChangeNotificationsSuppressed:">&ndash;&nbsp;withChangeNotificationsSuppressed:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/changeNotificationsEnabled" title="changeNotificationsEnabled"></a>
+	<h3 class="subsubtitle method-title">changeNotificationsEnabled</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL changeNotificationsEnabled</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/count" title="count"></a>
+	<h3 class="subsubtitle method-title">count</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger count</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/countChanged" title="countChanged"></a>
+	<h3 class="subsubtitle method-title">countChanged</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) RACSignal *countChanged</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectsAdded" title="objectsAdded"></a>
+	<h3 class="subsubtitle method-title">objectsAdded</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) RACSignal *objectsAdded</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectsRemoved" title="objectsRemoved"></a>
+	<h3 class="subsubtitle method-title">objectsRemoved</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) RACSignal *objectsRemoved</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/collectionWithObjects:" title="collectionWithObjects:"></a>
+	<h3 class="subsubtitle method-title">collectionWithObjects:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)collectionWithObjects:(id)<em>object</em>, <em>...</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/collectionWithObjectsInArray:" title="collectionWithObjectsInArray:"></a>
+	<h3 class="subsubtitle method-title">collectionWithObjectsInArray:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)collectionWithObjectsInArray:(NSArray *)<em>array</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addObject:" title="addObject:"></a>
+	<h3 class="subsubtitle method-title">addObject:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addObject:(id)<em>object</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addObjectsFromArray:" title="addObjectsFromArray:"></a>
+	<h3 class="subsubtitle method-title">addObjectsFromArray:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addObjectsFromArray:(NSArray *)<em>otherArray</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allObjects" title="allObjects"></a>
+	<h3 class="subsubtitle method-title">allObjects</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)allObjects</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/indexOfObject:" title="indexOfObject:"></a>
+	<h3 class="subsubtitle method-title">indexOfObject:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)indexOfObject:(id)<em>object</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertObject:atIndex:" title="insertObject:atIndex:"></a>
+	<h3 class="subsubtitle method-title">insertObject:atIndex:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)insertObject:(id)<em>object</em> atIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectAtIndex:" title="objectAtIndex:"></a>
+	<h3 class="subsubtitle method-title">objectAtIndex:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)objectAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAllObjects" title="removeAllObjects"></a>
+	<h3 class="subsubtitle method-title">removeAllObjects</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeAllObjects</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeObject:" title="removeObject:"></a>
+	<h3 class="subsubtitle method-title">removeObject:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeObject:(id)<em>object</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeObjectAtIndex:" title="removeObjectAtIndex:"></a>
+	<h3 class="subsubtitle method-title">removeObjectAtIndex:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeObjectAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/withChangeNotificationsSuppressed:" title="withChangeNotificationsSuppressed:"></a>
+	<h3 class="subsubtitle method-title">withChangeNotificationsSuppressed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)withChangeNotificationsSuppressed:(void ( ^ ) ( void ))<em>block</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Josh Abernathy. All rights reserved. (Last updated: 2012-11-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

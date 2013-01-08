@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TDValidationContext.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TDValidationContext</TokenIdentifier>
+			<Abstract type="html">Context passed into a TDValidationBlock.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDValidationContext/setCurrentRevision:</TokenIdentifier>
+			<Abstract type="html">The contents of the current revision of the document, or nil if this is a new document.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDRevision *currentRevision</Declaration>
+			
+			
+			<Anchor>//api/name/currentRevision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TDValidationContext/currentRevision</TokenIdentifier>
+			<Abstract type="html">The contents of the current revision of the document, or nil if this is a new document.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDRevision *currentRevision</Declaration>
+			
+			
+			<Anchor>//api/name/currentRevision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDValidationContext/setErrorType:</TokenIdentifier>
+			<Abstract type="html">The type of HTTP status to report, if the validate block returns NO.
+    The default value is 403 (&quot;Forbidden&quot;). </Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>@property TDStatus errorType</Declaration>
+			
+			
+			<Anchor>//api/name/errorType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TDValidationContext/errorType</TokenIdentifier>
+			<Abstract type="html">The type of HTTP status to report, if the validate block returns NO.
+    The default value is 403 (&quot;Forbidden&quot;). </Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>@property TDStatus errorType</Declaration>
+			
+			
+			<Anchor>//api/name/errorType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDValidationContext/setErrorMessage:</TokenIdentifier>
+			<Abstract type="html">The error message to return in the HTTP response, if the validate block returns NO.
+    The default value is &quot;invalid document&quot;. </Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *errorMessage</Declaration>
+			
+			
+			<Anchor>//api/name/errorMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TDValidationContext/errorMessage</TokenIdentifier>
+			<Abstract type="html">The error message to return in the HTTP response, if the validate block returns NO.
+    The default value is &quot;invalid document&quot;. </Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *errorMessage</Declaration>
+			
+			
+			<Anchor>//api/name/errorMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDValidationContext/setChangedKeys:</TokenIdentifier>
+			<Abstract type="html">Returns an array of all the keys whose values are different between the current and new revisions.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *changedKeys</Declaration>
+			
+			
+			<Anchor>//api/name/changedKeys</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TDValidationContext/changedKeys</TokenIdentifier>
+			<Abstract type="html">Returns an array of all the keys whose values are different between the current and new revisions.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *changedKeys</Declaration>
+			
+			
+			<Anchor>//api/name/changedKeys</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDValidationContext/allowChangesOnlyTo:</TokenIdentifier>
+			<Abstract type="html">Returns YES if only the keys given in the &apos;allowedKeys&apos; array have changed; else returns NO and sets a default error message naming the offending key.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)allowChangesOnlyTo:(NSArray *)allowedKeys</Declaration>
+			
+			
+			<Anchor>//api/name/allowChangesOnlyTo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDValidationContext/disallowChangesTo:</TokenIdentifier>
+			<Abstract type="html">Returns YES if none of the keys given in the &apos;disallowedKeys&apos; array have changed; else returns NO and sets a default error message naming the offending key.</Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)disallowChangesTo:(NSArray *)disallowedKeys</Declaration>
+			
+			
+			<Anchor>//api/name/disallowChangesTo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDValidationContext/enumerateChanges:</TokenIdentifier>
+			<Abstract type="html">Calls the &apos;enumerator&apos; block for each key that&apos;s changed, passing both the old and new values.
+    If the block returns NO, the enumeration stops and sets a default error message, and the method returns NO; else the method returns YES. </Abstract>
+			<DeclaredIn>TDDatabase+Insertion.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)enumerateChanges:(TDChangeEnumeratorBlock)enumerator</Declaration>
+			
+			
+			<Anchor>//api/name/enumerateChanges:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

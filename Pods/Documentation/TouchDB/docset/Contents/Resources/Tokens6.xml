@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OAConsumer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OAConsumer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAConsumer.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAConsumer/setKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAConsumer.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, readwrite) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OAConsumer/key</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAConsumer.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, readwrite) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAConsumer/setSecret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAConsumer.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, readwrite) NSString *secret</Declaration>
+			
+			
+			<Anchor>//api/name/secret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OAConsumer/secret</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAConsumer.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, readwrite) NSString *secret</Declaration>
+			
+			
+			<Anchor>//api/name/secret</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAConsumer/initWithKey:secret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAConsumer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithKey:(const NSString *)aKey secret:(const NSString *)aSecret</Declaration>
+			
+			
+			<Anchor>//api/name/initWithKey:secret:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OAConsumer/isEqualToConsumer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OAConsumer.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isEqualToConsumer:(OAConsumer *)aConsumer</Declaration>
+			
+			
+			<Anchor>//api/name/isEqualToConsumer:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

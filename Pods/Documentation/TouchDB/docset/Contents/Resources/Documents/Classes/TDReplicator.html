@@ -1,0 +1,1571 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TDReplicator Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TouchDB 1.0 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TDReplicator Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/active">&nbsp;&nbsp;&nbsp;&nbsp;active</option>
+	
+	<option value="//api/name/activeRequestsStatus">&nbsp;&nbsp;&nbsp;&nbsp;activeRequestsStatus</option>
+	
+	<option value="//api/name/authorizer">&nbsp;&nbsp;&nbsp;&nbsp;authorizer</option>
+	
+	<option value="//api/name/changesProcessed">&nbsp;&nbsp;&nbsp;&nbsp;changesProcessed</option>
+	
+	<option value="//api/name/changesTotal">&nbsp;&nbsp;&nbsp;&nbsp;changesTotal</option>
+	
+	<option value="//api/name/continuous">&nbsp;&nbsp;&nbsp;&nbsp;continuous</option>
+	
+	<option value="//api/name/db">&nbsp;&nbsp;&nbsp;&nbsp;db</option>
+	
+	<option value="//api/name/error">&nbsp;&nbsp;&nbsp;&nbsp;error</option>
+	
+	<option value="//api/name/filterName">&nbsp;&nbsp;&nbsp;&nbsp;filterName</option>
+	
+	<option value="//api/name/filterParameters">&nbsp;&nbsp;&nbsp;&nbsp;filterParameters</option>
+	
+	<option value="//api/name/isPush">&nbsp;&nbsp;&nbsp;&nbsp;isPush</option>
+	
+	<option value="//api/name/lastSequence">&nbsp;&nbsp;&nbsp;&nbsp;lastSequence</option>
+	
+	<option value="//api/name/online">&nbsp;&nbsp;&nbsp;&nbsp;online</option>
+	
+	<option value="//api/name/options">&nbsp;&nbsp;&nbsp;&nbsp;options</option>
+	
+	<option value="//api/name/remote">&nbsp;&nbsp;&nbsp;&nbsp;remote</option>
+	
+	<option value="//api/name/requestHeaders">&nbsp;&nbsp;&nbsp;&nbsp;requestHeaders</option>
+	
+	<option value="//api/name/running">&nbsp;&nbsp;&nbsp;&nbsp;running</option>
+	
+	<option value="//api/name/savingCheckpoint">&nbsp;&nbsp;&nbsp;&nbsp;savingCheckpoint</option>
+	
+	<option value="//api/name/sessionID">&nbsp;&nbsp;&nbsp;&nbsp;sessionID</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/progressChangedNotification">&nbsp;&nbsp;&nbsp;&nbsp;+ progressChangedNotification</option>
+	
+	<option value="//api/name/stoppedNotification">&nbsp;&nbsp;&nbsp;&nbsp;+ stoppedNotification</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addRemoteRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- addRemoteRequest:</option>
+	
+	<option value="//api/name/addRevsToInbox:">&nbsp;&nbsp;&nbsp;&nbsp;- addRevsToInbox:</option>
+	
+	<option value="//api/name/addToInbox:">&nbsp;&nbsp;&nbsp;&nbsp;- addToInbox:</option>
+	
+	<option value="//api/name/asyncTaskStarted">&nbsp;&nbsp;&nbsp;&nbsp;- asyncTaskStarted</option>
+	
+	<option value="//api/name/asyncTasksFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- asyncTasksFinished:</option>
+	
+	<option value="//api/name/beginReplicating">&nbsp;&nbsp;&nbsp;&nbsp;- beginReplicating</option>
+	
+	<option value="//api/name/databaseClosing">&nbsp;&nbsp;&nbsp;&nbsp;- databaseClosing</option>
+	
+	<option value="//api/name/goOffline">&nbsp;&nbsp;&nbsp;&nbsp;- goOffline</option>
+	
+	<option value="//api/name/goOnline">&nbsp;&nbsp;&nbsp;&nbsp;- goOnline</option>
+	
+	<option value="//api/name/initWithDB:remote:push:continuous:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDB:remote:push:continuous:</option>
+	
+	<option value="//api/name/maybeCreateRemoteDB">&nbsp;&nbsp;&nbsp;&nbsp;- maybeCreateRemoteDB</option>
+	
+	<option value="//api/name/processInbox:">&nbsp;&nbsp;&nbsp;&nbsp;- processInbox:</option>
+	
+	<option value="//api/name/reachabilityChanged:">&nbsp;&nbsp;&nbsp;&nbsp;- reachabilityChanged:</option>
+	
+	<option value="//api/name/removeRemoteRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- removeRemoteRequest:</option>
+	
+	<option value="//api/name/retry">&nbsp;&nbsp;&nbsp;&nbsp;- retry</option>
+	
+	<option value="//api/name/revisionFailed">&nbsp;&nbsp;&nbsp;&nbsp;- revisionFailed</option>
+	
+	<option value="//api/name/sendAsyncRequest:path:body:onCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- sendAsyncRequest:path:body:onCompletion:</option>
+	
+	<option value="//api/name/start">&nbsp;&nbsp;&nbsp;&nbsp;- start</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	<option value="//api/name/stopped">&nbsp;&nbsp;&nbsp;&nbsp;- stopped</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/active">active</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activeRequestsStatus">activeRequestsStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authorizer">authorizer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changesProcessed">changesProcessed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changesTotal">changesTotal</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/continuous">continuous</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/db">db</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/error">error</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/filterName">filterName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/filterParameters">filterParameters</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isPush">isPush</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastSequence">lastSequence</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/online">online</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/options">options</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/remote">remote</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestHeaders">requestHeaders</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/running">running</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/savingCheckpoint">savingCheckpoint</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sessionID">sessionID</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/progressChangedNotification">progressChangedNotification</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stoppedNotification">stoppedNotification</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addRemoteRequest:">addRemoteRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addRevsToInbox:">addRevsToInbox:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addToInbox:">addToInbox:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asyncTaskStarted">asyncTaskStarted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asyncTasksFinished:">asyncTasksFinished:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginReplicating">beginReplicating</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/databaseClosing">databaseClosing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/goOffline">goOffline</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/goOnline">goOnline</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDB:remote:push:continuous:">initWithDB:remote:push:continuous:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maybeCreateRemoteDB">maybeCreateRemoteDB</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/processInbox:">processInbox:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachabilityChanged:">reachabilityChanged:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeRemoteRequest:">removeRemoteRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/retry">retry</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/revisionFailed">revisionFailed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendAsyncRequest:path:body:onCompletion:">sendAsyncRequest:path:body:onCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start">start</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopped">stopped</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TDReplicator Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TDReplicator Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TDReplicator.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Abstract base class for push or pull replications.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/progressChangedNotification">+&nbsp;progressChangedNotification</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stoppedNotification">+&nbsp;stoppedNotification</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDB:remote:push:continuous:">&ndash;&nbsp;initWithDB:remote:push:continuous:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/db">&nbsp;&nbsp;db</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/remote">&nbsp;&nbsp;remote</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isPush">&nbsp;&nbsp;isPush</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/continuous">&nbsp;&nbsp;continuous</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/filterName">&nbsp;&nbsp;filterName</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/filterParameters">&nbsp;&nbsp;filterParameters</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/options">&nbsp;&nbsp;options</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestHeaders">&nbsp;&nbsp;requestHeaders</a></code>
+		<span class="tooltip"><p>Optional dictionary of headers to be added to all requests to <a href="#//api/name/remote">remote</a> servers.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authorizer">&nbsp;&nbsp;authorizer</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+		<span class="tooltip"><p>Starts the replicator.</p>
+
+<pre><code>Replicators run asynchronously so nothing will happen until later.
+A replicator can only be started once; don't reuse it after it stops. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+		<span class="tooltip"><p>Request to stop the replicator.</p>
+
+<pre><code>Any pending asynchronous operations will be canceled.
+TDReplicatorStoppedNotification will be posted when it finally stops. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/running">&nbsp;&nbsp;running</a></code>
+		<span class="tooltip"><p>Is the replicator running? (Observable)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/online">&nbsp;&nbsp;online</a></code>
+		<span class="tooltip"><p>Is the replicator able to connect to the <a href="#//api/name/remote">remote</a> host?</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/active">&nbsp;&nbsp;active</a></code>
+		<span class="tooltip"><p>Is the replicator actively sending/receiving revisions? (Observable)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/error">&nbsp;&nbsp;error</a></code>
+		<span class="tooltip"><p>Latest error encountered while replicating.</p>
+
+<pre><code>This is set to nil when starting. It may also be set to nil by the client if desired.
+Not all errors are fatal; if .running is still true, the replicator will retry. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sessionID">&nbsp;&nbsp;sessionID</a></code>
+		<span class="tooltip"><p>A unique-per-process string identifying this replicator instance.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changesProcessed">&nbsp;&nbsp;changesProcessed</a></code>
+		<span class="tooltip"><p>Number of changes (docs or other metadata) transferred so far.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changesTotal">&nbsp;&nbsp;changesTotal</a></code>
+		<span class="tooltip"><p>Approximate total number of changes to transfer.</p>
+
+<pre><code>This is only an estimate and its value will change during replication. It starts at zero and returns to zero when replication stops. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activeRequestsStatus">&nbsp;&nbsp;activeRequestsStatus</a></code>
+		<span class="tooltip"><p>JSON-compatible array of status info about <a href="#//api/name/active">active</a> <a href="#//api/name/remote">remote</a> HTTP requests.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastSequence">&nbsp;&nbsp;lastSequence</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maybeCreateRemoteDB">&ndash;&nbsp;maybeCreateRemoteDB</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginReplicating">&ndash;&nbsp;beginReplicating</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addToInbox:">&ndash;&nbsp;addToInbox:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addRevsToInbox:">&ndash;&nbsp;addRevsToInbox:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/processInbox:">&ndash;&nbsp;processInbox:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendAsyncRequest:path:body:onCompletion:">&ndash;&nbsp;sendAsyncRequest:path:body:onCompletion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addRemoteRequest:">&ndash;&nbsp;addRemoteRequest:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeRemoteRequest:">&ndash;&nbsp;removeRemoteRequest:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asyncTaskStarted">&ndash;&nbsp;asyncTaskStarted</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asyncTasksFinished:">&ndash;&nbsp;asyncTasksFinished:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopped">&ndash;&nbsp;stopped</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/databaseClosing">&ndash;&nbsp;databaseClosing</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/revisionFailed">&ndash;&nbsp;revisionFailed</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/retry">&ndash;&nbsp;retry</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachabilityChanged:">&ndash;&nbsp;reachabilityChanged:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/goOffline">&ndash;&nbsp;goOffline</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/goOnline">&ndash;&nbsp;goOnline</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/savingCheckpoint">&nbsp;&nbsp;savingCheckpoint</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/active" title="active"></a>
+	<h3 class="subsubtitle method-title">active</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Is the replicator actively sending/receiving revisions? (Observable)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL active</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Is the replicator actively sending/receiving revisions? (Observable)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDReplicator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/activeRequestsStatus" title="activeRequestsStatus"></a>
+	<h3 class="subsubtitle method-title">activeRequestsStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>JSON-compatible array of status info about <a href="#//api/name/active">active</a> <a href="#//api/name/remote">remote</a> HTTP requests.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *activeRequestsStatus</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>JSON-compatible array of status info about <a href="#//api/name/active">active</a> <a href="#//api/name/remote">remote</a> HTTP requests.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDReplicator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/authorizer" title="authorizer"></a>
+	<h3 class="subsubtitle method-title">authorizer</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain) id&lt;TDAuthorizer&gt; authorizer</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changesProcessed" title="changesProcessed"></a>
+	<h3 class="subsubtitle method-title">changesProcessed</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Number of changes (docs or other metadata) transferred so far.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSUInteger changesProcessed</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Number of changes (docs or other metadata) transferred so far.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDReplicator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changesTotal" title="changesTotal"></a>
+	<h3 class="subsubtitle method-title">changesTotal</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Approximate total number of changes to transfer.</p>
+
+<pre><code>This is only an estimate and its value will change during replication. It starts at zero and returns to zero when replication stops. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSUInteger changesTotal</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Approximate total number of changes to transfer.</p>
+
+<pre><code>This is only an estimate and its value will change during replication. It starts at zero and returns to zero when replication stops. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDReplicator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/continuous" title="continuous"></a>
+	<h3 class="subsubtitle method-title">continuous</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL continuous</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/db" title="db"></a>
+	<h3 class="subsubtitle method-title">db</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) TDDatabase *db</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/error" title="error"></a>
+	<h3 class="subsubtitle method-title">error</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Latest error encountered while replicating.</p>
+
+<pre><code>This is set to nil when starting. It may also be set to nil by the client if desired.
+Not all errors are fatal; if .running is still true, the replicator will retry. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSError *error</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Latest error encountered while replicating.</p>
+
+<pre><code>This is set to nil when starting. It may also be set to nil by the client if desired.
+Not all errors are fatal; if .running is still true, the replicator will retry. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDReplicator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/filterName" title="filterName"></a>
+	<h3 class="subsubtitle method-title">filterName</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *filterName</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/filterParameters" title="filterParameters"></a>
+	<h3 class="subsubtitle method-title">filterParameters</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSDictionary *filterParameters</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isPush" title="isPush"></a>
+	<h3 class="subsubtitle method-title">isPush</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL isPush</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastSequence" title="lastSequence"></a>
+	<h3 class="subsubtitle method-title">lastSequence</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *lastSequence</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/online" title="online"></a>
+	<h3 class="subsubtitle method-title">online</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Is the replicator able to connect to the <a href="#//api/name/remote">remote</a> host?</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL online</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Is the replicator able to connect to the <a href="#//api/name/remote">remote</a> host?</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDReplicator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/options" title="options"></a>
+	<h3 class="subsubtitle method-title">options</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSDictionary *options</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/remote" title="remote"></a>
+	<h3 class="subsubtitle method-title">remote</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSURL *remote</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestHeaders" title="requestHeaders"></a>
+	<h3 class="subsubtitle method-title">requestHeaders</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Optional dictionary of headers to be added to all requests to <a href="#//api/name/remote">remote</a> servers.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSDictionary *requestHeaders</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Optional dictionary of headers to be added to all requests to <a href="#//api/name/remote">remote</a> servers.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDReplicator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/running" title="running"></a>
+	<h3 class="subsubtitle method-title">running</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Is the replicator running? (Observable)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL running</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Is the replicator running? (Observable)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDReplicator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/savingCheckpoint" title="savingCheckpoint"></a>
+	<h3 class="subsubtitle method-title">savingCheckpoint</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL savingCheckpoint</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sessionID" title="sessionID"></a>
+	<h3 class="subsubtitle method-title">sessionID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A unique-per-process string identifying this replicator instance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy, nonatomic) NSString *sessionID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A unique-per-process string identifying this replicator instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDReplicator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/progressChangedNotification" title="progressChangedNotification"></a>
+	<h3 class="subsubtitle method-title">progressChangedNotification</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)progressChangedNotification</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stoppedNotification" title="stoppedNotification"></a>
+	<h3 class="subsubtitle method-title">stoppedNotification</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)stoppedNotification</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addRemoteRequest:" title="addRemoteRequest:"></a>
+	<h3 class="subsubtitle method-title">addRemoteRequest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addRemoteRequest:(TDRemoteRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addRevsToInbox:" title="addRevsToInbox:"></a>
+	<h3 class="subsubtitle method-title">addRevsToInbox:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addRevsToInbox:(TDRevisionList *)<em>revs</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addToInbox:" title="addToInbox:"></a>
+	<h3 class="subsubtitle method-title">addToInbox:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addToInbox:(TDRevision *)<em>rev</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/asyncTaskStarted" title="asyncTaskStarted"></a>
+	<h3 class="subsubtitle method-title">asyncTaskStarted</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)asyncTaskStarted</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/asyncTasksFinished:" title="asyncTasksFinished:"></a>
+	<h3 class="subsubtitle method-title">asyncTasksFinished:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)asyncTasksFinished:(NSUInteger)<em>numTasks</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginReplicating" title="beginReplicating"></a>
+	<h3 class="subsubtitle method-title">beginReplicating</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)beginReplicating</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/databaseClosing" title="databaseClosing"></a>
+	<h3 class="subsubtitle method-title">databaseClosing</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)databaseClosing</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/goOffline" title="goOffline"></a>
+	<h3 class="subsubtitle method-title">goOffline</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)goOffline</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/goOnline" title="goOnline"></a>
+	<h3 class="subsubtitle method-title">goOnline</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)goOnline</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDB:remote:push:continuous:" title="initWithDB:remote:push:continuous:"></a>
+	<h3 class="subsubtitle method-title">initWithDB:remote:push:continuous:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDB:(TDDatabase *)<em>db</em> remote:(NSURL *)<em>remote</em> push:(BOOL)<em>push</em> continuous:(BOOL)<em>continuous</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maybeCreateRemoteDB" title="maybeCreateRemoteDB"></a>
+	<h3 class="subsubtitle method-title">maybeCreateRemoteDB</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)maybeCreateRemoteDB</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/processInbox:" title="processInbox:"></a>
+	<h3 class="subsubtitle method-title">processInbox:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)processInbox:(TDRevisionList *)<em>inbox</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reachabilityChanged:" title="reachabilityChanged:"></a>
+	<h3 class="subsubtitle method-title">reachabilityChanged:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)reachabilityChanged:(TDReachability *)<em>host</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeRemoteRequest:" title="removeRemoteRequest:"></a>
+	<h3 class="subsubtitle method-title">removeRemoteRequest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeRemoteRequest:(TDRemoteRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/retry" title="retry"></a>
+	<h3 class="subsubtitle method-title">retry</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)retry</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/revisionFailed" title="revisionFailed"></a>
+	<h3 class="subsubtitle method-title">revisionFailed</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)revisionFailed</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendAsyncRequest:path:body:onCompletion:" title="sendAsyncRequest:path:body:onCompletion:"></a>
+	<h3 class="subsubtitle method-title">sendAsyncRequest:path:body:onCompletion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDRemoteJSONRequest *)sendAsyncRequest:(NSString *)<em>method</em> path:(NSString *)<em>relativePath</em> body:(id)<em>body</em> onCompletion:(TDRemoteRequestCompletionBlock)<em>onCompletion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="subsubtitle method-title">start</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts the replicator.</p>
+
+<pre><code>Replicators run asynchronously so nothing will happen until later.
+A replicator can only be started once; don't reuse it after it stops. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)start</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Starts the replicator.</p>
+
+<pre><code>Replicators run asynchronously so nothing will happen until later.
+A replicator can only be started once; don't reuse it after it stops. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDReplicator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request to stop the replicator.</p>
+
+<pre><code>Any pending asynchronous operations will be canceled.
+TDReplicatorStoppedNotification will be posted when it finally stops. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Request to stop the replicator.</p>
+
+<pre><code>Any pending asynchronous operations will be canceled.
+TDReplicatorStoppedNotification will be posted when it finally stops. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDReplicator.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopped" title="stopped"></a>
+	<h3 class="subsubtitle method-title">stopped</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)stopped</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

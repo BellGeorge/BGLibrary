@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/HTTPConfig.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/HTTPConfig</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConfig/initWithServer:documentRoot:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithServer:(HTTPServer *)server documentRoot:(NSString *)documentRoot</Declaration>
+			
+			
+			<Anchor>//api/name/initWithServer:documentRoot:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConfig/initWithServer:documentRoot:queue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithServer:(HTTPServer *)server documentRoot:(NSString *)documentRoot queue:(dispatch_queue_t)q</Declaration>
+			
+			
+			<Anchor>//api/name/initWithServer:documentRoot:queue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConfig/setServer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) HTTPServer *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/HTTPConfig/server</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) HTTPServer *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConfig/setDocumentRoot:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *documentRoot</Declaration>
+			
+			
+			<Anchor>//api/name/documentRoot</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/HTTPConfig/documentRoot</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *documentRoot</Declaration>
+			
+			
+			<Anchor>//api/name/documentRoot</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConfig/setQueue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) dispatch_queue_t queue</Declaration>
+			
+			
+			<Anchor>//api/name/queue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/HTTPConfig/queue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) dispatch_queue_t queue</Declaration>
+			
+			
+			<Anchor>//api/name/queue</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,1348 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CouchDesignDocument Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CouchCocoa 0.961beta6 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CouchDesignDocument Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/changed">&nbsp;&nbsp;&nbsp;&nbsp;changed</option>
+	
+	<option value="//api/name/filters">&nbsp;&nbsp;&nbsp;&nbsp;filters</option>
+	
+	<option value="//api/name/includeLocalSequence">&nbsp;&nbsp;&nbsp;&nbsp;includeLocalSequence</option>
+	
+	<option value="//api/name/language">&nbsp;&nbsp;&nbsp;&nbsp;language</option>
+	
+	<option value="//api/name/validation">&nbsp;&nbsp;&nbsp;&nbsp;validation</option>
+	
+	<option value="//api/name/viewNames">&nbsp;&nbsp;&nbsp;&nbsp;viewNames</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/defineFilterNamed:asFunction:">&nbsp;&nbsp;&nbsp;&nbsp;- defineFilterNamed:asFunction:</option>
+	
+	<option value="//api/name/defineFilterNamed:block:">&nbsp;&nbsp;&nbsp;&nbsp;- defineFilterNamed:block:</option>
+	
+	<option value="//api/name/defineViewNamed:map:">&nbsp;&nbsp;&nbsp;&nbsp;- defineViewNamed:map:</option>
+	
+	<option value="//api/name/defineViewNamed:map:reduce:">&nbsp;&nbsp;&nbsp;&nbsp;- defineViewNamed:map:reduce:</option>
+	
+	<option value="//api/name/defineViewNamed:mapBlock:reduceBlock:version:">&nbsp;&nbsp;&nbsp;&nbsp;- defineViewNamed:mapBlock:reduceBlock:version:</option>
+	
+	<option value="//api/name/defineViewNamed:mapBlock:version:">&nbsp;&nbsp;&nbsp;&nbsp;- defineViewNamed:mapBlock:version:</option>
+	
+	<option value="//api/name/isLanguageAvailable:">&nbsp;&nbsp;&nbsp;&nbsp;- isLanguageAvailable:</option>
+	
+	<option value="//api/name/mapFunctionOfViewNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- mapFunctionOfViewNamed:</option>
+	
+	<option value="//api/name/queryViewNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- queryViewNamed:</option>
+	
+	<option value="//api/name/reduceFunctionOfViewNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- reduceFunctionOfViewNamed:</option>
+	
+	<option value="//api/name/saveChanges">&nbsp;&nbsp;&nbsp;&nbsp;- saveChanges</option>
+	
+	<option value="//api/name/setValidationBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setValidationBlock:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Embedded Methods">Embedded Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changed">changed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/filters">filters</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/includeLocalSequence">includeLocalSequence</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/language">language</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/validation">validation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewNames">viewNames</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defineFilterNamed:asFunction:">defineFilterNamed:asFunction:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defineFilterNamed:block:">defineFilterNamed:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defineViewNamed:map:">defineViewNamed:map:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defineViewNamed:map:reduce:">defineViewNamed:map:reduce:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defineViewNamed:mapBlock:reduceBlock:version:">defineViewNamed:mapBlock:reduceBlock:version:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defineViewNamed:mapBlock:version:">defineViewNamed:mapBlock:version:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLanguageAvailable:">isLanguageAvailable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapFunctionOfViewNamed:">mapFunctionOfViewNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queryViewNamed:">queryViewNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reduceFunctionOfViewNamed:">reduceFunctionOfViewNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveChanges">saveChanges</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValidationBlock:">setValidationBlock:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CouchDesignDocument Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CouchDesignDocument Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CouchDocument.html">CouchDocument</a> : <a href="../Classes/CouchResource.html">CouchResource</a> : <a href="../Classes/RESTResource.html">RESTResource</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CouchDesignDocument.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A Design Document is a special document type that contains things like map/reduce functions, and the code and static resources for CouchApps.
+Optional support for native Objective-C map/reduce functions.</p>
+
+<pre><code>This is only available when talking to an embedded Couchbase database running in the same process as the app, e.g. Couchbase Mobile. 
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queryViewNamed:">&ndash;&nbsp;queryViewNamed:</a></code>
+		<span class="tooltip"><p>Creates a query for the given named view.</p>
+
+<pre><code>If view definitions have been modified but not saved yet, they will be saved first. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLanguageAvailable:">&ndash;&nbsp;isLanguageAvailable:</a></code>
+		<span class="tooltip"><p>Indicates whether a given <a href="#//api/name/language">language</a> is available for writing functions in, in this database.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/language">&nbsp;&nbsp;language</a></code>
+		<span class="tooltip"><p>The language that the functions in this design document are written in.</p>
+
+<pre><code>Defaults to kCouchLanguageJavaScript. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewNames">&nbsp;&nbsp;viewNames</a></code>
+		<span class="tooltip"><p>Fetches and returns the names of all the views defined in this design document.</p>
+
+<pre><code>The first call fetches the entire design document synchronously; subsequent calls are cached. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapFunctionOfViewNamed:">&ndash;&nbsp;mapFunctionOfViewNamed:</a></code>
+		<span class="tooltip"><p>Returns the map function of the view with the given name.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reduceFunctionOfViewNamed:">&ndash;&nbsp;reduceFunctionOfViewNamed:</a></code>
+		<span class="tooltip"><p>Returns the reduce function of the view with the given name.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defineViewNamed:map:reduce:">&ndash;&nbsp;defineViewNamed:map:reduce:</a></code>
+		<span class="tooltip"><p>Sets the definition of a view, or deletes it.</p>
+
+<pre><code>After making changes to one or more views, you should call saveChanges to PUT them back to the database.
+If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defineViewNamed:map:">&ndash;&nbsp;defineViewNamed:map:</a></code>
+		<span class="tooltip"><p>A shortcut that defines a simple view with no reduce function.</p>
+
+<pre><code>After making changes to one or more views, you should call saveChanges to PUT them back to the database.
+If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/filters">&nbsp;&nbsp;filters</a></code>
+		<span class="tooltip"><p>The filter functions defined in this design document.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defineFilterNamed:asFunction:">&ndash;&nbsp;defineFilterNamed:asFunction:</a></code>
+		<span class="tooltip"><p>Sets the definition of a filter, or deletes it.</p>
+
+<pre><code>After making changes to one or more filters, you should call saveChanges to PUT them back to the database.
+If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/validation">&nbsp;&nbsp;validation</a></code>
+		<span class="tooltip"><p>The validation function, a JavaScript function that validates document contents.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/includeLocalSequence">&nbsp;&nbsp;includeLocalSequence</a></code>
+		<span class="tooltip"><p>Should view query results include the document local sequence number in the index?</p>
+
+<pre><code>Setting this to YES sets the 'local_seq' property of the design document's 'options' property to 'true'.
+This affects every view in this design document. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changed">&nbsp;&nbsp;changed</a></code>
+		<span class="tooltip"><p>Have the contents of the design document been changed in-memory but not yet saved?</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveChanges">&ndash;&nbsp;saveChanges</a></code>
+		<span class="tooltip"><p>Saves changes, asynchronously. If there are no current changes, returns nil.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Embedded Methods" name="task_Embedded Methods"></a>
+						<h3 class="subsubtitle task-title">Embedded Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defineViewNamed:mapBlock:version:">&ndash;&nbsp;defineViewNamed:mapBlock:version:</a></code>
+		<span class="tooltip"><p>Defines or deletes a native view.</p>
+
+<pre><code>The view's definition is given as an Objective-C block (or NULL to delete the view). The body of the block should call the 'emit' block (passed in as a paramter) for every key/value pair it wants to write to the view.
+Since the function itself is obviously not stored in the database (only a unique string idenfitying it), you must re-define the view on every launch of the app! If the database needs to rebuild the view but the function hasn't been defined yet, it will fail and the view will be empty, causing weird problems later on.
+It is very important that this block be a law-abiding map function! As in other languages, it must be a "pure" function, with no side effects, that always emits the same values given the same input document. That means that it should not access or change any external state; be careful, since blocks make that so easy that you might do it inadvertently!
+The block may be called on any thread, or on multiple threads simultaneously. This won't be a problem if the code is "pure" as described above, since it will as a consequence also be thread-safe. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defineViewNamed:mapBlock:reduceBlock:version:">&ndash;&nbsp;defineViewNamed:mapBlock:reduceBlock:version:</a></code>
+		<span class="tooltip"><p>Defines or deletes a native view with both a map and a reduce function.</p>
+
+<pre><code>For details, read the documentation of the -defineViewNamed:mapBlock: method.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defineFilterNamed:block:">&ndash;&nbsp;defineFilterNamed:block:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setValidationBlock:">&ndash;&nbsp;setValidationBlock:</a></code>
+		<span class="tooltip"><p>An Objective-C block that can validate any document being added/updated/deleted in this database.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/changed" title="changed"></a>
+	<h3 class="subsubtitle method-title">changed</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Have the contents of the design document been changed in-memory but not yet saved?</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL changed</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Have the contents of the design document been changed in-memory but not yet saved?</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/filters" title="filters"></a>
+	<h3 class="subsubtitle method-title">filters</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The filter functions defined in this design document.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSDictionary *filters</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An NSDictionary whose keys are filter names and values are function source code.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The filter functions defined in this design document.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/includeLocalSequence" title="includeLocalSequence"></a>
+	<h3 class="subsubtitle method-title">includeLocalSequence</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Should view query results include the document local sequence number in the index?</p>
+
+<pre><code>Setting this to YES sets the 'local_seq' property of the design document's 'options' property to 'true'.
+This affects every view in this design document. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL includeLocalSequence</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Should view query results include the document local sequence number in the index?</p>
+
+<pre><code>Setting this to YES sets the 'local_seq' property of the design document's 'options' property to 'true'.
+This affects every view in this design document. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/language" title="language"></a>
+	<h3 class="subsubtitle method-title">language</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The language that the functions in this design document are written in.</p>
+
+<pre><code>Defaults to kCouchLanguageJavaScript. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *language</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The language that the functions in this design document are written in.</p>
+
+<pre><code>Defaults to kCouchLanguageJavaScript. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/validation" title="validation"></a>
+	<h3 class="subsubtitle method-title">validation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The validation function, a JavaScript function that validates document contents.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *validation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The validation function, a JavaScript function that validates document contents.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewNames" title="viewNames"></a>
+	<h3 class="subsubtitle method-title">viewNames</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetches and returns the names of all the views defined in this design document.</p>
+
+<pre><code>The first call fetches the entire design document synchronously; subsequent calls are cached. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *viewNames</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Fetches and returns the names of all the views defined in this design document.</p>
+
+<pre><code>The first call fetches the entire design document synchronously; subsequent calls are cached. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/defineFilterNamed:asFunction:" title="defineFilterNamed:asFunction:"></a>
+	<h3 class="subsubtitle method-title">defineFilterNamed:asFunction:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the definition of a filter, or deletes it.</p>
+
+<pre><code>After making changes to one or more filters, you should call saveChanges to PUT them back to the database.
+If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)defineFilterNamed:(NSString *)<em>filterName</em> asFunction:(NSString *)<em>filterFunction</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filterName</em></dt>
+			<dd><p>The name of the filter, in the scope of this design doc.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filterFunction</em></dt>
+			<dd><p>The source code of the filter function. If nil, the filter will be deleted.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the definition of a filter, or deletes it.</p>
+
+<pre><code>After making changes to one or more filters, you should call saveChanges to PUT them back to the database.
+If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defineFilterNamed:block:" title="defineFilterNamed:block:"></a>
+	<h3 class="subsubtitle method-title">defineFilterNamed:block:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)defineFilterNamed:(NSString *)<em>filterName</em> block:(TDFilterBlock)<em>filterBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defineViewNamed:map:" title="defineViewNamed:map:"></a>
+	<h3 class="subsubtitle method-title">defineViewNamed:map:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A shortcut that defines a simple view with no reduce function.</p>
+
+<pre><code>After making changes to one or more views, you should call saveChanges to PUT them back to the database.
+If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)defineViewNamed:(NSString *)<em>viewName</em> map:(NSString *)<em>mapFunction</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewName</em></dt>
+			<dd><p>The name of the view, in the scope of this design doc.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mapFunction</em></dt>
+			<dd><p>The source code of the map function. If nil, the view will be deleted.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A shortcut that defines a simple view with no reduce function.</p>
+
+<pre><code>After making changes to one or more views, you should call saveChanges to PUT them back to the database.
+If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defineViewNamed:map:reduce:" title="defineViewNamed:map:reduce:"></a>
+	<h3 class="subsubtitle method-title">defineViewNamed:map:reduce:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the definition of a view, or deletes it.</p>
+
+<pre><code>After making changes to one or more views, you should call saveChanges to PUT them back to the database.
+If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)defineViewNamed:(NSString *)<em>viewName</em> map:(NSString *)<em>mapFunction</em> reduce:(NSString *)<em>reduceFunction</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewName</em></dt>
+			<dd><p>The name of the view, in the scope of this design doc.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mapFunction</em></dt>
+			<dd><p>The source code of the map function. If nil, the view will be deleted.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reduceFunction</em></dt>
+			<dd><p>The source code of the reduce function. Optional; pass nil for none.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the definition of a view, or deletes it.</p>
+
+<pre><code>After making changes to one or more views, you should call saveChanges to PUT them back to the database.
+If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defineViewNamed:mapBlock:reduceBlock:version:" title="defineViewNamed:mapBlock:reduceBlock:version:"></a>
+	<h3 class="subsubtitle method-title">defineViewNamed:mapBlock:reduceBlock:version:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defines or deletes a native view with both a map and a reduce function.</p>
+
+<pre><code>For details, read the documentation of the -defineViewNamed:mapBlock: method.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)defineViewNamed:(NSString *)<em>viewName</em> mapBlock:(TDMapBlock)<em>mapBlock</em> reduceBlock:(TDReduceBlock)<em>reduceBlock</em> version:(NSString *)<em>version</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Defines or deletes a native view with both a map and a reduce function.</p>
+
+<pre><code>For details, read the documentation of the -defineViewNamed:mapBlock: method.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument_Embedded.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defineViewNamed:mapBlock:version:" title="defineViewNamed:mapBlock:version:"></a>
+	<h3 class="subsubtitle method-title">defineViewNamed:mapBlock:version:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defines or deletes a native view.</p>
+
+<pre><code>The view's definition is given as an Objective-C block (or NULL to delete the view). The body of the block should call the 'emit' block (passed in as a paramter) for every key/value pair it wants to write to the view.
+Since the function itself is obviously not stored in the database (only a unique string idenfitying it), you must re-define the view on every launch of the app! If the database needs to rebuild the view but the function hasn't been defined yet, it will fail and the view will be empty, causing weird problems later on.
+It is very important that this block be a law-abiding map function! As in other languages, it must be a "pure" function, with no side effects, that always emits the same values given the same input document. That means that it should not access or change any external state; be careful, since blocks make that so easy that you might do it inadvertently!
+The block may be called on any thread, or on multiple threads simultaneously. This won't be a problem if the code is "pure" as described above, since it will as a consequence also be thread-safe. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)defineViewNamed:(NSString *)<em>viewName</em> mapBlock:(TDMapBlock)<em>mapBlock</em> version:(NSString *)<em>version</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Defines or deletes a native view.</p>
+
+<pre><code>The view's definition is given as an Objective-C block (or NULL to delete the view). The body of the block should call the 'emit' block (passed in as a paramter) for every key/value pair it wants to write to the view.
+Since the function itself is obviously not stored in the database (only a unique string idenfitying it), you must re-define the view on every launch of the app! If the database needs to rebuild the view but the function hasn't been defined yet, it will fail and the view will be empty, causing weird problems later on.
+It is very important that this block be a law-abiding map function! As in other languages, it must be a "pure" function, with no side effects, that always emits the same values given the same input document. That means that it should not access or change any external state; be careful, since blocks make that so easy that you might do it inadvertently!
+The block may be called on any thread, or on multiple threads simultaneously. This won't be a problem if the code is "pure" as described above, since it will as a consequence also be thread-safe. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument_Embedded.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLanguageAvailable:" title="isLanguageAvailable:"></a>
+	<h3 class="subsubtitle method-title">isLanguageAvailable:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates whether a given <a href="#//api/name/language">language</a> is available for writing functions in, in this database.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isLanguageAvailable:(NSString *)<em>language</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Indicates whether a given <a href="#//api/name/language">language</a> is available for writing functions in, in this database.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapFunctionOfViewNamed:" title="mapFunctionOfViewNamed:"></a>
+	<h3 class="subsubtitle method-title">mapFunctionOfViewNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the map function of the view with the given name.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)mapFunctionOfViewNamed:(NSString *)<em>viewName</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the map function of the view with the given name.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queryViewNamed:" title="queryViewNamed:"></a>
+	<h3 class="subsubtitle method-title">queryViewNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a query for the given named view.</p>
+
+<pre><code>If view definitions have been modified but not saved yet, they will be saved first. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CouchQuery *)queryViewNamed:(NSString *)<em>viewName</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a query for the given named view.</p>
+
+<pre><code>If view definitions have been modified but not saved yet, they will be saved first. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reduceFunctionOfViewNamed:" title="reduceFunctionOfViewNamed:"></a>
+	<h3 class="subsubtitle method-title">reduceFunctionOfViewNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the reduce function of the view with the given name.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)reduceFunctionOfViewNamed:(NSString *)<em>viewName</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the reduce function of the view with the given name.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveChanges" title="saveChanges"></a>
+	<h3 class="subsubtitle method-title">saveChanges</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Saves changes, asynchronously. If there are no current changes, returns nil.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)saveChanges</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Saves changes, asynchronously. If there are no current changes, returns nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setValidationBlock:" title="setValidationBlock:"></a>
+	<h3 class="subsubtitle method-title">setValidationBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An Objective-C block that can validate any document being added/updated/deleted in this database.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setValidationBlock:(TDValidationBlock)<em>validationBlock</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An Objective-C block that can validate any document being added/updated/deleted in this database.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDesignDocument_Embedded.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

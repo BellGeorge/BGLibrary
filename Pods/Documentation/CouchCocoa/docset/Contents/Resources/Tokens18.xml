@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchResource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchResource</TokenIdentifier>
+			<Abstract type="html">Superclass of CouchDB model classes. Adds Couch-specific error handling to RESTResource.</Abstract>
+			<DeclaredIn>CouchResource.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchResource/setDatabase:</TokenIdentifier>
+			<Abstract type="html">The owning database.</Abstract>
+			<DeclaredIn>CouchResource.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchDatabase *database</Declaration>
+			
+			
+			<Anchor>//api/name/database</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchResource/database</TokenIdentifier>
+			<Abstract type="html">The owning database.</Abstract>
+			<DeclaredIn>CouchResource.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchDatabase *database</Declaration>
+			
+			
+			<Anchor>//api/name/database</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchResource/childWithPath:</TokenIdentifier>
+			<Abstract type="html">Returns a CouchResource object with the given relative path from the receiver.
+    (This will always be an instance of CouchResource, not something more specific like CouchDocument. This is a convenience to reach API endpoints like bulkdocs or _purge that aren&apos;t part of the regular object model. </Abstract>
+			<DeclaredIn>CouchResource.h</DeclaredIn>			
+			
+			<Declaration>- (CouchResource *)childWithPath:(NSString *)relativePath</Declaration>
+			
+			
+			<Anchor>//api/name/childWithPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

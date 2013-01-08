@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RNOpenSSLCryptor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RNOpenSSLCryptor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RNOpenSSLCryptor.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RNOpenSSLCryptor/openSSLCryptor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RNOpenSSLCryptor.h</DeclaredIn>			
+			
+			<Declaration>+ (RNOpenSSLCryptor *)openSSLCryptor</Declaration>
+			
+			
+			<Anchor>//api/name/openSSLCryptor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RNOpenSSLCryptor/encryptFromStream:toStream:password:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RNOpenSSLCryptor.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)encryptFromStream:(NSInputStream *)fromStream toStream:(NSOutputStream *)toStream password:(NSString *)password error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/encryptFromStream:toStream:password:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RNOpenSSLCryptor/decryptFromStream:toStream:password:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RNOpenSSLCryptor.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)decryptFromStream:(NSInputStream *)fromStream toStream:(NSOutputStream *)toStream password:(NSString *)password error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/decryptFromStream:toStream:password:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

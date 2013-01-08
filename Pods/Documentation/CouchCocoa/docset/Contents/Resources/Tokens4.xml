@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchDatabase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchDatabase</TokenIdentifier>
+			<Abstract type="html">A CouchDB database; contains CouchDocuments.
+    The CouchServer is the factory object for CouchDatabases. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchDatabase/databaseWithURL:</TokenIdentifier>
+			<Abstract type="html">A convenience to instantiate a CouchDatabase directly from a URL, without having to first instantiate a CouchServer.
+    Unlike CouchServer&apos;s -databaseNamed: method, if you call this twice with the same URL you will get two distinct CouchDatabase objects (with two distinct CouchServers as parents.) </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>+ (CouchDatabase *)databaseWithURL:(NSURL *)databaseURL</Declaration>
+			
+			
+			<Anchor>//api/name/databaseWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchDatabase/databaseNamed:onServerWithURL:</TokenIdentifier>
+			<Abstract type="html">A convenience to instantiate a CouchDatabase directly from a name and a server URL, without having to first instantiate a CouchServer.
+    Unlike CouchServer&apos;s -databaseNamed: method, if you call this twice with the same URL/name you will get two distinct CouchDatabase objects (with two distinct CouchServers as parents.) </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>+ (CouchDatabase *)databaseNamed:(NSString *)databaseName onServerWithURL:(NSURL *)serverURL</Declaration>
+			
+			
+			<Anchor>//api/name/databaseNamed:onServerWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/setServer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchServer *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDatabase/server</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchServer *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/setDocumentPathMap:</TokenIdentifier>
+			<Abstract type="html">Allows retrieving documents from the CouchDatabase using a different path from the documentID. This is useful for
+    accessing a document using a Couch rewrite. The result of the CouchDocumentPathMap is the path relative to the database. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) CouchDocumentPathMap documentPathMap</Declaration>
+			
+			
+			<Anchor>//api/name/documentPathMap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDatabase/documentPathMap</TokenIdentifier>
+			<Abstract type="html">Allows retrieving documents from the CouchDatabase using a different path from the documentID. This is useful for
+    accessing a document using a Couch rewrite. The result of the CouchDocumentPathMap is the path relative to the database. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) CouchDocumentPathMap documentPathMap</Declaration>
+			
+			
+			<Anchor>//api/name/documentPathMap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/create</TokenIdentifier>
+			<Abstract type="html">Creates the database on the server.
+    Fails with an HTTP status 412 (Conflict) if a database with this name already exists. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)create</Declaration>
+			
+			
+			<Anchor>//api/name/create</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/ensureCreated:</TokenIdentifier>
+			<Abstract type="html">Creates the database on the server, if it doesn&apos;t already exist (Synchronous).
+    This calls create and waits for completion, but ignores HTTP status 412. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)ensureCreated:(NSError **)outError</Declaration>
+			
+			
+			<Anchor>//api/name/ensureCreated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/compact</TokenIdentifier>
+			<Abstract type="html">Compacts the database, freeing up disk space by deleting old revisions of documents.
+    This should be run periodically, especially after making a lot of changes.
+    Note: The REST operation completes as soon as the server starts compacting, but the actual compaction will run asynchronously and may take a while. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)compact</Declaration>
+			
+			
+			<Anchor>//api/name/compact</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/getDocumentCount</TokenIdentifier>
+			<Abstract type="html">Gets the current total number of documents. (Synchronous)</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)getDocumentCount</Declaration>
+			
+			
+			<Anchor>//api/name/getDocumentCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/documentWithID:</TokenIdentifier>
+			<Abstract type="html">Instantiates a CouchDocument object with the given ID.
+    Makes no server calls; a document with that ID doesn&apos;t even need to exist yet.
+    CouchDocuments are cached, so there will never be more than one instance (in this database)
+    at a time with the same documentID. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (CouchDocument *)documentWithID:(NSString *)docID</Declaration>
+			
+			
+			<Anchor>//api/name/documentWithID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/objectForKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html">Same as documentWithID:. Enables &quot;[]&quot; access in Xcode 4.4+</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectForKeyedSubscript:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/objectForKeyedSubscript:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/untitledDocument</TokenIdentifier>
+			<Abstract type="html">Creates a CouchDocument object with no current ID.
+    The first time you PUT to that document, it will be created on the server (via a POST). </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (CouchDocument *)untitledDocument</Declaration>
+			
+			
+			<Anchor>//api/name/untitledDocument</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/getAllDocuments</TokenIdentifier>
+			<Abstract type="html">Returns a query that will fetch all documents in the database.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (CouchQuery *)getAllDocuments</Declaration>
+			
+			
+			<Anchor>//api/name/getAllDocuments</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/getDocumentsWithIDs:</TokenIdentifier>
+			<Abstract type="html">Returns a query that will fetch the documents with the given IDs.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (CouchQuery *)getDocumentsWithIDs:(NSArray *)docIDs</Declaration>
+			
+			
+			<Anchor>//api/name/getDocumentsWithIDs:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/putChanges:toRevisions:</TokenIdentifier>
+			<Abstract type="html">Bulk-writes multiple documents in one HTTP call.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)putChanges:(NSArray *)properties toRevisions:(NSArray *)revisions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>properties</Name>
+					<Abstract type="html">An array specifying the new properties of each item in revisions. Each item must be an NSDictionary, or an NSNull object which means to delete the corresponding document.</Abstract>
+				</Parameter><Parameter>
+					<Name>revisions</Name>
+					<Abstract type="html">A parallel array to &apos;properties&apos;, containing each CouchRevision or CouchDocument to be updated. Can be nil, in which case the method acts as described in the docs for putChanges:. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/putChanges:toRevisions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/putChanges:</TokenIdentifier>
+			<Abstract type="html">Bulk-writes multiple documents in one HTTP call.
+    Each property dictionary with an &quot;id&quot; key will update the existing document with that ID, or create a new document with that ID. A dictionary without an &quot;id&quot; key will always create a new document with a server-assigned unique ID.
+    If a dictionary updates an existing document, it must also have an &quot;_rev&quot; key that contains the document&apos;s current revision ID.
+    The write is asynchronous, but after the returned operation finishes, its -resultObject will be an NSArray of CouchDocuments.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)putChanges:(NSArray *)properties</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>properties</Name>
+					<Abstract type="html">Array of NSDictionaries, each one the properties of a document. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/putChanges:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/deleteRevisions:</TokenIdentifier>
+			<Abstract type="html">Deletes the given revisions.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)deleteRevisions:(NSArray *)revisions</Declaration>
+			
+			
+			<Anchor>//api/name/deleteRevisions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/deleteDocuments:</TokenIdentifier>
+			<Abstract type="html">Deletes the given documents.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)deleteDocuments:(NSArray *)documents</Declaration>
+			
+			
+			<Anchor>//api/name/deleteDocuments:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/purgeDocuments:</TokenIdentifier>
+			<Abstract type="html">Purges the given documents from the database; this isn&apos;t deletion, more like forgetting entirely about them.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)purgeDocuments:(NSArray *)documents</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>documents</Name>
+					<Abstract type="html">Array of CouchDocument objects or document IDs (NSStrings). </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/purgeDocuments:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/clearDocumentCache</TokenIdentifier>
+			<Abstract type="html">Empties the cache of recently used CouchDocument objects.
+    API calls will now instantiate and return new instances. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (void)clearDocumentCache</Declaration>
+			
+			
+			<Anchor>//api/name/clearDocumentCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/slowQueryWithMap:reduce:language:</TokenIdentifier>
+			<Abstract type="html">Returns a query that runs custom map/reduce functions.
+    This is very slow compared to a precompiled view and should only be used for testing.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (CouchQuery *)slowQueryWithMap:(NSString *)map reduce:(NSString *)reduce language:(NSString *)language</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>map</Name>
+					<Abstract type="html">The map function source. Must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>reduce</Name>
+					<Abstract type="html">The reduce function source, or nil for none.</Abstract>
+				</Parameter><Parameter>
+					<Name>language</Name>
+					<Abstract type="html">The language of the functions, or nil for JavaScript. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/slowQueryWithMap:reduce:language:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/slowQueryWithMap:</TokenIdentifier>
+			<Abstract type="html">Convenience method that creates a custom query from a JavaScript map function.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (CouchQuery *)slowQueryWithMap:(NSString *)map</Declaration>
+			
+			
+			<Anchor>//api/name/slowQueryWithMap:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/designDocumentWithName:</TokenIdentifier>
+			<Abstract type="html">Instantiates a CouchDesignDocument object with the given ID.
+    Makes no server calls; a design document with that ID doesn&apos;t even need to exist yet.
+    CouchDesignDocuments are cached, so there will never be more than one instance (in this database) at a time with the same name. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (CouchDesignDocument *)designDocumentWithName:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/designDocumentWithName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/setTracksChanges:</TokenIdentifier>
+			<Abstract type="html">Controls whether document change-tracking is enabled.
+    It&apos;s off by default.
+    Only external changes are tracked, not ones made through this database object and its children. This is useful in handling synchronization, or multi-client access to the same database, or on application relaunch to detect changes made after it last quit.
+    Turning tracking on creates a persistent socket connection to the database, and will post potentially a lot of notifications, so don&apos;t turn it on unless you&apos;re actually going to use the notifications. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL tracksChanges</Declaration>
+			
+			
+			<Anchor>//api/name/tracksChanges</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDatabase/tracksChanges</TokenIdentifier>
+			<Abstract type="html">Controls whether document change-tracking is enabled.
+    It&apos;s off by default.
+    Only external changes are tracked, not ones made through this database object and its children. This is useful in handling synchronization, or multi-client access to the same database, or on application relaunch to detect changes made after it last quit.
+    Turning tracking on creates a persistent socket connection to the database, and will post potentially a lot of notifications, so don&apos;t turn it on unless you&apos;re actually going to use the notifications. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL tracksChanges</Declaration>
+			
+			
+			<Anchor>//api/name/tracksChanges</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/setLastSequenceNumber:</TokenIdentifier>
+			<Abstract type="html">The last change sequence number received from the database.
+    If this is not known yet, the current value will be fetched via a synchronous query.
+    You can save the current value on quit, and restore it on relaunch before enabling change tracking, to get notifications of all changes that have occurred in the meantime. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property NSUInteger lastSequenceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequenceNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDatabase/lastSequenceNumber</TokenIdentifier>
+			<Abstract type="html">The last change sequence number received from the database.
+    If this is not known yet, the current value will be fetched via a synchronous query.
+    You can save the current value on quit, and restore it on relaunch before enabling change tracking, to get notifications of all changes that have occurred in the meantime. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property NSUInteger lastSequenceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequenceNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/pullFromDatabaseAtURL:</TokenIdentifier>
+			<Abstract type="html">Triggers replication from a source database, to this database.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (CouchReplication *)pullFromDatabaseAtURL:(NSURL *)sourceURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceURL</Name>
+					<Abstract type="html">The URL of the database to replicate from.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CouchReplication object managing the replication. You have a chance to customize its properties (like .continuous and .filter) before it starts. </Abstract></ReturnValue>
+			<Anchor>//api/name/pullFromDatabaseAtURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/pushToDatabaseAtURL:</TokenIdentifier>
+			<Abstract type="html">Triggers replication from this database to a target database.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (CouchReplication *)pushToDatabaseAtURL:(NSURL *)targetURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>targetURL</Name>
+					<Abstract type="html">The URL of the database to replicate to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CouchReplication object managing the replication. You have a chance to customize its properties (like .continuous and .filter) before it starts.</Abstract></ReturnValue>
+			<Anchor>//api/name/pushToDatabaseAtURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/replicateWithURL:exclusively:</TokenIdentifier>
+			<Abstract type="html">Configures this database to replicate bidirectionally (sync to and from) a database at the given URL.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)replicateWithURL:(NSURL *)otherURL exclusively:(BOOL)exclusively</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>otherURL</Name>
+					<Abstract type="html">The URL of the other database, or nil to indicate no replication.</Abstract>
+				</Parameter><Parameter>
+					<Name>exclusively</Name>
+					<Abstract type="html">If YES, any existing replications to or from other URLs will be removed.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A two-element NSArray whose values are the CouchPersistentReplications from and to the other URL, respectively. Returns nil if no target URL was given, or on failure. </Abstract></ReturnValue>
+			<Anchor>//api/name/replicateWithURL:exclusively:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/replicationFromDatabaseAtURL:</TokenIdentifier>
+			<Abstract type="html">Creates a persistent replication from a database (a pull).
+    Returns an object representing this replication. If a replication from this URL already exists, the configuration is unchanged. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (CouchPersistentReplication *)replicationFromDatabaseAtURL:(NSURL *)sourceURL</Declaration>
+			
+			
+			<Anchor>//api/name/replicationFromDatabaseAtURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/replicationToDatabaseAtURL:</TokenIdentifier>
+			<Abstract type="html">Creates a persistent replication to a database (a push).
+    Returns an object representing this replication. If a replication from this URL already exists, the configuration is unchanged. </Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>- (CouchPersistentReplication *)replicationToDatabaseAtURL:(NSURL *)targetURL</Declaration>
+			
+			
+			<Anchor>//api/name/replicationToDatabaseAtURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/setReplications:</TokenIdentifier>
+			<Abstract type="html">All currently configured persistent replications involving this database, as CouchPersistentReplication objects.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *replications</Declaration>
+			
+			
+			<Anchor>//api/name/replications</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDatabase/replications</TokenIdentifier>
+			<Abstract type="html">All currently configured persistent replications involving this database, as CouchPersistentReplication objects.</Abstract>
+			<DeclaredIn>CouchDatabase.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *replications</Declaration>
+			
+			
+			<Anchor>//api/name/replications</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/setModelFactory:</TokenIdentifier>
+			<Abstract type="html">The CouchModel factory object to be used by this database.
+    Every database has its own instance by default, but you can set this property to use a different one -- either to use a custom subclass, or to share a factory among multiple databases, or both. </Abstract>
+			<DeclaredIn>CouchModelFactory.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) CouchModelFactory *modelFactory</Declaration>
+			
+			
+			<Anchor>//api/name/modelFactory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDatabase/modelFactory</TokenIdentifier>
+			<Abstract type="html">The CouchModel factory object to be used by this database.
+    Every database has its own instance by default, but you can set this property to use a different one -- either to use a custom subclass, or to share a factory among multiple databases, or both. </Abstract>
+			<DeclaredIn>CouchModelFactory.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) CouchModelFactory *modelFactory</Declaration>
+			
+			
+			<Anchor>//api/name/modelFactory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/documentAssignedID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)documentAssignedID:(CouchDocument *)document</Declaration>
+			
+			
+			<Anchor>//api/name/documentAssignedID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/beginDocumentOperation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)beginDocumentOperation:(CouchResource *)resource</Declaration>
+			
+			
+			<Anchor>//api/name/beginDocumentOperation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/endDocumentOperation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)endDocumentOperation:(CouchResource *)resource</Declaration>
+			
+			
+			<Anchor>//api/name/endDocumentOperation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/onChange:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)onChange:(OnDatabaseChangeBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/onChange:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/unretainDocumentCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)unretainDocumentCache</Declaration>
+			
+			
+			<Anchor>//api/name/unretainDocumentCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDatabase/changeTrackerReceivedChange:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)changeTrackerReceivedChange:(NSDictionary *)change</Declaration>
+			
+			
+			<Anchor>//api/name/changeTrackerReceivedChange:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDMultipartDownloader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDMultipartDownloader</TokenIdentifier>
+			<Abstract type="html">Downloads a remote CouchDB document in multipart format.
+    Attachments are added to the database, but the document body isn&apos;t. </Abstract>
+			<DeclaredIn>TDMultipartDownloader.h</DeclaredIn>
+			
+			<NodeRef refid="32"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartDownloader/initWithURL:database:requestHeaders:onCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDownloader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)url database:(TDDatabase *)database requestHeaders:(NSDictionary *)requestHeaders onCompletion:(TDRemoteRequestCompletionBlock)onCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:database:requestHeaders:onCompletion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartDownloader/setDocument:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDownloader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *document</Declaration>
+			
+			
+			<Anchor>//api/name/document</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultipartDownloader/document</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDownloader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *document</Declaration>
+			
+			
+			<Anchor>//api/name/document</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

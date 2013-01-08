@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>CouchCocoa 0.961beta6 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">CouchCocoa 0.961beta6 </a></h1>
+				<a id="developerHome" href="index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CouchCocoa 0.961beta6 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CouchCocoa 0.961beta6 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h2>CouchCocoa: An Objective-C API To TouchDB and Apache CouchDB™</h2>
+
+<p>CouchCocoa is a medium-level Objective-C API for working with <a href="[https://github.com/couchbaselabs/TouchDB-iOS](https://github.com/couchbaselabs/TouchDB-iOS)">TouchDB</a> and <a href="[http://couchdb.apache.org/](http://couchdb.apache.org/)">CouchDB</a> on iOS and Mac OS. By &ldquo;medium-level&rdquo; we mean:</p>
+
+<ul>
+<li>It doesn&rsquo;t require knowledge of the HTTP API, only of CouchDB&rsquo;s architecture. You won&rsquo;t have to remember special paths or URL query parameters.</li>
+<li>But it doesn&rsquo;t completely abstract away the fact that you&rsquo;re working with a database, the way CoreData does. You still work with CouchDB-style documents and queries, although there is a <a href="Classes/CouchModel.html">CouchModel</a> class that does some of the dirty work of mapping between documents and native objects.</li>
+</ul>
+
+
+<p>This API is not the only way to access CouchDB or TouchDB &mdash; if you prefer, you can go down to the metal and talk to the HTTP API yourself using NSURLConnection.</p>
+
+<h3>Kick The Tires!</h3>
+
+<ul>
+<li><a href="[https://github.com/couchbaselabs/CouchCocoa/wiki/Example-Snippets](https://github.com/couchbaselabs/CouchCocoa/wiki/Example-Snippets)">Peruse some simple code snippets!</a></li>
+<li><a href="[http://couchbaselabs.github.com/CouchCocoa/docs/](http://couchbaselabs.github.com/CouchCocoa/docs/)">Explore the API documentation!</a></li>
+</ul>
+
+
+<h3>Join Us</h3>
+
+<ul>
+<li>You can discuss this API or ask questions at the <a href="[https://groups.google.com/group/mobile-couchbase](https://groups.google.com/group/mobile-couchbase)">Couchbase Mobile Google Group</a>.</li>
+<li>You might also want to look at the <a href="[http://www.couchbase.org/issues/secure/IssueNavigator.jspa](http://www.couchbase.org/issues/secure/IssueNavigator.jspa)">issue tracker</a> to see known problems and feature requests.</li>
+</ul>
+
+
+<h2>Build Instructions</h2>
+
+<h3>Prerequisite</h3>
+
+<p>Xcode 4.3 or later, with the SDK for iOS 4.3 or later.</p>
+
+<h3>One-Time Repository Setup</h3>
+
+<p>If you cloned the CouchCocoa Git repository, aso opposed to downloading a precompiled framework, then you&rsquo;ll next need to initialize Git &ldquo;submodules&rdquo;. This will clone the dependency JSONKit into the &ldquo;vendor&rdquo; subfolder:</p>
+
+<pre><code>cd CouchCocoa
+git submodule init
+git submodule update
+</code></pre>
+
+<h3>Running The iOS Demo App</h3>
+
+<p>Our iOS demo, &ldquo;Grocery Sync&rdquo;, has <a href="https://github.com/couchbaselabs/iOS-Couchbase-Demo">its own GitHub repository</a>. Check it out and look at its README for instructions.</p>
+
+<h3>Running The Mac OS Demo Apps</h3>
+
+<p>There are two simple Mac demo apps included in the Demo/ subfolder. One lets you edit a simple list of names and email addresses, the other is a shopping list. (They actually share most of the same source code; all the differences are in their model classes and .xib files, thanks to the magic of Cocoa bindings.) To run them:</p>
+
+<ol>
+<li>Start a CouchDB server on localhost. (You can use a package manager like <a href="[http://mxcl.github.com/homebrew/](http://mxcl.github.com/homebrew/)">HomeBrew</a> to install CouchDB.)</li>
+<li>Open CouchCocoa.xcodeproj (in Xcode 4.2 or later)</li>
+<li>Select &ldquo;Demo-Addresses&rdquo; or &ldquo;Demo-Shopping&rdquo; from the scheme pop-up in the toolbar</li>
+<li>Press the Run button</li>
+</ol>
+
+
+<h3>Building The Framework</h3>
+
+<p>(You only need to do this if you checked out the CouchCocoa source code and want to build it yourself. If you downloaded a precompiled framework, just go onto the next section.)</p>
+
+<ol>
+<li>Open CouchCocoa.xcodeproj</li>
+<li>Select &ldquo;Mac Framework&rdquo; or &ldquo;iOS Framework&rdquo; from the scheme pop-up in the toolbar</li>
+<li>Product > Build</li>
+</ol>
+
+
+<p>If you want to run the unit tests, first make sure a CouchDB server is running on localhost, then choose Product > Test.</p>
+
+<p>The framework will be located at:</p>
+
+<ul>
+<li>Mac: build/CouchCocoa/Build/Products/Debug/CouchCocoa.framework</li>
+<li>iOS: build/CouchCocoa/Build/Products/Debug-universal/CouchCocoa.framework</li>
+</ul>
+
+
+<p>(The exact location of <code>build</code> itself will depend on your Xcode preferences. It may be a subdirectory of the project folder, or it may be located down in an Xcode &ldquo;DerivedData&rdquo; folder. One way to find the framework is to open up the <code>Products</code> group in the project navigator, right-click on the appropriate <code>CouchCocoa.framework</code>, and choose &ldquo;Show In Finder&rdquo;.)</p>
+
+<h2>Using The Framework In Your Apps</h2>
+
+<h3>Mac OS:</h3>
+
+<ol>
+<li>Build the Mac framework (see above).</li>
+<li>Copy CouchCocoa.framework somewhere, either into your project&rsquo;s folder or into a location shared between all your projects.</li>
+<li>Open your Xcode project.</li>
+<li>Drag the copied framework into the project window&rsquo;s file list.</li>
+<li>Add the framework to your target (if you weren&rsquo;t already prompted to in the previous step.)</li>
+<li>Edit your target and add a new Copy Files build phase.</li>
+<li>Set the build phase&rsquo;s destination to Frameworks, and drag CouchCocoa.framework into its list from the main project file list.</li>
+</ol>
+
+
+<h3>iOS:</h3>
+
+<ol>
+<li>Build the iOS framework (see above).</li>
+<li>Copy CouchCocoa.framework somewhere, either into your project&rsquo;s folder or into a location shared between all your projects.</li>
+<li>Open your Xcode project.</li>
+<li>Drag the copied framework into the project window&rsquo;s file list.</li>
+<li>Add the framework to your target (if you weren&rsquo;t already prompted to in the previous step.)</li>
+</ol>
+
+
+<p>You&rsquo;ll probably want to run a local database server on your iOS device, since it&rsquo;ll allow your app to work offline (and improves performance.) CouchCocoa.framework doesn&rsquo;t contain CouchDB itself, so you should also add the <a href="[http://www.couchbase.org/get/couchbase-mobile-for-ios/current](http://www.couchbase.org/get/couchbase-mobile-for-ios/current)">Couchbase Mobile</a> framework to your app. Using the two together is very simple: when the <a href="Classes/CouchbaseMobile.html">CouchbaseMobile</a> object calls your delegate method to tell you the server&rsquo;s up and running, just use the URL it gives you to instantiate a <a href="Classes/CouchServer.html">CouchServer</a> object.</p>
+
+<h2>License</h2>
+
+<p>Released under the <a href="[http://www.apache.org/licenses/LICENSE-2.0.html](http://www.apache.org/licenses/LICENSE-2.0.html)">Apache license, version 2.0</a>.</p>
+
+<p>Author: <a href="https://github.com/snej/">Jens Alfke</a></p>
+
+<p>With contributions from: <a href="https://github.com/jchris/">J Chris Anderson</a>, <a href="https://github.com/dlvenable">David Venable</a>, <a href="https://github.com/alexmcarthur">Alex McArthur</a>, <a href="https://github.com/jmah">Jonathon Mah</a>, <a href="https://github.com/pimetrai">Pierre Metrailler</a>, <a href="https://github.com/sas71">Sven A. Schmidt</a>, <a href="https://github.com/kaalita">Katrin Apel</a>.</p>
+
+<p>Copyright 2012, Couchbase, Inc.</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/CouchAttachment.html">CouchAttachment</a></li>
+							
+							<li><a href="Classes/CouchChangeTracker.html">CouchChangeTracker</a></li>
+							
+							<li><a href="Classes/CouchConnectionChangeTracker.html">CouchConnectionChangeTracker</a></li>
+							
+							<li><a href="Classes/CouchDatabase.html">CouchDatabase</a></li>
+							
+							<li><a href="Classes/CouchDesignDocument.html">CouchDesignDocument</a></li>
+							
+							<li><a href="Classes/CouchDocument.html">CouchDocument</a></li>
+							
+							<li><a href="Classes/CouchDynamicObject.html">CouchDynamicObject</a></li>
+							
+							<li><a href="Classes/CouchEmbeddedServer.html">CouchEmbeddedServer</a></li>
+							
+							<li><a href="Classes/CouchFunctionQuery.html">CouchFunctionQuery</a></li>
+							
+							<li><a href="Classes/CouchLiveQuery.html">CouchLiveQuery</a></li>
+							
+							<li><a href="Classes/CouchModel.html">CouchModel</a></li>
+							
+							<li><a href="Classes/CouchModelFactory.html">CouchModelFactory</a></li>
+							
+							<li><a href="Classes/CouchPersistentReplication.html">CouchPersistentReplication</a></li>
+							
+							<li><a href="Classes/CouchQuery.html">CouchQuery</a></li>
+							
+							<li><a href="Classes/CouchQueryEnumerator.html">CouchQueryEnumerator</a></li>
+							
+							<li><a href="Classes/CouchQueryRow.html">CouchQueryRow</a></li>
+							
+							<li><a href="Classes/CouchReplication.html">CouchReplication</a></li>
+							
+							<li><a href="Classes/CouchResource.html">CouchResource</a></li>
+							
+							<li><a href="Classes/CouchRevision.html">CouchRevision</a></li>
+							
+							<li><a href="Classes/CouchServer.html">CouchServer</a></li>
+							
+							<li><a href="Classes/CouchSocketChangeTracker.html">CouchSocketChangeTracker</a></li>
+							
+							<li><a href="Classes/CouchTouchDBDatabase.html">CouchTouchDBDatabase</a></li>
+							
+							<li><a href="Classes/CouchTouchDBServer.html">CouchTouchDBServer</a></li>
+							
+							<li><a href="Classes/CouchUITableSource.html">CouchUITableSource</a></li>
+							
+							<li><a href="Classes/CouchbaseCallbacks.html">CouchbaseCallbacks</a></li>
+							
+							<li><a href="Classes/CouchbaseMobile.html">CouchbaseMobile</a></li>
+							
+							<li><a href="Classes/RESTBase64.html">RESTBase64</a></li>
+							
+							<li><a href="Classes/RESTBody.html">RESTBody</a></li>
+							
+							<li><a href="Classes/RESTCache.html">RESTCache</a></li>
+							
+							<li><a href="Classes/RESTMutableBody.html">RESTMutableBody</a></li>
+							
+							<li><a href="Classes/RESTOperation.html">RESTOperation</a></li>
+							
+							<li><a href="Classes/RESTResource.html">RESTResource</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/CouchChangeTrackerClient.html">CouchChangeTrackerClient</a></li>
+							
+							<li><a href="Protocols/CouchDocumentModel.html">CouchDocumentModel</a></li>
+							
+							<li><a href="Protocols/CouchUITableDelegate.html">CouchUITableDelegate</a></li>
+							
+							<li><a href="Protocols/CouchbaseDelegate.html">CouchbaseDelegate</a></li>
+							
+							<li><a href="Protocols/CouchbaseValidationContext.html">CouchbaseValidationContext</a></li>
+							
+							<li><a href="Protocols/RESTResourceDelegate.html">RESTResourceDelegate</a></li>
+							
+						</ul>
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSArray+RESTExtensions.html">NSArray(RESTExtensions)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

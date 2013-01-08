@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDJSON.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDJSON</TokenIdentifier>
+			<Abstract type="html">Identical to the corresponding NSJSON option flags.</Abstract>
+			<DeclaredIn>TDJSON.h</DeclaredIn>
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDJSON/dataWithJSONObject:options:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDJSON.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)dataWithJSONObject:(id)obj options:(TDJSONWritingOptions)opt error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/dataWithJSONObject:options:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDJSON/JSONObjectWithData:options:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDJSON.h</DeclaredIn>			
+			
+			<Declaration>+ (id)JSONObjectWithData:(NSData *)data options:(TDJSONReadingOptions)opt error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/JSONObjectWithData:options:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDJSON/stringWithJSONObject:options:error:</TokenIdentifier>
+			<Abstract type="html">Same as -dataWithJSONObject... but returns an NSString.</Abstract>
+			<DeclaredIn>TDJSON.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)stringWithJSONObject:(id)obj options:(TDJSONWritingOptions)opt error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/stringWithJSONObject:options:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDJSON/appendDictionary:toJSONDictionaryData:</TokenIdentifier>
+			<Abstract type="html">Given valid JSON data representing a dictionary, inserts the contents of the given NSDictionary into it and returns the resulting JSON data.
+    This does not parse or regenerate the JSON, so it&apos;s quite fast.
+    But it will generate invalid JSON if the input JSON begins or ends with whitespace, or if the dictionary contains any keys that are already in the original JSON. </Abstract>
+			<DeclaredIn>TDJSON.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)appendDictionary:(NSDictionary *)dict toJSONDictionaryData:(NSData *)json</Declaration>
+			
+			
+			<Anchor>//api/name/appendDictionary:toJSONDictionaryData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

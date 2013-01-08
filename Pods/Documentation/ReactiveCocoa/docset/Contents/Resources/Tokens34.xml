@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSArray+RACExtensions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSArray(RACExtensions)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSArray+RACExtensions.h</DeclaredIn>
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(RACExtensions)/rac_select:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSArray+RACExtensions.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)rac_select:(id ( ^ ) ( id object ))block</Declaration>
+			
+			
+			<Anchor>//api/name/rac_select:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(RACExtensions)/rac_where:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSArray+RACExtensions.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)rac_where:(BOOL ( ^ ) ( id object ))block</Declaration>
+			
+			
+			<Anchor>//api/name/rac_where:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(RACExtensions)/rac_any:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSArray+RACExtensions.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)rac_any:(BOOL ( ^ ) ( id object ))block</Declaration>
+			
+			
+			<Anchor>//api/name/rac_any:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

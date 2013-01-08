@@ -1,0 +1,1234 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>HTTPServer Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CocoaHTTPServer 2.2.1 </a></h1>
+				<a id="developerHome" href="../index.html">Robbie Hanson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">HTTPServer Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/TXTRecordDictionary">&nbsp;&nbsp;&nbsp;&nbsp;- TXTRecordDictionary</option>
+	
+	<option value="//api/name/addWebSocket:">&nbsp;&nbsp;&nbsp;&nbsp;- addWebSocket:</option>
+	
+	<option value="//api/name/connectionClass">&nbsp;&nbsp;&nbsp;&nbsp;- connectionClass</option>
+	
+	<option value="//api/name/documentRoot">&nbsp;&nbsp;&nbsp;&nbsp;- documentRoot</option>
+	
+	<option value="//api/name/domain">&nbsp;&nbsp;&nbsp;&nbsp;- domain</option>
+	
+	<option value="//api/name/interface">&nbsp;&nbsp;&nbsp;&nbsp;- interface</option>
+	
+	<option value="//api/name/isRunning">&nbsp;&nbsp;&nbsp;&nbsp;- isRunning</option>
+	
+	<option value="//api/name/listeningPort">&nbsp;&nbsp;&nbsp;&nbsp;- listeningPort</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;- name</option>
+	
+	<option value="//api/name/numberOfHTTPConnections">&nbsp;&nbsp;&nbsp;&nbsp;- numberOfHTTPConnections</option>
+	
+	<option value="//api/name/numberOfWebSocketConnections">&nbsp;&nbsp;&nbsp;&nbsp;- numberOfWebSocketConnections</option>
+	
+	<option value="//api/name/port">&nbsp;&nbsp;&nbsp;&nbsp;- port</option>
+	
+	<option value="//api/name/publishedName">&nbsp;&nbsp;&nbsp;&nbsp;- publishedName</option>
+	
+	<option value="//api/name/republishBonjour">&nbsp;&nbsp;&nbsp;&nbsp;- republishBonjour</option>
+	
+	<option value="//api/name/setConnectionClass:">&nbsp;&nbsp;&nbsp;&nbsp;- setConnectionClass:</option>
+	
+	<option value="//api/name/setDocumentRoot:">&nbsp;&nbsp;&nbsp;&nbsp;- setDocumentRoot:</option>
+	
+	<option value="//api/name/setDomain:">&nbsp;&nbsp;&nbsp;&nbsp;- setDomain:</option>
+	
+	<option value="//api/name/setInterface:">&nbsp;&nbsp;&nbsp;&nbsp;- setInterface:</option>
+	
+	<option value="//api/name/setName:">&nbsp;&nbsp;&nbsp;&nbsp;- setName:</option>
+	
+	<option value="//api/name/setPort:">&nbsp;&nbsp;&nbsp;&nbsp;- setPort:</option>
+	
+	<option value="//api/name/setTXTRecordDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- setTXTRecordDictionary:</option>
+	
+	<option value="//api/name/setType:">&nbsp;&nbsp;&nbsp;&nbsp;- setType:</option>
+	
+	<option value="//api/name/start:">&nbsp;&nbsp;&nbsp;&nbsp;- start:</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	<option value="//api/name/stop:">&nbsp;&nbsp;&nbsp;&nbsp;- stop:</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;- type</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/TXTRecordDictionary">TXTRecordDictionary</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addWebSocket:">addWebSocket:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionClass">connectionClass</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/documentRoot">documentRoot</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/domain">domain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interface">interface</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isRunning">isRunning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listeningPort">listeningPort</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfHTTPConnections">numberOfHTTPConnections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfWebSocketConnections">numberOfWebSocketConnections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/port">port</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/publishedName">publishedName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/republishBonjour">republishBonjour</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setConnectionClass:">setConnectionClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDocumentRoot:">setDocumentRoot:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDomain:">setDomain:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setInterface:">setInterface:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setName:">setName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setPort:">setPort:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTXTRecordDictionary:">setTXTRecordDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setType:">setType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start:">start:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop:">stop:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="HTTPServer Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">HTTPServer Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">HTTPServer.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/documentRoot">&ndash;&nbsp;documentRoot</a></code>
+		<span class="tooltip"><p>Specifies the document root to serve files from.
+For example, if you set this to &ldquo;/Users/&lt;your_user<a href="#//api/name/name">name</a>/Sites&rdquo;,
+then it will serve files out of the local Sites directory (including subdirectories).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDocumentRoot:">&ndash;&nbsp;setDocumentRoot:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionClass">&ndash;&nbsp;connectionClass</a></code>
+		<span class="tooltip"><p>The connection class is the class used to handle incoming HTTP connections.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setConnectionClass:">&ndash;&nbsp;setConnectionClass:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interface">&ndash;&nbsp;interface</a></code>
+		<span class="tooltip"><p>Set what interface you&rsquo;d like the server to listen on.
+By default this is nil, which causes the server to listen on all available interfaces like en1, wifi etc.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setInterface:">&ndash;&nbsp;setInterface:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/port">&ndash;&nbsp;port</a></code>
+		<span class="tooltip"><p>The port number to run the HTTP server on.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listeningPort">&ndash;&nbsp;listeningPort</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setPort:">&ndash;&nbsp;setPort:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/domain">&ndash;&nbsp;domain</a></code>
+		<span class="tooltip"><p>Bonjour domain for publishing the service.
+The default value is &ldquo;local.&rdquo;.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDomain:">&ndash;&nbsp;setDomain:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&ndash;&nbsp;name</a></code>
+		<span class="tooltip"><p>Bonjour name for publishing the service.
+The default value is &ldquo;&rdquo;.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/publishedName">&ndash;&nbsp;publishedName</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setName:">&ndash;&nbsp;setName:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&ndash;&nbsp;type</a></code>
+		<span class="tooltip"><p>Bonjour type for publishing the service.
+The default value is nil.
+The service will not be published via bonjour unless the type is set.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setType:">&ndash;&nbsp;setType:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/republishBonjour">&ndash;&nbsp;republishBonjour</a></code>
+		<span class="tooltip"><p>Republishes the service via bonjour if the server is running.
+If the service was not previously published, this method will publish it (if the server is running).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/TXTRecordDictionary">&ndash;&nbsp;TXTRecordDictionary</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTXTRecordDictionary:">&ndash;&nbsp;setTXTRecordDictionary:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/start:">&ndash;&nbsp;start:</a></code>
+		<span class="tooltip"><p>Attempts to starts the server on the configured <a href="#//api/name/port">port</a>, <a href="#//api/name/interface">interface</a>, etc.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+		<span class="tooltip"><p>Stops the server, preventing it from accepting any new connections.
+You may specify whether or not you want to close the existing client connections.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop:">&ndash;&nbsp;stop:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isRunning">&ndash;&nbsp;isRunning</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addWebSocket:">&ndash;&nbsp;addWebSocket:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfHTTPConnections">&ndash;&nbsp;numberOfHTTPConnections</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfWebSocketConnections">&ndash;&nbsp;numberOfWebSocketConnections</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/TXTRecordDictionary" title="TXTRecordDictionary"></a>
+	<h3 class="subsubtitle method-title">TXTRecordDictionary</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)TXTRecordDictionary</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addWebSocket:" title="addWebSocket:"></a>
+	<h3 class="subsubtitle method-title">addWebSocket:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addWebSocket:(WebSocket *)<em>ws</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionClass" title="connectionClass"></a>
+	<h3 class="subsubtitle method-title">connectionClass</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The connection class is the class used to handle incoming HTTP connections.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (Class)connectionClass</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The connection class is the class used to handle incoming HTTP connections.</p>
+
+<p>The default value is [HTTPConnection class].
+You can override HTTPConnection, and then set this to [MyHTTPConnection class].</p>
+
+<p>If you change the connectionClass while the server is running,
+the change will affect future incoming http connections.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/documentRoot" title="documentRoot"></a>
+	<h3 class="subsubtitle method-title">documentRoot</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies the document root to serve files from.
+For example, if you set this to &ldquo;/Users/&lt;your_user<a href="#//api/name/name">name</a>/Sites&rdquo;,
+then it will serve files out of the local Sites directory (including subdirectories).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)documentRoot</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifies the document root to serve files from.
+For example, if you set this to &ldquo;/Users/&lt;your_user<a href="#//api/name/name">name</a>/Sites&rdquo;,
+then it will serve files out of the local Sites directory (including subdirectories).</p>
+
+<p>The default value is nil.
+The default server configuration will not serve any files until this is set.</p>
+
+<p>If you change the documentRoot while the server is running,
+the change will affect future incoming http connections.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/domain" title="domain"></a>
+	<h3 class="subsubtitle method-title">domain</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Bonjour domain for publishing the service.
+The default value is &ldquo;local.&rdquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)domain</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Bonjour domain for publishing the service.
+The default value is &ldquo;local.&rdquo;.</p>
+
+<p>Note: Bonjour publishing requires you set a <a href="#//api/name/type">type</a>.</p>
+
+<p>If you change the domain property after the bonjour service has already been published (server already started),
+you&rsquo;ll need to invoke the <a href="#//api/name/republishBonjour">republishBonjour</a> method to update the broadcasted bonjour service.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interface" title="interface"></a>
+	<h3 class="subsubtitle method-title">interface</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set what interface you&rsquo;d like the server to listen on.
+By default this is nil, which causes the server to listen on all available interfaces like en1, wifi etc.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)interface</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set what interface you&rsquo;d like the server to listen on.
+By default this is nil, which causes the server to listen on all available interfaces like en1, wifi etc.</p>
+
+<p>The interface may be specified by <a href="#//api/name/name">name</a> (e.g. &ldquo;en1&rdquo; or &ldquo;lo0&rdquo;) or by IP address (e.g. &ldquo;192.168.4.34&rdquo;).
+You may also use the special strings &ldquo;localhost&rdquo; or &ldquo;loopback&rdquo; to specify that
+the socket only accept connections from the local machine.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isRunning" title="isRunning"></a>
+	<h3 class="subsubtitle method-title">isRunning</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isRunning</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listeningPort" title="listeningPort"></a>
+	<h3 class="subsubtitle method-title">listeningPort</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (UInt16)listeningPort</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Bonjour name for publishing the service.
+The default value is &ldquo;&rdquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)name</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Bonjour name for publishing the service.
+The default value is &ldquo;&rdquo;.</p>
+
+<p>If using an empty string (&ldquo;&rdquo;) for the service name when registering,
+the system will automatically use the &ldquo;Computer Name&rdquo;.
+Using an empty string will also handle name conflicts
+by automatically appending a digit to the end of the name.</p>
+
+<p>Note: Bonjour publishing requires you set a <a href="#//api/name/type">type</a>.</p>
+
+<p>If you change the name after the bonjour service has already been published (server already started),
+you&rsquo;ll need to invoke the <a href="#//api/name/republishBonjour">republishBonjour</a> method to update the broadcasted bonjour service.</p>
+
+<p>The <a href="#//api/name/publishedName">publishedName</a> method will always return the actual name that was published via the bonjour service.
+If the service is not running this method returns nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfHTTPConnections" title="numberOfHTTPConnections"></a>
+	<h3 class="subsubtitle method-title">numberOfHTTPConnections</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)numberOfHTTPConnections</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfWebSocketConnections" title="numberOfWebSocketConnections"></a>
+	<h3 class="subsubtitle method-title">numberOfWebSocketConnections</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)numberOfWebSocketConnections</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/port" title="port"></a>
+	<h3 class="subsubtitle method-title">port</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The port number to run the HTTP server on.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UInt16)port</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The port number to run the HTTP server on.</p>
+
+<p>The default port number is zero, meaning the server will automatically use any available port.
+This is the recommended port value, as it avoids possible port conflicts with other applications.
+Technologies such as Bonjour can be used to allow other applications to automatically discover the port number.</p>
+
+<p>Note: As is common on most OS&rsquo;s, you need root privledges to bind to port numbers below 1024.</p>
+
+<p>You can change the port property while the server is running, but it won&rsquo;t affect the running server.
+To actually change the port the server is listening for connections on you&rsquo;ll need to restart the server.</p>
+
+<p>The <a href="#//api/name/listeningPort">listeningPort</a> method will always return the port number the running server is listening for connections on.
+If the server is not running this method returns 0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/publishedName" title="publishedName"></a>
+	<h3 class="subsubtitle method-title">publishedName</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)publishedName</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/republishBonjour" title="republishBonjour"></a>
+	<h3 class="subsubtitle method-title">republishBonjour</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Republishes the service via bonjour if the server is running.
+If the service was not previously published, this method will publish it (if the server is running).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)republishBonjour</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Republishes the service via bonjour if the server is running.
+If the service was not previously published, this method will publish it (if the server is running).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setConnectionClass:" title="setConnectionClass:"></a>
+	<h3 class="subsubtitle method-title">setConnectionClass:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setConnectionClass:(Class)<em>value</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDocumentRoot:" title="setDocumentRoot:"></a>
+	<h3 class="subsubtitle method-title">setDocumentRoot:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setDocumentRoot:(NSString *)<em>value</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDomain:" title="setDomain:"></a>
+	<h3 class="subsubtitle method-title">setDomain:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setDomain:(NSString *)<em>value</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setInterface:" title="setInterface:"></a>
+	<h3 class="subsubtitle method-title">setInterface:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setInterface:(NSString *)<em>value</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setName:" title="setName:"></a>
+	<h3 class="subsubtitle method-title">setName:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setName:(NSString *)<em>value</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setPort:" title="setPort:"></a>
+	<h3 class="subsubtitle method-title">setPort:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setPort:(UInt16)<em>value</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTXTRecordDictionary:" title="setTXTRecordDictionary:"></a>
+	<h3 class="subsubtitle method-title">setTXTRecordDictionary:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setTXTRecordDictionary:(NSDictionary *)<em>dict</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setType:" title="setType:"></a>
+	<h3 class="subsubtitle method-title">setType:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setType:(NSString *)<em>value</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/start:" title="start:"></a>
+	<h3 class="subsubtitle method-title">start:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Attempts to starts the server on the configured <a href="#//api/name/port">port</a>, <a href="#//api/name/interface">interface</a>, etc.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)start:(NSError **)<em>errPtr</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Attempts to starts the server on the configured port, interface, etc.</p>
+
+<p>If an error occurs, this method returns NO and sets the errPtr (if given).
+Otherwise returns YES on success.</p>
+
+<p>Some examples of errors that might occur:
+&ndash; You specified the server listen on a port which is already in use by another application.
+&ndash; You specified the server listen on a port number below 1024, which requires root priviledges.</p>
+
+<p>Code Example:</p>
+
+<p>NSError *err = nil;
+if (![httpServer start:&amp;err])
+{
+NSLog(@&ldquo;Error starting http server: %@&rdquo;, err);
+}</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops the server, preventing it from accepting any new connections.
+You may specify whether or not you want to close the existing client connections.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stops the server, preventing it from accepting any new connections.
+You may specify whether or not you want to close the existing client connections.</p>
+
+<p>The default stop method (with no arguments) will close any existing connections. (It invokes [self stop:NO])</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop:" title="stop:"></a>
+	<h3 class="subsubtitle method-title">stop:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)stop:(BOOL)<em>keepExistingConnections</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Bonjour type for publishing the service.
+The default value is nil.
+The service will not be published via bonjour unless the type is set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)type</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Bonjour type for publishing the service.
+The default value is nil.
+The service will not be published via bonjour unless the type is set.</p>
+
+<p>If you wish to publish the service as a traditional HTTP server, you should set the type to be &ldquo;<em>http.</em>tcp.&rdquo;.</p>
+
+<p>If you change the type after the bonjour service has already been published (server already started),
+you&rsquo;ll need to invoke the <a href="#//api/name/republishBonjour">republishBonjour</a> method to update the broadcasted bonjour service.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">HTTPServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Robbie Hanson. All rights reserved. (Last updated: 2012-11-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

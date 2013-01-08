@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OADataFetcher.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OADataFetcher</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OADataFetcher.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OADataFetcher/fetchDataWithRequest:delegate:didFinishSelector:didFailSelector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OADataFetcher.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchDataWithRequest:(OAMutableURLRequest *)aRequest delegate:(id)aDelegate didFinishSelector:(SEL)finishSelector didFailSelector:(SEL)failSelector</Declaration>
+			
+			
+			<Anchor>//api/name/fetchDataWithRequest:delegate:didFinishSelector:didFailSelector:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

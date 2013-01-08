@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGScaledImage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGScaledImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGScaledImage.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGScaledImage/initWithURL:size:key:</TokenIdentifier>
+			<Abstract type="html">Scale the image at url to aspect-fit into size (specified in points). Note
+that the full-sized image will be cached at key and the scaled image cached
+using a generated key based on key + size.</Abstract>
+			<DeclaredIn>OGScaledImage.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)url size:(CGSize)size key:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:size:key:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGScaledImage/initWithURL:size:key:placeholderImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGScaledImage.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)url size:(CGSize)size key:(NSString *)key placeholderImage:(UIImage *)placeholderImage</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:size:key:placeholderImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGScaledImage/setScaledImage:</TokenIdentifier>
+			<Abstract type="html">The scaled image—The inherited image property is set to the full-size image at url.
+Clients should listen for KVO notifications on this property and image as
+appropriate.</Abstract>
+			<DeclaredIn>OGScaledImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *scaledImage</Declaration>
+			
+			
+			<Anchor>//api/name/scaledImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGScaledImage/scaledImage</TokenIdentifier>
+			<Abstract type="html">The scaled image—The inherited image property is set to the full-size image at url.
+Clients should listen for KVO notifications on this property and image as
+appropriate.</Abstract>
+			<DeclaredIn>OGScaledImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *scaledImage</Declaration>
+			
+			
+			<Anchor>//api/name/scaledImage</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

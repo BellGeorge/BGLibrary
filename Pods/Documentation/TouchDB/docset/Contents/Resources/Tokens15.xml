@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OATokenManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OATokenManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OATokenManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OATokenManager/initWithConsumer:token:oauthBase:realm:callback:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithConsumer:(OAConsumer *)aConsumer token:(OAToken *)aToken oauthBase:(const NSString *)base realm:(const NSString *)aRealm callback:(const NSString *)aCallback delegate:(NSObject&lt;OATokenManagerDelegate&gt; *)aDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithConsumer:token:oauthBase:realm:callback:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OATokenManager/authorizedToken:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)authorizedToken:(const NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/authorizedToken:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OATokenManager/fetchData:finished:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchData:(NSString *)aURL finished:(SEL)didFinish</Declaration>
+			
+			
+			<Anchor>//api/name/fetchData:finished:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OATokenManager/fetchData:method:parameters:finished:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchData:(NSString *)aURL method:(NSString *)aMethod parameters:(NSArray *)theParameters finished:(SEL)didFinish</Declaration>
+			
+			
+			<Anchor>//api/name/fetchData:method:parameters:finished:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OATokenManager/fetchData:method:parameters:files:finished:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchData:(NSString *)aURL method:(NSString *)aMethod parameters:(NSArray *)theParameters files:(NSDictionary *)theFiles finished:(SEL)didFinish</Declaration>
+			
+			
+			<Anchor>//api/name/fetchData:method:parameters:files:finished:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OATokenManager/fetchData:method:parameters:files:finished:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchData:(NSString *)aURL method:(NSString *)aMethod parameters:(NSArray *)theParameters files:(NSDictionary *)theFiles finished:(SEL)didFinish delegate:(NSObject *)aDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/fetchData:method:parameters:files:finished:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OATokenManager/call:failedWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)call:(OACall *)call failedWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/call:failedWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OATokenManager/call:failedWithProblem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)call:(OACall *)call failedWithProblem:(OAProblem *)problem</Declaration>
+			
+			
+			<Anchor>//api/name/call:failedWithProblem:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

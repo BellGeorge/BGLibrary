@@ -1,0 +1,5 @@
+// Get the shared configuration
+#include "./BGLibraryShared.xcconfig"
+
+// Hardass Mode, dont ship apps with warnings
+//GCC_TREAT_WARNINGS_AS_ERRORS = YES

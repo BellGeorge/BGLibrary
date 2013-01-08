@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSURL+MYUtilities.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSURL(MYUtilities)</TokenIdentifier>
+			<Abstract type="html">Shorthand for creating an NSURL.</Abstract>
+			<DeclaredIn>MYURLUtils.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(MYUtilities)/setMy_effectivePort:</TokenIdentifier>
+			<Abstract type="html">The port number explicitly or implicitly specified by this URL.</Abstract>
+			<DeclaredIn>MYURLUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) UInt16 my_effectivePort</Declaration>
+			
+			
+			<Anchor>//api/name/my_effectivePort</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSURL(MYUtilities)/my_effectivePort</TokenIdentifier>
+			<Abstract type="html">The port number explicitly or implicitly specified by this URL.</Abstract>
+			<DeclaredIn>MYURLUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) UInt16 my_effectivePort</Declaration>
+			
+			
+			<Anchor>//api/name/my_effectivePort</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(MYUtilities)/setMy_isHTTPS:</TokenIdentifier>
+			<Abstract type="html">YES if the scheme is &apos;https:&apos;.</Abstract>
+			<DeclaredIn>MYURLUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL my_isHTTPS</Declaration>
+			
+			
+			<Anchor>//api/name/my_isHTTPS</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSURL(MYUtilities)/my_isHTTPS</TokenIdentifier>
+			<Abstract type="html">YES if the scheme is &apos;https:&apos;.</Abstract>
+			<DeclaredIn>MYURLUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL my_isHTTPS</Declaration>
+			
+			
+			<Anchor>//api/name/my_isHTTPS</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(MYUtilities)/setMy_pathAndQuery:</TokenIdentifier>
+			<Abstract type="html">The path and everything after it. This is what appears on the first line of an HTTP request.</Abstract>
+			<DeclaredIn>MYURLUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *my_pathAndQuery</Declaration>
+			
+			
+			<Anchor>//api/name/my_pathAndQuery</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSURL(MYUtilities)/my_pathAndQuery</TokenIdentifier>
+			<Abstract type="html">The path and everything after it. This is what appears on the first line of an HTTP request.</Abstract>
+			<DeclaredIn>MYURLUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *my_pathAndQuery</Declaration>
+			
+			
+			<Anchor>//api/name/my_pathAndQuery</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(MYUtilities)/my_protectionSpaceWithRealm:authenticationMethod:</TokenIdentifier>
+			<Abstract type="html">Returns an NSURLProtectionSpace initialized based on the attributes of this URL
+    (host, effective port, scheme) and the given realm and authentication method. </Abstract>
+			<DeclaredIn>MYURLUtils.h</DeclaredIn>			
+			
+			<Declaration>- (NSURLProtectionSpace *)my_protectionSpaceWithRealm:(NSString *)realm authenticationMethod:(NSString *)authenticationMethod</Declaration>
+			
+			
+			<Anchor>//api/name/my_protectionSpaceWithRealm:authenticationMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(MYUtilities)/my_credentialForRealm:authenticationMethod:</TokenIdentifier>
+			<Abstract type="html">Looks up a credential for this URL.
+    It will be looked up from the shared NSURLCredentialStorage (ie. the Keychain),
+    unless using a username and password hardcoded in the URL itself. </Abstract>
+			<DeclaredIn>MYURLUtils.h</DeclaredIn>			
+			
+			<Declaration>- (NSURLCredential *)my_credentialForRealm:(NSString *)realm authenticationMethod:(NSString *)authenticationMethod</Declaration>
+			
+			
+			<Anchor>//api/name/my_credentialForRealm:authenticationMethod:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

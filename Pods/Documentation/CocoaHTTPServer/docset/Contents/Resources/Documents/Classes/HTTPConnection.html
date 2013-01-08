@@ -1,0 +1,1026 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>HTTPConnection Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CocoaHTTPServer 2.2.1 </a></h1>
+				<a id="developerHome" href="../index.html">Robbie Hanson</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">HTTPConnection Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/die">&nbsp;&nbsp;&nbsp;&nbsp;- die</option>
+	
+	<option value="//api/name/directoryIndexFileNames">&nbsp;&nbsp;&nbsp;&nbsp;- directoryIndexFileNames</option>
+	
+	<option value="//api/name/expectsRequestBodyFromMethod:atPath:">&nbsp;&nbsp;&nbsp;&nbsp;- expectsRequestBodyFromMethod:atPath:</option>
+	
+	<option value="//api/name/filePathForURI:">&nbsp;&nbsp;&nbsp;&nbsp;- filePathForURI:</option>
+	
+	<option value="//api/name/filePathForURI:allowDirectory:">&nbsp;&nbsp;&nbsp;&nbsp;- filePathForURI:allowDirectory:</option>
+	
+	<option value="//api/name/finishBody">&nbsp;&nbsp;&nbsp;&nbsp;- finishBody</option>
+	
+	<option value="//api/name/finishResponse">&nbsp;&nbsp;&nbsp;&nbsp;- finishResponse</option>
+	
+	<option value="//api/name/handleAuthenticationFailed">&nbsp;&nbsp;&nbsp;&nbsp;- handleAuthenticationFailed</option>
+	
+	<option value="//api/name/handleInvalidRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- handleInvalidRequest:</option>
+	
+	<option value="//api/name/handleResourceNotFound">&nbsp;&nbsp;&nbsp;&nbsp;- handleResourceNotFound</option>
+	
+	<option value="//api/name/handleUnknownMethod:">&nbsp;&nbsp;&nbsp;&nbsp;- handleUnknownMethod:</option>
+	
+	<option value="//api/name/handleVersionNotSupported:">&nbsp;&nbsp;&nbsp;&nbsp;- handleVersionNotSupported:</option>
+	
+	<option value="//api/name/httpResponseForMethod:URI:">&nbsp;&nbsp;&nbsp;&nbsp;- httpResponseForMethod:URI:</option>
+	
+	<option value="//api/name/initWithAsyncSocket:configuration:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithAsyncSocket:configuration:</option>
+	
+	<option value="//api/name/isPasswordProtected:">&nbsp;&nbsp;&nbsp;&nbsp;- isPasswordProtected:</option>
+	
+	<option value="//api/name/isSecureServer">&nbsp;&nbsp;&nbsp;&nbsp;- isSecureServer</option>
+	
+	<option value="//api/name/parseGetParams">&nbsp;&nbsp;&nbsp;&nbsp;- parseGetParams</option>
+	
+	<option value="//api/name/parseParams:">&nbsp;&nbsp;&nbsp;&nbsp;- parseParams:</option>
+	
+	<option value="//api/name/passwordForUser:">&nbsp;&nbsp;&nbsp;&nbsp;- passwordForUser:</option>
+	
+	<option value="//api/name/prepareForBodyWithSize:">&nbsp;&nbsp;&nbsp;&nbsp;- prepareForBodyWithSize:</option>
+	
+	<option value="//api/name/preprocessErrorResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- preprocessErrorResponse:</option>
+	
+	<option value="//api/name/preprocessResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- preprocessResponse:</option>
+	
+	<option value="//api/name/processBodyData:">&nbsp;&nbsp;&nbsp;&nbsp;- processBodyData:</option>
+	
+	<option value="//api/name/realm">&nbsp;&nbsp;&nbsp;&nbsp;- realm</option>
+	
+	<option value="//api/name/requestURI">&nbsp;&nbsp;&nbsp;&nbsp;- requestURI</option>
+	
+	<option value="//api/name/responseDidAbort:">&nbsp;&nbsp;&nbsp;&nbsp;- responseDidAbort:</option>
+	
+	<option value="//api/name/responseHasAvailableData:">&nbsp;&nbsp;&nbsp;&nbsp;- responseHasAvailableData:</option>
+	
+	<option value="//api/name/shouldDie">&nbsp;&nbsp;&nbsp;&nbsp;- shouldDie</option>
+	
+	<option value="//api/name/sslIdentityAndCertificates">&nbsp;&nbsp;&nbsp;&nbsp;- sslIdentityAndCertificates</option>
+	
+	<option value="//api/name/start">&nbsp;&nbsp;&nbsp;&nbsp;- start</option>
+	
+	<option value="//api/name/startConnection">&nbsp;&nbsp;&nbsp;&nbsp;- startConnection</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	<option value="//api/name/supportsMethod:atPath:">&nbsp;&nbsp;&nbsp;&nbsp;- supportsMethod:atPath:</option>
+	
+	<option value="//api/name/useDigestAccessAuthentication">&nbsp;&nbsp;&nbsp;&nbsp;- useDigestAccessAuthentication</option>
+	
+	<option value="//api/name/webSocketForURI:">&nbsp;&nbsp;&nbsp;&nbsp;- webSocketForURI:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_AsynchronousHTTPResponse Methods">AsynchronousHTTPResponse Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/die">die</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/directoryIndexFileNames">directoryIndexFileNames</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/expectsRequestBodyFromMethod:atPath:">expectsRequestBodyFromMethod:atPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/filePathForURI:">filePathForURI:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/filePathForURI:allowDirectory:">filePathForURI:allowDirectory:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/finishBody">finishBody</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/finishResponse">finishResponse</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleAuthenticationFailed">handleAuthenticationFailed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleInvalidRequest:">handleInvalidRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleResourceNotFound">handleResourceNotFound</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleUnknownMethod:">handleUnknownMethod:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleVersionNotSupported:">handleVersionNotSupported:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/httpResponseForMethod:URI:">httpResponseForMethod:URI:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithAsyncSocket:configuration:">initWithAsyncSocket:configuration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isPasswordProtected:">isPasswordProtected:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isSecureServer">isSecureServer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseGetParams">parseGetParams</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseParams:">parseParams:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/passwordForUser:">passwordForUser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareForBodyWithSize:">prepareForBodyWithSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preprocessErrorResponse:">preprocessErrorResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/preprocessResponse:">preprocessResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/processBodyData:">processBodyData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/realm">realm</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestURI">requestURI</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseDidAbort:">responseDidAbort:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseHasAvailableData:">responseHasAvailableData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldDie">shouldDie</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sslIdentityAndCertificates">sslIdentityAndCertificates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start">start</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startConnection">startConnection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supportsMethod:atPath:">supportsMethod:atPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/useDigestAccessAuthentication">useDigestAccessAuthentication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/webSocketForURI:">webSocketForURI:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="HTTPConnection Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">HTTPConnection Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">HTTPConnection.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithAsyncSocket:configuration:">&ndash;&nbsp;initWithAsyncSocket:configuration:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startConnection">&ndash;&nbsp;startConnection</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/supportsMethod:atPath:">&ndash;&nbsp;supportsMethod:atPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/expectsRequestBodyFromMethod:atPath:">&ndash;&nbsp;expectsRequestBodyFromMethod:atPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isSecureServer">&ndash;&nbsp;isSecureServer</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sslIdentityAndCertificates">&ndash;&nbsp;sslIdentityAndCertificates</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isPasswordProtected:">&ndash;&nbsp;isPasswordProtected:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/useDigestAccessAuthentication">&ndash;&nbsp;useDigestAccessAuthentication</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/realm">&ndash;&nbsp;realm</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/passwordForUser:">&ndash;&nbsp;passwordForUser:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parseParams:">&ndash;&nbsp;parseParams:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parseGetParams">&ndash;&nbsp;parseGetParams</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestURI">&ndash;&nbsp;requestURI</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/directoryIndexFileNames">&ndash;&nbsp;directoryIndexFileNames</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/filePathForURI:">&ndash;&nbsp;filePathForURI:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/filePathForURI:allowDirectory:">&ndash;&nbsp;filePathForURI:allowDirectory:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/httpResponseForMethod:URI:">&ndash;&nbsp;httpResponseForMethod:URI:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/webSocketForURI:">&ndash;&nbsp;webSocketForURI:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareForBodyWithSize:">&ndash;&nbsp;prepareForBodyWithSize:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/processBodyData:">&ndash;&nbsp;processBodyData:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/finishBody">&ndash;&nbsp;finishBody</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleVersionNotSupported:">&ndash;&nbsp;handleVersionNotSupported:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleAuthenticationFailed">&ndash;&nbsp;handleAuthenticationFailed</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleResourceNotFound">&ndash;&nbsp;handleResourceNotFound</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleInvalidRequest:">&ndash;&nbsp;handleInvalidRequest:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleUnknownMethod:">&ndash;&nbsp;handleUnknownMethod:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preprocessResponse:">&ndash;&nbsp;preprocessResponse:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/preprocessErrorResponse:">&ndash;&nbsp;preprocessErrorResponse:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/finishResponse">&ndash;&nbsp;finishResponse</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldDie">&ndash;&nbsp;shouldDie</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/die">&ndash;&nbsp;die</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="AsynchronousHTTPResponse Methods" name="task_AsynchronousHTTPResponse Methods"></a>
+						<h3 class="subsubtitle task-title">AsynchronousHTTPResponse Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseHasAvailableData:">&ndash;&nbsp;responseHasAvailableData:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseDidAbort:">&ndash;&nbsp;responseDidAbort:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/die" title="die"></a>
+	<h3 class="subsubtitle method-title">die</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)die</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/directoryIndexFileNames" title="directoryIndexFileNames"></a>
+	<h3 class="subsubtitle method-title">directoryIndexFileNames</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)directoryIndexFileNames</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/expectsRequestBodyFromMethod:atPath:" title="expectsRequestBodyFromMethod:atPath:"></a>
+	<h3 class="subsubtitle method-title">expectsRequestBodyFromMethod:atPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)expectsRequestBodyFromMethod:(NSString *)<em>method</em> atPath:(NSString *)<em>path</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/filePathForURI:" title="filePathForURI:"></a>
+	<h3 class="subsubtitle method-title">filePathForURI:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)filePathForURI:(NSString *)<em>path</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/filePathForURI:allowDirectory:" title="filePathForURI:allowDirectory:"></a>
+	<h3 class="subsubtitle method-title">filePathForURI:allowDirectory:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)filePathForURI:(NSString *)<em>path</em> allowDirectory:(BOOL)<em>allowDirectory</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/finishBody" title="finishBody"></a>
+	<h3 class="subsubtitle method-title">finishBody</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)finishBody</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/finishResponse" title="finishResponse"></a>
+	<h3 class="subsubtitle method-title">finishResponse</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)finishResponse</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleAuthenticationFailed" title="handleAuthenticationFailed"></a>
+	<h3 class="subsubtitle method-title">handleAuthenticationFailed</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)handleAuthenticationFailed</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleInvalidRequest:" title="handleInvalidRequest:"></a>
+	<h3 class="subsubtitle method-title">handleInvalidRequest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)handleInvalidRequest:(NSData *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleResourceNotFound" title="handleResourceNotFound"></a>
+	<h3 class="subsubtitle method-title">handleResourceNotFound</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)handleResourceNotFound</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleUnknownMethod:" title="handleUnknownMethod:"></a>
+	<h3 class="subsubtitle method-title">handleUnknownMethod:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)handleUnknownMethod:(NSString *)<em>method</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleVersionNotSupported:" title="handleVersionNotSupported:"></a>
+	<h3 class="subsubtitle method-title">handleVersionNotSupported:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)handleVersionNotSupported:(NSString *)<em>version</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/httpResponseForMethod:URI:" title="httpResponseForMethod:URI:"></a>
+	<h3 class="subsubtitle method-title">httpResponseForMethod:URI:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSObject&lt;HTTPResponse&gt; *)httpResponseForMethod:(NSString *)<em>method</em> URI:(NSString *)<em>path</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithAsyncSocket:configuration:" title="initWithAsyncSocket:configuration:"></a>
+	<h3 class="subsubtitle method-title">initWithAsyncSocket:configuration:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithAsyncSocket:(GCDAsyncSocket *)<em>newSocket</em> configuration:(HTTPConfig *)<em>aConfig</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isPasswordProtected:" title="isPasswordProtected:"></a>
+	<h3 class="subsubtitle method-title">isPasswordProtected:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isPasswordProtected:(NSString *)<em>path</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isSecureServer" title="isSecureServer"></a>
+	<h3 class="subsubtitle method-title">isSecureServer</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isSecureServer</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parseGetParams" title="parseGetParams"></a>
+	<h3 class="subsubtitle method-title">parseGetParams</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)parseGetParams</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parseParams:" title="parseParams:"></a>
+	<h3 class="subsubtitle method-title">parseParams:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)parseParams:(NSString *)<em>query</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/passwordForUser:" title="passwordForUser:"></a>
+	<h3 class="subsubtitle method-title">passwordForUser:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)passwordForUser:(NSString *)<em>username</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareForBodyWithSize:" title="prepareForBodyWithSize:"></a>
+	<h3 class="subsubtitle method-title">prepareForBodyWithSize:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)prepareForBodyWithSize:(UInt64)<em>contentLength</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preprocessErrorResponse:" title="preprocessErrorResponse:"></a>
+	<h3 class="subsubtitle method-title">preprocessErrorResponse:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)preprocessErrorResponse:(HTTPMessage *)<em>response</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/preprocessResponse:" title="preprocessResponse:"></a>
+	<h3 class="subsubtitle method-title">preprocessResponse:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)preprocessResponse:(HTTPMessage *)<em>response</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/processBodyData:" title="processBodyData:"></a>
+	<h3 class="subsubtitle method-title">processBodyData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)processBodyData:(NSData *)<em>postDataChunk</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/realm" title="realm"></a>
+	<h3 class="subsubtitle method-title">realm</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)realm</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestURI" title="requestURI"></a>
+	<h3 class="subsubtitle method-title">requestURI</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)requestURI</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/responseDidAbort:" title="responseDidAbort:"></a>
+	<h3 class="subsubtitle method-title">responseDidAbort:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)responseDidAbort:(NSObject&lt;HTTPResponse&gt; *)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/responseHasAvailableData:" title="responseHasAvailableData:"></a>
+	<h3 class="subsubtitle method-title">responseHasAvailableData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)responseHasAvailableData:(NSObject&lt;HTTPResponse&gt; *)<em>sender</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldDie" title="shouldDie"></a>
+	<h3 class="subsubtitle method-title">shouldDie</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldDie</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sslIdentityAndCertificates" title="sslIdentityAndCertificates"></a>
+	<h3 class="subsubtitle method-title">sslIdentityAndCertificates</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)sslIdentityAndCertificates</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="subsubtitle method-title">start</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)start</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startConnection" title="startConnection"></a>
+	<h3 class="subsubtitle method-title">startConnection</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)startConnection</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/supportsMethod:atPath:" title="supportsMethod:atPath:"></a>
+	<h3 class="subsubtitle method-title">supportsMethod:atPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)supportsMethod:(NSString *)<em>method</em> atPath:(NSString *)<em>path</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/useDigestAccessAuthentication" title="useDigestAccessAuthentication"></a>
+	<h3 class="subsubtitle method-title">useDigestAccessAuthentication</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)useDigestAccessAuthentication</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/webSocketForURI:" title="webSocketForURI:"></a>
+	<h3 class="subsubtitle method-title">webSocketForURI:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (WebSocket *)webSocketForURI:(NSString *)<em>path</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Robbie Hanson. All rights reserved. (Last updated: 2012-11-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

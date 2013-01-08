@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CouchUITableDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CouchUITableDelegate</TokenIdentifier>
+			<Abstract type="html">Additional methods for the table view&apos;s delegate, that will be invoked by the CouchUITableSource.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>
+			
+			<NodeRef refid="36"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CouchUITableDelegate/couchTableSource:cellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Allows delegate to return its own custom cell, just like -tableView:cellForRowAtIndexPath:.
+    If this returns nil the table source will create its own cell, as if this method were not implemented. </Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>- (UITableViewCell *)couchTableSource:(CouchUITableSource *)source cellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/couchTableSource:cellForRowAtIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CouchUITableDelegate/couchTableSource:willUpdateFromQuery:</TokenIdentifier>
+			<Abstract type="html">Called after the query&apos;s results change, before the table view is reloaded.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)couchTableSource:(CouchUITableSource *)source willUpdateFromQuery:(CouchLiveQuery *)query</Declaration>
+			
+			
+			<Anchor>//api/name/couchTableSource:willUpdateFromQuery:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CouchUITableDelegate/couchTableSource:updateFromQuery:previousRows:</TokenIdentifier>
+			<Abstract type="html">Called after the query&apos;s results change to update the table view. If this method is not implemented by the delegate, reloadData is called on the table view.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)couchTableSource:(CouchUITableSource *)source updateFromQuery:(CouchLiveQuery *)query previousRows:(NSArray *)previousRows</Declaration>
+			
+			
+			<Anchor>//api/name/couchTableSource:updateFromQuery:previousRows:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CouchUITableDelegate/couchTableSource:willUseCell:forRow:</TokenIdentifier>
+			<Abstract type="html">Called from -tableView:cellForRowAtIndexPath: just before it returns, giving the delegate a chance to customize the new cell.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)couchTableSource:(CouchUITableSource *)source willUseCell:(UITableViewCell *)cell forRow:(CouchQueryRow *)row</Declaration>
+			
+			
+			<Anchor>//api/name/couchTableSource:willUseCell:forRow:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CouchUITableDelegate/couchTableSource:operationFailed:</TokenIdentifier>
+			<Abstract type="html">Called if a CouchDB operation invoked by the source (e.g. deleting a document) fails.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)couchTableSource:(CouchUITableSource *)source operationFailed:(RESTOperation *)op</Declaration>
+			
+			
+			<Anchor>//api/name/couchTableSource:operationFailed:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

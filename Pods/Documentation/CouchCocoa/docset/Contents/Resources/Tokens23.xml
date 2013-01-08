@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchTouchDBServer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchTouchDBServer</TokenIdentifier>
+			<Abstract type="html">A convenience class that glues TouchDB into CouchCocoa.
+    On creation, starts up an instance of TDServer and sets up TDURLProtocol to serve it.
+    The CouchServer URL is set to the root URL served by the protocol, so you can treat it just like a normal remote server instance. </Abstract>
+			<DeclaredIn>CouchTouchDBServer.h</DeclaredIn>
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchTouchDBServer/sharedInstance</TokenIdentifier>
+			<Abstract type="html">A shared per-process instance. Remember that CouchCocoa is not thread-safe so you can&apos;t
+use this shared instance among multiple threads.</Abstract>
+			<DeclaredIn>CouchTouchDBServer.h</DeclaredIn>			
+			
+			<Declaration>+ (CouchTouchDBServer *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchTouchDBServer/init</TokenIdentifier>
+			<Abstract type="html">Preferred initializer. Starts up an in-process server.</Abstract>
+			<DeclaredIn>CouchTouchDBServer.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchTouchDBServer/initWithServerPath:</TokenIdentifier>
+			<Abstract type="html">Starts up a server that stores its data at the given path.</Abstract>
+			<DeclaredIn>CouchTouchDBServer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithServerPath:(NSString *)serverPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serverPath</Name>
+					<Abstract type="html">The filesystem path to the server directory. If it doesn&apos;t already exist it will be created. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithServerPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchTouchDBServer/initWithServerPath:options:</TokenIdentifier>
+			<Abstract type="html">Starts up a server that stores its data at the given path.</Abstract>
+			<DeclaredIn>CouchTouchDBServer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithServerPath:(NSString *)serverPath options:(const struct TDDatabaseManagerOptions *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serverPath</Name>
+					<Abstract type="html">The filesystem path to the server directory. If it doesn&apos;t already exist it will be created.</Abstract>
+				</Parameter><Parameter>
+					<Name>options</Name>
+					<Abstract type="html">Option settings; can be used to open in read-only mode or to disable the replicator. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithServerPath:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchTouchDBServer/initWithURL:</TokenIdentifier>
+			<Abstract type="html">Inherited initializer, if you want to connect to a remote server for debugging purposes.</Abstract>
+			<DeclaredIn>CouchTouchDBServer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchTouchDBServer/close</TokenIdentifier>
+			<Abstract type="html">Shuts down the TouchDB server.</Abstract>
+			<DeclaredIn>CouchTouchDBServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchTouchDBServer/setError:</TokenIdentifier>
+			<Abstract type="html">If this is non-nil, the server failed to initialize.</Abstract>
+			<DeclaredIn>CouchTouchDBServer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchTouchDBServer/error</TokenIdentifier>
+			<Abstract type="html">If this is non-nil, the server failed to initialize.</Abstract>
+			<DeclaredIn>CouchTouchDBServer.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchTouchDBServer/tellTDServer:</TokenIdentifier>
+			<Abstract type="html">Invokes the given block on the TouchDB server thread, passing it a pointer to the TDServer.
+    You can use this to (carefully!) access the TDServer API.
+    Be aware that the block may not run immediately; it&apos;s queued and will be called immediately before the server handles the next REST call. </Abstract>
+			<DeclaredIn>CouchTouchDBServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)tellTDServer:(void ( ^ ) ( TDServer *))block</Declaration>
+			
+			
+			<Anchor>//api/name/tellTDServer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchTouchDBServer/tellTDDatabaseNamed:to:</TokenIdentifier>
+			<Abstract type="html">Invokes the given block on the TouchDB server thread, passing it a pointer to a TDDatabase.
+    You can use this to (carefully!) access the TDDatabase API.
+    Be aware that the block may not run immediately; it&apos;s queued and will be called immediately before the server handles the next REST call. </Abstract>
+			<DeclaredIn>CouchTouchDBServer.h</DeclaredIn>			
+			
+			<Declaration>- (void)tellTDDatabaseNamed:(NSString *)dbName to:(void ( ^ ) ( TDDatabase *))block</Declaration>
+			
+			
+			<Anchor>//api/name/tellTDDatabaseNamed:to:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

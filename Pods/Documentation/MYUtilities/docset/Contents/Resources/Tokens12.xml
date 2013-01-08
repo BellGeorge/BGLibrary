@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSInputStream+MYUtils.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSInputStream(MYUtils)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MYStreamUtils.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSInputStream(MYUtils)/my_readBytes:</TokenIdentifier>
+			<Abstract type="html">Reads from the stream and passes the read bytes/length to the supplied block.
+    Note: The data buffer passed to the block is only valid for the duration of the call.</Abstract>
+			<DeclaredIn>MYStreamUtils.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)my_readBytes:(void ( ^ ) ( const void *bytes , NSUInteger length ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">Called if the read succeeds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the read succeeds, NO if it fails. </Abstract></ReturnValue>
+			<Anchor>//api/name/my_readBytes:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSInputStream(MYUtils)/my_readData:</TokenIdentifier>
+			<Abstract type="html">Reads from the stream and passes the read data to the supplied block.
+    Note: The NSData object passed to the block is only valid for the duration of the call; it&apos;s created with -initWithBytesNoCopy so it has a direct pointer to a temporary data buffer. If you need the data after the block returns, make a copy of it.</Abstract>
+			<DeclaredIn>MYStreamUtils.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)my_readData:(void ( ^ ) ( NSData *data ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">Called if the read succeeds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the read succeeds, NO if it fails. </Abstract></ReturnValue>
+			<Anchor>//api/name/my_readData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

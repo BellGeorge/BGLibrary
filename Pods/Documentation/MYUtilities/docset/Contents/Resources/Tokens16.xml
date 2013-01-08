@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSSet+MYUtils.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSSet(MYUtils)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CollectionUtils.h</DeclaredIn>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSSet(MYUtils)/my_unionOfSet:andSet:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CollectionUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSSet *)my_unionOfSet:(NSSet *)set1 andSet:(NSSet *)set2</Declaration>
+			
+			
+			<Anchor>//api/name/my_unionOfSet:andSet:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSSet(MYUtils)/my_intersectionOfSet:andSet:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CollectionUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSSet *)my_intersectionOfSet:(NSSet *)set1 andSet:(NSSet *)set2</Declaration>
+			
+			
+			<Anchor>//api/name/my_intersectionOfSet:andSet:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSSet(MYUtils)/my_differenceOfSet:andSet:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CollectionUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (NSSet *)my_differenceOfSet:(NSSet *)set1 andSet:(NSSet *)set2</Declaration>
+			
+			
+			<Anchor>//api/name/my_differenceOfSet:andSet:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

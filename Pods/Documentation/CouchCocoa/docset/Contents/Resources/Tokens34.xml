@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CouchChangeTrackerClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CouchChangeTrackerClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CouchChangeTrackerClient/changeTrackerReceivedChange:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)changeTrackerReceivedChange:(NSDictionary *)change</Declaration>
+			
+			
+			<Anchor>//api/name/changeTrackerReceivedChange:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CouchChangeTrackerClient/authCredential</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (NSURLCredential *)authCredential</Declaration>
+			
+			
+			<Anchor>//api/name/authCredential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CouchChangeTrackerClient/changeTrackerStopped:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)changeTrackerStopped:(CouchChangeTracker *)tracker</Declaration>
+			
+			
+			<Anchor>//api/name/changeTrackerStopped:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

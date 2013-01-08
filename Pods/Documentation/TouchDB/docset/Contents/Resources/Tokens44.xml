@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDReplicatorManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDReplicatorManager</TokenIdentifier>
+			<Abstract type="html">Manages the _replicator database for persistent replications.
+    It doesn&apos;t really have an API; it works on its own by monitoring the &apos;_replicator&apos; database, and docs in it, for changes. Applications use the regular document APIs to manage replications.
+    A TDServer owns an instance of this class. </Abstract>
+			<DeclaredIn>TDReplicatorManager.h</DeclaredIn>
+			
+			<NodeRef refid="44"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicatorManager/initWithDatabaseManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicatorManager.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDatabaseManager:(TDDatabaseManager *)dbManager</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDatabaseManager:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicatorManager/start</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicatorManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicatorManager/stop</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDReplicatorManager.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDReplicatorManager/parseReplicatorProperties:toDatabase:remote:isPush:createTarget:headers:authorizer:</TokenIdentifier>
+			<Abstract type="html">Examines the JSON object describing a replication and determines the local database and remote URL, and some of the other parameters.</Abstract>
+			<DeclaredIn>TDReplicatorManager.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)parseReplicatorProperties:(NSDictionary *)body toDatabase:(TDDatabase **)outDatabase remote:(NSURL **)outRemote isPush:(BOOL *)outIsPush createTarget:(BOOL *)outCreateTarget headers:(NSDictionary **)outHeaders authorizer:(id&lt;TDAuthorizer&gt; *)outAuthorizer</Declaration>
+			
+			
+			<Anchor>//api/name/parseReplicatorProperties:toDatabase:remote:isPush:createTarget:headers:authorizer:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

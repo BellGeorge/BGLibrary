@@ -1,0 +1,662 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TDValidationContext Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TouchDB 1.0 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TDValidationContext Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/changedKeys">&nbsp;&nbsp;&nbsp;&nbsp;changedKeys</option>
+	
+	<option value="//api/name/currentRevision">&nbsp;&nbsp;&nbsp;&nbsp;currentRevision</option>
+	
+	<option value="//api/name/errorMessage">&nbsp;&nbsp;&nbsp;&nbsp;errorMessage</option>
+	
+	<option value="//api/name/errorType">&nbsp;&nbsp;&nbsp;&nbsp;errorType</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/allowChangesOnlyTo:">&nbsp;&nbsp;&nbsp;&nbsp;- allowChangesOnlyTo:</option>
+	
+	<option value="//api/name/disallowChangesTo:">&nbsp;&nbsp;&nbsp;&nbsp;- disallowChangesTo:</option>
+	
+	<option value="//api/name/enumerateChanges:">&nbsp;&nbsp;&nbsp;&nbsp;- enumerateChanges:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changedKeys">changedKeys</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentRevision">currentRevision</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorMessage">errorMessage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorType">errorType</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowChangesOnlyTo:">allowChangesOnlyTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disallowChangesTo:">disallowChangesTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumerateChanges:">enumerateChanges:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TDValidationContext Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TDValidationContext Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TDDatabase+Insertion.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Context passed into a TDValidationBlock.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentRevision">&nbsp;&nbsp;currentRevision</a></code>
+		<span class="tooltip"><p>The contents of the current revision of the document, or nil if this is a new document.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorType">&nbsp;&nbsp;errorType</a></code>
+		<span class="tooltip"><p>The type of HTTP status to report, if the validate block returns NO.</p>
+
+<pre><code>The default value is 403 ("Forbidden"). 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorMessage">&nbsp;&nbsp;errorMessage</a></code>
+		<span class="tooltip"><p>The error message to return in the HTTP response, if the validate block returns NO.</p>
+
+<pre><code>The default value is "invalid document". 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changedKeys">&nbsp;&nbsp;changedKeys</a></code>
+		<span class="tooltip"><p>Returns an array of all the keys whose values are different between the current and new revisions.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allowChangesOnlyTo:">&ndash;&nbsp;allowChangesOnlyTo:</a></code>
+		<span class="tooltip"><p>Returns YES if only the keys given in the &lsquo;allowedKeys&rsquo; array have changed; else returns NO and sets a default error message naming the offending key.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disallowChangesTo:">&ndash;&nbsp;disallowChangesTo:</a></code>
+		<span class="tooltip"><p>Returns YES if none of the keys given in the &lsquo;disallowedKeys&rsquo; array have changed; else returns NO and sets a default error message naming the offending key.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enumerateChanges:">&ndash;&nbsp;enumerateChanges:</a></code>
+		<span class="tooltip"><p>Calls the &lsquo;enumerator&rsquo; block for each key that&rsquo;s changed, passing both the old and new values.</p>
+
+<pre><code>If the block returns NO, the enumeration stops and sets a default error message, and the method returns NO; else the method returns YES. 
+</code></pre></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/changedKeys" title="changedKeys"></a>
+	<h3 class="subsubtitle method-title">changedKeys</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an array of all the keys whose values are different between the current and new revisions.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *changedKeys</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an array of all the keys whose values are different between the current and new revisions.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentRevision" title="currentRevision"></a>
+	<h3 class="subsubtitle method-title">currentRevision</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The contents of the current revision of the document, or nil if this is a new document.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) TDRevision *currentRevision</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The contents of the current revision of the document, or nil if this is a new document.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorMessage" title="errorMessage"></a>
+	<h3 class="subsubtitle method-title">errorMessage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The error message to return in the HTTP response, if the validate block returns NO.</p>
+
+<pre><code>The default value is "invalid document". 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *errorMessage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The error message to return in the HTTP response, if the validate block returns NO.</p>
+
+<pre><code>The default value is "invalid document". 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorType" title="errorType"></a>
+	<h3 class="subsubtitle method-title">errorType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The type of HTTP status to report, if the validate block returns NO.</p>
+
+<pre><code>The default value is 403 ("Forbidden"). 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property TDStatus errorType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The type of HTTP status to report, if the validate block returns NO.</p>
+
+<pre><code>The default value is 403 ("Forbidden"). 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/allowChangesOnlyTo:" title="allowChangesOnlyTo:"></a>
+	<h3 class="subsubtitle method-title">allowChangesOnlyTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if only the keys given in the &lsquo;allowedKeys&rsquo; array have changed; else returns NO and sets a default error message naming the offending key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)allowChangesOnlyTo:(NSArray *)<em>allowedKeys</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES if only the keys given in the &lsquo;allowedKeys&rsquo; array have changed; else returns NO and sets a default error message naming the offending key.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disallowChangesTo:" title="disallowChangesTo:"></a>
+	<h3 class="subsubtitle method-title">disallowChangesTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if none of the keys given in the &lsquo;disallowedKeys&rsquo; array have changed; else returns NO and sets a default error message naming the offending key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)disallowChangesTo:(NSArray *)<em>disallowedKeys</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns YES if none of the keys given in the &lsquo;disallowedKeys&rsquo; array have changed; else returns NO and sets a default error message naming the offending key.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enumerateChanges:" title="enumerateChanges:"></a>
+	<h3 class="subsubtitle method-title">enumerateChanges:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Calls the &lsquo;enumerator&rsquo; block for each key that&rsquo;s changed, passing both the old and new values.</p>
+
+<pre><code>If the block returns NO, the enumeration stops and sets a default error message, and the method returns NO; else the method returns YES. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)enumerateChanges:(TDChangeEnumeratorBlock)<em>enumerator</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Calls the &lsquo;enumerator&rsquo; block for each key that&rsquo;s changed, passing both the old and new values.</p>
+
+<pre><code>If the block returns NO, the enumeration stops and sets a default error message, and the method returns NO; else the method returns YES. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

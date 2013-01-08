@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+DDData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(DDData)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDData.h</DeclaredIn>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(DDData)/md5Digest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDData.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)md5Digest</Declaration>
+			
+			
+			<Anchor>//api/name/md5Digest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(DDData)/sha1Digest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDData.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)sha1Digest</Declaration>
+			
+			
+			<Anchor>//api/name/sha1Digest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(DDData)/hexStringValue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDData.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)hexStringValue</Declaration>
+			
+			
+			<Anchor>//api/name/hexStringValue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(DDData)/base64Encoded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDData.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)base64Encoded</Declaration>
+			
+			
+			<Anchor>//api/name/base64Encoded</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(DDData)/base64Decoded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDData.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)base64Decoded</Declaration>
+			
+			
+			<Anchor>//api/name/base64Decoded</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

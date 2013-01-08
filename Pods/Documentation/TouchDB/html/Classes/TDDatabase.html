@@ -1,0 +1,3125 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TDDatabase Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TouchDB 1.0 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TDDatabase Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/activeReplicators">&nbsp;&nbsp;&nbsp;&nbsp;activeReplicators</option>
+	
+	<option value="//api/name/allViews">&nbsp;&nbsp;&nbsp;&nbsp;allViews</option>
+	
+	<option value="//api/name/attachmentStore">&nbsp;&nbsp;&nbsp;&nbsp;attachmentStore</option>
+	
+	<option value="//api/name/documentCount">&nbsp;&nbsp;&nbsp;&nbsp;documentCount</option>
+	
+	<option value="//api/name/exists">&nbsp;&nbsp;&nbsp;&nbsp;exists</option>
+	
+	<option value="//api/name/fmdb">&nbsp;&nbsp;&nbsp;&nbsp;fmdb</option>
+	
+	<option value="//api/name/lastSequence">&nbsp;&nbsp;&nbsp;&nbsp;lastSequence</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	<option value="//api/name/path">&nbsp;&nbsp;&nbsp;&nbsp;path</option>
+	
+	<option value="//api/name/privateUUID">&nbsp;&nbsp;&nbsp;&nbsp;privateUUID</option>
+	
+	<option value="//api/name/publicUUID">&nbsp;&nbsp;&nbsp;&nbsp;publicUUID</option>
+	
+	<option value="//api/name/readOnly">&nbsp;&nbsp;&nbsp;&nbsp;readOnly</option>
+	
+	<option value="//api/name/totalDataSize">&nbsp;&nbsp;&nbsp;&nbsp;totalDataSize</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/createEmptyDBAtPath:">&nbsp;&nbsp;&nbsp;&nbsp;+ createEmptyDBAtPath:</option>
+	
+	<option value="//api/name/generateDocumentID">&nbsp;&nbsp;&nbsp;&nbsp;+ generateDocumentID</option>
+	
+	<option value="//api/name/isValidDocumentID:">&nbsp;&nbsp;&nbsp;&nbsp;+ isValidDocumentID:</option>
+	
+	<option value="//api/name/joinQuotedStrings:">&nbsp;&nbsp;&nbsp;&nbsp;+ joinQuotedStrings:</option>
+	
+	<option value="//api/name/parseCouchDBRevisionHistory:">&nbsp;&nbsp;&nbsp;&nbsp;+ parseCouchDBRevisionHistory:</option>
+	
+	<option value="//api/name/stubOutAttachmentsIn:beforeRevPos:attachmentsFollow:">&nbsp;&nbsp;&nbsp;&nbsp;+ stubOutAttachmentsIn:beforeRevPos:attachmentsFollow:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/activeReplicatorWithRemoteURL:push:">&nbsp;&nbsp;&nbsp;&nbsp;- activeReplicatorWithRemoteURL:push:</option>
+	
+	<option value="//api/name/attachmentWriter">&nbsp;&nbsp;&nbsp;&nbsp;- attachmentWriter</option>
+	
+	<option value="//api/name/attachmentWriterForAttachment:">&nbsp;&nbsp;&nbsp;&nbsp;- attachmentWriterForAttachment:</option>
+	
+	<option value="//api/name/attachmentsFromRevision:status:">&nbsp;&nbsp;&nbsp;&nbsp;- attachmentsFromRevision:status:</option>
+	
+	<option value="//api/name/beginTransaction">&nbsp;&nbsp;&nbsp;&nbsp;- beginTransaction</option>
+	
+	<option value="//api/name/changesSinceSequence:options:filter:params:">&nbsp;&nbsp;&nbsp;&nbsp;- changesSinceSequence:options:filter:params:</option>
+	
+	<option value="//api/name/close">&nbsp;&nbsp;&nbsp;&nbsp;- close</option>
+	
+	<option value="//api/name/compact">&nbsp;&nbsp;&nbsp;&nbsp;- compact</option>
+	
+	<option value="//api/name/copyAttachmentNamed:fromSequence:toSequence:">&nbsp;&nbsp;&nbsp;&nbsp;- copyAttachmentNamed:fromSequence:toSequence:</option>
+	
+	<option value="//api/name/defineFilter:asBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- defineFilter:asBlock:</option>
+	
+	<option value="//api/name/defineValidation:asBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- defineValidation:asBlock:</option>
+	
+	<option value="//api/name/deleteDatabase:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteDatabase:</option>
+	
+	<option value="//api/name/deleteLocalDocumentWithID:revisionID:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteLocalDocumentWithID:revisionID:</option>
+	
+	<option value="//api/name/deleteViewNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteViewNamed:</option>
+	
+	<option value="//api/name/documentPropertiesFromJSON:docID:revID:deleted:sequence:options:">&nbsp;&nbsp;&nbsp;&nbsp;- documentPropertiesFromJSON:docID:revID:deleted:sequence:options:</option>
+	
+	<option value="//api/name/encodeDocumentJSON:">&nbsp;&nbsp;&nbsp;&nbsp;- encodeDocumentJSON:</option>
+	
+	<option value="//api/name/endTransaction:">&nbsp;&nbsp;&nbsp;&nbsp;- endTransaction:</option>
+	
+	<option value="//api/name/existingViewNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- existingViewNamed:</option>
+	
+	<option value="//api/name/existsDocumentWithID:revisionID:">&nbsp;&nbsp;&nbsp;&nbsp;- existsDocumentWithID:revisionID:</option>
+	
+	<option value="//api/name/fileForAttachmentDict:">&nbsp;&nbsp;&nbsp;&nbsp;- fileForAttachmentDict:</option>
+	
+	<option value="//api/name/filterNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- filterNamed:</option>
+	
+	<option value="//api/name/findCommonAncestorOf:withRevIDs:">&nbsp;&nbsp;&nbsp;&nbsp;- findCommonAncestorOf:withRevIDs:</option>
+	
+	<option value="//api/name/findMissingRevisions:">&nbsp;&nbsp;&nbsp;&nbsp;- findMissingRevisions:</option>
+	
+	<option value="//api/name/forceInsert:revisionHistory:source:">&nbsp;&nbsp;&nbsp;&nbsp;- forceInsert:revisionHistory:source:</option>
+	
+	<option value="//api/name/garbageCollectAttachments">&nbsp;&nbsp;&nbsp;&nbsp;- garbageCollectAttachments</option>
+	
+	<option value="//api/name/getAllDocs:">&nbsp;&nbsp;&nbsp;&nbsp;- getAllDocs:</option>
+	
+	<option value="//api/name/getAllRevisionsOfDocumentID:numericID:onlyCurrent:">&nbsp;&nbsp;&nbsp;&nbsp;- getAllRevisionsOfDocumentID:numericID:onlyCurrent:</option>
+	
+	<option value="//api/name/getAllRevisionsOfDocumentID:onlyCurrent:">&nbsp;&nbsp;&nbsp;&nbsp;- getAllRevisionsOfDocumentID:onlyCurrent:</option>
+	
+	<option value="//api/name/getAttachmentDictForSequence:options:">&nbsp;&nbsp;&nbsp;&nbsp;- getAttachmentDictForSequence:options:</option>
+	
+	<option value="//api/name/getAttachmentForSequence:named:type:encoding:status:">&nbsp;&nbsp;&nbsp;&nbsp;- getAttachmentForSequence:named:type:encoding:status:</option>
+	
+	<option value="//api/name/getAttachmentPathForSequence:named:type:encoding:status:">&nbsp;&nbsp;&nbsp;&nbsp;- getAttachmentPathForSequence:named:type:encoding:status:</option>
+	
+	<option value="//api/name/getDocNumericID:">&nbsp;&nbsp;&nbsp;&nbsp;- getDocNumericID:</option>
+	
+	<option value="//api/name/getDocsWithIDs:options:">&nbsp;&nbsp;&nbsp;&nbsp;- getDocsWithIDs:options:</option>
+	
+	<option value="//api/name/getDocumentWithID:revisionID:">&nbsp;&nbsp;&nbsp;&nbsp;- getDocumentWithID:revisionID:</option>
+	
+	<option value="//api/name/getDocumentWithID:revisionID:options:status:">&nbsp;&nbsp;&nbsp;&nbsp;- getDocumentWithID:revisionID:options:status:</option>
+	
+	<option value="//api/name/getLocalDocumentWithID:revisionID:">&nbsp;&nbsp;&nbsp;&nbsp;- getLocalDocumentWithID:revisionID:</option>
+	
+	<option value="//api/name/getPossibleAncestorRevisionIDs:limit:">&nbsp;&nbsp;&nbsp;&nbsp;- getPossibleAncestorRevisionIDs:limit:</option>
+	
+	<option value="//api/name/getRevisionHistory:">&nbsp;&nbsp;&nbsp;&nbsp;- getRevisionHistory:</option>
+	
+	<option value="//api/name/getRevisionHistoryDict:">&nbsp;&nbsp;&nbsp;&nbsp;- getRevisionHistoryDict:</option>
+	
+	<option value="//api/name/inTransaction:">&nbsp;&nbsp;&nbsp;&nbsp;- inTransaction:</option>
+	
+	<option value="//api/name/initWithPath:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithPath:</option>
+	
+	<option value="//api/name/inlineFollowingAttachmentsIn:error:">&nbsp;&nbsp;&nbsp;&nbsp;- inlineFollowingAttachmentsIn:error:</option>
+	
+	<option value="//api/name/insertAttachment:forSequence:">&nbsp;&nbsp;&nbsp;&nbsp;- insertAttachment:forSequence:</option>
+	
+	<option value="//api/name/lastSequenceWithCheckpointID:">&nbsp;&nbsp;&nbsp;&nbsp;- lastSequenceWithCheckpointID:</option>
+	
+	<option value="//api/name/loadRevisionBody:options:">&nbsp;&nbsp;&nbsp;&nbsp;- loadRevisionBody:options:</option>
+	
+	<option value="//api/name/multipartWriterForRevision:contentType:">&nbsp;&nbsp;&nbsp;&nbsp;- multipartWriterForRevision:contentType:</option>
+	
+	<option value="//api/name/open">&nbsp;&nbsp;&nbsp;&nbsp;- open</option>
+	
+	<option value="//api/name/processAttachments:forRevision:withParentSequence:">&nbsp;&nbsp;&nbsp;&nbsp;- processAttachments:forRevision:withParentSequence:</option>
+	
+	<option value="//api/name/purgeRevisions:result:">&nbsp;&nbsp;&nbsp;&nbsp;- purgeRevisions:result:</option>
+	
+	<option value="//api/name/putLocalRevision:prevRevisionID:status:">&nbsp;&nbsp;&nbsp;&nbsp;- putLocalRevision:prevRevisionID:status:</option>
+	
+	<option value="//api/name/putRevision:prevRevisionID:allowConflict:status:">&nbsp;&nbsp;&nbsp;&nbsp;- putRevision:prevRevisionID:allowConflict:status:</option>
+	
+	<option value="//api/name/rememberAttachmentWritersForDigests:">&nbsp;&nbsp;&nbsp;&nbsp;- rememberAttachmentWritersForDigests:</option>
+	
+	<option value="//api/name/replaceWithDatabaseFile:withAttachments:error:">&nbsp;&nbsp;&nbsp;&nbsp;- replaceWithDatabaseFile:withAttachments:error:</option>
+	
+	<option value="//api/name/replicatorWithRemoteURL:push:continuous:">&nbsp;&nbsp;&nbsp;&nbsp;- replicatorWithRemoteURL:push:continuous:</option>
+	
+	<option value="//api/name/setLastSequence:withCheckpointID:">&nbsp;&nbsp;&nbsp;&nbsp;- setLastSequence:withCheckpointID:</option>
+	
+	<option value="//api/name/stopAndForgetReplicator:">&nbsp;&nbsp;&nbsp;&nbsp;- stopAndForgetReplicator:</option>
+	
+	<option value="//api/name/storeBlob:creatingKey:">&nbsp;&nbsp;&nbsp;&nbsp;- storeBlob:creatingKey:</option>
+	
+	<option value="//api/name/updateAttachment:body:type:encoding:ofDocID:revID:status:">&nbsp;&nbsp;&nbsp;&nbsp;- updateAttachment:body:type:encoding:ofDocID:revID:status:</option>
+	
+	<option value="//api/name/validateRevision:previousRevision:">&nbsp;&nbsp;&nbsp;&nbsp;- validateRevision:previousRevision:</option>
+	
+	<option value="//api/name/validationNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- validationNamed:</option>
+	
+	<option value="//api/name/viewNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- viewNamed:</option>
+	
+	<option value="//api/name/winningRevIDOfDocNumericID:isDeleted:">&nbsp;&nbsp;&nbsp;&nbsp;- winningRevIDOfDocNumericID:isDeleted:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Replication_Internal Methods">Replication_Internal Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Attachments Methods">Attachments Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Attachments_Internal Methods">Attachments_Internal Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Replication Methods">Replication Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Insertion Methods">Insertion Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Insertion_Internal Methods">Insertion_Internal Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_LocalDocs Methods">LocalDocs Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activeReplicators">activeReplicators</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allViews">allViews</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachmentStore">attachmentStore</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/documentCount">documentCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/exists">exists</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fmdb">fmdb</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastSequence">lastSequence</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/path">path</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/privateUUID">privateUUID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/publicUUID">publicUUID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readOnly">readOnly</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/totalDataSize">totalDataSize</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createEmptyDBAtPath:">createEmptyDBAtPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generateDocumentID">generateDocumentID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isValidDocumentID:">isValidDocumentID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joinQuotedStrings:">joinQuotedStrings:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseCouchDBRevisionHistory:">parseCouchDBRevisionHistory:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stubOutAttachmentsIn:beforeRevPos:attachmentsFollow:">stubOutAttachmentsIn:beforeRevPos:attachmentsFollow:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activeReplicatorWithRemoteURL:push:">activeReplicatorWithRemoteURL:push:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachmentWriter">attachmentWriter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachmentWriterForAttachment:">attachmentWriterForAttachment:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachmentsFromRevision:status:">attachmentsFromRevision:status:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginTransaction">beginTransaction</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changesSinceSequence:options:filter:params:">changesSinceSequence:options:filter:params:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/close">close</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/compact">compact</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copyAttachmentNamed:fromSequence:toSequence:">copyAttachmentNamed:fromSequence:toSequence:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defineFilter:asBlock:">defineFilter:asBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defineValidation:asBlock:">defineValidation:asBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteDatabase:">deleteDatabase:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteLocalDocumentWithID:revisionID:">deleteLocalDocumentWithID:revisionID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteViewNamed:">deleteViewNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/documentPropertiesFromJSON:docID:revID:deleted:sequence:options:">documentPropertiesFromJSON:docID:revID:deleted:sequence:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/encodeDocumentJSON:">encodeDocumentJSON:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endTransaction:">endTransaction:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/existingViewNamed:">existingViewNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/existsDocumentWithID:revisionID:">existsDocumentWithID:revisionID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fileForAttachmentDict:">fileForAttachmentDict:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/filterNamed:">filterNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findCommonAncestorOf:withRevIDs:">findCommonAncestorOf:withRevIDs:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findMissingRevisions:">findMissingRevisions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/forceInsert:revisionHistory:source:">forceInsert:revisionHistory:source:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/garbageCollectAttachments">garbageCollectAttachments</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllDocs:">getAllDocs:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllRevisionsOfDocumentID:numericID:onlyCurrent:">getAllRevisionsOfDocumentID:numericID:onlyCurrent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllRevisionsOfDocumentID:onlyCurrent:">getAllRevisionsOfDocumentID:onlyCurrent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAttachmentDictForSequence:options:">getAttachmentDictForSequence:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAttachmentForSequence:named:type:encoding:status:">getAttachmentForSequence:named:type:encoding:status:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAttachmentPathForSequence:named:type:encoding:status:">getAttachmentPathForSequence:named:type:encoding:status:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDocNumericID:">getDocNumericID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDocsWithIDs:options:">getDocsWithIDs:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDocumentWithID:revisionID:">getDocumentWithID:revisionID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDocumentWithID:revisionID:options:status:">getDocumentWithID:revisionID:options:status:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getLocalDocumentWithID:revisionID:">getLocalDocumentWithID:revisionID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getPossibleAncestorRevisionIDs:limit:">getPossibleAncestorRevisionIDs:limit:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRevisionHistory:">getRevisionHistory:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRevisionHistoryDict:">getRevisionHistoryDict:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inTransaction:">inTransaction:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithPath:">initWithPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inlineFollowingAttachmentsIn:error:">inlineFollowingAttachmentsIn:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertAttachment:forSequence:">insertAttachment:forSequence:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastSequenceWithCheckpointID:">lastSequenceWithCheckpointID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadRevisionBody:options:">loadRevisionBody:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multipartWriterForRevision:contentType:">multipartWriterForRevision:contentType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/open">open</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/processAttachments:forRevision:withParentSequence:">processAttachments:forRevision:withParentSequence:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/purgeRevisions:result:">purgeRevisions:result:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putLocalRevision:prevRevisionID:status:">putLocalRevision:prevRevisionID:status:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putRevision:prevRevisionID:allowConflict:status:">putRevision:prevRevisionID:allowConflict:status:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rememberAttachmentWritersForDigests:">rememberAttachmentWritersForDigests:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replaceWithDatabaseFile:withAttachments:error:">replaceWithDatabaseFile:withAttachments:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replicatorWithRemoteURL:push:continuous:">replicatorWithRemoteURL:push:continuous:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLastSequence:withCheckpointID:">setLastSequence:withCheckpointID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopAndForgetReplicator:">stopAndForgetReplicator:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/storeBlob:creatingKey:">storeBlob:creatingKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateAttachment:body:type:encoding:ofDocID:revID:status:">updateAttachment:body:type:encoding:ofDocID:revID:status:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/validateRevision:previousRevision:">validateRevision:previousRevision:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/validationNamed:">validationNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewNamed:">viewNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/winningRevIDOfDocNumericID:isDeleted:">winningRevIDOfDocNumericID:isDeleted:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TDDatabase Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TDDatabase Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TDDatabase.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A TouchDB database.
+Types of encoding/compression of stored attachments.
+Validation block, used to approve revisions being added to the database.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithPath:">&ndash;&nbsp;initWithPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/open">&ndash;&nbsp;open</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/close">&ndash;&nbsp;close</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteDatabase:">&ndash;&nbsp;deleteDatabase:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createEmptyDBAtPath:">+&nbsp;createEmptyDBAtPath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readOnly">&nbsp;&nbsp;readOnly</a></code>
+		<span class="tooltip"><p>Should the database file be opened in read-only mode?</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replaceWithDatabaseFile:withAttachments:error:">&ndash;&nbsp;replaceWithDatabaseFile:withAttachments:error:</a></code>
+		<span class="tooltip"><p>Replaces the database with a copy of another database.</p>
+
+<pre><code>This is primarily used to install a canned database on first launch of an app, in which case you should first check .exists to avoid replacing the database if it exists already. The canned database would have been copied into your app bundle at build time.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/path">&nbsp;&nbsp;path</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/exists">&nbsp;&nbsp;exists</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/totalDataSize">&nbsp;&nbsp;totalDataSize</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/documentCount">&nbsp;&nbsp;documentCount</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastSequence">&nbsp;&nbsp;lastSequence</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/privateUUID">&nbsp;&nbsp;privateUUID</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/publicUUID">&nbsp;&nbsp;publicUUID</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beginTransaction">&ndash;&nbsp;beginTransaction</a></code>
+		<span class="tooltip"><p>Begins a database transaction. Transactions can nest. Every -beginTransaction must be balanced by a later <a href="#//api/name/endTransaction:">endTransaction:</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endTransaction:">&ndash;&nbsp;endTransaction:</a></code>
+		<span class="tooltip"><p>Commits or aborts (rolls back) a transaction.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inTransaction:">&ndash;&nbsp;inTransaction:</a></code>
+		<span class="tooltip"><p>Executes the block within a database transaction.</p>
+
+<pre><code>If the block returns a non-OK status, the transaction is aborted/rolled back.
+Any exception raised by the block will be caught and treated as kTDStatusException. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDocumentWithID:revisionID:options:status:">&ndash;&nbsp;getDocumentWithID:revisionID:options:status:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDocumentWithID:revisionID:">&ndash;&nbsp;getDocumentWithID:revisionID:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/existsDocumentWithID:revisionID:">&ndash;&nbsp;existsDocumentWithID:revisionID:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loadRevisionBody:options:">&ndash;&nbsp;loadRevisionBody:options:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRevisionHistory:">&ndash;&nbsp;getRevisionHistory:</a></code>
+		<span class="tooltip"><p>Returns an array of TDRevs in reverse chronological order,</p>
+
+<pre><code>starting with the given revision. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRevisionHistoryDict:">&ndash;&nbsp;getRevisionHistoryDict:</a></code>
+		<span class="tooltip"><p>Returns the revision history as a _revisions dictionary, as returned by the REST API&rsquo;s ?revs=true option.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAllRevisionsOfDocumentID:onlyCurrent:">&ndash;&nbsp;getAllRevisionsOfDocumentID:onlyCurrent:</a></code>
+		<span class="tooltip"><p>Returns all the known revisions (or all current/conflicting revisions) of a document.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getPossibleAncestorRevisionIDs:limit:">&ndash;&nbsp;getPossibleAncestorRevisionIDs:limit:</a></code>
+		<span class="tooltip"><p>Returns IDs of local revisions of the same document, that have a lower generation number.</p>
+
+<pre><code>Does not return revisions whose bodies have been compacted away, or deletion markers. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findCommonAncestorOf:withRevIDs:">&ndash;&nbsp;findCommonAncestorOf:withRevIDs:</a></code>
+		<span class="tooltip"><p>Returns the most recent member of revIDs that appears in rev&rsquo;s ancestry.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAllDocs:">&ndash;&nbsp;getAllDocs:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDocsWithIDs:options:">&ndash;&nbsp;getDocsWithIDs:options:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewNamed:">&ndash;&nbsp;viewNamed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/existingViewNamed:">&ndash;&nbsp;existingViewNamed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allViews">&nbsp;&nbsp;allViews</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changesSinceSequence:options:filter:params:">&ndash;&nbsp;changesSinceSequence:options:filter:params:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defineFilter:asBlock:">&ndash;&nbsp;defineFilter:asBlock:</a></code>
+		<span class="tooltip"><p>Define or clear a named filter function. These aren&rsquo;t used directly by TDDatabase, but they&rsquo;re looked up by <a href="../Classes/TDRouter.html">TDRouter</a> when a _changes request has a ?filter parameter.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/filterNamed:">&ndash;&nbsp;filterNamed:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fmdb">&nbsp;&nbsp;fmdb</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachmentStore">&nbsp;&nbsp;attachmentStore</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDocNumericID:">&ndash;&nbsp;getDocNumericID:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAllRevisionsOfDocumentID:numericID:onlyCurrent:">&ndash;&nbsp;getAllRevisionsOfDocumentID:numericID:onlyCurrent:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteViewNamed:">&ndash;&nbsp;deleteViewNamed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/documentPropertiesFromJSON:docID:revID:deleted:sequence:options:">&ndash;&nbsp;documentPropertiesFromJSON:docID:revID:deleted:sequence:options:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/winningRevIDOfDocNumericID:isDeleted:">&ndash;&nbsp;winningRevIDOfDocNumericID:isDeleted:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Replication_Internal Methods" name="task_Replication_Internal Methods"></a>
+						<h3 class="subsubtitle task-title">Replication_Internal Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopAndForgetReplicator:">&ndash;&nbsp;stopAndForgetReplicator:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastSequenceWithCheckpointID:">&ndash;&nbsp;lastSequenceWithCheckpointID:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLastSequence:withCheckpointID:">&ndash;&nbsp;setLastSequence:withCheckpointID:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/joinQuotedStrings:">+&nbsp;joinQuotedStrings:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Attachments Methods" name="task_Attachments Methods"></a>
+						<h3 class="subsubtitle task-title">Attachments Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachmentWriter">&ndash;&nbsp;attachmentWriter</a></code>
+		<span class="tooltip"><p>Creates a <a href="../Classes/TDBlobStoreWriter.html">TDBlobStoreWriter</a> object that can be used to stream an attachment to the store.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachmentsFromRevision:status:">&ndash;&nbsp;attachmentsFromRevision:status:</a></code>
+		<span class="tooltip"><p>Creates <a href="../Classes/TDAttachment.html">TDAttachment</a> objects from the revision&rsquo;s &lsquo;_attachments&rsquo; property.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/processAttachments:forRevision:withParentSequence:">&ndash;&nbsp;processAttachments:forRevision:withParentSequence:</a></code>
+		<span class="tooltip"><p>Given a newly-added revision, adds the necessary attachment rows to the database and stores inline attachments into the blob store.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAttachmentDictForSequence:options:">&ndash;&nbsp;getAttachmentDictForSequence:options:</a></code>
+		<span class="tooltip"><p>Constructs an &ldquo;_attachments&rdquo; dictionary for a revision, to be inserted in its JSON body.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stubOutAttachmentsIn:beforeRevPos:attachmentsFollow:">+&nbsp;stubOutAttachmentsIn:beforeRevPos:attachmentsFollow:</a></code>
+		<span class="tooltip"><p>Modifies a TDRevision&rsquo;s <em>attachments dictionary by changing all attachments with revpos &lt; minRevPos into stubs; and if &lsquo;attachmentsFollow&rsquo; is true, the remaining attachments will be modified to </em>not_ be stubs but include a &ldquo;follows&rdquo; key instead of a body.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multipartWriterForRevision:contentType:">&ndash;&nbsp;multipartWriterForRevision:contentType:</a></code>
+		<span class="tooltip"><p>Generates a MIME multipart writer for a revision, with separate body parts for each attachment whose &ldquo;follows&rdquo; property is set.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAttachmentForSequence:named:type:encoding:status:">&ndash;&nbsp;getAttachmentForSequence:named:type:encoding:status:</a></code>
+		<span class="tooltip"><p>Returns the content and metadata of an attachment.</p>
+
+<pre><code>If you pass NULL for the 'outEncoding' parameter, it signifies that you don't care about encodings and just want the 'real' data, so it'll be decoded for you. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAttachmentPathForSequence:named:type:encoding:status:">&ndash;&nbsp;getAttachmentPathForSequence:named:type:encoding:status:</a></code>
+		<span class="tooltip"><p>Returns the location of an attachment&rsquo;s file in the blob store.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fileForAttachmentDict:">&ndash;&nbsp;fileForAttachmentDict:</a></code>
+		<span class="tooltip"><p>Uses the &ldquo;digest&rdquo; field of the attachment dict to look up the attachment in the store and return a file URL to it. DO NOT MODIFY THIS FILE!</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/garbageCollectAttachments">&ndash;&nbsp;garbageCollectAttachments</a></code>
+		<span class="tooltip"><p>Deletes obsolete attachments from the database and blob store.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateAttachment:body:type:encoding:ofDocID:revID:status:">&ndash;&nbsp;updateAttachment:body:type:encoding:ofDocID:revID:status:</a></code>
+		<span class="tooltip"><p>Updates or deletes an attachment, creating a new document revision in the process.</p>
+
+<pre><code>Used by the PUT / DELETE methods called on attachment URLs. 
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Attachments_Internal Methods" name="task_Attachments_Internal Methods"></a>
+						<h3 class="subsubtitle task-title">Attachments_Internal Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rememberAttachmentWritersForDigests:">&ndash;&nbsp;rememberAttachmentWritersForDigests:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachmentWriterForAttachment:">&ndash;&nbsp;attachmentWriterForAttachment:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/storeBlob:creatingKey:">&ndash;&nbsp;storeBlob:creatingKey:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertAttachment:forSequence:">&ndash;&nbsp;insertAttachment:forSequence:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/copyAttachmentNamed:fromSequence:toSequence:">&ndash;&nbsp;copyAttachmentNamed:fromSequence:toSequence:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inlineFollowingAttachmentsIn:error:">&ndash;&nbsp;inlineFollowingAttachmentsIn:error:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Replication Methods" name="task_Replication Methods"></a>
+						<h3 class="subsubtitle task-title">Replication Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activeReplicators">&nbsp;&nbsp;activeReplicators</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activeReplicatorWithRemoteURL:push:">&ndash;&nbsp;activeReplicatorWithRemoteURL:push:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replicatorWithRemoteURL:push:continuous:">&ndash;&nbsp;replicatorWithRemoteURL:push:continuous:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findMissingRevisions:">&ndash;&nbsp;findMissingRevisions:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Insertion Methods" name="task_Insertion Methods"></a>
+						<h3 class="subsubtitle task-title">Insertion Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isValidDocumentID:">+&nbsp;isValidDocumentID:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generateDocumentID">+&nbsp;generateDocumentID</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putRevision:prevRevisionID:allowConflict:status:">&ndash;&nbsp;putRevision:prevRevisionID:allowConflict:status:</a></code>
+		<span class="tooltip"><p>Stores a new (or initial) revision of a document. This is what&rsquo;s invoked by a PUT or POST. As with those, the previous revision ID must be supplied when necessary and the call will fail if it doesn&rsquo;t match.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/forceInsert:revisionHistory:source:">&ndash;&nbsp;forceInsert:revisionHistory:source:</a></code>
+		<span class="tooltip"><p>Inserts an already-existing revision replicated from a remote database. It must already have a revision ID. This may create a conflict! The revision&rsquo;s history must be given; ancestor revision IDs that don&rsquo;t already exist locally will create phantom revisions with no content.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parseCouchDBRevisionHistory:">+&nbsp;parseCouchDBRevisionHistory:</a></code>
+		<span class="tooltip"><p>Parses the _revisions dict from a document into an array of revision ID strings</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defineValidation:asBlock:">&ndash;&nbsp;defineValidation:asBlock:</a></code>
+		<span class="tooltip"><p>Define or clear a named document validation function.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/validationNamed:">&ndash;&nbsp;validationNamed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/compact">&ndash;&nbsp;compact</a></code>
+		<span class="tooltip"><p>Compacts the database storage by removing the bodies and attachments of obsolete revisions.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/purgeRevisions:result:">&ndash;&nbsp;purgeRevisions:result:</a></code>
+		<span class="tooltip"><p>Purges specific revisions, which deletes them completely from the local database <em>without</em> adding a &ldquo;tombstone&rdquo; revision. It&rsquo;s as though they were never there.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Insertion_Internal Methods" name="task_Insertion_Internal Methods"></a>
+						<h3 class="subsubtitle task-title">Insertion_Internal Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/encodeDocumentJSON:">&ndash;&nbsp;encodeDocumentJSON:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/validateRevision:previousRevision:">&ndash;&nbsp;validateRevision:previousRevision:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="LocalDocs Methods" name="task_LocalDocs Methods"></a>
+						<h3 class="subsubtitle task-title">LocalDocs Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getLocalDocumentWithID:revisionID:">&ndash;&nbsp;getLocalDocumentWithID:revisionID:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putLocalRevision:prevRevisionID:status:">&ndash;&nbsp;putLocalRevision:prevRevisionID:status:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteLocalDocumentWithID:revisionID:">&ndash;&nbsp;deleteLocalDocumentWithID:revisionID:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/activeReplicators" title="activeReplicators"></a>
+	<h3 class="subsubtitle method-title">activeReplicators</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *activeReplicators</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allViews" title="allViews"></a>
+	<h3 class="subsubtitle method-title">allViews</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *allViews</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/attachmentStore" title="attachmentStore"></a>
+	<h3 class="subsubtitle method-title">attachmentStore</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) TDBlobStore *attachmentStore</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/documentCount" title="documentCount"></a>
+	<h3 class="subsubtitle method-title">documentCount</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSUInteger documentCount</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/exists" title="exists"></a>
+	<h3 class="subsubtitle method-title">exists</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL exists</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fmdb" title="fmdb"></a>
+	<h3 class="subsubtitle method-title">fmdb</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) FMDatabase *fmdb</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastSequence" title="lastSequence"></a>
+	<h3 class="subsubtitle method-title">lastSequence</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) SequenceNumber lastSequence</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, copy) NSString *name</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/path" title="path"></a>
+	<h3 class="subsubtitle method-title">path</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *path</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/privateUUID" title="privateUUID"></a>
+	<h3 class="subsubtitle method-title">privateUUID</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *privateUUID</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/publicUUID" title="publicUUID"></a>
+	<h3 class="subsubtitle method-title">publicUUID</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *publicUUID</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readOnly" title="readOnly"></a>
+	<h3 class="subsubtitle method-title">readOnly</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Should the database file be opened in read-only mode?</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property BOOL readOnly</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Should the database file be opened in read-only mode?</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/totalDataSize" title="totalDataSize"></a>
+	<h3 class="subsubtitle method-title">totalDataSize</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) UInt64 totalDataSize</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/createEmptyDBAtPath:" title="createEmptyDBAtPath:"></a>
+	<h3 class="subsubtitle method-title">createEmptyDBAtPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (TDDatabase *)createEmptyDBAtPath:(NSString *)<em>path</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generateDocumentID" title="generateDocumentID"></a>
+	<h3 class="subsubtitle method-title">generateDocumentID</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)generateDocumentID</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isValidDocumentID:" title="isValidDocumentID:"></a>
+	<h3 class="subsubtitle method-title">isValidDocumentID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isValidDocumentID:(NSString *)<em>str</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/joinQuotedStrings:" title="joinQuotedStrings:"></a>
+	<h3 class="subsubtitle method-title">joinQuotedStrings:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)joinQuotedStrings:(NSArray *)<em>strings</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parseCouchDBRevisionHistory:" title="parseCouchDBRevisionHistory:"></a>
+	<h3 class="subsubtitle method-title">parseCouchDBRevisionHistory:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Parses the _revisions dict from a document into an array of revision ID strings</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)parseCouchDBRevisionHistory:(NSDictionary *)<em>docProperties</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Parses the _revisions dict from a document into an array of revision ID strings</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stubOutAttachmentsIn:beforeRevPos:attachmentsFollow:" title="stubOutAttachmentsIn:beforeRevPos:attachmentsFollow:"></a>
+	<h3 class="subsubtitle method-title">stubOutAttachmentsIn:beforeRevPos:attachmentsFollow:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Modifies a TDRevision&rsquo;s <em>attachments dictionary by changing all attachments with revpos &lt; minRevPos into stubs; and if &lsquo;attachmentsFollow&rsquo; is true, the remaining attachments will be modified to </em>not_ be stubs but include a &ldquo;follows&rdquo; key instead of a body.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)stubOutAttachmentsIn:(TDRevision *)<em>rev</em> beforeRevPos:(int)<em>minRevPos</em> attachmentsFollow:(BOOL)<em>attachmentsFollow</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Modifies a TDRevision&rsquo;s <em>attachments dictionary by changing all attachments with revpos &lt; minRevPos into stubs; and if &lsquo;attachmentsFollow&rsquo; is true, the remaining attachments will be modified to </em>not_ be stubs but include a &ldquo;follows&rdquo; key instead of a body.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Attachments.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/activeReplicatorWithRemoteURL:push:" title="activeReplicatorWithRemoteURL:push:"></a>
+	<h3 class="subsubtitle method-title">activeReplicatorWithRemoteURL:push:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDReplicator *)activeReplicatorWithRemoteURL:(NSURL *)<em>remote</em> push:(BOOL)<em>push</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/attachmentWriter" title="attachmentWriter"></a>
+	<h3 class="subsubtitle method-title">attachmentWriter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a <a href="../Classes/TDBlobStoreWriter.html">TDBlobStoreWriter</a> object that can be used to stream an attachment to the store.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDBlobStoreWriter *)attachmentWriter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a <a href="../Classes/TDBlobStoreWriter.html">TDBlobStoreWriter</a> object that can be used to stream an attachment to the store.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Attachments.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/attachmentWriterForAttachment:" title="attachmentWriterForAttachment:"></a>
+	<h3 class="subsubtitle method-title">attachmentWriterForAttachment:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)attachmentWriterForAttachment:(NSDictionary *)<em>attachment</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/attachmentsFromRevision:status:" title="attachmentsFromRevision:status:"></a>
+	<h3 class="subsubtitle method-title">attachmentsFromRevision:status:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates <a href="../Classes/TDAttachment.html">TDAttachment</a> objects from the revision&rsquo;s &lsquo;_attachments&rsquo; property.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)attachmentsFromRevision:(TDRevision *)<em>rev</em> status:(TDStatus *)<em>outStatus</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates <a href="../Classes/TDAttachment.html">TDAttachment</a> objects from the revision&rsquo;s &lsquo;_attachments&rsquo; property.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Attachments.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beginTransaction" title="beginTransaction"></a>
+	<h3 class="subsubtitle method-title">beginTransaction</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Begins a database transaction. Transactions can nest. Every -beginTransaction must be balanced by a later <a href="#//api/name/endTransaction:">endTransaction:</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)beginTransaction</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Begins a database transaction. Transactions can nest. Every -beginTransaction must be balanced by a later <a href="#//api/name/endTransaction:">endTransaction:</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changesSinceSequence:options:filter:params:" title="changesSinceSequence:options:filter:params:"></a>
+	<h3 class="subsubtitle method-title">changesSinceSequence:options:filter:params:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDRevisionList *)changesSinceSequence:(SequenceNumber)<em>lastSequence</em> options:(const TDChangesOptions *)<em>options</em> filter:(TDFilterBlock)<em>filter</em> params:(NSDictionary *)<em>filterParams</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/close" title="close"></a>
+	<h3 class="subsubtitle method-title">close</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)close</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/compact" title="compact"></a>
+	<h3 class="subsubtitle method-title">compact</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Compacts the database storage by removing the bodies and attachments of obsolete revisions.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)compact</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Compacts the database storage by removing the bodies and attachments of obsolete revisions.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/copyAttachmentNamed:fromSequence:toSequence:" title="copyAttachmentNamed:fromSequence:toSequence:"></a>
+	<h3 class="subsubtitle method-title">copyAttachmentNamed:fromSequence:toSequence:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)copyAttachmentNamed:(NSString *)<em>name</em> fromSequence:(SequenceNumber)<em>fromSequence</em> toSequence:(SequenceNumber)<em>toSequence</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defineFilter:asBlock:" title="defineFilter:asBlock:"></a>
+	<h3 class="subsubtitle method-title">defineFilter:asBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Define or clear a named filter function. These aren&rsquo;t used directly by TDDatabase, but they&rsquo;re looked up by <a href="../Classes/TDRouter.html">TDRouter</a> when a _changes request has a ?filter parameter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)defineFilter:(NSString *)<em>filterName</em> asBlock:(TDFilterBlock)<em>filterBlock</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Define or clear a named filter function. These aren&rsquo;t used directly by TDDatabase, but they&rsquo;re looked up by <a href="../Classes/TDRouter.html">TDRouter</a> when a _changes request has a ?filter parameter.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defineValidation:asBlock:" title="defineValidation:asBlock:"></a>
+	<h3 class="subsubtitle method-title">defineValidation:asBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Define or clear a named document validation function.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)defineValidation:(NSString *)<em>validationName</em> asBlock:(TDValidationBlock)<em>validationBlock</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Define or clear a named document validation function.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteDatabase:" title="deleteDatabase:"></a>
+	<h3 class="subsubtitle method-title">deleteDatabase:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)deleteDatabase:(NSError **)<em>outError</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteLocalDocumentWithID:revisionID:" title="deleteLocalDocumentWithID:revisionID:"></a>
+	<h3 class="subsubtitle method-title">deleteLocalDocumentWithID:revisionID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)deleteLocalDocumentWithID:(NSString *)<em>docID</em> revisionID:(NSString *)<em>revID</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteViewNamed:" title="deleteViewNamed:"></a>
+	<h3 class="subsubtitle method-title">deleteViewNamed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)deleteViewNamed:(NSString *)<em>name</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/documentPropertiesFromJSON:docID:revID:deleted:sequence:options:" title="documentPropertiesFromJSON:docID:revID:deleted:sequence:options:"></a>
+	<h3 class="subsubtitle method-title">documentPropertiesFromJSON:docID:revID:deleted:sequence:options:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableDictionary *)documentPropertiesFromJSON:(NSData *)<em>json</em> docID:(NSString *)<em>docID</em> revID:(NSString *)<em>revID</em> deleted:(BOOL)<em>deleted</em> sequence:(SequenceNumber)<em>sequence</em> options:(TDContentOptions)<em>options</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/encodeDocumentJSON:" title="encodeDocumentJSON:"></a>
+	<h3 class="subsubtitle method-title">encodeDocumentJSON:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)encodeDocumentJSON:(TDRevision *)<em>rev</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endTransaction:" title="endTransaction:"></a>
+	<h3 class="subsubtitle method-title">endTransaction:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Commits or aborts (rolls back) a transaction.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)endTransaction:(BOOL)<em>commit</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>commit</em></dt>
+			<dd><p>If YES, commits; if NO, aborts and rolls back, undoing all changes made since the matching <a href="#//api/name/beginTransaction">beginTransaction</a> call, <em>including</em> any committed nested transactions.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Commits or aborts (rolls back) a transaction.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/existingViewNamed:" title="existingViewNamed:"></a>
+	<h3 class="subsubtitle method-title">existingViewNamed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDView *)existingViewNamed:(NSString *)<em>name</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/existsDocumentWithID:revisionID:" title="existsDocumentWithID:revisionID:"></a>
+	<h3 class="subsubtitle method-title">existsDocumentWithID:revisionID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)existsDocumentWithID:(NSString *)<em>docID</em> revisionID:(NSString *)<em>revID</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fileForAttachmentDict:" title="fileForAttachmentDict:"></a>
+	<h3 class="subsubtitle method-title">fileForAttachmentDict:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Uses the &ldquo;digest&rdquo; field of the attachment dict to look up the attachment in the store and return a file URL to it. DO NOT MODIFY THIS FILE!</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSURL *)fileForAttachmentDict:(NSDictionary *)<em>attachmentDict</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Uses the &ldquo;digest&rdquo; field of the attachment dict to look up the attachment in the store and return a file URL to it. DO NOT MODIFY THIS FILE!</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Attachments.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/filterNamed:" title="filterNamed:"></a>
+	<h3 class="subsubtitle method-title">filterNamed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDFilterBlock)filterNamed:(NSString *)<em>filterName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findCommonAncestorOf:withRevIDs:" title="findCommonAncestorOf:withRevIDs:"></a>
+	<h3 class="subsubtitle method-title">findCommonAncestorOf:withRevIDs:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the most recent member of revIDs that appears in rev&rsquo;s ancestry.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)findCommonAncestorOf:(TDRevision *)<em>rev</em> withRevIDs:(NSArray *)<em>revIDs</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the most recent member of revIDs that appears in rev&rsquo;s ancestry.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findMissingRevisions:" title="findMissingRevisions:"></a>
+	<h3 class="subsubtitle method-title">findMissingRevisions:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)findMissingRevisions:(TDRevisionList *)<em>revs</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/forceInsert:revisionHistory:source:" title="forceInsert:revisionHistory:source:"></a>
+	<h3 class="subsubtitle method-title">forceInsert:revisionHistory:source:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Inserts an already-existing revision replicated from a remote database. It must already have a revision ID. This may create a conflict! The revision&rsquo;s history must be given; ancestor revision IDs that don&rsquo;t already exist locally will create phantom revisions with no content.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)forceInsert:(TDRevision *)<em>rev</em> revisionHistory:(NSArray *)<em>history</em> source:(NSURL *)<em>source</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Inserts an already-existing revision replicated from a remote database. It must already have a revision ID. This may create a conflict! The revision&rsquo;s history must be given; ancestor revision IDs that don&rsquo;t already exist locally will create phantom revisions with no content.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/garbageCollectAttachments" title="garbageCollectAttachments"></a>
+	<h3 class="subsubtitle method-title">garbageCollectAttachments</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deletes obsolete attachments from the database and blob store.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)garbageCollectAttachments</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Deletes obsolete attachments from the database and blob store.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Attachments.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAllDocs:" title="getAllDocs:"></a>
+	<h3 class="subsubtitle method-title">getAllDocs:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)getAllDocs:(const struct TDQueryOptions *)<em>options</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAllRevisionsOfDocumentID:numericID:onlyCurrent:" title="getAllRevisionsOfDocumentID:numericID:onlyCurrent:"></a>
+	<h3 class="subsubtitle method-title">getAllRevisionsOfDocumentID:numericID:onlyCurrent:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDRevisionList *)getAllRevisionsOfDocumentID:(NSString *)<em>docID</em> numericID:(SInt64)<em>docNumericID</em> onlyCurrent:(BOOL)<em>onlyCurrent</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAllRevisionsOfDocumentID:onlyCurrent:" title="getAllRevisionsOfDocumentID:onlyCurrent:"></a>
+	<h3 class="subsubtitle method-title">getAllRevisionsOfDocumentID:onlyCurrent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns all the known revisions (or all current/conflicting revisions) of a document.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDRevisionList *)getAllRevisionsOfDocumentID:(NSString *)<em>docID</em> onlyCurrent:(BOOL)<em>onlyCurrent</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns all the known revisions (or all current/conflicting revisions) of a document.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAttachmentDictForSequence:options:" title="getAttachmentDictForSequence:options:"></a>
+	<h3 class="subsubtitle method-title">getAttachmentDictForSequence:options:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Constructs an &ldquo;_attachments&rdquo; dictionary for a revision, to be inserted in its JSON body.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)getAttachmentDictForSequence:(SequenceNumber)<em>sequence</em> options:(TDContentOptions)<em>options</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Constructs an &ldquo;_attachments&rdquo; dictionary for a revision, to be inserted in its JSON body.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Attachments.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAttachmentForSequence:named:type:encoding:status:" title="getAttachmentForSequence:named:type:encoding:status:"></a>
+	<h3 class="subsubtitle method-title">getAttachmentForSequence:named:type:encoding:status:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the content and metadata of an attachment.</p>
+
+<pre><code>If you pass NULL for the 'outEncoding' parameter, it signifies that you don't care about encodings and just want the 'real' data, so it'll be decoded for you. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)getAttachmentForSequence:(SequenceNumber)<em>sequence</em> named:(NSString *)<em>filename</em> type:(NSString **)<em>outType</em> encoding:(TDAttachmentEncoding *)<em>outEncoding</em> status:(TDStatus *)<em>outStatus</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the content and metadata of an attachment.</p>
+
+<pre><code>If you pass NULL for the 'outEncoding' parameter, it signifies that you don't care about encodings and just want the 'real' data, so it'll be decoded for you. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Attachments.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAttachmentPathForSequence:named:type:encoding:status:" title="getAttachmentPathForSequence:named:type:encoding:status:"></a>
+	<h3 class="subsubtitle method-title">getAttachmentPathForSequence:named:type:encoding:status:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the location of an attachment&rsquo;s file in the blob store.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)getAttachmentPathForSequence:(SequenceNumber)<em>sequence</em> named:(NSString *)<em>filename</em> type:(NSString **)<em>outType</em> encoding:(TDAttachmentEncoding *)<em>outEncoding</em> status:(TDStatus *)<em>outStatus</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the location of an attachment&rsquo;s file in the blob store.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Attachments.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDocNumericID:" title="getDocNumericID:"></a>
+	<h3 class="subsubtitle method-title">getDocNumericID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (SInt64)getDocNumericID:(NSString *)<em>docID</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDocsWithIDs:options:" title="getDocsWithIDs:options:"></a>
+	<h3 class="subsubtitle method-title">getDocsWithIDs:options:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)getDocsWithIDs:(NSArray *)<em>docIDs</em> options:(const struct TDQueryOptions *)<em>options</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDocumentWithID:revisionID:" title="getDocumentWithID:revisionID:"></a>
+	<h3 class="subsubtitle method-title">getDocumentWithID:revisionID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDRevision *)getDocumentWithID:(NSString *)<em>docID</em> revisionID:(NSString *)<em>revID</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDocumentWithID:revisionID:options:status:" title="getDocumentWithID:revisionID:options:status:"></a>
+	<h3 class="subsubtitle method-title">getDocumentWithID:revisionID:options:status:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDRevision *)getDocumentWithID:(NSString *)<em>docID</em> revisionID:(NSString *)<em>revID</em> options:(TDContentOptions)<em>options</em> status:(TDStatus *)<em>outStatus</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getLocalDocumentWithID:revisionID:" title="getLocalDocumentWithID:revisionID:"></a>
+	<h3 class="subsubtitle method-title">getLocalDocumentWithID:revisionID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDRevision *)getLocalDocumentWithID:(NSString *)<em>docID</em> revisionID:(NSString *)<em>revID</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getPossibleAncestorRevisionIDs:limit:" title="getPossibleAncestorRevisionIDs:limit:"></a>
+	<h3 class="subsubtitle method-title">getPossibleAncestorRevisionIDs:limit:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns IDs of local revisions of the same document, that have a lower generation number.</p>
+
+<pre><code>Does not return revisions whose bodies have been compacted away, or deletion markers. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)getPossibleAncestorRevisionIDs:(TDRevision *)<em>rev</em> limit:(unsigned)<em>limit</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns IDs of local revisions of the same document, that have a lower generation number.</p>
+
+<pre><code>Does not return revisions whose bodies have been compacted away, or deletion markers. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRevisionHistory:" title="getRevisionHistory:"></a>
+	<h3 class="subsubtitle method-title">getRevisionHistory:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an array of TDRevs in reverse chronological order,</p>
+
+<pre><code>starting with the given revision. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)getRevisionHistory:(TDRevision *)<em>rev</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an array of TDRevs in reverse chronological order,</p>
+
+<pre><code>starting with the given revision. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRevisionHistoryDict:" title="getRevisionHistoryDict:"></a>
+	<h3 class="subsubtitle method-title">getRevisionHistoryDict:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the revision history as a _revisions dictionary, as returned by the REST API&rsquo;s ?revs=true option.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)getRevisionHistoryDict:(TDRevision *)<em>rev</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the revision history as a _revisions dictionary, as returned by the REST API&rsquo;s ?revs=true option.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inTransaction:" title="inTransaction:"></a>
+	<h3 class="subsubtitle method-title">inTransaction:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Executes the block within a database transaction.</p>
+
+<pre><code>If the block returns a non-OK status, the transaction is aborted/rolled back.
+Any exception raised by the block will be caught and treated as kTDStatusException. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)inTransaction:(TDStatus ( ^ ) ( ))<em>block</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Executes the block within a database transaction.</p>
+
+<pre><code>If the block returns a non-OK status, the transaction is aborted/rolled back.
+Any exception raised by the block will be caught and treated as kTDStatusException. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithPath:" title="initWithPath:"></a>
+	<h3 class="subsubtitle method-title">initWithPath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithPath:(NSString *)<em>path</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inlineFollowingAttachmentsIn:error:" title="inlineFollowingAttachmentsIn:error:"></a>
+	<h3 class="subsubtitle method-title">inlineFollowingAttachmentsIn:error:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)inlineFollowingAttachmentsIn:(TDRevision *)<em>rev</em> error:(NSError **)<em>outError</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertAttachment:forSequence:" title="insertAttachment:forSequence:"></a>
+	<h3 class="subsubtitle method-title">insertAttachment:forSequence:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)insertAttachment:(TDAttachment *)<em>attachment</em> forSequence:(SequenceNumber)<em>sequence</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastSequenceWithCheckpointID:" title="lastSequenceWithCheckpointID:"></a>
+	<h3 class="subsubtitle method-title">lastSequenceWithCheckpointID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)lastSequenceWithCheckpointID:(NSString *)<em>checkpointID</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loadRevisionBody:options:" title="loadRevisionBody:options:"></a>
+	<h3 class="subsubtitle method-title">loadRevisionBody:options:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)loadRevisionBody:(TDRevision *)<em>rev</em> options:(TDContentOptions)<em>options</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multipartWriterForRevision:contentType:" title="multipartWriterForRevision:contentType:"></a>
+	<h3 class="subsubtitle method-title">multipartWriterForRevision:contentType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Generates a MIME multipart writer for a revision, with separate body parts for each attachment whose &ldquo;follows&rdquo; property is set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDMultipartWriter *)multipartWriterForRevision:(TDRevision *)<em>rev</em> contentType:(NSString *)<em>contentType</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Generates a MIME multipart writer for a revision, with separate body parts for each attachment whose &ldquo;follows&rdquo; property is set.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Attachments.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/open" title="open"></a>
+	<h3 class="subsubtitle method-title">open</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)open</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/processAttachments:forRevision:withParentSequence:" title="processAttachments:forRevision:withParentSequence:"></a>
+	<h3 class="subsubtitle method-title">processAttachments:forRevision:withParentSequence:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Given a newly-added revision, adds the necessary attachment rows to the database and stores inline attachments into the blob store.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)processAttachments:(NSDictionary *)<em>attachments</em> forRevision:(TDRevision *)<em>rev</em> withParentSequence:(SequenceNumber)<em>parentSequence</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Given a newly-added revision, adds the necessary attachment rows to the database and stores inline attachments into the blob store.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Attachments.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/purgeRevisions:result:" title="purgeRevisions:result:"></a>
+	<h3 class="subsubtitle method-title">purgeRevisions:result:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Purges specific revisions, which deletes them completely from the local database <em>without</em> adding a &ldquo;tombstone&rdquo; revision. It&rsquo;s as though they were never there.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)purgeRevisions:(NSDictionary *)<em>docsToRevs</em> result:(NSDictionary **)<em>outResult</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>docsToRevs</em></dt>
+			<dd><p>A dictionary mapping document IDs to arrays of revision IDs.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>outResult</em></dt>
+			<dd><p>On success will point to an NSDictionary with the same form as docsToRev, containing the doc/revision IDs that were actually removed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Purges specific revisions, which deletes them completely from the local database <em>without</em> adding a &ldquo;tombstone&rdquo; revision. It&rsquo;s as though they were never there.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putLocalRevision:prevRevisionID:status:" title="putLocalRevision:prevRevisionID:status:"></a>
+	<h3 class="subsubtitle method-title">putLocalRevision:prevRevisionID:status:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDRevision *)putLocalRevision:(TDRevision *)<em>revision</em> prevRevisionID:(NSString *)<em>prevRevID</em> status:(TDStatus *)<em>outStatus</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putRevision:prevRevisionID:allowConflict:status:" title="putRevision:prevRevisionID:allowConflict:status:"></a>
+	<h3 class="subsubtitle method-title">putRevision:prevRevisionID:allowConflict:status:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stores a new (or initial) revision of a document. This is what&rsquo;s invoked by a PUT or POST. As with those, the previous revision ID must be supplied when necessary and the call will fail if it doesn&rsquo;t match.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDRevision *)putRevision:(TDRevision *)<em>revision</em> prevRevisionID:(NSString *)<em>prevRevID</em> allowConflict:(BOOL)<em>allowConflict</em> status:(TDStatus *)<em>outStatus</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>revision</em></dt>
+			<dd><p>The revision to add. If the docID is nil, a new UUID will be assigned. Its revID must be nil. It must have a JSON body.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>prevRevID</em></dt>
+			<dd><p>The ID of the revision to replace (same as the &ldquo;?rev=&rdquo; parameter to a PUT), or nil if this is a new document.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>allowConflict</em></dt>
+			<dd><p>If NO, an error status kTDStatusConflict will be returned if the insertion would create a conflict, i.e. if the previous revision already has a child.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>status</em></dt>
+			<dd><p>On return, an HTTP status code indicating success or failure.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new <a href="../Classes/TDRevision.html">TDRevision</a> with the docID, revID and sequence filled in (but no body).</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stores a new (or initial) revision of a document. This is what&rsquo;s invoked by a PUT or POST. As with those, the previous revision ID must be supplied when necessary and the call will fail if it doesn&rsquo;t match.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Insertion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rememberAttachmentWritersForDigests:" title="rememberAttachmentWritersForDigests:"></a>
+	<h3 class="subsubtitle method-title">rememberAttachmentWritersForDigests:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)rememberAttachmentWritersForDigests:(NSDictionary *)<em>writersByDigests</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replaceWithDatabaseFile:withAttachments:error:" title="replaceWithDatabaseFile:withAttachments:error:"></a>
+	<h3 class="subsubtitle method-title">replaceWithDatabaseFile:withAttachments:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Replaces the database with a copy of another database.</p>
+
+<pre><code>This is primarily used to install a canned database on first launch of an app, in which case you should first check .exists to avoid replacing the database if it exists already. The canned database would have been copied into your app bundle at build time.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)replaceWithDatabaseFile:(NSString *)<em>databasePath</em> withAttachments:(NSString *)<em>attachmentsPath</em> error:(NSError **)<em>outError</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>databasePath</em></dt>
+			<dd><p>Path of the database file that should replace this one.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attachmentsPath</em></dt>
+			<dd><p>Path of the associated attachments directory, or nil if there are no attachments.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>If an error occurs, it will be stored into this parameter on return.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the database was copied, NO if an error occurred.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Replaces the database with a copy of another database.</p>
+
+<pre><code>This is primarily used to install a canned database on first launch of an app, in which case you should first check .exists to avoid replacing the database if it exists already. The canned database would have been copied into your app bundle at build time.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replicatorWithRemoteURL:push:continuous:" title="replicatorWithRemoteURL:push:continuous:"></a>
+	<h3 class="subsubtitle method-title">replicatorWithRemoteURL:push:continuous:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDReplicator *)replicatorWithRemoteURL:(NSURL *)<em>remote</em> push:(BOOL)<em>push</em> continuous:(BOOL)<em>continuous</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLastSequence:withCheckpointID:" title="setLastSequence:withCheckpointID:"></a>
+	<h3 class="subsubtitle method-title">setLastSequence:withCheckpointID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setLastSequence:(NSString *)<em>lastSequence</em> withCheckpointID:(NSString *)<em>checkpointID</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopAndForgetReplicator:" title="stopAndForgetReplicator:"></a>
+	<h3 class="subsubtitle method-title">stopAndForgetReplicator:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)stopAndForgetReplicator:(TDReplicator *)<em>repl</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/storeBlob:creatingKey:" title="storeBlob:creatingKey:"></a>
+	<h3 class="subsubtitle method-title">storeBlob:creatingKey:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)storeBlob:(NSData *)<em>blob</em> creatingKey:(TDBlobKey *)<em>outKey</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateAttachment:body:type:encoding:ofDocID:revID:status:" title="updateAttachment:body:type:encoding:ofDocID:revID:status:"></a>
+	<h3 class="subsubtitle method-title">updateAttachment:body:type:encoding:ofDocID:revID:status:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates or deletes an attachment, creating a new document revision in the process.</p>
+
+<pre><code>Used by the PUT / DELETE methods called on attachment URLs. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDRevision *)updateAttachment:(NSString *)<em>filename</em> body:(NSData *)<em>body</em> type:(NSString *)<em>contentType</em> encoding:(TDAttachmentEncoding)<em>encoding</em> ofDocID:(NSString *)<em>docID</em> revID:(NSString *)<em>oldRevID</em> status:(TDStatus *)<em>outStatus</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Updates or deletes an attachment, creating a new document revision in the process.</p>
+
+<pre><code>Used by the PUT / DELETE methods called on attachment URLs. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDDatabase+Attachments.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/validateRevision:previousRevision:" title="validateRevision:previousRevision:"></a>
+	<h3 class="subsubtitle method-title">validateRevision:previousRevision:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)validateRevision:(TDRevision *)<em>newRev</em> previousRevision:(TDRevision *)<em>oldRev</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/validationNamed:" title="validationNamed:"></a>
+	<h3 class="subsubtitle method-title">validationNamed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDValidationBlock)validationNamed:(NSString *)<em>validationName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewNamed:" title="viewNamed:"></a>
+	<h3 class="subsubtitle method-title">viewNamed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDView *)viewNamed:(NSString *)<em>name</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/winningRevIDOfDocNumericID:isDeleted:" title="winningRevIDOfDocNumericID:isDeleted:"></a>
+	<h3 class="subsubtitle method-title">winningRevIDOfDocNumericID:isDeleted:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)winningRevIDOfDocNumericID:(SInt64)<em>docNumericID</em> isDeleted:(BOOL *)<em>outIsDeleted</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

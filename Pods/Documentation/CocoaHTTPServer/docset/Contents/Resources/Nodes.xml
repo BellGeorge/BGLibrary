@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>CocoaHTTPServer 2.2.1</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>DAVConnection</Name>
+			<Path>Classes/DAVConnection.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>DAVResponse</Name>
+			<Path>Classes/DAVResponse.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>DELETEResponse</Name>
+			<Path>Classes/DELETEResponse.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>HTTPAsyncFileResponse</Name>
+			<Path>Classes/HTTPAsyncFileResponse.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>HTTPAuthenticationRequest</Name>
+			<Path>Classes/HTTPAuthenticationRequest.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>HTTPConfig</Name>
+			<Path>Classes/HTTPConfig.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>HTTPConnection</Name>
+			<Path>Classes/HTTPConnection.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>HTTPDataResponse</Name>
+			<Path>Classes/HTTPDataResponse.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>HTTPDynamicFileResponse</Name>
+			<Path>Classes/HTTPDynamicFileResponse.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>HTTPFileResponse</Name>
+			<Path>Classes/HTTPFileResponse.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>HTTPMessage</Name>
+			<Path>Classes/HTTPMessage.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>HTTPRedirectResponse</Name>
+			<Path>Classes/HTTPRedirectResponse.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>HTTPServer</Name>
+			<Path>Classes/HTTPServer.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>PUTResponse</Name>
+			<Path>Classes/PUTResponse.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>WebSocket</Name>
+			<Path>Classes/WebSocket.html</Path>
+		</Node>
+		
+		<Node id="16">
+			<Name>NSData(DDData)</Name>
+			<Path>Categories/NSData+DDData.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>NSNumber(DDNumber)</Name>
+			<Path>Categories/NSNumber+DDNumber.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>NSValue(NSValueDDRangeExtensions)</Name>
+			<Path>Categories/NSValue+NSValueDDRangeExtensions.html</Path>
+		</Node>
+		
+		<Node id="19">
+			<Name>HTTPResponse</Name>
+			<Path>Protocols/HTTPResponse.html</Path>
+		</Node>
+		<Node id="20">
+			<Name>WebSocketDelegate</Name>
+			<Path>Protocols/WebSocketDelegate.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

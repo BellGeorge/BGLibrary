@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/Lawrence/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.MYUtilities-0.0.1.docset
+Time: 2012-11-05 23:11:59 +0000

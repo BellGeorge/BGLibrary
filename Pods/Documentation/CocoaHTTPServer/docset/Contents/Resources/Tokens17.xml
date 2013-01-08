@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSNumber+DDNumber.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSNumber(DDNumber)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDNumber.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(DDNumber)/parseString:intoSInt64:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDNumber.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)parseString:(NSString *)str intoSInt64:(SInt64 *)pNum</Declaration>
+			
+			
+			<Anchor>//api/name/parseString:intoSInt64:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(DDNumber)/parseString:intoUInt64:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDNumber.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)parseString:(NSString *)str intoUInt64:(UInt64 *)pNum</Declaration>
+			
+			
+			<Anchor>//api/name/parseString:intoUInt64:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(DDNumber)/parseString:intoNSInteger:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDNumber.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)parseString:(NSString *)str intoNSInteger:(NSInteger *)pNum</Declaration>
+			
+			
+			<Anchor>//api/name/parseString:intoNSInteger:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumber(DDNumber)/parseString:intoNSUInteger:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDNumber.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)parseString:(NSString *)str intoNSUInteger:(NSUInteger *)pNum</Declaration>
+			
+			
+			<Anchor>//api/name/parseString:intoNSUInteger:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchConnectionChangeTracker.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchConnectionChangeTracker</TokenIdentifier>
+			<Abstract type="html">CouchChangeTracker that uses a regular NSURLConnection.
+    This unfortunately doesn&apos;t work with regular CouchDB in continuous mode, apparently due to some bug in CFNetwork. </Abstract>
+			<DeclaredIn>CouchConnectionChangeTracker.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

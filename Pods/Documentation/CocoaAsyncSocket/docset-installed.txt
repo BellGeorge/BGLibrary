@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/Lawrence/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.CocoaAsyncSocket-0.0.1.docset
+Time: 2012-11-05 23:10:00 +0000

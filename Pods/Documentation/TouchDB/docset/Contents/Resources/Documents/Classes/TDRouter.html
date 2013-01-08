@@ -1,0 +1,886 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TDRouter Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TouchDB 1.0 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TDRouter Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/bodyAsDictionary">&nbsp;&nbsp;&nbsp;&nbsp;bodyAsDictionary</option>
+	
+	<option value="//api/name/ifMatch">&nbsp;&nbsp;&nbsp;&nbsp;ifMatch</option>
+	
+	<option value="//api/name/multipartRequestType">&nbsp;&nbsp;&nbsp;&nbsp;multipartRequestType</option>
+	
+	<option value="//api/name/onAccessCheck">&nbsp;&nbsp;&nbsp;&nbsp;onAccessCheck</option>
+	
+	<option value="//api/name/onDataAvailable">&nbsp;&nbsp;&nbsp;&nbsp;onDataAvailable</option>
+	
+	<option value="//api/name/onFinished">&nbsp;&nbsp;&nbsp;&nbsp;onFinished</option>
+	
+	<option value="//api/name/onResponseReady">&nbsp;&nbsp;&nbsp;&nbsp;onResponseReady</option>
+	
+	<option value="//api/name/processRanges">&nbsp;&nbsp;&nbsp;&nbsp;processRanges</option>
+	
+	<option value="//api/name/request">&nbsp;&nbsp;&nbsp;&nbsp;request</option>
+	
+	<option value="//api/name/response">&nbsp;&nbsp;&nbsp;&nbsp;response</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/versionString">&nbsp;&nbsp;&nbsp;&nbsp;+ versionString</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/boolQuery:">&nbsp;&nbsp;&nbsp;&nbsp;- boolQuery:</option>
+	
+	<option value="//api/name/cacheWithEtag:">&nbsp;&nbsp;&nbsp;&nbsp;- cacheWithEtag:</option>
+	
+	<option value="//api/name/contentOptions">&nbsp;&nbsp;&nbsp;&nbsp;- contentOptions</option>
+	
+	<option value="//api/name/finished">&nbsp;&nbsp;&nbsp;&nbsp;- finished</option>
+	
+	<option value="//api/name/getQueryOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getQueryOptions:</option>
+	
+	<option value="//api/name/initWithDatabaseManager:request:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDatabaseManager:request:</option>
+	
+	<option value="//api/name/initWithServer:request:isLocal:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithServer:request:isLocal:</option>
+	
+	<option value="//api/name/intQuery:defaultValue:">&nbsp;&nbsp;&nbsp;&nbsp;- intQuery:defaultValue:</option>
+	
+	<option value="//api/name/jsonQueries">&nbsp;&nbsp;&nbsp;&nbsp;- jsonQueries</option>
+	
+	<option value="//api/name/jsonQuery:error:">&nbsp;&nbsp;&nbsp;&nbsp;- jsonQuery:error:</option>
+	
+	<option value="//api/name/openDB">&nbsp;&nbsp;&nbsp;&nbsp;- openDB</option>
+	
+	<option value="//api/name/query:">&nbsp;&nbsp;&nbsp;&nbsp;- query:</option>
+	
+	<option value="//api/name/sendResponseBodyAndFinish:">&nbsp;&nbsp;&nbsp;&nbsp;- sendResponseBodyAndFinish:</option>
+	
+	<option value="//api/name/sendResponseHeaders">&nbsp;&nbsp;&nbsp;&nbsp;- sendResponseHeaders</option>
+	
+	<option value="//api/name/start">&nbsp;&nbsp;&nbsp;&nbsp;- start</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Internal Methods">Internal Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bodyAsDictionary">bodyAsDictionary</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ifMatch">ifMatch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multipartRequestType">multipartRequestType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onAccessCheck">onAccessCheck</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onDataAvailable">onDataAvailable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onFinished">onFinished</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/onResponseReady">onResponseReady</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/processRanges">processRanges</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/request">request</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/response">response</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/versionString">versionString</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/boolQuery:">boolQuery:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cacheWithEtag:">cacheWithEtag:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentOptions">contentOptions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/finished">finished</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getQueryOptions:">getQueryOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDatabaseManager:request:">initWithDatabaseManager:request:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithServer:request:isLocal:">initWithServer:request:isLocal:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/intQuery:defaultValue:">intQuery:defaultValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/jsonQueries">jsonQueries</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/jsonQuery:error:">jsonQuery:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openDB">openDB</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/query:">query:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendResponseBodyAndFinish:">sendResponseBodyAndFinish:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendResponseHeaders">sendResponseHeaders</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start">start</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TDRouter Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TDRouter Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TDRouter.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithServer:request:isLocal:">&ndash;&nbsp;initWithServer:request:isLocal:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/processRanges">&nbsp;&nbsp;processRanges</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onAccessCheck">&nbsp;&nbsp;onAccessCheck</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onResponseReady">&nbsp;&nbsp;onResponseReady</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onDataAvailable">&nbsp;&nbsp;onDataAvailable</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/onFinished">&nbsp;&nbsp;onFinished</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/request">&nbsp;&nbsp;request</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/response">&nbsp;&nbsp;response</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/versionString">+&nbsp;versionString</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDatabaseManager:request:">&ndash;&nbsp;initWithDatabaseManager:request:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Internal Methods" name="task_Internal Methods"></a>
+						<h3 class="subsubtitle task-title">Internal Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/query:">&ndash;&nbsp;query:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/boolQuery:">&ndash;&nbsp;boolQuery:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/intQuery:defaultValue:">&ndash;&nbsp;intQuery:defaultValue:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/jsonQuery:error:">&ndash;&nbsp;jsonQuery:error:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/jsonQueries">&ndash;&nbsp;jsonQueries</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cacheWithEtag:">&ndash;&nbsp;cacheWithEtag:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentOptions">&ndash;&nbsp;contentOptions</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getQueryOptions:">&ndash;&nbsp;getQueryOptions:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multipartRequestType">&nbsp;&nbsp;multipartRequestType</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bodyAsDictionary">&nbsp;&nbsp;bodyAsDictionary</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ifMatch">&nbsp;&nbsp;ifMatch</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openDB">&ndash;&nbsp;openDB</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendResponseHeaders">&ndash;&nbsp;sendResponseHeaders</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendResponseBodyAndFinish:">&ndash;&nbsp;sendResponseBodyAndFinish:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/finished">&ndash;&nbsp;finished</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/bodyAsDictionary" title="bodyAsDictionary"></a>
+	<h3 class="subsubtitle method-title">bodyAsDictionary</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSDictionary *bodyAsDictionary</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ifMatch" title="ifMatch"></a>
+	<h3 class="subsubtitle method-title">ifMatch</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *ifMatch</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multipartRequestType" title="multipartRequestType"></a>
+	<h3 class="subsubtitle method-title">multipartRequestType</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *multipartRequestType</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onAccessCheck" title="onAccessCheck"></a>
+	<h3 class="subsubtitle method-title">onAccessCheck</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (copy) OnAccessCheckBlock onAccessCheck</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onDataAvailable" title="onDataAvailable"></a>
+	<h3 class="subsubtitle method-title">onDataAvailable</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (copy) OnDataAvailableBlock onDataAvailable</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onFinished" title="onFinished"></a>
+	<h3 class="subsubtitle method-title">onFinished</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (copy) OnFinishedBlock onFinished</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/onResponseReady" title="onResponseReady"></a>
+	<h3 class="subsubtitle method-title">onResponseReady</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (copy) OnResponseReadyBlock onResponseReady</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/processRanges" title="processRanges"></a>
+	<h3 class="subsubtitle method-title">processRanges</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property BOOL processRanges</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/request" title="request"></a>
+	<h3 class="subsubtitle method-title">request</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSURLRequest *request</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/response" title="response"></a>
+	<h3 class="subsubtitle method-title">response</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) TDResponse *response</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/versionString" title="versionString"></a>
+	<h3 class="subsubtitle method-title">versionString</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)versionString</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/boolQuery:" title="boolQuery:"></a>
+	<h3 class="subsubtitle method-title">boolQuery:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)boolQuery:(NSString *)<em>param</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cacheWithEtag:" title="cacheWithEtag:"></a>
+	<h3 class="subsubtitle method-title">cacheWithEtag:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)cacheWithEtag:(NSString *)<em>etag</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentOptions" title="contentOptions"></a>
+	<h3 class="subsubtitle method-title">contentOptions</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDContentOptions)contentOptions</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/finished" title="finished"></a>
+	<h3 class="subsubtitle method-title">finished</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)finished</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getQueryOptions:" title="getQueryOptions:"></a>
+	<h3 class="subsubtitle method-title">getQueryOptions:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)getQueryOptions:(struct TDQueryOptions *)<em>options</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDatabaseManager:request:" title="initWithDatabaseManager:request:"></a>
+	<h3 class="subsubtitle method-title">initWithDatabaseManager:request:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDatabaseManager:(TDDatabaseManager *)<em>dbManager</em> request:(NSURLRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithServer:request:isLocal:" title="initWithServer:request:isLocal:"></a>
+	<h3 class="subsubtitle method-title">initWithServer:request:isLocal:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithServer:(TDServer *)<em>server</em> request:(NSURLRequest *)<em>request</em> isLocal:(BOOL)<em>isLocal</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/intQuery:defaultValue:" title="intQuery:defaultValue:"></a>
+	<h3 class="subsubtitle method-title">intQuery:defaultValue:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (int)intQuery:(NSString *)<em>param</em> defaultValue:(int)<em>defaultValue</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/jsonQueries" title="jsonQueries"></a>
+	<h3 class="subsubtitle method-title">jsonQueries</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableDictionary *)jsonQueries</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/jsonQuery:error:" title="jsonQuery:error:"></a>
+	<h3 class="subsubtitle method-title">jsonQuery:error:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)jsonQuery:(NSString *)<em>param</em> error:(NSError **)<em>outError</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openDB" title="openDB"></a>
+	<h3 class="subsubtitle method-title">openDB</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)openDB</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/query:" title="query:"></a>
+	<h3 class="subsubtitle method-title">query:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)query:(NSString *)<em>param</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendResponseBodyAndFinish:" title="sendResponseBodyAndFinish:"></a>
+	<h3 class="subsubtitle method-title">sendResponseBodyAndFinish:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)sendResponseBodyAndFinish:(BOOL)<em>finished</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendResponseHeaders" title="sendResponseHeaders"></a>
+	<h3 class="subsubtitle method-title">sendResponseHeaders</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)sendResponseHeaders</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="subsubtitle method-title">start</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)start</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

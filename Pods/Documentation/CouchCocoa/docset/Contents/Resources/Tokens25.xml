@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchbaseCallbacks.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchbaseCallbacks</TokenIdentifier>
+			<Abstract type="html">Central per-process registry for native design-document functions.
+	Associates a key (a unique ID stored in the design doc as the &quot;source&quot; of the function)
+	with a C block.
+	This class is thread-safe. </Abstract>
+			<DeclaredIn>CouchbaseCallbacks.h</DeclaredIn>
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchbaseCallbacks/sharedInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchbaseCallbacks.h</DeclaredIn>			
+			
+			<Declaration>+ (CouchbaseCallbacks *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseCallbacks/generateKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchbaseCallbacks.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)generateKey</Declaration>
+			
+			
+			<Anchor>//api/name/generateKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseCallbacks/registerMapBlock:forKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchbaseCallbacks.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerMapBlock:(CouchMapBlock)block forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/registerMapBlock:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseCallbacks/registerReduceBlock:forKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchbaseCallbacks.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerReduceBlock:(CouchReduceBlock)block forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/registerReduceBlock:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseCallbacks/registerValidateUpdateBlock:forKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchbaseCallbacks.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerValidateUpdateBlock:(CouchValidateUpdateBlock)block forKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/registerValidateUpdateBlock:forKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseCallbacks/mapBlockForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchbaseCallbacks.h</DeclaredIn>			
+			
+			<Declaration>- (CouchMapBlock)mapBlockForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/mapBlockForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseCallbacks/reduceBlockForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchbaseCallbacks.h</DeclaredIn>			
+			
+			<Declaration>- (CouchReduceBlock)reduceBlockForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/reduceBlockForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseCallbacks/validateUpdateBlockForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchbaseCallbacks.h</DeclaredIn>			
+			
+			<Declaration>- (CouchValidateUpdateBlock)validateUpdateBlockForKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/validateUpdateBlockForKey:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

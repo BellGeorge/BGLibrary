@@ -1,0 +1,803 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>OAToken Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TouchDB 1.0 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OAToken Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/attributes">&nbsp;&nbsp;&nbsp;&nbsp;attributes</option>
+	
+	<option value="//api/name/duration">&nbsp;&nbsp;&nbsp;&nbsp;duration</option>
+	
+	<option value="//api/name/forRenewal">&nbsp;&nbsp;&nbsp;&nbsp;forRenewal</option>
+	
+	<option value="//api/name/key">&nbsp;&nbsp;&nbsp;&nbsp;key</option>
+	
+	<option value="//api/name/secret">&nbsp;&nbsp;&nbsp;&nbsp;secret</option>
+	
+	<option value="//api/name/session">&nbsp;&nbsp;&nbsp;&nbsp;session</option>
+	
+	<option value="//api/name/verifier">&nbsp;&nbsp;&nbsp;&nbsp;verifier</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/removeFromUserDefaultsWithServiceProviderName:prefix:">&nbsp;&nbsp;&nbsp;&nbsp;+ removeFromUserDefaultsWithServiceProviderName:prefix:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/attribute:">&nbsp;&nbsp;&nbsp;&nbsp;- attribute:</option>
+	
+	<option value="//api/name/attributeString">&nbsp;&nbsp;&nbsp;&nbsp;- attributeString</option>
+	
+	<option value="//api/name/hasAttributes">&nbsp;&nbsp;&nbsp;&nbsp;- hasAttributes</option>
+	
+	<option value="//api/name/hasExpired">&nbsp;&nbsp;&nbsp;&nbsp;- hasExpired</option>
+	
+	<option value="//api/name/initWithHTTPResponseBody:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithHTTPResponseBody:</option>
+	
+	<option value="//api/name/initWithKey:secret:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithKey:secret:</option>
+	
+	<option value="//api/name/initWithKey:secret:session:duration:attributes:created:renewable:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithKey:secret:session:duration:attributes:created:renewable:</option>
+	
+	<option value="//api/name/initWithUserDefaultsUsingServiceProviderName:prefix:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithUserDefaultsUsingServiceProviderName:prefix:</option>
+	
+	<option value="//api/name/isEqualToToken:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToToken:</option>
+	
+	<option value="//api/name/isRenewable">&nbsp;&nbsp;&nbsp;&nbsp;- isRenewable</option>
+	
+	<option value="//api/name/isValid">&nbsp;&nbsp;&nbsp;&nbsp;- isValid</option>
+	
+	<option value="//api/name/parameters">&nbsp;&nbsp;&nbsp;&nbsp;- parameters</option>
+	
+	<option value="//api/name/setAttribute:value:">&nbsp;&nbsp;&nbsp;&nbsp;- setAttribute:value:</option>
+	
+	<option value="//api/name/setAttributesWithString:">&nbsp;&nbsp;&nbsp;&nbsp;- setAttributesWithString:</option>
+	
+	<option value="//api/name/setDurationWithString:">&nbsp;&nbsp;&nbsp;&nbsp;- setDurationWithString:</option>
+	
+	<option value="//api/name/storeInUserDefaultsWithServiceProviderName:prefix:">&nbsp;&nbsp;&nbsp;&nbsp;- storeInUserDefaultsWithServiceProviderName:prefix:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attributes">attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/duration">duration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/forRenewal">forRenewal</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/key">key</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/secret">secret</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/session">session</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verifier">verifier</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeFromUserDefaultsWithServiceProviderName:prefix:">removeFromUserDefaultsWithServiceProviderName:prefix:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attribute:">attribute:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attributeString">attributeString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasAttributes">hasAttributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasExpired">hasExpired</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithHTTPResponseBody:">initWithHTTPResponseBody:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithKey:secret:">initWithKey:secret:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithKey:secret:session:duration:attributes:created:renewable:">initWithKey:secret:session:duration:attributes:created:renewable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithUserDefaultsUsingServiceProviderName:prefix:">initWithUserDefaultsUsingServiceProviderName:prefix:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToToken:">isEqualToToken:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isRenewable">isRenewable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isValid">isValid</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parameters">parameters</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAttribute:value:">setAttribute:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAttributesWithString:">setAttributesWithString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDurationWithString:">setDurationWithString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/storeInUserDefaultsWithServiceProviderName:prefix:">storeInUserDefaultsWithServiceProviderName:prefix:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="OAToken Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OAToken Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCoding</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">OAToken.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/key">&nbsp;&nbsp;key</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/secret">&nbsp;&nbsp;secret</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/session">&nbsp;&nbsp;session</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/duration">&nbsp;&nbsp;duration</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/verifier">&nbsp;&nbsp;verifier</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attributes">&nbsp;&nbsp;attributes</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/forRenewal">&nbsp;&nbsp;forRenewal</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithKey:secret:">&ndash;&nbsp;initWithKey:secret:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithKey:secret:session:duration:attributes:created:renewable:">&ndash;&nbsp;initWithKey:secret:session:duration:attributes:created:renewable:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithHTTPResponseBody:">&ndash;&nbsp;initWithHTTPResponseBody:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithUserDefaultsUsingServiceProviderName:prefix:">&ndash;&nbsp;initWithUserDefaultsUsingServiceProviderName:prefix:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/storeInUserDefaultsWithServiceProviderName:prefix:">&ndash;&nbsp;storeInUserDefaultsWithServiceProviderName:prefix:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isValid">&ndash;&nbsp;isValid</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAttribute:value:">&ndash;&nbsp;setAttribute:value:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attribute:">&ndash;&nbsp;attribute:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAttributesWithString:">&ndash;&nbsp;setAttributesWithString:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attributeString">&ndash;&nbsp;attributeString</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasExpired">&ndash;&nbsp;hasExpired</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isRenewable">&ndash;&nbsp;isRenewable</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDurationWithString:">&ndash;&nbsp;setDurationWithString:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasAttributes">&ndash;&nbsp;hasAttributes</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parameters">&ndash;&nbsp;parameters</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqualToToken:">&ndash;&nbsp;isEqualToToken:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeFromUserDefaultsWithServiceProviderName:prefix:">+&nbsp;removeFromUserDefaultsWithServiceProviderName:prefix:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attributes" title="attributes"></a>
+	<h3 class="subsubtitle method-title">attributes</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readwrite) NSDictionary *attributes</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/duration" title="duration"></a>
+	<h3 class="subsubtitle method-title">duration</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readwrite) NSNumber *duration</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/forRenewal" title="forRenewal"></a>
+	<h3 class="subsubtitle method-title">forRenewal</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, getter=isForRenewal) BOOL forRenewal</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/key" title="key"></a>
+	<h3 class="subsubtitle method-title">key</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readwrite) NSString *key</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/secret" title="secret"></a>
+	<h3 class="subsubtitle method-title">secret</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readwrite) NSString *secret</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/session" title="session"></a>
+	<h3 class="subsubtitle method-title">session</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readwrite) NSString *session</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/verifier" title="verifier"></a>
+	<h3 class="subsubtitle method-title">verifier</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain, readwrite) NSString *verifier</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/removeFromUserDefaultsWithServiceProviderName:prefix:" title="removeFromUserDefaultsWithServiceProviderName:prefix:"></a>
+	<h3 class="subsubtitle method-title">removeFromUserDefaultsWithServiceProviderName:prefix:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)removeFromUserDefaultsWithServiceProviderName:(const NSString *)<em>provider</em> prefix:(const NSString *)<em>prefix</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attribute:" title="attribute:"></a>
+	<h3 class="subsubtitle method-title">attribute:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)attribute:(NSString *)<em>aKey</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/attributeString" title="attributeString"></a>
+	<h3 class="subsubtitle method-title">attributeString</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)attributeString</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasAttributes" title="hasAttributes"></a>
+	<h3 class="subsubtitle method-title">hasAttributes</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasAttributes</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasExpired" title="hasExpired"></a>
+	<h3 class="subsubtitle method-title">hasExpired</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasExpired</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithHTTPResponseBody:" title="initWithHTTPResponseBody:"></a>
+	<h3 class="subsubtitle method-title">initWithHTTPResponseBody:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithHTTPResponseBody:(NSString *)<em>body</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithKey:secret:" title="initWithKey:secret:"></a>
+	<h3 class="subsubtitle method-title">initWithKey:secret:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithKey:(NSString *)<em>aKey</em> secret:(NSString *)<em>aSecret</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithKey:secret:session:duration:attributes:created:renewable:" title="initWithKey:secret:session:duration:attributes:created:renewable:"></a>
+	<h3 class="subsubtitle method-title">initWithKey:secret:session:duration:attributes:created:renewable:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithKey:(NSString *)<em>aKey</em> secret:(NSString *)<em>aSecret</em> session:(NSString *)<em>aSession</em> duration:(NSNumber *)<em>aDuration</em> attributes:(NSDictionary *)<em>theAttributes</em> created:(NSDate *)<em>creation</em> renewable:(BOOL)<em>renew</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithUserDefaultsUsingServiceProviderName:prefix:" title="initWithUserDefaultsUsingServiceProviderName:prefix:"></a>
+	<h3 class="subsubtitle method-title">initWithUserDefaultsUsingServiceProviderName:prefix:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithUserDefaultsUsingServiceProviderName:(NSString *)<em>provider</em> prefix:(NSString *)<em>prefix</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEqualToToken:" title="isEqualToToken:"></a>
+	<h3 class="subsubtitle method-title">isEqualToToken:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToToken:(OAToken *)<em>aToken</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isRenewable" title="isRenewable"></a>
+	<h3 class="subsubtitle method-title">isRenewable</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isRenewable</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isValid" title="isValid"></a>
+	<h3 class="subsubtitle method-title">isValid</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isValid</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parameters" title="parameters"></a>
+	<h3 class="subsubtitle method-title">parameters</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)parameters</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAttribute:value:" title="setAttribute:value:"></a>
+	<h3 class="subsubtitle method-title">setAttribute:value:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setAttribute:(NSString *)<em>aKey</em> value:(NSString *)<em>aValue</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAttributesWithString:" title="setAttributesWithString:"></a>
+	<h3 class="subsubtitle method-title">setAttributesWithString:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setAttributesWithString:(NSString *)<em>aAttributes</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDurationWithString:" title="setDurationWithString:"></a>
+	<h3 class="subsubtitle method-title">setDurationWithString:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setDurationWithString:(NSString *)<em>aDuration</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/storeInUserDefaultsWithServiceProviderName:prefix:" title="storeInUserDefaultsWithServiceProviderName:prefix:"></a>
+	<h3 class="subsubtitle method-title">storeInUserDefaultsWithServiceProviderName:prefix:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (int)storeInUserDefaultsWithServiceProviderName:(NSString *)<em>provider</em> prefix:(NSString *)<em>prefix</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

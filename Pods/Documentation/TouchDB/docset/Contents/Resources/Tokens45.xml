@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDResponse</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>
+			
+			<NodeRef refid="45"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/setInternalStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) TDStatus internalStatus</Declaration>
+			
+			
+			<Anchor>//api/name/internalStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDResponse/internalStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) TDStatus internalStatus</Declaration>
+			
+			
+			<Anchor>//api/name/internalStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/setStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) int status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDResponse/status</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) int status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/setStatusMsg:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *statusMsg</Declaration>
+			
+			
+			<Anchor>//api/name/statusMsg</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDResponse/statusMsg</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *statusMsg</Declaration>
+			
+			
+			<Anchor>//api/name/statusMsg</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/setStatusReason:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *statusReason</Declaration>
+			
+			
+			<Anchor>//api/name/statusReason</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDResponse/statusReason</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *statusReason</Declaration>
+			
+			
+			<Anchor>//api/name/statusReason</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/setHeaders:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDResponse/headers</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/setBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TDBody *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDResponse/body</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) TDBody *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/setBodyObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) id bodyObject</Declaration>
+			
+			
+			<Anchor>//api/name/bodyObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDResponse/bodyObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) id bodyObject</Declaration>
+			
+			
+			<Anchor>//api/name/bodyObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/setBaseContentType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *baseContentType</Declaration>
+			
+			
+			<Anchor>//api/name/baseContentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDResponse/baseContentType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *baseContentType</Declaration>
+			
+			
+			<Anchor>//api/name/baseContentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/reset</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/objectForKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)objectForKeyedSubscript:(NSString *)header</Declaration>
+			
+			
+			<Anchor>//api/name/objectForKeyedSubscript:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/setObject:forKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)setObject:(NSString *)value forKeyedSubscript:(NSString *)header</Declaration>
+			
+			
+			<Anchor>//api/name/setObject:forKeyedSubscript:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/setMultipartBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMultipartBody:(TDMultipartWriter *)mp</Declaration>
+			
+			
+			<Anchor>//api/name/setMultipartBody:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDResponse/setMultipartBody:type:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMultipartBody:(NSArray *)parts type:(NSString *)type</Declaration>
+			
+			
+			<Anchor>//api/name/setMultipartBody:type:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

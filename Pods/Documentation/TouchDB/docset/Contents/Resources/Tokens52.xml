@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDView</TokenIdentifier>
+			<Abstract type="html">Represents a view available in a database.</Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>
+			
+			<NodeRef refid="52"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/deleteView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteView</Declaration>
+			
+			
+			<Anchor>//api/name/deleteView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/setDatabase:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDDatabase *database</Declaration>
+			
+			
+			<Anchor>//api/name/database</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDView/database</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDDatabase *database</Declaration>
+			
+			
+			<Anchor>//api/name/database</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/setName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDView/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/setMapBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDMapBlock mapBlock</Declaration>
+			
+			
+			<Anchor>//api/name/mapBlock</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDView/mapBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDMapBlock mapBlock</Declaration>
+			
+			
+			<Anchor>//api/name/mapBlock</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/setReduceBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDReduceBlock reduceBlock</Declaration>
+			
+			
+			<Anchor>//api/name/reduceBlock</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDView/reduceBlock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDReduceBlock reduceBlock</Declaration>
+			
+			
+			<Anchor>//api/name/reduceBlock</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/setCollation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property TDViewCollation collation</Declaration>
+			
+			
+			<Anchor>//api/name/collation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDView/collation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property TDViewCollation collation</Declaration>
+			
+			
+			<Anchor>//api/name/collation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/setMapContentOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property TDContentOptions mapContentOptions</Declaration>
+			
+			
+			<Anchor>//api/name/mapContentOptions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDView/mapContentOptions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property TDContentOptions mapContentOptions</Declaration>
+			
+			
+			<Anchor>//api/name/mapContentOptions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/setMapBlock:reduceBlock:version:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)setMapBlock:(TDMapBlock)mapBlock reduceBlock:(TDReduceBlock)reduceBlock version:(NSString *)version</Declaration>
+			
+			
+			<Anchor>//api/name/setMapBlock:reduceBlock:version:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/removeIndex</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeIndex</Declaration>
+			
+			
+			<Anchor>//api/name/removeIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/setStale:</TokenIdentifier>
+			<Abstract type="html">Is the view&apos;s index currently out of date?</Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL stale</Declaration>
+			
+			
+			<Anchor>//api/name/stale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDView/stale</TokenIdentifier>
+			<Abstract type="html">Is the view&apos;s index currently out of date?</Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL stale</Declaration>
+			
+			
+			<Anchor>//api/name/stale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/updateIndex</TokenIdentifier>
+			<Abstract type="html">Updates the view&apos;s index (incrementally) if necessary.</Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)updateIndex</Declaration>
+			
+			<ReturnValue><Abstract type="html">200 if updated, 304 if already up-to-date, else an error code </Abstract></ReturnValue>
+			<Anchor>//api/name/updateIndex</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/setLastSequenceIndexed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) SequenceNumber lastSequenceIndexed</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequenceIndexed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDView/lastSequenceIndexed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) SequenceNumber lastSequenceIndexed</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequenceIndexed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/queryWithOptions:status:</TokenIdentifier>
+			<Abstract type="html">Queries the view. Does NOT first update the index.</Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)queryWithOptions:(const TDQueryOptions *)options status:(TDStatus *)outStatus</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">The options to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array of result rows -- each is a dictionary with &quot;key&quot; and &quot;value&quot; keys, and possibly &quot;id&quot; and &quot;doc&quot;. </Abstract></ReturnValue>
+			<Anchor>//api/name/queryWithOptions:status:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDView/totalValues:</TokenIdentifier>
+			<Abstract type="html">Utility function to use in reduce blocks. Totals an array of NSNumbers.</Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)totalValues:(NSArray *)values</Declaration>
+			
+			
+			<Anchor>//api/name/totalValues:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDView/setCompiler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setCompiler:(id&lt;TDViewCompiler&gt;)compiler</Declaration>
+			
+			
+			<Anchor>//api/name/setCompiler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDView/compiler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDView.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;TDViewCompiler&gt;)compiler</Declaration>
+			
+			
+			<Anchor>//api/name/compiler</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/initWithDatabase:name:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDatabase:(TDDatabase *)db name:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDatabase:name:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/setViewID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) int viewID</Declaration>
+			
+			
+			<Anchor>//api/name/viewID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDView/viewID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) int viewID</Declaration>
+			
+			
+			<Anchor>//api/name/viewID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/dump</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)dump</Declaration>
+			
+			
+			<Anchor>//api/name/dump</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDView/databaseClosing</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)databaseClosing</Declaration>
+			
+			
+			<Anchor>//api/name/databaseClosing</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

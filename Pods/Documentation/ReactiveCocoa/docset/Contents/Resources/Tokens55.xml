@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RACSignal.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RACSignal</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>
+			
+			<NodeRef refid="55"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/subscribe:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACDisposable *)subscribe:(id&lt;RACSubscriber&gt;)subscriber</Declaration>
+			
+			
+			<Anchor>//api/name/subscribe:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/subscribeNext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACDisposable *)subscribeNext:(void ( ^ ) ( id x ))nextBlock</Declaration>
+			
+			
+			<Anchor>//api/name/subscribeNext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/subscribeNext:completed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACDisposable *)subscribeNext:(void ( ^ ) ( id x ))nextBlock completed:(void ( ^ ) ( void ))completedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/subscribeNext:completed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/subscribeNext:error:completed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACDisposable *)subscribeNext:(void ( ^ ) ( id x ))nextBlock error:(void ( ^ ) ( NSError *error ))errorBlock completed:(void ( ^ ) ( void ))completedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/subscribeNext:error:completed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/subscribeError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACDisposable *)subscribeError:(void ( ^ ) ( NSError *error ))errorBlock</Declaration>
+			
+			
+			<Anchor>//api/name/subscribeError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/subscribeCompleted:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACDisposable *)subscribeCompleted:(void ( ^ ) ( void ))completedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/subscribeCompleted:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/subscribeNext:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACDisposable *)subscribeNext:(void ( ^ ) ( id x ))nextBlock error:(void ( ^ ) ( NSError *error ))errorBlock</Declaration>
+			
+			
+			<Anchor>//api/name/subscribeNext:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/subscribeError:completed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACDisposable *)subscribeError:(void ( ^ ) ( NSError *error ))errorBlock completed:(void ( ^ ) ( void ))completedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/subscribeError:completed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/mapReplace:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)mapReplace:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/mapReplace:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/injectObjectWeakly:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)injectObjectWeakly:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/injectObjectWeakly:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/doNext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)doNext:(void ( ^ ) ( id x ))block</Declaration>
+			
+			
+			<Anchor>//api/name/doNext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/doError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)doError:(void ( ^ ) ( NSError *error ))block</Declaration>
+			
+			
+			<Anchor>//api/name/doError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/doCompleted:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)doCompleted:(void ( ^ ) ( void ))block</Declaration>
+			
+			
+			<Anchor>//api/name/doCompleted:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/throttle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)throttle:(NSTimeInterval)interval</Declaration>
+			
+			
+			<Anchor>//api/name/throttle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/delay:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)delay:(NSTimeInterval)interval</Declaration>
+			
+			
+			<Anchor>//api/name/delay:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/repeat</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)repeat</Declaration>
+			
+			
+			<Anchor>//api/name/repeat</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/finally:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)finally:(void ( ^ ) ( void ))block</Declaration>
+			
+			
+			<Anchor>//api/name/finally:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/windowWithStart:close:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)windowWithStart:(id&lt;RACSignal&gt;)openSignal close:(id&lt;RACSignal&gt; ( ^ ) ( id&lt;RACSignal&gt; start ))closeBlock</Declaration>
+			
+			
+			<Anchor>//api/name/windowWithStart:close:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/buffer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)buffer:(NSUInteger)bufferCount</Declaration>
+			
+			
+			<Anchor>//api/name/buffer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/bufferWithTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)bufferWithTime:(NSTimeInterval)interval</Declaration>
+			
+			
+			<Anchor>//api/name/bufferWithTime:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/takeLast:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)takeLast:(NSUInteger)count</Declaration>
+			
+			
+			<Anchor>//api/name/takeLast:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/combineLatest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;RACSignal&gt;)combineLatest:(NSArray *)signals</Declaration>
+			
+			
+			<Anchor>//api/name/combineLatest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/combineLatest:reduce:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;RACSignal&gt;)combineLatest:(NSArray *)signals reduce:(id)reduceBlock</Declaration>
+			
+			
+			<Anchor>//api/name/combineLatest:reduce:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/merge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;RACSignal&gt;)merge:(NSArray *)signals</Declaration>
+			
+			
+			<Anchor>//api/name/merge:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/flatten:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)flatten:(NSUInteger)maxConcurrent</Declaration>
+			
+			
+			<Anchor>//api/name/flatten:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/sequenceNext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)sequenceNext:(id&lt;RACSignal&gt; ( ^ ) ( void ))block</Declaration>
+			
+			
+			<Anchor>//api/name/sequenceNext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/concat</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)concat</Declaration>
+			
+			
+			<Anchor>//api/name/concat</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/aggregateWithStart:combine:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)aggregateWithStart:(id)start combine:(id ( ^ ) ( id running , id next ))combineBlock</Declaration>
+			
+			
+			<Anchor>//api/name/aggregateWithStart:combine:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/aggregateWithStartFactory:combine:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)aggregateWithStartFactory:(id ( ^ ) ( void ))startFactory combine:(id ( ^ ) ( id running , id next ))combineBlock</Declaration>
+			
+			
+			<Anchor>//api/name/aggregateWithStartFactory:combine:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/scanWithStart:combine:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)scanWithStart:(id)start combine:(id ( ^ ) ( id running , id next ))combineBlock</Declaration>
+			
+			
+			<Anchor>//api/name/scanWithStart:combine:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/toProperty:onObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACDisposable *)toProperty:(NSString *)keyPath onObject:(NSObject *)object</Declaration>
+			
+			
+			<Anchor>//api/name/toProperty:onObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/interval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;RACSignal&gt;)interval:(NSTimeInterval)interval</Declaration>
+			
+			
+			<Anchor>//api/name/interval:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/takeUntil:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)takeUntil:(id&lt;RACSignal&gt;)signalTrigger</Declaration>
+			
+			
+			<Anchor>//api/name/takeUntil:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/takeUntilBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)takeUntilBlock:(BOOL ( ^ ) ( id x ))predicate</Declaration>
+			
+			
+			<Anchor>//api/name/takeUntilBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/takeWhileBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)takeWhileBlock:(BOOL ( ^ ) ( id x ))predicate</Declaration>
+			
+			
+			<Anchor>//api/name/takeWhileBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/asMaybes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)asMaybes</Declaration>
+			
+			
+			<Anchor>//api/name/asMaybes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/catch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)catch:(id&lt;RACSignal&gt; ( ^ ) ( NSError *error ))catchBlock</Declaration>
+			
+			
+			<Anchor>//api/name/catch:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/catchTo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)catchTo:(id&lt;RACSignal&gt;)signal</Declaration>
+			
+			
+			<Anchor>//api/name/catchTo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/first</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id)first</Declaration>
+			
+			
+			<Anchor>//api/name/first</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/firstOrDefault:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id)firstOrDefault:(id)defaultValue</Declaration>
+			
+			
+			<Anchor>//api/name/firstOrDefault:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/firstOrDefault:success:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id)firstOrDefault:(id)defaultValue success:(BOOL *)success error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/firstOrDefault:success:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/skipUntilBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)skipUntilBlock:(BOOL ( ^ ) ( id x ))block</Declaration>
+			
+			
+			<Anchor>//api/name/skipUntilBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/skipWhileBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)skipWhileBlock:(BOOL ( ^ ) ( id x ))block</Declaration>
+			
+			
+			<Anchor>//api/name/skipWhileBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/defer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>+ (id&lt;RACSignal&gt;)defer:(id&lt;RACSignal&gt; ( ^ ) ( void ))block</Declaration>
+			
+			
+			<Anchor>//api/name/defer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/distinctUntilChanged</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)distinctUntilChanged</Declaration>
+			
+			
+			<Anchor>//api/name/distinctUntilChanged</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/switch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)switch</Declaration>
+			
+			
+			<Anchor>//api/name/switch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/toArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)toArray</Declaration>
+			
+			
+			<Anchor>//api/name/toArray</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/setSequence:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) RACSequence *sequence</Declaration>
+			
+			
+			<Anchor>//api/name/sequence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/RACSignal/sequence</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) RACSequence *sequence</Declaration>
+			
+			
+			<Anchor>//api/name/sequence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/publish</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACConnectableSignal *)publish</Declaration>
+			
+			
+			<Anchor>//api/name/publish</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/multicast:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACConnectableSignal *)multicast:(RACSubject *)subject</Declaration>
+			
+			
+			<Anchor>//api/name/multicast:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/timeout:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)timeout:(NSTimeInterval)interval</Declaration>
+			
+			
+			<Anchor>//api/name/timeout:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/deliverOn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)deliverOn:(RACScheduler *)scheduler</Declaration>
+			
+			
+			<Anchor>//api/name/deliverOn:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/subscribeOn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)subscribeOn:(RACScheduler *)scheduler</Declaration>
+			
+			
+			<Anchor>//api/name/subscribeOn:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/let:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)let:(id&lt;RACSignal&gt; ( ^ ) ( id&lt;RACSignal&gt; sharedSignal ))letBlock</Declaration>
+			
+			
+			<Anchor>//api/name/let:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/groupBy:transform:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)groupBy:(id&lt;NSCopying&gt; ( ^ ) ( id object ))keyBlock transform:(id ( ^ ) ( id object ))transformBlock</Declaration>
+			
+			
+			<Anchor>//api/name/groupBy:transform:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/groupBy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)groupBy:(id&lt;NSCopying&gt; ( ^ ) ( id object ))keyBlock</Declaration>
+			
+			
+			<Anchor>//api/name/groupBy:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/any</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)any</Declaration>
+			
+			
+			<Anchor>//api/name/any</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/any:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)any:(BOOL ( ^ ) ( id object ))predicateBlock</Declaration>
+			
+			
+			<Anchor>//api/name/any:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/all:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)all:(BOOL ( ^ ) ( id object ))predicateBlock</Declaration>
+			
+			
+			<Anchor>//api/name/all:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/retry:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)retry:(NSInteger)retryCount</Declaration>
+			
+			
+			<Anchor>//api/name/retry:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/retry</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (id&lt;RACSignal&gt;)retry</Declaration>
+			
+			
+			<Anchor>//api/name/retry</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/asCancelableToSubject:withBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACCancelableSignal *)asCancelableToSubject:(RACSubject *)subject withBlock:(void ( ^ ) ( void ))block</Declaration>
+			
+			
+			<Anchor>//api/name/asCancelableToSubject:withBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/asCancelableWithBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACCancelableSignal *)asCancelableWithBlock:(void ( ^ ) ( void ))block</Declaration>
+			
+			
+			<Anchor>//api/name/asCancelableWithBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACSignal/asCancelable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACSignalProtocol.h</DeclaredIn>			
+			
+			<Declaration>- (RACCancelableSignal *)asCancelable</Declaration>
+			
+			
+			<Anchor>//api/name/asCancelable</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

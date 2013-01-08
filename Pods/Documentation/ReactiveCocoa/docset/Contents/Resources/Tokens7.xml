@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RACCancelableSignal.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RACCancelableSignal</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACCancelableSignal.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACCancelableSignal/cancel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACCancelableSignal.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACCancelableSignal/cancelableSignalSourceSignal:withBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACCancelableSignal+Private.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)cancelableSignalSourceSignal:(id&lt;RACSignal&gt;)sourceSignal withBlock:(void ( ^ ) ( void ))block</Declaration>
+			
+			
+			<Anchor>//api/name/cancelableSignalSourceSignal:withBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACCancelableSignal/cancelableSignalSourceSignal:subject:withBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACCancelableSignal+Private.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)cancelableSignalSourceSignal:(id&lt;RACSignal&gt;)sourceSignal subject:(RACSubject *)subject withBlock:(void ( ^ ) ( void ))block</Declaration>
+			
+			
+			<Anchor>//api/name/cancelableSignalSourceSignal:subject:withBlock:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

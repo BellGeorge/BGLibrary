@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RESTMutableBody.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RESTMutableBody</TokenIdentifier>
+			<Abstract type="html">A mutable subclass of RESTBody that allows the content and headers to be replaced.</Abstract>
+			<DeclaredIn>RESTBody.h</DeclaredIn>
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTMutableBody/setContent:</TokenIdentifier>
+			<Abstract type="html">The raw content.</Abstract>
+			<DeclaredIn>RESTBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, copy) NSData *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTMutableBody/content</TokenIdentifier>
+			<Abstract type="html">The raw content.</Abstract>
+			<DeclaredIn>RESTBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, copy) NSData *content</Declaration>
+			
+			
+			<Anchor>//api/name/content</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTMutableBody/setHeaders:</TokenIdentifier>
+			<Abstract type="html">The HTTP headers, with standard capitalization (first letter of each word capitalized.)</Abstract>
+			<DeclaredIn>RESTBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, copy) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTMutableBody/headers</TokenIdentifier>
+			<Abstract type="html">The HTTP headers, with standard capitalization (first letter of each word capitalized.)</Abstract>
+			<DeclaredIn>RESTBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, copy) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTMutableBody/setMutableHeaders:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, copy) NSMutableDictionary *mutableHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/mutableHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTMutableBody/mutableHeaders</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, copy) NSMutableDictionary *mutableHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/mutableHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTMutableBody/setContentType:</TokenIdentifier>
+			<Abstract type="html">The value of the Content-Type: header.</Abstract>
+			<DeclaredIn>RESTBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, copy) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTMutableBody/contentType</TokenIdentifier>
+			<Abstract type="html">The value of the Content-Type: header.</Abstract>
+			<DeclaredIn>RESTBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, copy) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTMutableBody/setResource:</TokenIdentifier>
+			<Abstract type="html">The owning RESTResource.</Abstract>
+			<DeclaredIn>RESTBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, retain) RESTResource *resource</Declaration>
+			
+			
+			<Anchor>//api/name/resource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTMutableBody/resource</TokenIdentifier>
+			<Abstract type="html">The owning RESTResource.</Abstract>
+			<DeclaredIn>RESTBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, retain) RESTResource *resource</Declaration>
+			
+			
+			<Anchor>//api/name/resource</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

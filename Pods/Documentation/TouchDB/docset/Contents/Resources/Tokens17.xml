@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDBase64.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDBase64</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBase64.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDBase64/encode:length:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)encode:(const void *)input length:(size_t)length</Declaration>
+			
+			
+			<Anchor>//api/name/encode:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDBase64/encode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)encode:(NSData *)rawBytes</Declaration>
+			
+			
+			<Anchor>//api/name/encode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDBase64/decode:length:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)decode:(const char *)string length:(size_t)inputLength</Declaration>
+			
+			
+			<Anchor>//api/name/decode:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDBase64/decode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBase64.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)decode:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/decode:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

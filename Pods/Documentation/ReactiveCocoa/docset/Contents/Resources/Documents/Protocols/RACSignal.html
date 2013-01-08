@@ -1,0 +1,1680 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RACSignal Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ReactiveCocoa 0.9.0 </a></h1>
+				<a id="developerHome" href="../index.html">Josh Abernathy</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RACSignal Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/sequence">&nbsp;&nbsp;&nbsp;&nbsp;sequence</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/combineLatest:">&nbsp;&nbsp;&nbsp;&nbsp;+ combineLatest:</option>
+	
+	<option value="//api/name/combineLatest:reduce:">&nbsp;&nbsp;&nbsp;&nbsp;+ combineLatest:reduce:</option>
+	
+	<option value="//api/name/defer:">&nbsp;&nbsp;&nbsp;&nbsp;+ defer:</option>
+	
+	<option value="//api/name/interval:">&nbsp;&nbsp;&nbsp;&nbsp;+ interval:</option>
+	
+	<option value="//api/name/merge:">&nbsp;&nbsp;&nbsp;&nbsp;+ merge:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/aggregateWithStart:combine:">&nbsp;&nbsp;&nbsp;&nbsp;- aggregateWithStart:combine:</option>
+	
+	<option value="//api/name/aggregateWithStartFactory:combine:">&nbsp;&nbsp;&nbsp;&nbsp;- aggregateWithStartFactory:combine:</option>
+	
+	<option value="//api/name/all:">&nbsp;&nbsp;&nbsp;&nbsp;- all:</option>
+	
+	<option value="//api/name/any">&nbsp;&nbsp;&nbsp;&nbsp;- any</option>
+	
+	<option value="//api/name/any:">&nbsp;&nbsp;&nbsp;&nbsp;- any:</option>
+	
+	<option value="//api/name/asCancelable">&nbsp;&nbsp;&nbsp;&nbsp;- asCancelable</option>
+	
+	<option value="//api/name/asCancelableToSubject:withBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- asCancelableToSubject:withBlock:</option>
+	
+	<option value="//api/name/asCancelableWithBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- asCancelableWithBlock:</option>
+	
+	<option value="//api/name/asMaybes">&nbsp;&nbsp;&nbsp;&nbsp;- asMaybes</option>
+	
+	<option value="//api/name/buffer:">&nbsp;&nbsp;&nbsp;&nbsp;- buffer:</option>
+	
+	<option value="//api/name/bufferWithTime:">&nbsp;&nbsp;&nbsp;&nbsp;- bufferWithTime:</option>
+	
+	<option value="//api/name/catch:">&nbsp;&nbsp;&nbsp;&nbsp;- catch:</option>
+	
+	<option value="//api/name/catchTo:">&nbsp;&nbsp;&nbsp;&nbsp;- catchTo:</option>
+	
+	<option value="//api/name/concat">&nbsp;&nbsp;&nbsp;&nbsp;- concat</option>
+	
+	<option value="//api/name/delay:">&nbsp;&nbsp;&nbsp;&nbsp;- delay:</option>
+	
+	<option value="//api/name/deliverOn:">&nbsp;&nbsp;&nbsp;&nbsp;- deliverOn:</option>
+	
+	<option value="//api/name/distinctUntilChanged">&nbsp;&nbsp;&nbsp;&nbsp;- distinctUntilChanged</option>
+	
+	<option value="//api/name/doCompleted:">&nbsp;&nbsp;&nbsp;&nbsp;- doCompleted:</option>
+	
+	<option value="//api/name/doError:">&nbsp;&nbsp;&nbsp;&nbsp;- doError:</option>
+	
+	<option value="//api/name/doNext:">&nbsp;&nbsp;&nbsp;&nbsp;- doNext:</option>
+	
+	<option value="//api/name/finally:">&nbsp;&nbsp;&nbsp;&nbsp;- finally:</option>
+	
+	<option value="//api/name/first">&nbsp;&nbsp;&nbsp;&nbsp;- first</option>
+	
+	<option value="//api/name/firstOrDefault:">&nbsp;&nbsp;&nbsp;&nbsp;- firstOrDefault:</option>
+	
+	<option value="//api/name/firstOrDefault:success:error:">&nbsp;&nbsp;&nbsp;&nbsp;- firstOrDefault:success:error:</option>
+	
+	<option value="//api/name/flatten:">&nbsp;&nbsp;&nbsp;&nbsp;- flatten:</option>
+	
+	<option value="//api/name/groupBy:">&nbsp;&nbsp;&nbsp;&nbsp;- groupBy:</option>
+	
+	<option value="//api/name/groupBy:transform:">&nbsp;&nbsp;&nbsp;&nbsp;- groupBy:transform:</option>
+	
+	<option value="//api/name/injectObjectWeakly:">&nbsp;&nbsp;&nbsp;&nbsp;- injectObjectWeakly:</option>
+	
+	<option value="//api/name/let:">&nbsp;&nbsp;&nbsp;&nbsp;- let:</option>
+	
+	<option value="//api/name/mapReplace:">&nbsp;&nbsp;&nbsp;&nbsp;- mapReplace:</option>
+	
+	<option value="//api/name/multicast:">&nbsp;&nbsp;&nbsp;&nbsp;- multicast:</option>
+	
+	<option value="//api/name/publish">&nbsp;&nbsp;&nbsp;&nbsp;- publish</option>
+	
+	<option value="//api/name/repeat">&nbsp;&nbsp;&nbsp;&nbsp;- repeat</option>
+	
+	<option value="//api/name/retry">&nbsp;&nbsp;&nbsp;&nbsp;- retry</option>
+	
+	<option value="//api/name/retry:">&nbsp;&nbsp;&nbsp;&nbsp;- retry:</option>
+	
+	<option value="//api/name/scanWithStart:combine:">&nbsp;&nbsp;&nbsp;&nbsp;- scanWithStart:combine:</option>
+	
+	<option value="//api/name/sequenceNext:">&nbsp;&nbsp;&nbsp;&nbsp;- sequenceNext:</option>
+	
+	<option value="//api/name/skipUntilBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- skipUntilBlock:</option>
+	
+	<option value="//api/name/skipWhileBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- skipWhileBlock:</option>
+	
+	<option value="//api/name/subscribe:">&nbsp;&nbsp;&nbsp;&nbsp;- subscribe:</option>
+	
+	<option value="//api/name/subscribeCompleted:">&nbsp;&nbsp;&nbsp;&nbsp;- subscribeCompleted:</option>
+	
+	<option value="//api/name/subscribeError:">&nbsp;&nbsp;&nbsp;&nbsp;- subscribeError:</option>
+	
+	<option value="//api/name/subscribeError:completed:">&nbsp;&nbsp;&nbsp;&nbsp;- subscribeError:completed:</option>
+	
+	<option value="//api/name/subscribeNext:">&nbsp;&nbsp;&nbsp;&nbsp;- subscribeNext:</option>
+	
+	<option value="//api/name/subscribeNext:completed:">&nbsp;&nbsp;&nbsp;&nbsp;- subscribeNext:completed:</option>
+	
+	<option value="//api/name/subscribeNext:error:">&nbsp;&nbsp;&nbsp;&nbsp;- subscribeNext:error:</option>
+	
+	<option value="//api/name/subscribeNext:error:completed:">&nbsp;&nbsp;&nbsp;&nbsp;- subscribeNext:error:completed:</option>
+	
+	<option value="//api/name/subscribeOn:">&nbsp;&nbsp;&nbsp;&nbsp;- subscribeOn:</option>
+	
+	<option value="//api/name/switch">&nbsp;&nbsp;&nbsp;&nbsp;- switch</option>
+	
+	<option value="//api/name/takeLast:">&nbsp;&nbsp;&nbsp;&nbsp;- takeLast:</option>
+	
+	<option value="//api/name/takeUntil:">&nbsp;&nbsp;&nbsp;&nbsp;- takeUntil:</option>
+	
+	<option value="//api/name/takeUntilBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- takeUntilBlock:</option>
+	
+	<option value="//api/name/takeWhileBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- takeWhileBlock:</option>
+	
+	<option value="//api/name/throttle:">&nbsp;&nbsp;&nbsp;&nbsp;- throttle:</option>
+	
+	<option value="//api/name/timeout:">&nbsp;&nbsp;&nbsp;&nbsp;- timeout:</option>
+	
+	<option value="//api/name/toArray">&nbsp;&nbsp;&nbsp;&nbsp;- toArray</option>
+	
+	<option value="//api/name/toProperty:onObject:">&nbsp;&nbsp;&nbsp;&nbsp;- toProperty:onObject:</option>
+	
+	<option value="//api/name/windowWithStart:close:">&nbsp;&nbsp;&nbsp;&nbsp;- windowWithStart:close:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sequence">sequence</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/combineLatest:">combineLatest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/combineLatest:reduce:">combineLatest:reduce:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defer:">defer:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interval:">interval:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/merge:">merge:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/aggregateWithStart:combine:">aggregateWithStart:combine:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/aggregateWithStartFactory:combine:">aggregateWithStartFactory:combine:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/all:">all:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/any">any</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/any:">any:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asCancelable">asCancelable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asCancelableToSubject:withBlock:">asCancelableToSubject:withBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asCancelableWithBlock:">asCancelableWithBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asMaybes">asMaybes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/buffer:">buffer:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bufferWithTime:">bufferWithTime:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/catch:">catch:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/catchTo:">catchTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/concat">concat</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delay:">delay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deliverOn:">deliverOn:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/distinctUntilChanged">distinctUntilChanged</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doCompleted:">doCompleted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doError:">doError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/doNext:">doNext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/finally:">finally:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/first">first</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/firstOrDefault:">firstOrDefault:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/firstOrDefault:success:error:">firstOrDefault:success:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flatten:">flatten:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/groupBy:">groupBy:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/groupBy:transform:">groupBy:transform:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/injectObjectWeakly:">injectObjectWeakly:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/let:">let:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapReplace:">mapReplace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multicast:">multicast:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/publish">publish</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/repeat">repeat</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/retry">retry</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/retry:">retry:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scanWithStart:combine:">scanWithStart:combine:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sequenceNext:">sequenceNext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/skipUntilBlock:">skipUntilBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/skipWhileBlock:">skipWhileBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribe:">subscribe:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribeCompleted:">subscribeCompleted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribeError:">subscribeError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribeError:completed:">subscribeError:completed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribeNext:">subscribeNext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribeNext:completed:">subscribeNext:completed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribeNext:error:">subscribeNext:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribeNext:error:completed:">subscribeNext:error:completed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subscribeOn:">subscribeOn:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/switch">switch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/takeLast:">takeLast:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/takeUntil:">takeUntil:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/takeUntilBlock:">takeUntilBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/takeWhileBlock:">takeWhileBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/throttle:">throttle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeout:">timeout:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toArray">toArray</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toProperty:onObject:">toProperty:onObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/windowWithStart:close:">windowWithStart:close:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RACSignal Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RACSignal Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject<br /><a href="../Protocols/RACStream.html">RACStream</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RACSignalProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribe:">&ndash;&nbsp;subscribe:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribeNext:">&ndash;&nbsp;subscribeNext:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribeNext:completed:">&ndash;&nbsp;subscribeNext:completed:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribeNext:error:completed:">&ndash;&nbsp;subscribeNext:error:completed:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribeError:">&ndash;&nbsp;subscribeError:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribeCompleted:">&ndash;&nbsp;subscribeCompleted:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribeNext:error:">&ndash;&nbsp;subscribeNext:error:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribeError:completed:">&ndash;&nbsp;subscribeError:completed:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapReplace:">&ndash;&nbsp;mapReplace:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/injectObjectWeakly:">&ndash;&nbsp;injectObjectWeakly:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doNext:">&ndash;&nbsp;doNext:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doError:">&ndash;&nbsp;doError:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/doCompleted:">&ndash;&nbsp;doCompleted:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/throttle:">&ndash;&nbsp;throttle:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delay:">&ndash;&nbsp;delay:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/repeat">&ndash;&nbsp;repeat</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/finally:">&ndash;&nbsp;finally:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/windowWithStart:close:">&ndash;&nbsp;windowWithStart:close:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/buffer:">&ndash;&nbsp;buffer:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bufferWithTime:">&ndash;&nbsp;bufferWithTime:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/takeLast:">&ndash;&nbsp;takeLast:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/combineLatest:">+&nbsp;combineLatest:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/combineLatest:reduce:">+&nbsp;combineLatest:reduce:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/merge:">+&nbsp;merge:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flatten:">&ndash;&nbsp;flatten:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sequenceNext:">&ndash;&nbsp;sequenceNext:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/concat">&ndash;&nbsp;concat</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/aggregateWithStart:combine:">&ndash;&nbsp;aggregateWithStart:combine:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/aggregateWithStartFactory:combine:">&ndash;&nbsp;aggregateWithStartFactory:combine:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scanWithStart:combine:">&ndash;&nbsp;scanWithStart:combine:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toProperty:onObject:">&ndash;&nbsp;toProperty:onObject:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interval:">+&nbsp;interval:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/takeUntil:">&ndash;&nbsp;takeUntil:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/takeUntilBlock:">&ndash;&nbsp;takeUntilBlock:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/takeWhileBlock:">&ndash;&nbsp;takeWhileBlock:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asMaybes">&ndash;&nbsp;asMaybes</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/catch:">&ndash;&nbsp;catch:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/catchTo:">&ndash;&nbsp;catchTo:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/first">&ndash;&nbsp;first</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/firstOrDefault:">&ndash;&nbsp;firstOrDefault:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/firstOrDefault:success:error:">&ndash;&nbsp;firstOrDefault:success:error:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/skipUntilBlock:">&ndash;&nbsp;skipUntilBlock:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/skipWhileBlock:">&ndash;&nbsp;skipWhileBlock:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defer:">+&nbsp;defer:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/distinctUntilChanged">&ndash;&nbsp;distinctUntilChanged</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/switch">&ndash;&nbsp;switch</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toArray">&ndash;&nbsp;toArray</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sequence">&nbsp;&nbsp;sequence</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/publish">&ndash;&nbsp;publish</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multicast:">&ndash;&nbsp;multicast:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeout:">&ndash;&nbsp;timeout:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deliverOn:">&ndash;&nbsp;deliverOn:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subscribeOn:">&ndash;&nbsp;subscribeOn:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/let:">&ndash;&nbsp;let:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/groupBy:transform:">&ndash;&nbsp;groupBy:transform:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/groupBy:">&ndash;&nbsp;groupBy:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/any">&ndash;&nbsp;any</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/any:">&ndash;&nbsp;any:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/all:">&ndash;&nbsp;all:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/retry:">&ndash;&nbsp;retry:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/retry">&ndash;&nbsp;retry</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asCancelableToSubject:withBlock:">&ndash;&nbsp;asCancelableToSubject:withBlock:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asCancelableWithBlock:">&ndash;&nbsp;asCancelableWithBlock:</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asCancelable">&ndash;&nbsp;asCancelable</a></code>
+		
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sequence" title="sequence"></a>
+	<h3 class="subsubtitle method-title">sequence</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) RACSequence *sequence</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/combineLatest:" title="combineLatest:"></a>
+	<h3 class="subsubtitle method-title">combineLatest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id&lt;RACSignal&gt;)combineLatest:(NSArray *)<em>signals</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/combineLatest:reduce:" title="combineLatest:reduce:"></a>
+	<h3 class="subsubtitle method-title">combineLatest:reduce:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id&lt;RACSignal&gt;)combineLatest:(NSArray *)<em>signals</em> reduce:(id)<em>reduceBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defer:" title="defer:"></a>
+	<h3 class="subsubtitle method-title">defer:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id&lt;RACSignal&gt;)defer:(id&lt;RACSignal&gt; ( ^ ) ( void ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interval:" title="interval:"></a>
+	<h3 class="subsubtitle method-title">interval:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id&lt;RACSignal&gt;)interval:(NSTimeInterval)<em>interval</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/merge:" title="merge:"></a>
+	<h3 class="subsubtitle method-title">merge:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id&lt;RACSignal&gt;)merge:(NSArray *)<em>signals</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/aggregateWithStart:combine:" title="aggregateWithStart:combine:"></a>
+	<h3 class="subsubtitle method-title">aggregateWithStart:combine:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)aggregateWithStart:(id)<em>start</em> combine:(id ( ^ ) ( id running , id next ))<em>combineBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/aggregateWithStartFactory:combine:" title="aggregateWithStartFactory:combine:"></a>
+	<h3 class="subsubtitle method-title">aggregateWithStartFactory:combine:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)aggregateWithStartFactory:(id ( ^ ) ( void ))<em>startFactory</em> combine:(id ( ^ ) ( id running , id next ))<em>combineBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/all:" title="all:"></a>
+	<h3 class="subsubtitle method-title">all:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)all:(BOOL ( ^ ) ( id object ))<em>predicateBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/any" title="any"></a>
+	<h3 class="subsubtitle method-title">any</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)any</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/any:" title="any:"></a>
+	<h3 class="subsubtitle method-title">any:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)any:(BOOL ( ^ ) ( id object ))<em>predicateBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/asCancelable" title="asCancelable"></a>
+	<h3 class="subsubtitle method-title">asCancelable</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACCancelableSignal *)asCancelable</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/asCancelableToSubject:withBlock:" title="asCancelableToSubject:withBlock:"></a>
+	<h3 class="subsubtitle method-title">asCancelableToSubject:withBlock:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACCancelableSignal *)asCancelableToSubject:(RACSubject *)<em>subject</em> withBlock:(void ( ^ ) ( void ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/asCancelableWithBlock:" title="asCancelableWithBlock:"></a>
+	<h3 class="subsubtitle method-title">asCancelableWithBlock:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACCancelableSignal *)asCancelableWithBlock:(void ( ^ ) ( void ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/asMaybes" title="asMaybes"></a>
+	<h3 class="subsubtitle method-title">asMaybes</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)asMaybes</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/buffer:" title="buffer:"></a>
+	<h3 class="subsubtitle method-title">buffer:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)buffer:(NSUInteger)<em>bufferCount</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bufferWithTime:" title="bufferWithTime:"></a>
+	<h3 class="subsubtitle method-title">bufferWithTime:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)bufferWithTime:(NSTimeInterval)<em>interval</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/catch:" title="catch:"></a>
+	<h3 class="subsubtitle method-title">catch:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)catch:(id&lt;RACSignal&gt; ( ^ ) ( NSError *error ))<em>catchBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/catchTo:" title="catchTo:"></a>
+	<h3 class="subsubtitle method-title">catchTo:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)catchTo:(id&lt;RACSignal&gt;)<em>signal</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/concat" title="concat"></a>
+	<h3 class="subsubtitle method-title">concat</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)concat</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delay:" title="delay:"></a>
+	<h3 class="subsubtitle method-title">delay:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)delay:(NSTimeInterval)<em>interval</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deliverOn:" title="deliverOn:"></a>
+	<h3 class="subsubtitle method-title">deliverOn:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)deliverOn:(RACScheduler *)<em>scheduler</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/distinctUntilChanged" title="distinctUntilChanged"></a>
+	<h3 class="subsubtitle method-title">distinctUntilChanged</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)distinctUntilChanged</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/doCompleted:" title="doCompleted:"></a>
+	<h3 class="subsubtitle method-title">doCompleted:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)doCompleted:(void ( ^ ) ( void ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/doError:" title="doError:"></a>
+	<h3 class="subsubtitle method-title">doError:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)doError:(void ( ^ ) ( NSError *error ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/doNext:" title="doNext:"></a>
+	<h3 class="subsubtitle method-title">doNext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)doNext:(void ( ^ ) ( id x ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/finally:" title="finally:"></a>
+	<h3 class="subsubtitle method-title">finally:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)finally:(void ( ^ ) ( void ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/first" title="first"></a>
+	<h3 class="subsubtitle method-title">first</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)first</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/firstOrDefault:" title="firstOrDefault:"></a>
+	<h3 class="subsubtitle method-title">firstOrDefault:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)firstOrDefault:(id)<em>defaultValue</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/firstOrDefault:success:error:" title="firstOrDefault:success:error:"></a>
+	<h3 class="subsubtitle method-title">firstOrDefault:success:error:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)firstOrDefault:(id)<em>defaultValue</em> success:(BOOL *)<em>success</em> error:(NSError **)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flatten:" title="flatten:"></a>
+	<h3 class="subsubtitle method-title">flatten:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)flatten:(NSUInteger)<em>maxConcurrent</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/groupBy:" title="groupBy:"></a>
+	<h3 class="subsubtitle method-title">groupBy:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)groupBy:(id&lt;NSCopying&gt; ( ^ ) ( id object ))<em>keyBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/groupBy:transform:" title="groupBy:transform:"></a>
+	<h3 class="subsubtitle method-title">groupBy:transform:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)groupBy:(id&lt;NSCopying&gt; ( ^ ) ( id object ))<em>keyBlock</em> transform:(id ( ^ ) ( id object ))<em>transformBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/injectObjectWeakly:" title="injectObjectWeakly:"></a>
+	<h3 class="subsubtitle method-title">injectObjectWeakly:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)injectObjectWeakly:(id)<em>object</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/let:" title="let:"></a>
+	<h3 class="subsubtitle method-title">let:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)let:(id&lt;RACSignal&gt; ( ^ ) ( id&lt;RACSignal&gt; sharedSignal ))<em>letBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapReplace:" title="mapReplace:"></a>
+	<h3 class="subsubtitle method-title">mapReplace:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)mapReplace:(id)<em>object</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multicast:" title="multicast:"></a>
+	<h3 class="subsubtitle method-title">multicast:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACConnectableSignal *)multicast:(RACSubject *)<em>subject</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/publish" title="publish"></a>
+	<h3 class="subsubtitle method-title">publish</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACConnectableSignal *)publish</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/repeat" title="repeat"></a>
+	<h3 class="subsubtitle method-title">repeat</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)repeat</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/retry" title="retry"></a>
+	<h3 class="subsubtitle method-title">retry</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)retry</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/retry:" title="retry:"></a>
+	<h3 class="subsubtitle method-title">retry:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)retry:(NSInteger)<em>retryCount</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scanWithStart:combine:" title="scanWithStart:combine:"></a>
+	<h3 class="subsubtitle method-title">scanWithStart:combine:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)scanWithStart:(id)<em>start</em> combine:(id ( ^ ) ( id running , id next ))<em>combineBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sequenceNext:" title="sequenceNext:"></a>
+	<h3 class="subsubtitle method-title">sequenceNext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)sequenceNext:(id&lt;RACSignal&gt; ( ^ ) ( void ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/skipUntilBlock:" title="skipUntilBlock:"></a>
+	<h3 class="subsubtitle method-title">skipUntilBlock:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)skipUntilBlock:(BOOL ( ^ ) ( id x ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/skipWhileBlock:" title="skipWhileBlock:"></a>
+	<h3 class="subsubtitle method-title">skipWhileBlock:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)skipWhileBlock:(BOOL ( ^ ) ( id x ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribe:" title="subscribe:"></a>
+	<h3 class="subsubtitle method-title">subscribe:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACDisposable *)subscribe:(id&lt;RACSubscriber&gt;)<em>subscriber</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribeCompleted:" title="subscribeCompleted:"></a>
+	<h3 class="subsubtitle method-title">subscribeCompleted:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACDisposable *)subscribeCompleted:(void ( ^ ) ( void ))<em>completedBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribeError:" title="subscribeError:"></a>
+	<h3 class="subsubtitle method-title">subscribeError:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACDisposable *)subscribeError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribeError:completed:" title="subscribeError:completed:"></a>
+	<h3 class="subsubtitle method-title">subscribeError:completed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACDisposable *)subscribeError:(void ( ^ ) ( NSError *error ))<em>errorBlock</em> completed:(void ( ^ ) ( void ))<em>completedBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribeNext:" title="subscribeNext:"></a>
+	<h3 class="subsubtitle method-title">subscribeNext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACDisposable *)subscribeNext:(void ( ^ ) ( id x ))<em>nextBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribeNext:completed:" title="subscribeNext:completed:"></a>
+	<h3 class="subsubtitle method-title">subscribeNext:completed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACDisposable *)subscribeNext:(void ( ^ ) ( id x ))<em>nextBlock</em> completed:(void ( ^ ) ( void ))<em>completedBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribeNext:error:" title="subscribeNext:error:"></a>
+	<h3 class="subsubtitle method-title">subscribeNext:error:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACDisposable *)subscribeNext:(void ( ^ ) ( id x ))<em>nextBlock</em> error:(void ( ^ ) ( NSError *error ))<em>errorBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribeNext:error:completed:" title="subscribeNext:error:completed:"></a>
+	<h3 class="subsubtitle method-title">subscribeNext:error:completed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACDisposable *)subscribeNext:(void ( ^ ) ( id x ))<em>nextBlock</em> error:(void ( ^ ) ( NSError *error ))<em>errorBlock</em> completed:(void ( ^ ) ( void ))<em>completedBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subscribeOn:" title="subscribeOn:"></a>
+	<h3 class="subsubtitle method-title">subscribeOn:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)subscribeOn:(RACScheduler *)<em>scheduler</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/switch" title="switch"></a>
+	<h3 class="subsubtitle method-title">switch</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)switch</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/takeLast:" title="takeLast:"></a>
+	<h3 class="subsubtitle method-title">takeLast:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)takeLast:(NSUInteger)<em>count</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/takeUntil:" title="takeUntil:"></a>
+	<h3 class="subsubtitle method-title">takeUntil:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)takeUntil:(id&lt;RACSignal&gt;)<em>signalTrigger</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/takeUntilBlock:" title="takeUntilBlock:"></a>
+	<h3 class="subsubtitle method-title">takeUntilBlock:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)takeUntilBlock:(BOOL ( ^ ) ( id x ))<em>predicate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/takeWhileBlock:" title="takeWhileBlock:"></a>
+	<h3 class="subsubtitle method-title">takeWhileBlock:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)takeWhileBlock:(BOOL ( ^ ) ( id x ))<em>predicate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/throttle:" title="throttle:"></a>
+	<h3 class="subsubtitle method-title">throttle:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)throttle:(NSTimeInterval)<em>interval</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeout:" title="timeout:"></a>
+	<h3 class="subsubtitle method-title">timeout:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)timeout:(NSTimeInterval)<em>interval</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toArray" title="toArray"></a>
+	<h3 class="subsubtitle method-title">toArray</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)toArray</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toProperty:onObject:" title="toProperty:onObject:"></a>
+	<h3 class="subsubtitle method-title">toProperty:onObject:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (RACDisposable *)toProperty:(NSString *)<em>keyPath</em> onObject:(NSObject *)<em>object</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/windowWithStart:close:" title="windowWithStart:close:"></a>
+	<h3 class="subsubtitle method-title">windowWithStart:close:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;RACSignal&gt;)windowWithStart:(id&lt;RACSignal&gt;)<em>openSignal</em> close:(id&lt;RACSignal&gt; ( ^ ) ( id&lt;RACSignal&gt; start ))<em>closeBlock</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Josh Abernathy. All rights reserved. (Last updated: 2012-11-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

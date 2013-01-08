@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/HTTPConnection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/HTTPConnection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/initWithAsyncSocket:configuration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAsyncSocket:(GCDAsyncSocket *)newSocket configuration:(HTTPConfig *)aConfig</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAsyncSocket:configuration:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/start</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/stop</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/startConnection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)startConnection</Declaration>
+			
+			
+			<Anchor>//api/name/startConnection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/supportsMethod:atPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)supportsMethod:(NSString *)method atPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/supportsMethod:atPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/expectsRequestBodyFromMethod:atPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)expectsRequestBodyFromMethod:(NSString *)method atPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/expectsRequestBodyFromMethod:atPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/isSecureServer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isSecureServer</Declaration>
+			
+			
+			<Anchor>//api/name/isSecureServer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/sslIdentityAndCertificates</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)sslIdentityAndCertificates</Declaration>
+			
+			
+			<Anchor>//api/name/sslIdentityAndCertificates</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/isPasswordProtected:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isPasswordProtected:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/isPasswordProtected:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/useDigestAccessAuthentication</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)useDigestAccessAuthentication</Declaration>
+			
+			
+			<Anchor>//api/name/useDigestAccessAuthentication</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/realm</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)realm</Declaration>
+			
+			
+			<Anchor>//api/name/realm</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/passwordForUser:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)passwordForUser:(NSString *)username</Declaration>
+			
+			
+			<Anchor>//api/name/passwordForUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/parseParams:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)parseParams:(NSString *)query</Declaration>
+			
+			
+			<Anchor>//api/name/parseParams:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/parseGetParams</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)parseGetParams</Declaration>
+			
+			
+			<Anchor>//api/name/parseGetParams</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/requestURI</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)requestURI</Declaration>
+			
+			
+			<Anchor>//api/name/requestURI</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/directoryIndexFileNames</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)directoryIndexFileNames</Declaration>
+			
+			
+			<Anchor>//api/name/directoryIndexFileNames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/filePathForURI:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)filePathForURI:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/filePathForURI:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/filePathForURI:allowDirectory:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)filePathForURI:(NSString *)path allowDirectory:(BOOL)allowDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/filePathForURI:allowDirectory:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/httpResponseForMethod:URI:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSObject&lt;HTTPResponse&gt; *)httpResponseForMethod:(NSString *)method URI:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/httpResponseForMethod:URI:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/webSocketForURI:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (WebSocket *)webSocketForURI:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/webSocketForURI:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/prepareForBodyWithSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)prepareForBodyWithSize:(UInt64)contentLength</Declaration>
+			
+			
+			<Anchor>//api/name/prepareForBodyWithSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/processBodyData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)processBodyData:(NSData *)postDataChunk</Declaration>
+			
+			
+			<Anchor>//api/name/processBodyData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/finishBody</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)finishBody</Declaration>
+			
+			
+			<Anchor>//api/name/finishBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/handleVersionNotSupported:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleVersionNotSupported:(NSString *)version</Declaration>
+			
+			
+			<Anchor>//api/name/handleVersionNotSupported:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/handleAuthenticationFailed</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleAuthenticationFailed</Declaration>
+			
+			
+			<Anchor>//api/name/handleAuthenticationFailed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/handleResourceNotFound</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleResourceNotFound</Declaration>
+			
+			
+			<Anchor>//api/name/handleResourceNotFound</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/handleInvalidRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleInvalidRequest:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/handleInvalidRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/handleUnknownMethod:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)handleUnknownMethod:(NSString *)method</Declaration>
+			
+			
+			<Anchor>//api/name/handleUnknownMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/preprocessResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)preprocessResponse:(HTTPMessage *)response</Declaration>
+			
+			
+			<Anchor>//api/name/preprocessResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/preprocessErrorResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)preprocessErrorResponse:(HTTPMessage *)response</Declaration>
+			
+			
+			<Anchor>//api/name/preprocessErrorResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/finishResponse</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)finishResponse</Declaration>
+			
+			
+			<Anchor>//api/name/finishResponse</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/shouldDie</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)shouldDie</Declaration>
+			
+			
+			<Anchor>//api/name/shouldDie</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/die</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)die</Declaration>
+			
+			
+			<Anchor>//api/name/die</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/responseHasAvailableData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)responseHasAvailableData:(NSObject&lt;HTTPResponse&gt; *)sender</Declaration>
+			
+			
+			<Anchor>//api/name/responseHasAvailableData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPConnection/responseDidAbort:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)responseDidAbort:(NSObject&lt;HTTPResponse&gt; *)sender</Declaration>
+			
+			
+			<Anchor>//api/name/responseDidAbort:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

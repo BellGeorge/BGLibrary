@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchLiveQuery.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchLiveQuery</TokenIdentifier>
+			<Abstract type="html">A CouchQuery subclass that automatically refreshes the result rows every time the database changes.
+    All you need to do is watch for changes to the .rows property. </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchLiveQuery/setRows:</TokenIdentifier>
+			<Abstract type="html">In CouchLiveQuery the -rows accessor is now a non-blocking property that can be observed using KVO. Its value will be nil until the initial query finishes.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) CouchQueryEnumerator *rows</Declaration>
+			
+			
+			<Anchor>//api/name/rows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchLiveQuery/rows</TokenIdentifier>
+			<Abstract type="html">In CouchLiveQuery the -rows accessor is now a non-blocking property that can be observed using KVO. Its value will be nil until the initial query finishes.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) CouchQueryEnumerator *rows</Declaration>
+			
+			
+			<Anchor>//api/name/rows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchLiveQuery/wait</TokenIdentifier>
+			<Abstract type="html">When the live query first starts, .rows will return nil until the initial results come back.
+    This call will block until the results are ready. Subsequent calls do nothing. </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)wait</Declaration>
+			
+			
+			<Anchor>//api/name/wait</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

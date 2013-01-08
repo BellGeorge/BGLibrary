@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RACAsyncCommand.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RACAsyncCommand</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACAsyncCommand.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACAsyncCommand/setOperationQueue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACAsyncCommand.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSOperationQueue *operationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/operationQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RACAsyncCommand/operationQueue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACAsyncCommand.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSOperationQueue *operationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/operationQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACAsyncCommand/setMaxConcurrentExecutions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACAsyncCommand.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger maxConcurrentExecutions</Declaration>
+			
+			
+			<Anchor>//api/name/maxConcurrentExecutions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RACAsyncCommand/maxConcurrentExecutions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACAsyncCommand.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger maxConcurrentExecutions</Declaration>
+			
+			
+			<Anchor>//api/name/maxConcurrentExecutions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACAsyncCommand/setNumberOfActiveExecutions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACAsyncCommand.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) NSUInteger numberOfActiveExecutions</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfActiveExecutions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RACAsyncCommand/numberOfActiveExecutions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACAsyncCommand.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, assign) NSUInteger numberOfActiveExecutions</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfActiveExecutions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACAsyncCommand/addAsyncBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACAsyncCommand.h</DeclaredIn>			
+			
+			<Declaration>- (RACSignal *)addAsyncBlock:(RACSignal *( ^ ) ( id value ))block</Declaration>
+			
+			
+			<Anchor>//api/name/addAsyncBlock:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

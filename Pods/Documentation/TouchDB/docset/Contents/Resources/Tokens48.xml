@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDRouter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDRouter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>
+			
+			<NodeRef refid="48"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/initWithServer:request:isLocal:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithServer:(TDServer *)server request:(NSURLRequest *)request isLocal:(BOOL)isLocal</Declaration>
+			
+			
+			<Anchor>//api/name/initWithServer:request:isLocal:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/setProcessRanges:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL processRanges</Declaration>
+			
+			
+			<Anchor>//api/name/processRanges</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRouter/processRanges</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL processRanges</Declaration>
+			
+			
+			<Anchor>//api/name/processRanges</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/setOnAccessCheck:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) OnAccessCheckBlock onAccessCheck</Declaration>
+			
+			
+			<Anchor>//api/name/onAccessCheck</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRouter/onAccessCheck</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) OnAccessCheckBlock onAccessCheck</Declaration>
+			
+			
+			<Anchor>//api/name/onAccessCheck</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/setOnResponseReady:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) OnResponseReadyBlock onResponseReady</Declaration>
+			
+			
+			<Anchor>//api/name/onResponseReady</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRouter/onResponseReady</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) OnResponseReadyBlock onResponseReady</Declaration>
+			
+			
+			<Anchor>//api/name/onResponseReady</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/setOnDataAvailable:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) OnDataAvailableBlock onDataAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/onDataAvailable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRouter/onDataAvailable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) OnDataAvailableBlock onDataAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/onDataAvailable</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/setOnFinished:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) OnFinishedBlock onFinished</Declaration>
+			
+			
+			<Anchor>//api/name/onFinished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRouter/onFinished</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) OnFinishedBlock onFinished</Declaration>
+			
+			
+			<Anchor>//api/name/onFinished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/setRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRouter/request</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/setResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRouter/response</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/start</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/stop</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDRouter/versionString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)versionString</Declaration>
+			
+			
+			<Anchor>//api/name/versionString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/initWithDatabaseManager:request:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDInternal.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDatabaseManager:(TDDatabaseManager *)dbManager request:(NSURLRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDatabaseManager:request:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/query:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)query:(NSString *)param</Declaration>
+			
+			
+			<Anchor>//api/name/query:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/boolQuery:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)boolQuery:(NSString *)param</Declaration>
+			
+			
+			<Anchor>//api/name/boolQuery:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/intQuery:defaultValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (int)intQuery:(NSString *)param defaultValue:(int)defaultValue</Declaration>
+			
+			
+			<Anchor>//api/name/intQuery:defaultValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/jsonQuery:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (id)jsonQuery:(NSString *)param error:(NSError **)outError</Declaration>
+			
+			
+			<Anchor>//api/name/jsonQuery:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/jsonQueries</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableDictionary *)jsonQueries</Declaration>
+			
+			
+			<Anchor>//api/name/jsonQueries</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/cacheWithEtag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)cacheWithEtag:(NSString *)etag</Declaration>
+			
+			
+			<Anchor>//api/name/cacheWithEtag:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/contentOptions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (TDContentOptions)contentOptions</Declaration>
+			
+			
+			<Anchor>//api/name/contentOptions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/getQueryOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)getQueryOptions:(struct TDQueryOptions *)options</Declaration>
+			
+			
+			<Anchor>//api/name/getQueryOptions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/setMultipartRequestType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *multipartRequestType</Declaration>
+			
+			
+			<Anchor>//api/name/multipartRequestType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRouter/multipartRequestType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *multipartRequestType</Declaration>
+			
+			
+			<Anchor>//api/name/multipartRequestType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/setBodyAsDictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *bodyAsDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/bodyAsDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRouter/bodyAsDictionary</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *bodyAsDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/bodyAsDictionary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/setIfMatch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *ifMatch</Declaration>
+			
+			
+			<Anchor>//api/name/ifMatch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRouter/ifMatch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *ifMatch</Declaration>
+			
+			
+			<Anchor>//api/name/ifMatch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/openDB</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)openDB</Declaration>
+			
+			
+			<Anchor>//api/name/openDB</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/sendResponseHeaders</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendResponseHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/sendResponseHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/sendResponseBodyAndFinish:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendResponseBodyAndFinish:(BOOL)finished</Declaration>
+			
+			
+			<Anchor>//api/name/sendResponseBodyAndFinish:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRouter/finished</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRouter.h</DeclaredIn>			
+			
+			<Declaration>- (void)finished</Declaration>
+			
+			
+			<Anchor>//api/name/finished</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

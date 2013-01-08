@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>TouchDB 1.0</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
+						<NodeRef refid="48"/>
+						<NodeRef refid="49"/>
+						<NodeRef refid="50"/>
+						<NodeRef refid="51"/>
+						<NodeRef refid="52"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="53"/>
+						<NodeRef refid="54"/>
+						<NodeRef refid="55"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="56"/>
+						<NodeRef refid="57"/>
+						<NodeRef refid="58"/>
+						<NodeRef refid="59"/>
+						<NodeRef refid="60"/>
+						<NodeRef refid="61"/>
+						<NodeRef refid="62"/>
+						<NodeRef refid="63"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>FMDatabase</Name>
+			<Path>Classes/FMDatabase.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>FMResultSet</Name>
+			<Path>Classes/FMResultSet.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>FMStatement</Name>
+			<Path>Classes/FMStatement.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>OAAttachment</Name>
+			<Path>Classes/OAAttachment.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>OACall</Name>
+			<Path>Classes/OACall.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>OAConsumer</Name>
+			<Path>Classes/OAConsumer.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>OADataFetcher</Name>
+			<Path>Classes/OADataFetcher.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>OAHMAC_SHA1SignatureProvider</Name>
+			<Path>Classes/OAHMAC_SHA1SignatureProvider.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>OAMutableURLRequest</Name>
+			<Path>Classes/OAMutableURLRequest.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>OAPlaintextSignatureProvider</Name>
+			<Path>Classes/OAPlaintextSignatureProvider.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>OAProblem</Name>
+			<Path>Classes/OAProblem.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>OARequestParameter</Name>
+			<Path>Classes/OARequestParameter.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>OAServiceTicket</Name>
+			<Path>Classes/OAServiceTicket.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>OAToken</Name>
+			<Path>Classes/OAToken.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>OATokenManager</Name>
+			<Path>Classes/OATokenManager.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>TDAttachment</Name>
+			<Path>Classes/TDAttachment.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>TDBase64</Name>
+			<Path>Classes/TDBase64.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>TDBasicAuthorizer</Name>
+			<Path>Classes/TDBasicAuthorizer.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>TDBatcher</Name>
+			<Path>Classes/TDBatcher.html</Path>
+		</Node>
+		<Node id="20">
+			<Name>TDBlobStore</Name>
+			<Path>Classes/TDBlobStore.html</Path>
+		</Node>
+		<Node id="21">
+			<Name>TDBlobStoreWriter</Name>
+			<Path>Classes/TDBlobStoreWriter.html</Path>
+		</Node>
+		<Node id="22">
+			<Name>TDBody</Name>
+			<Path>Classes/TDBody.html</Path>
+		</Node>
+		<Node id="23">
+			<Name>TDCanonicalJSON</Name>
+			<Path>Classes/TDCanonicalJSON.html</Path>
+		</Node>
+		<Node id="24">
+			<Name>TDChangeTracker</Name>
+			<Path>Classes/TDChangeTracker.html</Path>
+		</Node>
+		<Node id="25">
+			<Name>TDConnectionChangeTracker</Name>
+			<Path>Classes/TDConnectionChangeTracker.html</Path>
+		</Node>
+		<Node id="26">
+			<Name>TDDatabase</Name>
+			<Path>Classes/TDDatabase.html</Path>
+		</Node>
+		<Node id="27">
+			<Name>TDDatabaseManager</Name>
+			<Path>Classes/TDDatabaseManager.html</Path>
+		</Node>
+		<Node id="28">
+			<Name>TDJSON</Name>
+			<Path>Classes/TDJSON.html</Path>
+		</Node>
+		<Node id="29">
+			<Name>TDMACAuthorizer</Name>
+			<Path>Classes/TDMACAuthorizer.html</Path>
+		</Node>
+		<Node id="30">
+			<Name>TDMultiStreamWriter</Name>
+			<Path>Classes/TDMultiStreamWriter.html</Path>
+		</Node>
+		<Node id="31">
+			<Name>TDMultipartDocumentReader</Name>
+			<Path>Classes/TDMultipartDocumentReader.html</Path>
+		</Node>
+		<Node id="32">
+			<Name>TDMultipartDownloader</Name>
+			<Path>Classes/TDMultipartDownloader.html</Path>
+		</Node>
+		<Node id="33">
+			<Name>TDMultipartReader</Name>
+			<Path>Classes/TDMultipartReader.html</Path>
+		</Node>
+		<Node id="34">
+			<Name>TDMultipartUploader</Name>
+			<Path>Classes/TDMultipartUploader.html</Path>
+		</Node>
+		<Node id="35">
+			<Name>TDMultipartWriter</Name>
+			<Path>Classes/TDMultipartWriter.html</Path>
+		</Node>
+		<Node id="36">
+			<Name>TDOAuth1Authorizer</Name>
+			<Path>Classes/TDOAuth1Authorizer.html</Path>
+		</Node>
+		<Node id="37">
+			<Name>TDPulledRevision</Name>
+			<Path>Classes/TDPulledRevision.html</Path>
+		</Node>
+		<Node id="38">
+			<Name>TDPuller</Name>
+			<Path>Classes/TDPuller.html</Path>
+		</Node>
+		<Node id="39">
+			<Name>TDPusher</Name>
+			<Path>Classes/TDPusher.html</Path>
+		</Node>
+		<Node id="40">
+			<Name>TDReachability</Name>
+			<Path>Classes/TDReachability.html</Path>
+		</Node>
+		<Node id="41">
+			<Name>TDRemoteJSONRequest</Name>
+			<Path>Classes/TDRemoteJSONRequest.html</Path>
+		</Node>
+		<Node id="42">
+			<Name>TDRemoteRequest</Name>
+			<Path>Classes/TDRemoteRequest.html</Path>
+		</Node>
+		<Node id="43">
+			<Name>TDReplicator</Name>
+			<Path>Classes/TDReplicator.html</Path>
+		</Node>
+		<Node id="44">
+			<Name>TDReplicatorManager</Name>
+			<Path>Classes/TDReplicatorManager.html</Path>
+		</Node>
+		<Node id="45">
+			<Name>TDResponse</Name>
+			<Path>Classes/TDResponse.html</Path>
+		</Node>
+		<Node id="46">
+			<Name>TDRevision</Name>
+			<Path>Classes/TDRevision.html</Path>
+		</Node>
+		<Node id="47">
+			<Name>TDRevisionList</Name>
+			<Path>Classes/TDRevisionList.html</Path>
+		</Node>
+		<Node id="48">
+			<Name>TDRouter</Name>
+			<Path>Classes/TDRouter.html</Path>
+		</Node>
+		<Node id="49">
+			<Name>TDSequenceMap</Name>
+			<Path>Classes/TDSequenceMap.html</Path>
+		</Node>
+		<Node id="50">
+			<Name>TDServer</Name>
+			<Path>Classes/TDServer.html</Path>
+		</Node>
+		<Node id="51">
+			<Name>TDURLProtocol</Name>
+			<Path>Classes/TDURLProtocol.html</Path>
+		</Node>
+		<Node id="52">
+			<Name>TDView</Name>
+			<Path>Classes/TDView.html</Path>
+		</Node>
+		
+		<Node id="53">
+			<Name>NSMutableURLRequest(OAParameterAdditions)</Name>
+			<Path>Categories/NSMutableURLRequest+OAParameterAdditions.html</Path>
+		</Node>
+		<Node id="54">
+			<Name>NSString(OAURLEncodingAdditions)</Name>
+			<Path>Categories/NSString+OAURLEncodingAdditions.html</Path>
+		</Node>
+		<Node id="55">
+			<Name>NSURL(OABaseAdditions)</Name>
+			<Path>Categories/NSURL+OABaseAdditions.html</Path>
+		</Node>
+		
+		<Node id="56">
+			<Name>OACallDelegate</Name>
+			<Path>Protocols/OACallDelegate.html</Path>
+		</Node>
+		<Node id="57">
+			<Name>OASignatureProviding</Name>
+			<Path>Protocols/OASignatureProviding.html</Path>
+		</Node>
+		<Node id="58">
+			<Name>OATokenManagerDelegate</Name>
+			<Path>Protocols/OATokenManagerDelegate.html</Path>
+		</Node>
+		<Node id="59">
+			<Name>TDAuthorizer</Name>
+			<Path>Protocols/TDAuthorizer.html</Path>
+		</Node>
+		<Node id="60">
+			<Name>TDChangeTrackerClient</Name>
+			<Path>Protocols/TDChangeTrackerClient.html</Path>
+		</Node>
+		<Node id="61">
+			<Name>TDMultipartReaderDelegate</Name>
+			<Path>Protocols/TDMultipartReaderDelegate.html</Path>
+		</Node>
+		<Node id="62">
+			<Name>TDValidationContext</Name>
+			<Path>Protocols/TDValidationContext.html</Path>
+		</Node>
+		<Node id="63">
+			<Name>TDViewCompiler</Name>
+			<Path>Protocols/TDViewCompiler.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

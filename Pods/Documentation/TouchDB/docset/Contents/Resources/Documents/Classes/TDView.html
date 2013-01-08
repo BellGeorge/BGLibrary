@@ -1,0 +1,874 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TDView Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TouchDB 1.0 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TDView Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/collation">&nbsp;&nbsp;&nbsp;&nbsp;collation</option>
+	
+	<option value="//api/name/database">&nbsp;&nbsp;&nbsp;&nbsp;database</option>
+	
+	<option value="//api/name/lastSequenceIndexed">&nbsp;&nbsp;&nbsp;&nbsp;lastSequenceIndexed</option>
+	
+	<option value="//api/name/mapBlock">&nbsp;&nbsp;&nbsp;&nbsp;mapBlock</option>
+	
+	<option value="//api/name/mapContentOptions">&nbsp;&nbsp;&nbsp;&nbsp;mapContentOptions</option>
+	
+	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
+	
+	<option value="//api/name/reduceBlock">&nbsp;&nbsp;&nbsp;&nbsp;reduceBlock</option>
+	
+	<option value="//api/name/stale">&nbsp;&nbsp;&nbsp;&nbsp;stale</option>
+	
+	<option value="//api/name/viewID">&nbsp;&nbsp;&nbsp;&nbsp;viewID</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/compiler">&nbsp;&nbsp;&nbsp;&nbsp;+ compiler</option>
+	
+	<option value="//api/name/setCompiler:">&nbsp;&nbsp;&nbsp;&nbsp;+ setCompiler:</option>
+	
+	<option value="//api/name/totalValues:">&nbsp;&nbsp;&nbsp;&nbsp;+ totalValues:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/databaseClosing">&nbsp;&nbsp;&nbsp;&nbsp;- databaseClosing</option>
+	
+	<option value="//api/name/deleteView">&nbsp;&nbsp;&nbsp;&nbsp;- deleteView</option>
+	
+	<option value="//api/name/dump">&nbsp;&nbsp;&nbsp;&nbsp;- dump</option>
+	
+	<option value="//api/name/initWithDatabase:name:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDatabase:name:</option>
+	
+	<option value="//api/name/queryWithOptions:status:">&nbsp;&nbsp;&nbsp;&nbsp;- queryWithOptions:status:</option>
+	
+	<option value="//api/name/removeIndex">&nbsp;&nbsp;&nbsp;&nbsp;- removeIndex</option>
+	
+	<option value="//api/name/setMapBlock:reduceBlock:version:">&nbsp;&nbsp;&nbsp;&nbsp;- setMapBlock:reduceBlock:version:</option>
+	
+	<option value="//api/name/updateIndex">&nbsp;&nbsp;&nbsp;&nbsp;- updateIndex</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collation">collation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/database">database</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastSequenceIndexed">lastSequenceIndexed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapBlock">mapBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapContentOptions">mapContentOptions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reduceBlock">reduceBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stale">stale</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewID">viewID</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/compiler">compiler</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCompiler:">setCompiler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/totalValues:">totalValues:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/databaseClosing">databaseClosing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteView">deleteView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dump">dump</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDatabase:name:">initWithDatabase:name:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queryWithOptions:status:">queryWithOptions:status:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeIndex">removeIndex</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMapBlock:reduceBlock:version:">setMapBlock:reduceBlock:version:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateIndex">updateIndex</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TDView Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TDView Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TDView.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Represents a view available in a <a href="#//api/name/database">database</a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteView">&ndash;&nbsp;deleteView</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/database">&nbsp;&nbsp;database</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapBlock">&nbsp;&nbsp;mapBlock</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reduceBlock">&nbsp;&nbsp;reduceBlock</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collation">&nbsp;&nbsp;collation</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapContentOptions">&nbsp;&nbsp;mapContentOptions</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setMapBlock:reduceBlock:version:">&ndash;&nbsp;setMapBlock:reduceBlock:version:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeIndex">&ndash;&nbsp;removeIndex</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stale">&nbsp;&nbsp;stale</a></code>
+		<span class="tooltip"><p>Is the view&rsquo;s index currently out of date?</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateIndex">&ndash;&nbsp;updateIndex</a></code>
+		<span class="tooltip"><p>Updates the view&rsquo;s index (incrementally) if necessary.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastSequenceIndexed">&nbsp;&nbsp;lastSequenceIndexed</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queryWithOptions:status:">&ndash;&nbsp;queryWithOptions:status:</a></code>
+		<span class="tooltip"><p>Queries the view. Does NOT first update the index.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/totalValues:">+&nbsp;totalValues:</a></code>
+		<span class="tooltip"><p>Utility function to use in reduce blocks. Totals an array of NSNumbers.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCompiler:">+&nbsp;setCompiler:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/compiler">+&nbsp;compiler</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDatabase:name:">&ndash;&nbsp;initWithDatabase:name:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewID">&nbsp;&nbsp;viewID</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dump">&ndash;&nbsp;dump</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/databaseClosing">&ndash;&nbsp;databaseClosing</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/collation" title="collation"></a>
+	<h3 class="subsubtitle method-title">collation</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property TDViewCollation collation</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/database" title="database"></a>
+	<h3 class="subsubtitle method-title">database</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) TDDatabase *database</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastSequenceIndexed" title="lastSequenceIndexed"></a>
+	<h3 class="subsubtitle method-title">lastSequenceIndexed</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) SequenceNumber lastSequenceIndexed</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapBlock" title="mapBlock"></a>
+	<h3 class="subsubtitle method-title">mapBlock</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) TDMapBlock mapBlock</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapContentOptions" title="mapContentOptions"></a>
+	<h3 class="subsubtitle method-title">mapContentOptions</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property TDContentOptions mapContentOptions</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="subsubtitle method-title">name</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *name</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reduceBlock" title="reduceBlock"></a>
+	<h3 class="subsubtitle method-title">reduceBlock</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) TDReduceBlock reduceBlock</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stale" title="stale"></a>
+	<h3 class="subsubtitle method-title">stale</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Is the view&rsquo;s index currently out of date?</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL stale</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Is the view&rsquo;s index currently out of date?</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewID" title="viewID"></a>
+	<h3 class="subsubtitle method-title">viewID</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) int viewID</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/compiler" title="compiler"></a>
+	<h3 class="subsubtitle method-title">compiler</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id&lt;TDViewCompiler&gt;)compiler</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCompiler:" title="setCompiler:"></a>
+	<h3 class="subsubtitle method-title">setCompiler:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setCompiler:(id&lt;TDViewCompiler&gt;)<em>compiler</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/totalValues:" title="totalValues:"></a>
+	<h3 class="subsubtitle method-title">totalValues:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Utility function to use in reduce blocks. Totals an array of NSNumbers.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSNumber *)totalValues:(NSArray *)<em>values</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Utility function to use in reduce blocks. Totals an array of NSNumbers.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/databaseClosing" title="databaseClosing"></a>
+	<h3 class="subsubtitle method-title">databaseClosing</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)databaseClosing</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteView" title="deleteView"></a>
+	<h3 class="subsubtitle method-title">deleteView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)deleteView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dump" title="dump"></a>
+	<h3 class="subsubtitle method-title">dump</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)dump</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDatabase:name:" title="initWithDatabase:name:"></a>
+	<h3 class="subsubtitle method-title">initWithDatabase:name:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDatabase:(TDDatabase *)<em>db</em> name:(NSString *)<em>name</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queryWithOptions:status:" title="queryWithOptions:status:"></a>
+	<h3 class="subsubtitle method-title">queryWithOptions:status:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Queries the view. Does NOT first update the index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)queryWithOptions:(const TDQueryOptions *)<em>options</em> status:(TDStatus *)<em>outStatus</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>The options to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array of result rows &mdash; each is a dictionary with &ldquo;key&rdquo; and &ldquo;value&rdquo; keys, and possibly &ldquo;id&rdquo; and &ldquo;doc&rdquo;.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Queries the view. Does NOT first update the index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeIndex" title="removeIndex"></a>
+	<h3 class="subsubtitle method-title">removeIndex</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removeIndex</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setMapBlock:reduceBlock:version:" title="setMapBlock:reduceBlock:version:"></a>
+	<h3 class="subsubtitle method-title">setMapBlock:reduceBlock:version:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setMapBlock:(TDMapBlock)<em>mapBlock</em> reduceBlock:(TDReduceBlock)<em>reduceBlock</em> version:(NSString *)<em>version</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateIndex" title="updateIndex"></a>
+	<h3 class="subsubtitle method-title">updateIndex</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates the view&rsquo;s index (incrementally) if necessary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (TDStatus)updateIndex</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>200 if updated, 304 if already up-to-date, else an error code</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Updates the view&rsquo;s index (incrementally) if necessary.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchDesignDocument.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchDesignDocument</TokenIdentifier>
+			<Abstract type="html">A Design Document is a special document type that contains things like map/reduce functions, and the code and static resources for CouchApps.
+Optional support for native Objective-C map/reduce functions.
+    This is only available when talking to an embedded Couchbase database running in the same process as the app, e.g. Couchbase Mobile. </Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/queryViewNamed:</TokenIdentifier>
+			<Abstract type="html">Creates a query for the given named view.
+    If view definitions have been modified but not saved yet, they will be saved first. </Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>- (CouchQuery *)queryViewNamed:(NSString *)viewName</Declaration>
+			
+			
+			<Anchor>//api/name/queryViewNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/isLanguageAvailable:</TokenIdentifier>
+			<Abstract type="html">Indicates whether a given language is available for writing functions in, in this database.</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isLanguageAvailable:(NSString *)language</Declaration>
+			
+			
+			<Anchor>//api/name/isLanguageAvailable:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/setLanguage:</TokenIdentifier>
+			<Abstract type="html">The language that the functions in this design document are written in.
+    Defaults to kCouchLanguageJavaScript. </Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *language</Declaration>
+			
+			
+			<Anchor>//api/name/language</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDesignDocument/language</TokenIdentifier>
+			<Abstract type="html">The language that the functions in this design document are written in.
+    Defaults to kCouchLanguageJavaScript. </Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *language</Declaration>
+			
+			
+			<Anchor>//api/name/language</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/setViewNames:</TokenIdentifier>
+			<Abstract type="html">Fetches and returns the names of all the views defined in this design document.
+    The first call fetches the entire design document synchronously; subsequent calls are cached. </Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *viewNames</Declaration>
+			
+			
+			<Anchor>//api/name/viewNames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDesignDocument/viewNames</TokenIdentifier>
+			<Abstract type="html">Fetches and returns the names of all the views defined in this design document.
+    The first call fetches the entire design document synchronously; subsequent calls are cached. </Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *viewNames</Declaration>
+			
+			
+			<Anchor>//api/name/viewNames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/mapFunctionOfViewNamed:</TokenIdentifier>
+			<Abstract type="html">Returns the map function of the view with the given name.</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)mapFunctionOfViewNamed:(NSString *)viewName</Declaration>
+			
+			
+			<Anchor>//api/name/mapFunctionOfViewNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/reduceFunctionOfViewNamed:</TokenIdentifier>
+			<Abstract type="html">Returns the reduce function of the view with the given name.</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)reduceFunctionOfViewNamed:(NSString *)viewName</Declaration>
+			
+			
+			<Anchor>//api/name/reduceFunctionOfViewNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/defineViewNamed:map:reduce:</TokenIdentifier>
+			<Abstract type="html">Sets the definition of a view, or deletes it.
+    After making changes to one or more views, you should call saveChanges to PUT them back to the database.
+    If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>- (void)defineViewNamed:(NSString *)viewName map:(NSString *)mapFunction reduce:(NSString *)reduceFunction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewName</Name>
+					<Abstract type="html">The name of the view, in the scope of this design doc.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapFunction</Name>
+					<Abstract type="html">The source code of the map function. If nil, the view will be deleted.</Abstract>
+				</Parameter><Parameter>
+					<Name>reduceFunction</Name>
+					<Abstract type="html">The source code of the reduce function. Optional; pass nil for none. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/defineViewNamed:map:reduce:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/defineViewNamed:map:</TokenIdentifier>
+			<Abstract type="html">A shortcut that defines a simple view with no reduce function.
+    After making changes to one or more views, you should call saveChanges to PUT them back to the database.
+    If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>- (void)defineViewNamed:(NSString *)viewName map:(NSString *)mapFunction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewName</Name>
+					<Abstract type="html">The name of the view, in the scope of this design doc.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapFunction</Name>
+					<Abstract type="html">The source code of the map function. If nil, the view will be deleted. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/defineViewNamed:map:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/setFilters:</TokenIdentifier>
+			<Abstract type="html">The filter functions defined in this design document.</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *filters</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSDictionary whose keys are filter names and values are function source code. </Abstract></ReturnValue>
+			<Anchor>//api/name/filters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDesignDocument/filters</TokenIdentifier>
+			<Abstract type="html">The filter functions defined in this design document.</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *filters</Declaration>
+			
+			<ReturnValue><Abstract type="html">An NSDictionary whose keys are filter names and values are function source code. </Abstract></ReturnValue>
+			<Anchor>//api/name/filters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/defineFilterNamed:asFunction:</TokenIdentifier>
+			<Abstract type="html">Sets the definition of a filter, or deletes it.
+    After making changes to one or more filters, you should call saveChanges to PUT them back to the database.
+    If the new definition is identical to the existing one, the design document will not be marked as changed or saved back to the database.</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>- (void)defineFilterNamed:(NSString *)filterName asFunction:(NSString *)filterFunction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filterName</Name>
+					<Abstract type="html">The name of the filter, in the scope of this design doc.</Abstract>
+				</Parameter><Parameter>
+					<Name>filterFunction</Name>
+					<Abstract type="html">The source code of the filter function. If nil, the filter will be deleted. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/defineFilterNamed:asFunction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/setValidation:</TokenIdentifier>
+			<Abstract type="html">The validation function, a JavaScript function that validates document contents.</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *validation</Declaration>
+			
+			
+			<Anchor>//api/name/validation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDesignDocument/validation</TokenIdentifier>
+			<Abstract type="html">The validation function, a JavaScript function that validates document contents.</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *validation</Declaration>
+			
+			
+			<Anchor>//api/name/validation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/setIncludeLocalSequence:</TokenIdentifier>
+			<Abstract type="html">Should view query results include the document local sequence number in the index?
+    Setting this to YES sets the &apos;local_seq&apos; property of the design document&apos;s &apos;options&apos; property to &apos;true&apos;.
+    This affects every view in this design document. </Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL includeLocalSequence</Declaration>
+			
+			
+			<Anchor>//api/name/includeLocalSequence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDesignDocument/includeLocalSequence</TokenIdentifier>
+			<Abstract type="html">Should view query results include the document local sequence number in the index?
+    Setting this to YES sets the &apos;local_seq&apos; property of the design document&apos;s &apos;options&apos; property to &apos;true&apos;.
+    This affects every view in this design document. </Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL includeLocalSequence</Declaration>
+			
+			
+			<Anchor>//api/name/includeLocalSequence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/setChanged:</TokenIdentifier>
+			<Abstract type="html">Have the contents of the design document been changed in-memory but not yet saved?</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL changed</Declaration>
+			
+			
+			<Anchor>//api/name/changed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchDesignDocument/changed</TokenIdentifier>
+			<Abstract type="html">Have the contents of the design document been changed in-memory but not yet saved?</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL changed</Declaration>
+			
+			
+			<Anchor>//api/name/changed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/saveChanges</TokenIdentifier>
+			<Abstract type="html">Saves changes, asynchronously. If there are no current changes, returns nil.</Abstract>
+			<DeclaredIn>CouchDesignDocument.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)saveChanges</Declaration>
+			
+			
+			<Anchor>//api/name/saveChanges</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/defineViewNamed:mapBlock:version:</TokenIdentifier>
+			<Abstract type="html">Defines or deletes a native view.
+    The view&apos;s definition is given as an Objective-C block (or NULL to delete the view). The body of the block should call the &apos;emit&apos; block (passed in as a paramter) for every key/value pair it wants to write to the view.
+    Since the function itself is obviously not stored in the database (only a unique string idenfitying it), you must re-define the view on every launch of the app! If the database needs to rebuild the view but the function hasn&apos;t been defined yet, it will fail and the view will be empty, causing weird problems later on.
+    It is very important that this block be a law-abiding map function! As in other languages, it must be a &quot;pure&quot; function, with no side effects, that always emits the same values given the same input document. That means that it should not access or change any external state; be careful, since blocks make that so easy that you might do it inadvertently!
+    The block may be called on any thread, or on multiple threads simultaneously. This won&apos;t be a problem if the code is &quot;pure&quot; as described above, since it will as a consequence also be thread-safe. </Abstract>
+			<DeclaredIn>CouchDesignDocument_Embedded.h</DeclaredIn>			
+			
+			<Declaration>- (void)defineViewNamed:(NSString *)viewName mapBlock:(TDMapBlock)mapBlock version:(NSString *)version</Declaration>
+			
+			
+			<Anchor>//api/name/defineViewNamed:mapBlock:version:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/defineViewNamed:mapBlock:reduceBlock:version:</TokenIdentifier>
+			<Abstract type="html">Defines or deletes a native view with both a map and a reduce function.
+    For details, read the documentation of the -defineViewNamed:mapBlock: method.</Abstract>
+			<DeclaredIn>CouchDesignDocument_Embedded.h</DeclaredIn>			
+			
+			<Declaration>- (void)defineViewNamed:(NSString *)viewName mapBlock:(TDMapBlock)mapBlock reduceBlock:(TDReduceBlock)reduceBlock version:(NSString *)version</Declaration>
+			
+			
+			<Anchor>//api/name/defineViewNamed:mapBlock:reduceBlock:version:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/defineFilterNamed:block:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchDesignDocument_Embedded.h</DeclaredIn>			
+			
+			<Declaration>- (void)defineFilterNamed:(NSString *)filterName block:(TDFilterBlock)filterBlock</Declaration>
+			
+			
+			<Anchor>//api/name/defineFilterNamed:block:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDesignDocument/setValidationBlock:</TokenIdentifier>
+			<Abstract type="html">An Objective-C block that can validate any document being added/updated/deleted in this database.</Abstract>
+			<DeclaredIn>CouchDesignDocument_Embedded.h</DeclaredIn>			
+			
+			<Declaration>- (void)setValidationBlock:(TDValidationBlock)validationBlock</Declaration>
+			
+			
+			<Anchor>//api/name/setValidationBlock:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>TouchDB 1.0 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">TouchDB 1.0 </a></h1>
+				<a id="developerHome" href="index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TouchDB 1.0 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TouchDB 1.0 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1>TouchDB</h1>
+
+<p>by Jens Alfke (jens@couchbase.com)<br/>
+with contributions from Alexander Edge, Chris Kau, David Venable, Derek Clarkson, Fabien Franzen, fcandalija, J Chris Anderson, Marty Schoch, Mike Lamb, Paul Mietz Egli, Robin Lu<br/>
+and technical advice from Damien Katz and Filipe Manana</p>
+
+<p><strong>TouchDB</strong> is a lightweight <a href="[http://couchdb.apache.org](http://couchdb.apache.org)">Apache CouchDB</a>-compatible database engine suitable for embedding into mobile or desktop apps. Think of it this way: If CouchDB is MySQL, then TouchDB is SQLite.</p>
+
+<p>By &ldquo;<em>CouchDB-compatible</em>&rdquo; I mean that it can replicate with CouchDB, and that its data model and high-level design are &ldquo;Couch-like&rdquo; enough to make it familiar to CouchDB/Couchbase developers. Its REST API is nearly identical, though it doesn&rsquo;t support a few CouchDB features, like user accounts, that aren&rsquo;t useful in mobile apps. Its implementation is <em>not</em> based on CouchDB&rsquo;s (it&rsquo;s not even written in Erlang.) It <em>does</em> support replication to and from CouchDB.</p>
+
+<p>By &ldquo;<em>suitable for embedding into mobile apps</em>&rdquo;, I mean that it meets the following requirements:</p>
+
+<ul>
+<li>Small code size; currently about 350kbytes of ARM7 code. (Code size is important to mobile apps, which are often downloaded over cell networks.)</li>
+<li>Quick startup time on relatively-slow CPUs; ideally 100ms or less.</li>
+<li>Low memory usage with typical mobile data-sets. The expectation is the number of documents will not be huge, although there may be sizable multimedia attachments.</li>
+<li>&ldquo;Good enough&rdquo; performance with these CPUs and data-sets.</li>
+</ul>
+
+
+<p>And by &ldquo;<em>mobile apps</em>&rdquo; we&rsquo;re focusing on iOS and <a href="[https://github.com/couchbaselabs/TouchDB-Android](https://github.com/couchbaselabs/TouchDB-Android)">Android</a>, although there&rsquo;s no reason we couldn&rsquo;t extend this to other platforms like Windows Phone. And it&rsquo;s not limited to mobile OSs &mdash; the Objective-C implementation runs on Mac OS as well, and on Linux and other Unix-like OSs via <a href="[http://www.gnustep.org/](http://www.gnustep.org/)">GNUstep</a>.</p>
+
+<h2>More Information</h2>
+
+<ul>
+<li>There&rsquo;s lots more information on the <a href="[https://github.com/couchbaselabs/TouchDB-iOS/wiki](https://github.com/couchbaselabs/TouchDB-iOS/wiki)">wiki</a>.</li>
+<li>There&rsquo;s a &ldquo;Grocery Sync&rdquo; <a href="[https://github.com/couchbaselabs/iOS-Couchbase-Demo](https://github.com/couchbaselabs/iOS-Couchbase-Demo)">demo app</a> for iOS, that implements a simple shared to-do list.</li>
+<li>Or if you want to ask questions or get help, join the <a href="[https://groups.google.com/forum/?fromgroups](https://groups.google.com/forum/?fromgroups)#!forum/mobile-couchbase">mailing list</a>.</li>
+</ul>
+
+
+<h2>Platforms</h2>
+
+<ul>
+<li><strong>Mac OS X</strong> &mdash; 10.7.2 or higher.</li>
+<li><strong>iOS</strong> &mdash; 5.0 or higher.</li>
+<li><strong>Linux, BSD, etc</strong> &mdash; Any platform <a href="[http://wiki.gnustep.org/index.php/Platform_compatibility](http://wiki.gnustep.org/index.php/Platform_compatibility)">supported by</a> current <a href="[http://www.gnustep.org/](http://www.gnustep.org/)">GNUstep</a> and libobjc2.</li>
+<li><strong>MS Windows</strong> &mdash; As <a href="[http://wiki.gnustep.org/index.php/Platform_compatibility](http://wiki.gnustep.org/index.php/Platform_compatibility)">supported by</a> GNUstep using MingW.</li>
+<li><strong>Android / Java</strong> &mdash; Has its own source base and <a href="[https://github.com/couchbaselabs/TouchDB-Android](https://github.com/couchbaselabs/TouchDB-Android)">repository</a>.</li>
+</ul>
+
+
+<h2>Requirements</h2>
+
+<ul>
+<li>It&rsquo;s written in Objective-C.</li>
+<li>Xcode 4.5+ is required to build it (Clang 3.1+, with GNUstep).</li>
+<li>Runtime system requirements for Apple platforms are iOS 5+, or Mac OS X 10.7.2+.</li>
+</ul>
+
+
+<h2>License</h2>
+
+<ul>
+<li>TouchDB itself is under the Apache License 2.0.</li>
+<li><a href="[https://github.com/couchbaselabs/fmdb](https://github.com/couchbaselabs/fmdb)">FMDB</a>, by <a href="[https://github.com/ccgus/](https://github.com/ccgus/)">Gus Mueller</a>, is under the MIT License.</li>
+<li><a href="[http://code.google.com/p/google-toolbox-for-mac/](http://code.google.com/p/google-toolbox-for-mac/)">Google Toolbox For Mac</a> is under the Apache License 2.0.</li>
+<li><a href="[https://github.com/robbiehanson/CocoaHTTPServer](https://github.com/robbiehanson/CocoaHTTPServer)">CocoaHTTPServer</a>, by Robbie Hanson, is under the BSD License.</li>
+<li><a href="[https://bitbucket.org/snej/myutilities/overview](https://bitbucket.org/snej/myutilities/overview)">MYUtilities</a> (portions of which are copied into the vendor/MYUtilities directory) is under the BSD License. (But note that I, Jens, wrote MYUtilities and would have no problem re-licensing it under Apache for use here.)</li>
+</ul>
+
+
+<h2>Development Status</h2>
+
+<p>TouchDB 1.0 was released on November 5, 2012.</p>
+
+<p>In general, the &ldquo;stable&rdquo; branch represents the latest stable release, while the &ldquo;master&rdquo; branch has the latest commits and may not be stable.</p>
+
+<h2>Downloading TouchDB</h2>
+
+<ul>
+<li><a href="[https://github.com/couchbaselabs/TouchDB-iOS/downloads](https://github.com/couchbaselabs/TouchDB-iOS/downloads)">Stable builds</a> (releases, betas and candidates)</li>
+<li><a href="http://files.couchbase.com/developer-previews/mobile/ios/touchdb/">Latest revisions</a> (built hourly after any commits. May not be stable; use at your own risk.)</li>
+</ul>
+
+
+<h2>Building TouchDB</h2>
+
+<h3>On a Mac</h3>
+
+<p>(You might prefer to just <a href="[https://github.com/couchbaselabs/TouchDB-iOS/downloads](https://github.com/couchbaselabs/TouchDB-iOS/downloads)">download</a> the latest stable release. But if you want to build it yourself&hellip;)</p>
+
+<p>For full details see the <a href="[https://github.com/couchbaselabs/TouchDB-iOS/wiki/Building-TouchDB](https://github.com/couchbaselabs/TouchDB-iOS/wiki/Building-TouchDB)">wiki page</a>. The basic steps are:</p>
+
+<ol>
+<li>Clone the TouchDB repository to your local disk.</li>
+<li>In that directory run &ldquo;<code>git submodule init</code>&rdquo; and then &ldquo;<code>git submodule update</code>&rdquo;. This will clone the dependent library repos (such as <a href="[https://github.com/couchbaselabs/fmdb](https://github.com/couchbaselabs/fmdb)">FMDB</a> and <a href="[https://bitbucket.org/snej/myutilities/overview](https://bitbucket.org/snej/myutilities/overview)">MYUtilities</a>) into the vendor/ subdirectory.</li>
+<li>Open the Xcode project and build the &ldquo;Mac Framework&rdquo; and/or &ldquo;iOS Framework&rdquo; schemes.</li>
+</ol>
+
+
+<h3>With GNUstep</h3>
+
+<p>Please refer to the files <a href="[https://github.com/couchbaselabs/TouchDB-iOS/blob/master/GNUstep/BUILDING.txt](https://github.com/couchbaselabs/TouchDB-iOS/blob/master/GNUstep/BUILDING.txt)">BUILDING.txt</a> and <a href="[https://github.com/couchbaselabs/TouchDB-iOS/blob/master/GNUstep/SETUP.txt](https://github.com/couchbaselabs/TouchDB-iOS/blob/master/GNUstep/SETUP.txt)">SETUP.txt</a> in the <code>GNUstep</code> directory.</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/FMDatabase.html">FMDatabase</a></li>
+							
+							<li><a href="Classes/FMResultSet.html">FMResultSet</a></li>
+							
+							<li><a href="Classes/FMStatement.html">FMStatement</a></li>
+							
+							<li><a href="Classes/OAAttachment.html">OAAttachment</a></li>
+							
+							<li><a href="Classes/OACall.html">OACall</a></li>
+							
+							<li><a href="Classes/OAConsumer.html">OAConsumer</a></li>
+							
+							<li><a href="Classes/OADataFetcher.html">OADataFetcher</a></li>
+							
+							<li><a href="Classes/OAHMAC_SHA1SignatureProvider.html">OAHMAC_SHA1SignatureProvider</a></li>
+							
+							<li><a href="Classes/OAMutableURLRequest.html">OAMutableURLRequest</a></li>
+							
+							<li><a href="Classes/OAPlaintextSignatureProvider.html">OAPlaintextSignatureProvider</a></li>
+							
+							<li><a href="Classes/OAProblem.html">OAProblem</a></li>
+							
+							<li><a href="Classes/OARequestParameter.html">OARequestParameter</a></li>
+							
+							<li><a href="Classes/OAServiceTicket.html">OAServiceTicket</a></li>
+							
+							<li><a href="Classes/OAToken.html">OAToken</a></li>
+							
+							<li><a href="Classes/OATokenManager.html">OATokenManager</a></li>
+							
+							<li><a href="Classes/TDAttachment.html">TDAttachment</a></li>
+							
+							<li><a href="Classes/TDBase64.html">TDBase64</a></li>
+							
+							<li><a href="Classes/TDBasicAuthorizer.html">TDBasicAuthorizer</a></li>
+							
+							<li><a href="Classes/TDBatcher.html">TDBatcher</a></li>
+							
+							<li><a href="Classes/TDBlobStore.html">TDBlobStore</a></li>
+							
+							<li><a href="Classes/TDBlobStoreWriter.html">TDBlobStoreWriter</a></li>
+							
+							<li><a href="Classes/TDBody.html">TDBody</a></li>
+							
+							<li><a href="Classes/TDCanonicalJSON.html">TDCanonicalJSON</a></li>
+							
+							<li><a href="Classes/TDChangeTracker.html">TDChangeTracker</a></li>
+							
+							<li><a href="Classes/TDConnectionChangeTracker.html">TDConnectionChangeTracker</a></li>
+							
+							<li><a href="Classes/TDDatabase.html">TDDatabase</a></li>
+							
+							<li><a href="Classes/TDDatabaseManager.html">TDDatabaseManager</a></li>
+							
+							<li><a href="Classes/TDJSON.html">TDJSON</a></li>
+							
+							<li><a href="Classes/TDMACAuthorizer.html">TDMACAuthorizer</a></li>
+							
+							<li><a href="Classes/TDMultiStreamWriter.html">TDMultiStreamWriter</a></li>
+							
+							<li><a href="Classes/TDMultipartDocumentReader.html">TDMultipartDocumentReader</a></li>
+							
+							<li><a href="Classes/TDMultipartDownloader.html">TDMultipartDownloader</a></li>
+							
+							<li><a href="Classes/TDMultipartReader.html">TDMultipartReader</a></li>
+							
+							<li><a href="Classes/TDMultipartUploader.html">TDMultipartUploader</a></li>
+							
+							<li><a href="Classes/TDMultipartWriter.html">TDMultipartWriter</a></li>
+							
+							<li><a href="Classes/TDOAuth1Authorizer.html">TDOAuth1Authorizer</a></li>
+							
+							<li><a href="Classes/TDPulledRevision.html">TDPulledRevision</a></li>
+							
+							<li><a href="Classes/TDPuller.html">TDPuller</a></li>
+							
+							<li><a href="Classes/TDPusher.html">TDPusher</a></li>
+							
+							<li><a href="Classes/TDReachability.html">TDReachability</a></li>
+							
+							<li><a href="Classes/TDRemoteJSONRequest.html">TDRemoteJSONRequest</a></li>
+							
+							<li><a href="Classes/TDRemoteRequest.html">TDRemoteRequest</a></li>
+							
+							<li><a href="Classes/TDReplicator.html">TDReplicator</a></li>
+							
+							<li><a href="Classes/TDReplicatorManager.html">TDReplicatorManager</a></li>
+							
+							<li><a href="Classes/TDResponse.html">TDResponse</a></li>
+							
+							<li><a href="Classes/TDRevision.html">TDRevision</a></li>
+							
+							<li><a href="Classes/TDRevisionList.html">TDRevisionList</a></li>
+							
+							<li><a href="Classes/TDRouter.html">TDRouter</a></li>
+							
+							<li><a href="Classes/TDSequenceMap.html">TDSequenceMap</a></li>
+							
+							<li><a href="Classes/TDServer.html">TDServer</a></li>
+							
+							<li><a href="Classes/TDURLProtocol.html">TDURLProtocol</a></li>
+							
+							<li><a href="Classes/TDView.html">TDView</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/OACallDelegate.html">OACallDelegate</a></li>
+							
+							<li><a href="Protocols/OASignatureProviding.html">OASignatureProviding</a></li>
+							
+							<li><a href="Protocols/OATokenManagerDelegate.html">OATokenManagerDelegate</a></li>
+							
+							<li><a href="Protocols/TDAuthorizer.html">TDAuthorizer</a></li>
+							
+							<li><a href="Protocols/TDChangeTrackerClient.html">TDChangeTrackerClient</a></li>
+							
+							<li><a href="Protocols/TDMultipartReaderDelegate.html">TDMultipartReaderDelegate</a></li>
+							
+							<li><a href="Protocols/TDValidationContext.html">TDValidationContext</a></li>
+							
+							<li><a href="Protocols/TDViewCompiler.html">TDViewCompiler</a></li>
+							
+						</ul>
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSMutableURLRequest+OAParameterAdditions.html">NSMutableURLRequest(OAParameterAdditions)</a></li>
+							
+							<li><a href="Categories/NSString+OAURLEncodingAdditions.html">NSString(OAURLEncodingAdditions)</a></li>
+							
+							<li><a href="Categories/NSURL+OABaseAdditions.html">NSURL(OABaseAdditions)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

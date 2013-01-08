@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NSAnimationDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NSAnimationDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMDefines.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

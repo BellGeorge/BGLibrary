@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CouchDocumentModel.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CouchDocumentModel</TokenIdentifier>
+			<Abstract type="html">This notification is posted by a CouchDocument in response to an external change (as reported by the _changes feed.)
+    It is not sent in response to &apos;local&apos; changes made by this CouchDatabase&apos;s object tree.
+    It will not be sent unless change-tracking is enabled in its parent CouchDatabase. </Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CouchDocumentModel/couchDocumentChanged:</TokenIdentifier>
+			<Abstract type="html">If a CouchDocument&apos;s modelObject implements this method, it will be called whenever the document posts a kCouchDocumentChangeNotification.</Abstract>
+			<DeclaredIn>CouchDocument.h</DeclaredIn>			
+			
+			<Declaration>- (void)couchDocumentChanged:(CouchDocument *)doc</Declaration>
+			
+			
+			<Anchor>//api/name/couchDocumentChanged:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

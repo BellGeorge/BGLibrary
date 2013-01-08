@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSException+MYUtilities.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSException(MYUtilities)</TokenIdentifier>
+			<Abstract type="html">Sets a callback to be invoked when MYReportException is called.
+    In a GUI app, the callback would typically call [NSApp reportException: theException].
+    The ExceptionReportingApplication class, below, sets this up automatically. </Abstract>
+			<DeclaredIn>ExceptionUtils.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSException(MYUtilities)/my_callStack</TokenIdentifier>
+			<Abstract type="html">Returns a textual, human-readable backtrace of the point where the exception was thrown.</Abstract>
+			<DeclaredIn>ExceptionUtils.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)my_callStack</Declaration>
+			
+			
+			<Anchor>//api/name/my_callStack</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

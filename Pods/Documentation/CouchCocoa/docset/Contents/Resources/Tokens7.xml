@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchDynamicObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchDynamicObject</TokenIdentifier>
+			<Abstract type="html">A generic class with runtime support for dynamic properties.
+    You can subclass this and declare properties in the subclass without needing to implement them or make instance variables; simply note them as &apos;@@dynamic&apos; in the @@implementation.
+    The dynamic accessors will be bridged to calls to getValueOfProperty: and setValue:ofProperty:, allowing you to easily store property values in an NSDictionary or other container. </Abstract>
+			<DeclaredIn>CouchDynamicObject.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchDynamicObject/propertyNames</TokenIdentifier>
+			<Abstract type="html">Returns the names of all properties defined in this class and superclasses up to CouchDynamicObject.</Abstract>
+			<DeclaredIn>CouchDynamicObject.h</DeclaredIn>			
+			
+			<Declaration>+ (NSSet *)propertyNames</Declaration>
+			
+			
+			<Anchor>//api/name/propertyNames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDynamicObject/getValueOfProperty:</TokenIdentifier>
+			<Abstract type="html">Returns the value of a named property.
+    This method will only be called for properties that have been declared in the class&apos;s @@interface using @@property.
+    You must override this method -- the base implementation just raises an exception. </Abstract>
+			<DeclaredIn>CouchDynamicObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)getValueOfProperty:(NSString *)property</Declaration>
+			
+			
+			<Anchor>//api/name/getValueOfProperty:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchDynamicObject/setValue:ofProperty:</TokenIdentifier>
+			<Abstract type="html">Sets the value of a named property.
+    This method will only be called for properties that have been declared in the class&apos;s @@interface using @@property, and are not declared readonly.
+    You must override this method -- the base implementation just raises an exception.</Abstract>
+			<DeclaredIn>CouchDynamicObject.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)setValue:(id)value ofProperty:(NSString *)property</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the property was set, NO if it isn&apos;t settable; an exception will be raised.
+    Default implementation returns NO. </Abstract></ReturnValue>
+			<Anchor>//api/name/setValue:ofProperty:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchDynamicObject/classOfProperty:</TokenIdentifier>
+			<Abstract type="html">Given the name of an object-valued property, returns the class of the property&apos;s value.
+    Returns nil if the property doesn&apos;t exist, or if its type isn&apos;t an object pointer or is &apos;id&apos;. </Abstract>
+			<DeclaredIn>CouchDynamicObject.h</DeclaredIn>			
+			
+			<Declaration>+ (Class)classOfProperty:(NSString *)propertyName</Declaration>
+			
+			
+			<Anchor>//api/name/classOfProperty:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchDynamicObject/getterKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchDynamicObject.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)getterKey:(SEL)sel</Declaration>
+			
+			
+			<Anchor>//api/name/getterKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchDynamicObject/setterKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchDynamicObject.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)setterKey:(SEL)sel</Declaration>
+			
+			
+			<Anchor>//api/name/setterKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchDynamicObject/impForGetterOfProperty:ofClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchDynamicObject.h</DeclaredIn>			
+			
+			<Declaration>+ (IMP)impForGetterOfProperty:(NSString *)property ofClass:(Class)propertyClass</Declaration>
+			
+			
+			<Anchor>//api/name/impForGetterOfProperty:ofClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchDynamicObject/impForSetterOfProperty:ofClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchDynamicObject.h</DeclaredIn>			
+			
+			<Declaration>+ (IMP)impForSetterOfProperty:(NSString *)property ofClass:(Class)propertyClass</Declaration>
+			
+			
+			<Anchor>//api/name/impForSetterOfProperty:ofClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchDynamicObject/impForGetterOfProperty:ofType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchDynamicObject.h</DeclaredIn>			
+			
+			<Declaration>+ (IMP)impForGetterOfProperty:(NSString *)property ofType:(const char *)propertyType</Declaration>
+			
+			
+			<Anchor>//api/name/impForGetterOfProperty:ofType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchDynamicObject/impForSetterOfProperty:ofType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchDynamicObject.h</DeclaredIn>			
+			
+			<Declaration>+ (IMP)impForSetterOfProperty:(NSString *)property ofType:(const char *)propertyType</Declaration>
+			
+			
+			<Anchor>//api/name/impForSetterOfProperty:ofType:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

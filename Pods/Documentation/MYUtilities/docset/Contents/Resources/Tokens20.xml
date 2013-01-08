@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NSImageDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NSImageDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTMDefines.h</DeclaredIn>
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

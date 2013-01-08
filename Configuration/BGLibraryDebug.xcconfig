@@ -1,0 +1,2 @@
+// Get the shared configuration
+#include "./BGLibraryShared.xcconfig"

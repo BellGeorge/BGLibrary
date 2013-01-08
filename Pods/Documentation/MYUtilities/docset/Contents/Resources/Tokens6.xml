@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+GTMZLibAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(GTMZLibAdditions)</TokenIdentifier>
+			<Abstract type="html">Helpers for dealing w/ zlib inflate/deflate calls.</Abstract>
+			<DeclaredIn>GTMNSData+zlib.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(GTMZLibAdditions)/gtm_dataByGzippingBytes:length:</TokenIdentifier>
+			<Abstract type="html">Return an autoreleased NSData w/ the result of gzipping the bytes.</Abstract>
+			<DeclaredIn>GTMNSData+zlib.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)gtm_dataByGzippingBytes:(const void *)bytes length:(NSUInteger)length</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_dataByGzippingBytes:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(GTMZLibAdditions)/gtm_dataByGzippingData:</TokenIdentifier>
+			<Abstract type="html">Return an autoreleased NSData w/ the result of gzipping the payload of |data|.</Abstract>
+			<DeclaredIn>GTMNSData+zlib.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)gtm_dataByGzippingData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_dataByGzippingData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(GTMZLibAdditions)/gtm_dataByGzippingBytes:length:compressionLevel:</TokenIdentifier>
+			<Abstract type="html">Return an autoreleased NSData w/ the result of gzipping the bytes using |level| compression level.</Abstract>
+			<DeclaredIn>GTMNSData+zlib.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)gtm_dataByGzippingBytes:(const void *)bytes length:(NSUInteger)length compressionLevel:(int)level</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_dataByGzippingBytes:length:compressionLevel:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(GTMZLibAdditions)/gtm_dataByGzippingData:compressionLevel:</TokenIdentifier>
+			<Abstract type="html">Return an autoreleased NSData w/ the result of gzipping the payload of |data| using |level| compression level.</Abstract>
+			<DeclaredIn>GTMNSData+zlib.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)gtm_dataByGzippingData:(NSData *)data compressionLevel:(int)level</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_dataByGzippingData:compressionLevel:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(GTMZLibAdditions)/gtm_dataByDeflatingBytes:length:</TokenIdentifier>
+			<Abstract type="html">Return an autoreleased NSData w/ the result of deflating the bytes.</Abstract>
+			<DeclaredIn>GTMNSData+zlib.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)gtm_dataByDeflatingBytes:(const void *)bytes length:(NSUInteger)length</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_dataByDeflatingBytes:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(GTMZLibAdditions)/gtm_dataByDeflatingData:</TokenIdentifier>
+			<Abstract type="html">Return an autoreleased NSData w/ the result of deflating the payload of |data|.</Abstract>
+			<DeclaredIn>GTMNSData+zlib.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)gtm_dataByDeflatingData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_dataByDeflatingData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(GTMZLibAdditions)/gtm_dataByDeflatingBytes:length:compressionLevel:</TokenIdentifier>
+			<Abstract type="html">Return an autoreleased NSData w/ the result of deflating the bytes using |level| compression level.</Abstract>
+			<DeclaredIn>GTMNSData+zlib.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)gtm_dataByDeflatingBytes:(const void *)bytes length:(NSUInteger)length compressionLevel:(int)level</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_dataByDeflatingBytes:length:compressionLevel:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(GTMZLibAdditions)/gtm_dataByDeflatingData:compressionLevel:</TokenIdentifier>
+			<Abstract type="html">Return an autoreleased NSData w/ the result of deflating the payload of |data| using |level| compression level.</Abstract>
+			<DeclaredIn>GTMNSData+zlib.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)gtm_dataByDeflatingData:(NSData *)data compressionLevel:(int)level</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_dataByDeflatingData:compressionLevel:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(GTMZLibAdditions)/gtm_dataByInflatingBytes:length:</TokenIdentifier>
+			<Abstract type="html">Return an autoreleased NSData w/ the result of decompressing the bytes.</Abstract>
+			<DeclaredIn>GTMNSData+zlib.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)gtm_dataByInflatingBytes:(const void *)bytes length:(NSUInteger)length</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_dataByInflatingBytes:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(GTMZLibAdditions)/gtm_dataByInflatingData:</TokenIdentifier>
+			<Abstract type="html">Return an autoreleased NSData w/ the result of decompressing the payload of |data|.</Abstract>
+			<DeclaredIn>GTMNSData+zlib.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)gtm_dataByInflatingData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/gtm_dataByInflatingData:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>OGImage 0.0.1</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>OGCachedImage</Name>
+			<Path>Classes/OGCachedImage.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>OGImage</Name>
+			<Path>Classes/OGImage.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>OGImageCache</Name>
+			<Path>Classes/OGImageCache.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>OGImageLoader</Name>
+			<Path>Classes/OGImageLoader.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>OGImageProcessing</Name>
+			<Path>Classes/OGImageProcessing.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>OGScaledImage</Name>
+			<Path>Classes/OGScaledImage.html</Path>
+		</Node>
+		
+		
+		
+	</Library>
+</DocSetNodes>

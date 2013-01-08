@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OACall.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OACall</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/setUrl:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OACall/url</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/setMethod:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OACall/method</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/setParameters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *parameters</Declaration>
+			
+			
+			<Anchor>//api/name/parameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OACall/parameters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *parameters</Declaration>
+			
+			
+			<Anchor>//api/name/parameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/setFiles:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *files</Declaration>
+			
+			
+			<Anchor>//api/name/files</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OACall/files</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *files</Declaration>
+			
+			
+			<Anchor>//api/name/files</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/setTicket:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) OAServiceTicket *ticket</Declaration>
+			
+			
+			<Anchor>//api/name/ticket</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OACall/ticket</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) OAServiceTicket *ticket</Declaration>
+			
+			
+			<Anchor>//api/name/ticket</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/initWithURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)aURL</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/initWithURL:method:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)aURL method:(NSString *)aMethod</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:method:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/initWithURL:parameters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)aURL parameters:(NSArray *)theParameters</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:parameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/initWithURL:method:parameters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)aURL method:(NSString *)aMethod parameters:(NSArray *)theParameters</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:method:parameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/initWithURL:parameters:files:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)aURL parameters:(NSArray *)theParameters files:(NSDictionary *)theFiles</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:parameters:files:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/initWithURL:method:parameters:files:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)aURL method:(NSString *)aMethod parameters:(NSArray *)theParameters files:(NSDictionary *)theFiles</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:method:parameters:files:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OACall/perform:token:realm:delegate:didFinish:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OACall.h</DeclaredIn>			
+			
+			<Declaration>- (void)perform:(OAConsumer *)consumer token:(OAToken *)token realm:(NSString *)realm delegate:(NSObject&lt;OACallDelegate&gt; *)aDelegate didFinish:(SEL)finished</Declaration>
+			
+			
+			<Anchor>//api/name/perform:token:realm:delegate:didFinish:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

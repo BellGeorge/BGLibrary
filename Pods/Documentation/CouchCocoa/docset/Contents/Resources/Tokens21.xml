@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchSocketChangeTracker.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchSocketChangeTracker</TokenIdentifier>
+			<Abstract type="html">CouchChangeTracker implementation that uses a raw TCP socket to read the chunk-mode HTTP response.</Abstract>
+			<DeclaredIn>CouchSocketChangeTracker.h</DeclaredIn>
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDPulledRevision.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDPulledRevision</TokenIdentifier>
+			<Abstract type="html">A revision received from a remote server during a pull. Tracks the opaque remote sequence ID.</Abstract>
+			<DeclaredIn>TDPuller.h</DeclaredIn>
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDPulledRevision/setRemoteSequenceID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDPuller.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *remoteSequenceID</Declaration>
+			
+			
+			<Anchor>//api/name/remoteSequenceID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDPulledRevision/remoteSequenceID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDPuller.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *remoteSequenceID</Declaration>
+			
+			
+			<Anchor>//api/name/remoteSequenceID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDPulledRevision/setConflicted:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDPuller.h</DeclaredIn>			
+			
+			<Declaration>@property bool conflicted</Declaration>
+			
+			
+			<Anchor>//api/name/conflicted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDPulledRevision/conflicted</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDPuller.h</DeclaredIn>			
+			
+			<Declaration>@property bool conflicted</Declaration>
+			
+			
+			<Anchor>//api/name/conflicted</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

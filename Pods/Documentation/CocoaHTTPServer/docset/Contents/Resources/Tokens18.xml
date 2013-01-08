@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSValue+NSValueDDRangeExtensions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSValue(NSValueDDRangeExtensions)</TokenIdentifier>
+			<Abstract type="html">DDRange is the functional equivalent of a 64 bit NSRange.
+The HTTP Server is designed to support very large files.
+On 32 bit architectures (ppc, i386) NSRange uses unsigned 32 bit integers.
+This only supports a range of up to 4 gigabytes.
+By defining our own variant, we can support a range up to 16 exabytes.</Abstract>
+			<DeclaredIn>DDRange.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSValue(NSValueDDRangeExtensions)/valueWithDDRange:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDRange.h</DeclaredIn>			
+			
+			<Declaration>+ (NSValue *)valueWithDDRange:(DDRange)range</Declaration>
+			
+			
+			<Anchor>//api/name/valueWithDDRange:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSValue(NSValueDDRangeExtensions)/ddrangeValue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDRange.h</DeclaredIn>			
+			
+			<Declaration>- (DDRange)ddrangeValue</Declaration>
+			
+			
+			<Anchor>//api/name/ddrangeValue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSValue(NSValueDDRangeExtensions)/ddrangeCompare:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DDRange.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)ddrangeCompare:(NSValue *)ddrangeValue</Declaration>
+			
+			
+			<Anchor>//api/name/ddrangeCompare:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

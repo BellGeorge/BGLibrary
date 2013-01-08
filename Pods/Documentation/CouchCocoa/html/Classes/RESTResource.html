@@ -1,0 +1,1901 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>RESTResource Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CouchCocoa 0.961beta6 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">RESTResource Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/URL">&nbsp;&nbsp;&nbsp;&nbsp;URL</option>
+	
+	<option value="//api/name/activeOperations">&nbsp;&nbsp;&nbsp;&nbsp;activeOperations</option>
+	
+	<option value="//api/name/cachedURL">&nbsp;&nbsp;&nbsp;&nbsp;cachedURL</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/eTag">&nbsp;&nbsp;&nbsp;&nbsp;eTag</option>
+	
+	<option value="//api/name/lastModified">&nbsp;&nbsp;&nbsp;&nbsp;lastModified</option>
+	
+	<option value="//api/name/owningCache">&nbsp;&nbsp;&nbsp;&nbsp;owningCache</option>
+	
+	<option value="//api/name/parent">&nbsp;&nbsp;&nbsp;&nbsp;parent</option>
+	
+	<option value="//api/name/relativePath">&nbsp;&nbsp;&nbsp;&nbsp;relativePath</option>
+	
+	<option value="//api/name/tracksActiveOperations">&nbsp;&nbsp;&nbsp;&nbsp;tracksActiveOperations</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/DELETE">&nbsp;&nbsp;&nbsp;&nbsp;- DELETE</option>
+	
+	<option value="//api/name/GET">&nbsp;&nbsp;&nbsp;&nbsp;- GET</option>
+	
+	<option value="//api/name/POST:parameters:">&nbsp;&nbsp;&nbsp;&nbsp;- POST:parameters:</option>
+	
+	<option value="//api/name/POSTJSON:parameters:">&nbsp;&nbsp;&nbsp;&nbsp;- POSTJSON:parameters:</option>
+	
+	<option value="//api/name/PUT:parameters:">&nbsp;&nbsp;&nbsp;&nbsp;- PUT:parameters:</option>
+	
+	<option value="//api/name/PUTJSON:parameters:">&nbsp;&nbsp;&nbsp;&nbsp;- PUTJSON:parameters:</option>
+	
+	<option value="//api/name/assignedRelativePath:">&nbsp;&nbsp;&nbsp;&nbsp;- assignedRelativePath:</option>
+	
+	<option value="//api/name/cacheResponse:">&nbsp;&nbsp;&nbsp;&nbsp;- cacheResponse:</option>
+	
+	<option value="//api/name/createdByPOST:">&nbsp;&nbsp;&nbsp;&nbsp;- createdByPOST:</option>
+	
+	<option value="//api/name/credentialForOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- credentialForOperation:</option>
+	
+	<option value="//api/name/initUntitledWithParent:">&nbsp;&nbsp;&nbsp;&nbsp;- initUntitledWithParent:</option>
+	
+	<option value="//api/name/initWithParent:relativePath:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithParent:relativePath:</option>
+	
+	<option value="//api/name/initWithURL:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:</option>
+	
+	<option value="//api/name/operation:willCompleteWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- operation:willCompleteWithError:</option>
+	
+	<option value="//api/name/operationDidComplete:">&nbsp;&nbsp;&nbsp;&nbsp;- operationDidComplete:</option>
+	
+	<option value="//api/name/operationDidStart:">&nbsp;&nbsp;&nbsp;&nbsp;- operationDidStart:</option>
+	
+	<option value="//api/name/protectionSpaceForOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- protectionSpaceForOperation:</option>
+	
+	<option value="//api/name/requestWithMethod:parameters:">&nbsp;&nbsp;&nbsp;&nbsp;- requestWithMethod:parameters:</option>
+	
+	<option value="//api/name/sendHTTP:parameters:">&nbsp;&nbsp;&nbsp;&nbsp;- sendHTTP:parameters:</option>
+	
+	<option value="//api/name/sendRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- sendRequest:</option>
+	
+	<option value="//api/name/setCredential:">&nbsp;&nbsp;&nbsp;&nbsp;- setCredential:</option>
+	
+	<option value="//api/name/setProtectionSpace:">&nbsp;&nbsp;&nbsp;&nbsp;- setProtectionSpace:</option>
+	
+	<option value="//api/name/setURL:">&nbsp;&nbsp;&nbsp;&nbsp;- setURL:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URL">URL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activeOperations">activeOperations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cachedURL">cachedURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eTag">eTag</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastModified">lastModified</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/owningCache">owningCache</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parent">parent</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/relativePath">relativePath</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tracksActiveOperations">tracksActiveOperations</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/DELETE">DELETE</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/GET">GET</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/POST:parameters:">POST:parameters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/POSTJSON:parameters:">POSTJSON:parameters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/PUT:parameters:">PUT:parameters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/PUTJSON:parameters:">PUTJSON:parameters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/assignedRelativePath:">assignedRelativePath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cacheResponse:">cacheResponse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createdByPOST:">createdByPOST:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/credentialForOperation:">credentialForOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initUntitledWithParent:">initUntitledWithParent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithParent:relativePath:">initWithParent:relativePath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:">initWithURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/operation:willCompleteWithError:">operation:willCompleteWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/operationDidComplete:">operationDidComplete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/operationDidStart:">operationDidStart:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/protectionSpaceForOperation:">protectionSpaceForOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWithMethod:parameters:">requestWithMethod:parameters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendHTTP:parameters:">sendHTTP:parameters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendRequest:">sendRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCredential:">setCredential:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setProtectionSpace:">setProtectionSpace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setURL:">setURL:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="RESTResource Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">RESTResource Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">RESTResource.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Represents an HTTP resource identified by a specific <a href="#//api/name/URL">URL</a>.</p>
+
+<pre><code>RESTResource instances form a hierarchy. Root instances are instantiated with an explicit URL, and children with paths relative to their parents. Children know their parents, but parents don't automatically remember their children. (Subclasses can use the RESTCache utility to enable such downward links, however.)
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithURL:">&ndash;&nbsp;initWithURL:</a></code>
+		<span class="tooltip"><p>Creates an instance with an absolute <a href="#//api/name/URL">URL</a> and no <a href="#//api/name/parent">parent</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithParent:relativePath:">&ndash;&nbsp;initWithParent:relativePath:</a></code>
+		<span class="tooltip"><p>Creates an instance with a path relative to a <a href="#//api/name/parent">parent</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initUntitledWithParent:">&ndash;&nbsp;initUntitledWithParent:</a></code>
+		<span class="tooltip"><p>Creates an instance that has a <a href="#//api/name/parent">parent</a> but no <a href="#//api/name/URL">URL</a> yet.</p>
+
+<pre><code>This resource will become real when it's first PUT, which will behind the scenes actually do a POST to the parent and assign the resource the URL returned in the Location: response header. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URL">&nbsp;&nbsp;URL</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parent">&nbsp;&nbsp;parent</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/relativePath">&nbsp;&nbsp;relativePath</a></code>
+		<span class="tooltip"><p>The relative path from the <a href="#//api/name/parent">parent</a> (as given in the initializer.)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCredential:">&ndash;&nbsp;setCredential:</a></code>
+		<span class="tooltip"><p>Sets the login credential (e.g. username/password) to be used for authentication by this resource and its children.</p>
+
+<pre><code>IMPORTANT: CouchDB's default configuration unfortunately doesn't support this type of programmatic auth. To make it work, you'll need to add a "WWW-Authenticate" property to the server's [httpd] configuration section, as described at https://groups.google.com/d/msg/mobile-couchbase/GiSnos0Hx54/q5JGepLaQBgJ. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setProtectionSpace:">&ndash;&nbsp;setProtectionSpace:</a></code>
+		<span class="tooltip"><p>Sets a protection space for operations on this resource.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/GET">&ndash;&nbsp;GET</a></code>
+		<span class="tooltip"><p>Starts an asynchronous HTTP GET operation, with no parameters.</p>
+
+<pre><code>(If you need to customize headers or URL queries, call sendHTTP:parameters:.) 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/POST:parameters:">&ndash;&nbsp;POST:parameters:</a></code>
+		<span class="tooltip"><p>Starts an asynchronous HTTP POST operation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/PUT:parameters:">&ndash;&nbsp;PUT:parameters:</a></code>
+		<span class="tooltip"><p>Starts an asynchronous HTTP PUT operation.</p>
+
+<pre><code>However, if this resource is "untitled" (has no relativePath yet), the operation will instead be a POST to the parent's URL. On successful completion of the POST, createdByPOST: will be called, which will set the relativePath property based on the response's Location: header. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/PUTJSON:parameters:">&ndash;&nbsp;PUTJSON:parameters:</a></code>
+		<span class="tooltip"><p>Starts an asynchronous HTTP PUT operation, with a JSON body.</p>
+
+<pre><code>The 'body' parameter will be serialized as JSON, and the Content-Type request header will be set to "application/json". 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/POSTJSON:parameters:">&ndash;&nbsp;POSTJSON:parameters:</a></code>
+		<span class="tooltip"><p>Starts an asynchronous HTTP POST operation, with a JSON body.</p>
+
+<pre><code>The 'body' parameter will be serialized as JSON, and the Content-Type request header will be set to "application/json". 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/DELETE">&ndash;&nbsp;DELETE</a></code>
+		<span class="tooltip"><p>Starts an asynchronous HTTP DELETE operation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendHTTP:parameters:">&ndash;&nbsp;sendHTTP:parameters:</a></code>
+		<span class="tooltip"><p>Sends an arbitrary HTTP request.</p>
+
+<pre><code>All the other HTTP request methods ultimately call this one.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWithMethod:parameters:">&ndash;&nbsp;requestWithMethod:parameters:</a></code>
+		<span class="tooltip"><p>Creates an NSURLRequest without a <a href="../Classes/RESTOperation.html">RESTOperation</a>.</p>
+
+<pre><code>Called by sendHTTP:parameters:.
+Clients usually won't need this, but you can call this directly if you want to customize the NSMutableURLRequest and then call sendRequest: on it. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendRequest:">&ndash;&nbsp;sendRequest:</a></code>
+		<span class="tooltip"><p>Bottleneck for starting a <a href="../Classes/RESTOperation.html">RESTOperation</a>.</p>
+
+<pre><code>Clients usually won't need to call this. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cacheResponse:">&ndash;&nbsp;cacheResponse:</a></code>
+		<span class="tooltip"><p>Remembers the cacheable state (<a href="#//api/name/eTag">eTag</a> and Last-Modified) of a <a href="#//api/name/GET">GET</a> response.</p>
+
+<pre><code>If the operation is a successful GET, with a valid Etag: or Last-Modified: header, this method will set the eTag and lastModified properties appropriately. These will be then be sent in subsequent GET requests, which may then receive empty 304 (Not Modified) responses if the contents have not changed.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eTag">&nbsp;&nbsp;eTag</a></code>
+		<span class="tooltip"><p>The HTTP ETag of the last cached response.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastModified">&nbsp;&nbsp;lastModified</a></code>
+		<span class="tooltip"><p>The HTTP Last-Modified timestamp of the last cached response.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cachedURL">&nbsp;&nbsp;cachedURL</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/URL">URL</a> of the last cached response.</p>
+
+<pre><code>This is associated with the eTag and lastModified properties.
+This URL might not be the same as the receiver's URL property, because "?"-prefixed parameters to a request are added to the URL's query. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tracksActiveOperations">&nbsp;&nbsp;tracksActiveOperations</a></code>
+		<span class="tooltip"><p>If set to YES, the .<a href="#//api/name/activeOperations">activeOperations</a> property is enabled.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activeOperations">&nbsp;&nbsp;activeOperations</a></code>
+		<span class="tooltip"><p>All currently active RESTOperations on this resource or its children.</p>
+
+<pre><code>This is not tracked (and will return nil) unless the .tracksActiveOperations property is first set to YES. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/operationDidStart:">&ndash;&nbsp;operationDidStart:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/operationDidComplete:">&ndash;&nbsp;operationDidComplete:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/operation:willCompleteWithError:">&ndash;&nbsp;operation:willCompleteWithError:</a></code>
+		<span class="tooltip"><p>This is sent by a <a href="../Classes/RESTOperation.html">RESTOperation</a> to its resource when it completes, before its state changes or any other handlers are called.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createdByPOST:">&ndash;&nbsp;createdByPOST:</a></code>
+		<span class="tooltip"><p>Called when an untitled (URL-less) resource has just been created by a successful POST: call to its <a href="#//api/name/parent">parent</a> resource&rsquo;s <a href="#//api/name/URL">URL</a>.</p>
+
+<pre><code>The base implementation sets this object's relativePath and URL properties based on the value of the response's Location: header. If you override this method, be sure to call the superclass method.
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setURL:">&ndash;&nbsp;setURL:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/assignedRelativePath:">&ndash;&nbsp;assignedRelativePath:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/owningCache">&nbsp;&nbsp;owningCache</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/credentialForOperation:">&ndash;&nbsp;credentialForOperation:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/protectionSpaceForOperation:">&ndash;&nbsp;protectionSpaceForOperation:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/URL" title="URL"></a>
+	<h3 class="subsubtitle method-title">URL</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSURL *URL</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/activeOperations" title="activeOperations"></a>
+	<h3 class="subsubtitle method-title">activeOperations</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>All currently active RESTOperations on this resource or its children.</p>
+
+<pre><code>This is not tracked (and will return nil) unless the .tracksActiveOperations property is first set to YES. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSSet *activeOperations</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>All currently active RESTOperations on this resource or its children.</p>
+
+<pre><code>This is not tracked (and will return nil) unless the .tracksActiveOperations property is first set to YES. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cachedURL" title="cachedURL"></a>
+	<h3 class="subsubtitle method-title">cachedURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/URL">URL</a> of the last cached response.</p>
+
+<pre><code>This is associated with the eTag and lastModified properties.
+This URL might not be the same as the receiver's URL property, because "?"-prefixed parameters to a request are added to the URL's query. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain) NSURL *cachedURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="#//api/name/URL">URL</a> of the last cached response.</p>
+
+<pre><code>This is associated with the eTag and lastModified properties.
+This URL might not be the same as the receiver's URL property, because "?"-prefixed parameters to a request are added to the URL's query. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) id&lt;RESTResourceDelegate&gt; delegate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eTag" title="eTag"></a>
+	<h3 class="subsubtitle method-title">eTag</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The HTTP ETag of the last cached response.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *eTag</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The HTTP ETag of the last cached response.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastModified" title="lastModified"></a>
+	<h3 class="subsubtitle method-title">lastModified</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The HTTP Last-Modified timestamp of the last cached response.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSString *lastModified</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The HTTP Last-Modified timestamp of the last cached response.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/owningCache" title="owningCache"></a>
+	<h3 class="subsubtitle method-title">owningCache</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, retain) RESTCache *owningCache</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parent" title="parent"></a>
+	<h3 class="subsubtitle method-title">parent</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) RESTResource *parent</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/relativePath" title="relativePath"></a>
+	<h3 class="subsubtitle method-title">relativePath</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The relative path from the <a href="#//api/name/parent">parent</a> (as given in the initializer.)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *relativePath</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The relative path from the <a href="#//api/name/parent">parent</a> (as given in the initializer.)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tracksActiveOperations" title="tracksActiveOperations"></a>
+	<h3 class="subsubtitle method-title">tracksActiveOperations</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If set to YES, the .<a href="#//api/name/activeOperations">activeOperations</a> property is enabled.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property BOOL tracksActiveOperations</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If set to YES, the .<a href="#//api/name/activeOperations">activeOperations</a> property is enabled.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/DELETE" title="DELETE"></a>
+	<h3 class="subsubtitle method-title">DELETE</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts an asynchronous HTTP DELETE operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)DELETE</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Starts an asynchronous HTTP DELETE operation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/GET" title="GET"></a>
+	<h3 class="subsubtitle method-title">GET</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts an asynchronous HTTP GET operation, with no parameters.</p>
+
+<pre><code>(If you need to customize headers or URL queries, call sendHTTP:parameters:.) 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)GET</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Starts an asynchronous HTTP GET operation, with no parameters.</p>
+
+<pre><code>(If you need to customize headers or URL queries, call sendHTTP:parameters:.) 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/POST:parameters:" title="POST:parameters:"></a>
+	<h3 class="subsubtitle method-title">POST:parameters:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts an asynchronous HTTP POST operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)POST:(NSData *)<em>body</em> parameters:(NSDictionary *)<em>parameters</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Starts an asynchronous HTTP POST operation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/POSTJSON:parameters:" title="POSTJSON:parameters:"></a>
+	<h3 class="subsubtitle method-title">POSTJSON:parameters:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts an asynchronous HTTP POST operation, with a JSON body.</p>
+
+<pre><code>The 'body' parameter will be serialized as JSON, and the Content-Type request header will be set to "application/json". 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)POSTJSON:(id)<em>body</em> parameters:(NSDictionary *)<em>parameters</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Starts an asynchronous HTTP POST operation, with a JSON body.</p>
+
+<pre><code>The 'body' parameter will be serialized as JSON, and the Content-Type request header will be set to "application/json". 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/PUT:parameters:" title="PUT:parameters:"></a>
+	<h3 class="subsubtitle method-title">PUT:parameters:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts an asynchronous HTTP PUT operation.</p>
+
+<pre><code>However, if this resource is "untitled" (has no relativePath yet), the operation will instead be a POST to the parent's URL. On successful completion of the POST, createdByPOST: will be called, which will set the relativePath property based on the response's Location: header. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)PUT:(NSData *)<em>body</em> parameters:(NSDictionary *)<em>parameters</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Starts an asynchronous HTTP PUT operation.</p>
+
+<pre><code>However, if this resource is "untitled" (has no relativePath yet), the operation will instead be a POST to the parent's URL. On successful completion of the POST, createdByPOST: will be called, which will set the relativePath property based on the response's Location: header. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/PUTJSON:parameters:" title="PUTJSON:parameters:"></a>
+	<h3 class="subsubtitle method-title">PUTJSON:parameters:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts an asynchronous HTTP PUT operation, with a JSON body.</p>
+
+<pre><code>The 'body' parameter will be serialized as JSON, and the Content-Type request header will be set to "application/json". 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)PUTJSON:(id)<em>body</em> parameters:(NSDictionary *)<em>parameters</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Starts an asynchronous HTTP PUT operation, with a JSON body.</p>
+
+<pre><code>The 'body' parameter will be serialized as JSON, and the Content-Type request header will be set to "application/json". 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/assignedRelativePath:" title="assignedRelativePath:"></a>
+	<h3 class="subsubtitle method-title">assignedRelativePath:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)assignedRelativePath:(NSString *)<em>relativePath</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cacheResponse:" title="cacheResponse:"></a>
+	<h3 class="subsubtitle method-title">cacheResponse:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remembers the cacheable state (<a href="#//api/name/eTag">eTag</a> and Last-Modified) of a <a href="#//api/name/GET">GET</a> response.</p>
+
+<pre><code>If the operation is a successful GET, with a valid Etag: or Last-Modified: header, this method will set the eTag and lastModified properties appropriately. These will be then be sent in subsequent GET requests, which may then receive empty 304 (Not Modified) responses if the contents have not changed.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)cacheResponse:(RESTOperation *)<em>operation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>operation</em></dt>
+			<dd><p>The <a href="#//api/name/GET">GET</a> operation that representedObject was parsed from; or nil to clear the cacheable state.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the response was cacheable and the object properties have been updated.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Remembers the cacheable state (<a href="#//api/name/eTag">eTag</a> and Last-Modified) of a <a href="#//api/name/GET">GET</a> response.</p>
+
+<pre><code>If the operation is a successful GET, with a valid Etag: or Last-Modified: header, this method will set the eTag and lastModified properties appropriately. These will be then be sent in subsequent GET requests, which may then receive empty 304 (Not Modified) responses if the contents have not changed.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createdByPOST:" title="createdByPOST:"></a>
+	<h3 class="subsubtitle method-title">createdByPOST:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when an untitled (URL-less) resource has just been created by a successful POST: call to its <a href="#//api/name/parent">parent</a> resource&rsquo;s <a href="#//api/name/URL">URL</a>.</p>
+
+<pre><code>The base implementation sets this object's relativePath and URL properties based on the value of the response's Location: header. If you override this method, be sure to call the superclass method.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)createdByPOST:(RESTOperation *)<em>op</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p>The HTTP operation, which is actually a POST to the <a href="#//api/name/parent">parent</a> resource.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when an untitled (URL-less) resource has just been created by a successful POST: call to its <a href="#//api/name/parent">parent</a> resource&rsquo;s <a href="#//api/name/URL">URL</a>.</p>
+
+<pre><code>The base implementation sets this object's relativePath and URL properties based on the value of the response's Location: header. If you override this method, be sure to call the superclass method.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/credentialForOperation:" title="credentialForOperation:"></a>
+	<h3 class="subsubtitle method-title">credentialForOperation:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSURLCredential *)credentialForOperation:(RESTOperation *)<em>op</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initUntitledWithParent:" title="initUntitledWithParent:"></a>
+	<h3 class="subsubtitle method-title">initUntitledWithParent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an instance that has a <a href="#//api/name/parent">parent</a> but no <a href="#//api/name/URL">URL</a> yet.</p>
+
+<pre><code>This resource will become real when it's first PUT, which will behind the scenes actually do a POST to the parent and assign the resource the URL returned in the Location: response header. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initUntitledWithParent:(RESTResource *)<em>parent</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates an instance that has a <a href="#//api/name/parent">parent</a> but no <a href="#//api/name/URL">URL</a> yet.</p>
+
+<pre><code>This resource will become real when it's first PUT, which will behind the scenes actually do a POST to the parent and assign the resource the URL returned in the Location: response header. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithParent:relativePath:" title="initWithParent:relativePath:"></a>
+	<h3 class="subsubtitle method-title">initWithParent:relativePath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an instance with a path relative to a <a href="#//api/name/parent">parent</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithParent:(RESTResource *)<em>parent</em> relativePath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parent</em></dt>
+			<dd><p>The <a href="#//api/name/parent">parent</a> resource. May not be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The relative path from the <a href="#//api/name/parent">parent</a>. This is appended to the parent&rsquo;s <a href="#//api/name/URL">URL</a>, joined with a &ldquo;/&rdquo; if necessary. (In other words, the <a href="#//api/name/parent">parent</a> is assumed to be a container, so this never produces a sibling <a href="#//api/name/URL">URL</a>.)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates an instance with a path relative to a <a href="#//api/name/parent">parent</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithURL:" title="initWithURL:"></a>
+	<h3 class="subsubtitle method-title">initWithURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an instance with an absolute <a href="#//api/name/URL">URL</a> and no <a href="#//api/name/parent">parent</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates an instance with an absolute <a href="#//api/name/URL">URL</a> and no <a href="#//api/name/parent">parent</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/operation:willCompleteWithError:" title="operation:willCompleteWithError:"></a>
+	<h3 class="subsubtitle method-title">operation:willCompleteWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is sent by a <a href="../Classes/RESTOperation.html">RESTOperation</a> to its resource when it completes, before its state changes or any other handlers are called.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSError *)operation:(RESTOperation *)<em>op</em> willCompleteWithError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>op</em></dt>
+			<dd><p>The <a href="../Classes/RESTOperation.html">RESTOperation</a>, created by this object, that just completed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>The error (or nil) result of the operation. This value has not yet been stored into the operation&rsquo;s -error property.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The error to store into the operation&rsquo;s -error property. You can return the input error value unchanged, or return a different (or no) error.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is sent by a <a href="../Classes/RESTOperation.html">RESTOperation</a> to its resource when it completes, before its state changes or any other handlers are called.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/operationDidComplete:" title="operationDidComplete:"></a>
+	<h3 class="subsubtitle method-title">operationDidComplete:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)operationDidComplete:(RESTOperation *)<em>op</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/operationDidStart:" title="operationDidStart:"></a>
+	<h3 class="subsubtitle method-title">operationDidStart:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)operationDidStart:(RESTOperation *)<em>op</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/protectionSpaceForOperation:" title="protectionSpaceForOperation:"></a>
+	<h3 class="subsubtitle method-title">protectionSpaceForOperation:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSURLProtectionSpace *)protectionSpaceForOperation:(RESTOperation *)<em>op</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWithMethod:parameters:" title="requestWithMethod:parameters:"></a>
+	<h3 class="subsubtitle method-title">requestWithMethod:parameters:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an NSURLRequest without a <a href="../Classes/RESTOperation.html">RESTOperation</a>.</p>
+
+<pre><code>Called by sendHTTP:parameters:.
+Clients usually won't need this, but you can call this directly if you want to customize the NSMutableURLRequest and then call sendRequest: on it. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableURLRequest *)requestWithMethod:(NSString *)<em>method</em> parameters:(NSDictionary *)<em>parameters</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates an NSURLRequest without a <a href="../Classes/RESTOperation.html">RESTOperation</a>.</p>
+
+<pre><code>Called by sendHTTP:parameters:.
+Clients usually won't need this, but you can call this directly if you want to customize the NSMutableURLRequest and then call sendRequest: on it. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendHTTP:parameters:" title="sendHTTP:parameters:"></a>
+	<h3 class="subsubtitle method-title">sendHTTP:parameters:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends an arbitrary HTTP request.</p>
+
+<pre><code>All the other HTTP request methods ultimately call this one.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)sendHTTP:(NSString *)<em>method</em> parameters:(NSDictionary *)<em>parameters</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>The HTTP method, e.g. @&ldquo;GET&rdquo;. Remember to capitalize it.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>parameters</em></dt>
+			<dd><p>Customization of the request headers or <a href="#//api/name/URL">URL</a> query.</p>
+
+<pre><code>Parameters whose keys start with "?" will be added to the URL's query; others will be added to the HTTP headers. 
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sends an arbitrary HTTP request.</p>
+
+<pre><code>All the other HTTP request methods ultimately call this one.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendRequest:" title="sendRequest:"></a>
+	<h3 class="subsubtitle method-title">sendRequest:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Bottleneck for starting a <a href="../Classes/RESTOperation.html">RESTOperation</a>.</p>
+
+<pre><code>Clients usually won't need to call this. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)sendRequest:(NSURLRequest *)<em>request</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Bottleneck for starting a <a href="../Classes/RESTOperation.html">RESTOperation</a>.</p>
+
+<pre><code>Clients usually won't need to call this. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCredential:" title="setCredential:"></a>
+	<h3 class="subsubtitle method-title">setCredential:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the login credential (e.g. username/password) to be used for authentication by this resource and its children.</p>
+
+<pre><code>IMPORTANT: CouchDB's default configuration unfortunately doesn't support this type of programmatic auth. To make it work, you'll need to add a "WWW-Authenticate" property to the server's [httpd] configuration section, as described at https://groups.google.com/d/msg/mobile-couchbase/GiSnos0Hx54/q5JGepLaQBgJ. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setCredential:(NSURLCredential *)<em>credential</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the login credential (e.g. username/password) to be used for authentication by this resource and its children.</p>
+
+<pre><code>IMPORTANT: CouchDB's default configuration unfortunately doesn't support this type of programmatic auth. To make it work, you'll need to add a "WWW-Authenticate" property to the server's [httpd] configuration section, as described at https://groups.google.com/d/msg/mobile-couchbase/GiSnos0Hx54/q5JGepLaQBgJ. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setProtectionSpace:" title="setProtectionSpace:"></a>
+	<h3 class="subsubtitle method-title">setProtectionSpace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a protection space for operations on this resource.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setProtectionSpace:(NSURLProtectionSpace *)<em>protectionSpace</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets a protection space for operations on this resource.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">RESTResource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setURL:" title="setURL:"></a>
+	<h3 class="subsubtitle method-title">setURL:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setURL:(NSURL *)<em>url</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

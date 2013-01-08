@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchPersistentReplication.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchPersistentReplication</TokenIdentifier>
+			<Abstract type="html">A model object representing a persistent replication to or from another database.
+    Each instance represents a document in the server&apos;s special _replication database.
+    Instances are created by the -replicate... factory methods on CouchDatabase. </Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setLocalDatabase:</TokenIdentifier>
+			<Abstract type="html">The local database being replicated to/from.</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchDatabase *localDatabase</Declaration>
+			
+			
+			<Anchor>//api/name/localDatabase</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/localDatabase</TokenIdentifier>
+			<Abstract type="html">The local database being replicated to/from.</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchDatabase *localDatabase</Declaration>
+			
+			
+			<Anchor>//api/name/localDatabase</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setRemoteURL:</TokenIdentifier>
+			<Abstract type="html">The remote database being replicated to/from.</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *remoteURL</Declaration>
+			
+			
+			<Anchor>//api/name/remoteURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/remoteURL</TokenIdentifier>
+			<Abstract type="html">The remote database being replicated to/from.</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *remoteURL</Declaration>
+			
+			
+			<Anchor>//api/name/remoteURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setPull:</TokenIdentifier>
+			<Abstract type="html">Does the replication pull from (as opposed to push to) the target?</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) bool pull</Declaration>
+			
+			
+			<Anchor>//api/name/pull</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/pull</TokenIdentifier>
+			<Abstract type="html">Does the replication pull from (as opposed to push to) the target?</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) bool pull</Declaration>
+			
+			
+			<Anchor>//api/name/pull</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setCreate_target:</TokenIdentifier>
+			<Abstract type="html">Should the target database be created if it doesn&apos;t already exist? (Defaults to NO).</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property bool create_target</Declaration>
+			
+			
+			<Anchor>//api/name/create_target</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/create_target</TokenIdentifier>
+			<Abstract type="html">Should the target database be created if it doesn&apos;t already exist? (Defaults to NO).</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property bool create_target</Declaration>
+			
+			
+			<Anchor>//api/name/create_target</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setContinuous:</TokenIdentifier>
+			<Abstract type="html">Should the replication operate continuously, copying changes as soon as the source database is modified? (Defaults to NO).</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property bool continuous</Declaration>
+			
+			
+			<Anchor>//api/name/continuous</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/continuous</TokenIdentifier>
+			<Abstract type="html">Should the replication operate continuously, copying changes as soon as the source database is modified? (Defaults to NO).</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property bool continuous</Declaration>
+			
+			
+			<Anchor>//api/name/continuous</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setFilter:</TokenIdentifier>
+			<Abstract type="html">Path of an optional filter function to run on the source server.
+    Only documents for which the function returns true are sent to the destination.
+    The path looks like &quot;designdocname/filtername&quot;. </Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *filter</Declaration>
+			
+			
+			<Anchor>//api/name/filter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/filter</TokenIdentifier>
+			<Abstract type="html">Path of an optional filter function to run on the source server.
+    Only documents for which the function returns true are sent to the destination.
+    The path looks like &quot;designdocname/filtername&quot;. </Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *filter</Declaration>
+			
+			
+			<Anchor>//api/name/filter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setQuery_params:</TokenIdentifier>
+			<Abstract type="html">Parameters to pass to the filter function.
+    Should be a JSON-compatible dictionary. </Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *query_params</Declaration>
+			
+			
+			<Anchor>//api/name/query_params</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/query_params</TokenIdentifier>
+			<Abstract type="html">Parameters to pass to the filter function.
+    Should be a JSON-compatible dictionary. </Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *query_params</Declaration>
+			
+			
+			<Anchor>//api/name/query_params</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setDoc_ids:</TokenIdentifier>
+			<Abstract type="html">Sets the documents to specify as part of the replication.</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSArray *doc_ids</Declaration>
+			
+			
+			<Anchor>//api/name/doc_ids</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/doc_ids</TokenIdentifier>
+			<Abstract type="html">Sets the documents to specify as part of the replication.</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSArray *doc_ids</Declaration>
+			
+			
+			<Anchor>//api/name/doc_ids</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setHeaders:</TokenIdentifier>
+			<Abstract type="html">Extra HTTP headers to send in all requests to the remote server.
+    Should map strings (header names) to strings. </Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/headers</TokenIdentifier>
+			<Abstract type="html">Extra HTTP headers to send in all requests to the remote server.
+    Should map strings (header names) to strings. </Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setOAuth:</TokenIdentifier>
+			<Abstract type="html">OAuth parameters that the replicator should use when authenticating to the remote database.
+    Keys in the dictionary should be &quot;consumerkey&quot;, &quot;consumersecret&quot;, &quot;token&quot;, &quot;tokensecret&quot;, and optionally &quot;signaturemethod&quot;. </Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *OAuth</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/OAuth</TokenIdentifier>
+			<Abstract type="html">OAuth parameters that the replicator should use when authenticating to the remote database.
+    Keys in the dictionary should be &quot;consumerkey&quot;, &quot;consumersecret&quot;, &quot;token&quot;, &quot;tokensecret&quot;, and optionally &quot;signaturemethod&quot;. </Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *OAuth</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/actAsUser:withRoles:</TokenIdentifier>
+			<Abstract type="html">Sets the &quot;userctx&quot; property of the replication, which identifies what privileges it will run with when accessing the local server. To replicate design documents, this should be set to a value with &quot;admin&quot; in the list of roles.
+    The server will not let you specify privileges you don&apos;t have, so the request to create the replication must be made with credentials that match what you&apos;re setting here, unless the server is in no-authentication &quot;admin party&quot; mode.
+    See https://gist.github.com/832610, section 8, for details.
+    If both &apos;user&apos; and &apos;roles&apos; are nil, the user_ctx will be cleared.</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>- (void)actAsUser:(NSString *)username withRoles:(NSArray *)roles</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">A server username, or nil</Abstract>
+				</Parameter><Parameter>
+					<Name>roles</Name>
+					<Abstract type="html">An array of CouchDB role name strings, or nil </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/actAsUser:withRoles:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/actAsAdmin</TokenIdentifier>
+			<Abstract type="html">A convenience that calls actAsUser:withRoles: to specify the _admin role.</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>- (void)actAsAdmin</Declaration>
+			
+			
+			<Anchor>//api/name/actAsAdmin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/restart</TokenIdentifier>
+			<Abstract type="html">Restarts a replication; this is most useful to make a noncontinuous replication run again after it&apos;s stopped.</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>- (void)restart</Declaration>
+			
+			
+			<Anchor>//api/name/restart</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setState:</TokenIdentifier>
+			<Abstract type="html">The current state of replication activity.</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchReplicationState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/state</TokenIdentifier>
+			<Abstract type="html">The current state of replication activity.</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchReplicationState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setCompleted:</TokenIdentifier>
+			<Abstract type="html">The number of completed changes processed, if the task is active, else 0 (observable).</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned completed</Declaration>
+			
+			
+			<Anchor>//api/name/completed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/completed</TokenIdentifier>
+			<Abstract type="html">The number of completed changes processed, if the task is active, else 0 (observable).</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned completed</Declaration>
+			
+			
+			<Anchor>//api/name/completed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setTotal:</TokenIdentifier>
+			<Abstract type="html">The total number of changes to be processed, if the task is active, else 0 (observable).</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned total</Declaration>
+			
+			
+			<Anchor>//api/name/total</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/total</TokenIdentifier>
+			<Abstract type="html">The total number of changes to be processed, if the task is active, else 0 (observable).</Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned total</Declaration>
+			
+			
+			<Anchor>//api/name/total</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/error</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setMode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CouchReplicationMode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/mode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchPersistentReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CouchReplicationMode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchPersistentReplication/createWithReplicatorDatabase:source:target:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>+ (CouchPersistentReplication *)createWithReplicatorDatabase:(CouchDatabase *)replicatorDB source:(NSString *)source target:(NSString *)target</Declaration>
+			
+			
+			<Anchor>//api/name/createWithReplicatorDatabase:source:target:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setSourceURLStr:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *sourceURLStr</Declaration>
+			
+			
+			<Anchor>//api/name/sourceURLStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/sourceURLStr</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *sourceURLStr</Declaration>
+			
+			
+			<Anchor>//api/name/sourceURLStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchPersistentReplication/setTargetURLStr:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *targetURLStr</Declaration>
+			
+			
+			<Anchor>//api/name/targetURLStr</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchPersistentReplication/targetURLStr</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *targetURLStr</Declaration>
+			
+			
+			<Anchor>//api/name/targetURLStr</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

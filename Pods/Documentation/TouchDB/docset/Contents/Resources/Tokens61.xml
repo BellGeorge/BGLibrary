@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TDMultipartReaderDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TDMultipartReaderDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>
+			
+			<NodeRef refid="61"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDMultipartReaderDelegate/startedPart:</TokenIdentifier>
+			<Abstract type="html">This method is called when a part&apos;s headers have been parsed, before its data is parsed.</Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>			
+			
+			<Declaration>- (void)startedPart:(NSDictionary *)headers</Declaration>
+			
+			
+			<Anchor>//api/name/startedPart:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDMultipartReaderDelegate/appendToPart:</TokenIdentifier>
+			<Abstract type="html">This method is called to append data to a part&apos;s body.</Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>			
+			
+			<Declaration>- (void)appendToPart:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/appendToPart:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDMultipartReaderDelegate/finishedPart</TokenIdentifier>
+			<Abstract type="html">This method is called when a part is complete.</Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>			
+			
+			<Declaration>- (void)finishedPart</Declaration>
+			
+			
+			<Anchor>//api/name/finishedPart</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

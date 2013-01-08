@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RESTCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RESTCache</TokenIdentifier>
+			<Abstract type="html">An in-memory cache of RESTResource objects.
+    It keeps track of all added resources as long as anything else has retained them,
+    and it keeps a certain number of recently-accessed resources with no external references.
+    It&apos;s intended for use by a parent resource, to cache its children.</Abstract>
+			<DeclaredIn>RESTCache.h</DeclaredIn>
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTCache/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTCache.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTCache/initWithRetainLimit:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTCache.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithRetainLimit:(NSUInteger)retainLimit</Declaration>
+			
+			
+			<Anchor>//api/name/initWithRetainLimit:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTCache/addResource:</TokenIdentifier>
+			<Abstract type="html">Adds a resource to the cache.
+    Does nothing if the resource is already in the cache.
+    An exception is raised if the resource is already in a different cache. </Abstract>
+			<DeclaredIn>RESTCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)addResource:(RESTResource *)resource</Declaration>
+			
+			
+			<Anchor>//api/name/addResource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTCache/resourceWithRelativePath:</TokenIdentifier>
+			<Abstract type="html">Looks up a resource given its -relativePath property.</Abstract>
+			<DeclaredIn>RESTCache.h</DeclaredIn>			
+			
+			<Declaration>- (RESTResource *)resourceWithRelativePath:(NSString *)relativePath</Declaration>
+			
+			
+			<Anchor>//api/name/resourceWithRelativePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTCache/forgetResource:</TokenIdentifier>
+			<Abstract type="html">Removes a resource from the cache.
+    Does nothing if the resource is not cached.
+    An exception is raised if the resource is already in a different cache. </Abstract>
+			<DeclaredIn>RESTCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)forgetResource:(RESTResource *)resource</Declaration>
+			
+			
+			<Anchor>//api/name/forgetResource:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTCache/forgetAllResources</TokenIdentifier>
+			<Abstract type="html">Removes all resources from the cache.</Abstract>
+			<DeclaredIn>RESTCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)forgetAllResources</Declaration>
+			
+			
+			<Anchor>//api/name/forgetAllResources</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTCache/unretainResources</TokenIdentifier>
+			<Abstract type="html">Removes retained references to objects.
+    All objects that don&apos;t have anything else retaining them will be removed from the cache. </Abstract>
+			<DeclaredIn>RESTCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)unretainResources</Declaration>
+			
+			
+			<Anchor>//api/name/unretainResources</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTCache/allCachedResources</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTCache.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)allCachedResources</Declaration>
+			
+			
+			<Anchor>//api/name/allCachedResources</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTCache/resourceBeingDealloced:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)resourceBeingDealloced:(RESTResource *)resource</Declaration>
+			
+			
+			<Anchor>//api/name/resourceBeingDealloced:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchbaseMobile.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchbaseMobile</TokenIdentifier>
+			<Abstract type="html">Manages an embedded instance of CouchDB that runs in a background thread.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CouchbaseMobile/startCouchbase:</TokenIdentifier>
+			<Abstract type="html">Convenience to instantiate and start a new instance.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>+ (CouchbaseMobile *)startCouchbase:(id&lt;CouchbaseDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/startCouchbase:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/init</TokenIdentifier>
+			<Abstract type="html">Initializes the instance.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate object, which will be notified when the server starts.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;CouchbaseDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchbaseMobile/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate object, which will be notified when the server starts.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;CouchbaseDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/start</TokenIdentifier>
+			<Abstract type="html">Starts the server, asynchronously. The delegate will be called when it&apos;s ready.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)start</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the server is starting, NO if it failed to start. </Abstract></ReturnValue>
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/restart</TokenIdentifier>
+			<Abstract type="html">Restart the server, necessary if app being suspended closes its listening socket</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>- (void)restart</Declaration>
+			
+			
+			<Anchor>//api/name/restart</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/setServerURL:</TokenIdentifier>
+			<Abstract type="html">The HTTP URL the server is listening on.
+    Will be nil until the server has finished starting up, some time after start is called.
+    This property is KV-observable, so an alternative to setting a delegate is to observe this
+    property and the error property and wait for one of them to become non-nil. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSURL *serverURL</Declaration>
+			
+			
+			<Anchor>//api/name/serverURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchbaseMobile/serverURL</TokenIdentifier>
+			<Abstract type="html">The HTTP URL the server is listening on.
+    Will be nil until the server has finished starting up, some time after start is called.
+    This property is KV-observable, so an alternative to setting a delegate is to observe this
+    property and the error property and wait for one of them to become non-nil. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSURL *serverURL</Declaration>
+			
+			
+			<Anchor>//api/name/serverURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/setError:</TokenIdentifier>
+			<Abstract type="html">If the server fails to start up, this will be set to a description of the error.
+    This is KV-observable. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchbaseMobile/error</TokenIdentifier>
+			<Abstract type="html">If the server fails to start up, this will be set to a description of the error.
+    This is KV-observable. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/setAutoRestart:</TokenIdentifier>
+			<Abstract type="html">Defaults to YES, set to NO to prevent autorestart behavior when app returns from background</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL autoRestart</Declaration>
+			
+			
+			<Anchor>//api/name/autoRestart</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchbaseMobile/autoRestart</TokenIdentifier>
+			<Abstract type="html">Defaults to YES, set to NO to prevent autorestart behavior when app returns from background</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL autoRestart</Declaration>
+			
+			
+			<Anchor>//api/name/autoRestart</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/setAdminCredential:</TokenIdentifier>
+			<Abstract type="html">A credential containing the admin username and password of the server.
+    These are required in any requests sent to the server. The password is generated randomly on first launch. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURLCredential *adminCredential</Declaration>
+			
+			
+			<Anchor>//api/name/adminCredential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchbaseMobile/adminCredential</TokenIdentifier>
+			<Abstract type="html">A credential containing the admin username and password of the server.
+    These are required in any requests sent to the server. The password is generated randomly on first launch. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURLCredential *adminCredential</Declaration>
+			
+			
+			<Anchor>//api/name/adminCredential</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/initWithBundlePath:</TokenIdentifier>
+			<Abstract type="html">Initializes the instance with a nonstandard location for the runtime resources.
+    (The default location is Resources/CouchbaseResources, but some application frameworks
+    require resources to go elsewhere, so in that case you might need to use a custom path.) </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithBundlePath:(NSString *)bundlePath</Declaration>
+			
+			
+			<Anchor>//api/name/initWithBundlePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/setRootDirectory:</TokenIdentifier>
+			<Abstract type="html">The root directory where Couchbase Mobile will store data files.
+    This defaults to ~/CouchbaseMobile.
+    You may NOT change this after starting the server. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *rootDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/rootDirectory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchbaseMobile/rootDirectory</TokenIdentifier>
+			<Abstract type="html">The root directory where Couchbase Mobile will store data files.
+    This defaults to ~/CouchbaseMobile.
+    You may NOT change this after starting the server. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *rootDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/rootDirectory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/setLogDirectory:</TokenIdentifier>
+			<Abstract type="html">The directory where CouchDB writes its log files.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *logDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/logDirectory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchbaseMobile/logDirectory</TokenIdentifier>
+			<Abstract type="html">The directory where CouchDB writes its log files.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *logDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/logDirectory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/setDatabaseDirectory:</TokenIdentifier>
+			<Abstract type="html">The directory where CouchDB stores its database files.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *databaseDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/databaseDirectory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchbaseMobile/databaseDirectory</TokenIdentifier>
+			<Abstract type="html">The directory where CouchDB stores its database files.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *databaseDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/databaseDirectory</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/setIniFilePath:</TokenIdentifier>
+			<Abstract type="html">The path to an app-specific CouchDB configuration (&quot;.ini&quot;) file.
+    Optional; defaults to nil.
+    The settings in this file will override the default CouchDB settings in default.ini, but
+    will in turn be overridden by any locally-made settings (see localIniFilePath. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *iniFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/iniFilePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchbaseMobile/iniFilePath</TokenIdentifier>
+			<Abstract type="html">The path to an app-specific CouchDB configuration (&quot;.ini&quot;) file.
+    Optional; defaults to nil.
+    The settings in this file will override the default CouchDB settings in default.ini, but
+    will in turn be overridden by any locally-made settings (see localIniFilePath. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *iniFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/iniFilePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/setLocalIniFilePath:</TokenIdentifier>
+			<Abstract type="html">The path to the mutable local configuration file.
+    This starts out empty, but will be modified if the app sends PUT requests to the server&apos;s
+    _config URI. The app can restore the default configuration at launch by deleting or
+    emptying the file at this path before calling start.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *localIniFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/localIniFilePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchbaseMobile/localIniFilePath</TokenIdentifier>
+			<Abstract type="html">The path to the mutable local configuration file.
+    This starts out empty, but will be modified if the app sends PUT requests to the server&apos;s
+    _config URI. The app can restore the default configuration at launch by deleting or
+    emptying the file at this path before calling start.</Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *localIniFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/localIniFilePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/setLogLevel:</TokenIdentifier>
+			<Abstract type="html">Controls the amount of logging by Erlang and CouchDB.
+    Defaults to 0, meaning none.
+    1 logs errors only, 2 also logs CouchDB info (like HTTP requests), 3 logs Erlang &apos;progress&apos;. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property uint8_t logLevel</Declaration>
+			
+			
+			<Anchor>//api/name/logLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchbaseMobile/logLevel</TokenIdentifier>
+			<Abstract type="html">Controls the amount of logging by Erlang and CouchDB.
+    Defaults to 0, meaning none.
+    1 logs errors only, 2 also logs CouchDB info (like HTTP requests), 3 logs Erlang &apos;progress&apos;. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>@property uint8_t logLevel</Declaration>
+			
+			
+			<Anchor>//api/name/logLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchbaseMobile/installDefaultDatabase:</TokenIdentifier>
+			<Abstract type="html">Copies a database file into the databaseDirectory if no such file exists there already.
+    Call this before start, to set up initial contents of one or more databases on first run. </Abstract>
+			<DeclaredIn>CouchbaseMobile.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)installDefaultDatabase:(NSString *)databasePath</Declaration>
+			
+			
+			<Anchor>//api/name/installDefaultDatabase:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

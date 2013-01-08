@@ -1,0 +1,1 @@
+../../../ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa/RACCancelableSignal+Private.h

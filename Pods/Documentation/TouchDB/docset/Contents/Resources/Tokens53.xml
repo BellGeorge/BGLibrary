@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSMutableURLRequest+OAParameterAdditions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSMutableURLRequest(OAParameterAdditions)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSMutableURLRequest+Parameters.h</DeclaredIn>
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(OAParameterAdditions)/setParameters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSMutableURLRequest+Parameters.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *parameters</Declaration>
+			
+			
+			<Anchor>//api/name/parameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(OAParameterAdditions)/parameters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSMutableURLRequest+Parameters.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *parameters</Declaration>
+			
+			
+			<Anchor>//api/name/parameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(OAParameterAdditions)/setHTTPBodyWithString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSMutableURLRequest+Parameters.h</DeclaredIn>			
+			
+			<Declaration>- (void)setHTTPBodyWithString:(NSString *)body</Declaration>
+			
+			
+			<Anchor>//api/name/setHTTPBodyWithString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(OAParameterAdditions)/attachFileWithName:filename:contentType:data:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSMutableURLRequest+Parameters.h</DeclaredIn>			
+			
+			<Declaration>- (void)attachFileWithName:(NSString *)name filename:(NSString *)filename contentType:(NSString *)contentType data:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/attachFileWithName:filename:contentType:data:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

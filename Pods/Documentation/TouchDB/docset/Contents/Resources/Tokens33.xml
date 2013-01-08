@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDMultipartReader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDMultipartReader</TokenIdentifier>
+			<Abstract type="html">Streaming MIME multipart reader.</Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartReader/initWithContentType:delegate:</TokenIdentifier>
+			<Abstract type="html">Initializes the reader.
+    Returns nil if the content type isn&apos;t a valid multipart type, or doesn&apos;t contain a &quot;boundary&quot; parameter.</Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithContentType:(NSString *)contentType delegate:(id&lt;TDMultipartReaderDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contentType</Name>
+					<Abstract type="html">the entire MIME Content-Type string, with parameters.</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate object that will be called as parts are parsed. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithContentType:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartReader/appendData:</TokenIdentifier>
+			<Abstract type="html">Call this when more data is available.</Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>			
+			
+			<Declaration>- (void)appendData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/appendData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartReader/setFinished:</TokenIdentifier>
+			<Abstract type="html">Has the reader successfully finished reading the entire multipart body?</Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL finished</Declaration>
+			
+			
+			<Anchor>//api/name/finished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultipartReader/finished</TokenIdentifier>
+			<Abstract type="html">Has the reader successfully finished reading the entire multipart body?</Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL finished</Declaration>
+			
+			
+			<Anchor>//api/name/finished</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartReader/setError:</TokenIdentifier>
+			<Abstract type="html">Was there a fatal parse error?</Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultipartReader/error</TokenIdentifier>
+			<Abstract type="html">Was there a fatal parse error?</Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartReader/setHeaders:</TokenIdentifier>
+			<Abstract type="html">The MIME headers of the part currently being parsed.
+    You can call this from your -appendToPart and/or -finishedPart overrides. </Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultipartReader/headers</TokenIdentifier>
+			<Abstract type="html">The MIME headers of the part currently being parsed.
+    You can call this from your -appendToPart and/or -finishedPart overrides. </Abstract>
+			<DeclaredIn>TDMultipartReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

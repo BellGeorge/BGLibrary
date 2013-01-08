@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDChangeTracker.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDChangeTracker</TokenIdentifier>
+			<Abstract type="html">Reads the continuousmode _changes feed of a database, and sends the individual change entries to its client&apos;s -changeTrackerReceivedChange:.
+    This class is abstract. Instantiate TDConnectionChangeTracker instead. </Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/initWithDatabaseURL:mode:conflicts:lastSequence:client:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDatabaseURL:(NSURL *)databaseURL mode:(TDChangeTrackerMode)mode conflicts:(BOOL)includeConflicts lastSequence:(id)lastSequenceID client:(id&lt;TDChangeTrackerClient&gt;)client</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDatabaseURL:mode:conflicts:lastSequence:client:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setDatabaseURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSURL *databaseURL</Declaration>
+			
+			
+			<Anchor>//api/name/databaseURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/databaseURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSURL *databaseURL</Declaration>
+			
+			
+			<Anchor>//api/name/databaseURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setDatabaseName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSString *databaseName</Declaration>
+			
+			
+			<Anchor>//api/name/databaseName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/databaseName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSString *databaseName</Declaration>
+			
+			
+			<Anchor>//api/name/databaseName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setChangesFeedURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *changesFeedURL</Declaration>
+			
+			
+			<Anchor>//api/name/changesFeedURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/changesFeedURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *changesFeedURL</Declaration>
+			
+			
+			<Anchor>//api/name/changesFeedURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setLastSequenceID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy, nonatomic) id lastSequenceID</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequenceID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/lastSequenceID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, copy, nonatomic) id lastSequenceID</Declaration>
+			
+			
+			<Anchor>//api/name/lastSequenceID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/error</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id&lt;TDChangeTrackerClient&gt; client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/client</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id&lt;TDChangeTrackerClient&gt; client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setRequestHeaders:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSDictionary *requestHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/requestHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/requestHeaders</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) NSDictionary *requestHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/requestHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setAuthorizer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) id&lt;TDAuthorizer&gt; authorizer</Declaration>
+			
+			
+			<Anchor>//api/name/authorizer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/authorizer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (retain, nonatomic) id&lt;TDAuthorizer&gt; authorizer</Declaration>
+			
+			
+			<Anchor>//api/name/authorizer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setMode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) TDChangeTrackerMode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/mode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) TDChangeTrackerMode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setFilterName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *filterName</Declaration>
+			
+			
+			<Anchor>//api/name/filterName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/filterName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *filterName</Declaration>
+			
+			
+			<Anchor>//api/name/filterName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setFilterParameters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *filterParameters</Declaration>
+			
+			
+			<Anchor>//api/name/filterParameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/filterParameters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSDictionary *filterParameters</Declaration>
+			
+			
+			<Anchor>//api/name/filterParameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setLimit:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) unsigned limit</Declaration>
+			
+			
+			<Anchor>//api/name/limit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/limit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) unsigned limit</Declaration>
+			
+			
+			<Anchor>//api/name/limit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setHeartbeat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSTimeInterval heartbeat</Declaration>
+			
+			
+			<Anchor>//api/name/heartbeat</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/heartbeat</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) NSTimeInterval heartbeat</Declaration>
+			
+			
+			<Anchor>//api/name/heartbeat</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/start</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/stop</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/retry</TokenIdentifier>
+			<Abstract type="html">Asks the tracker to retry connecting, if it&apos;s currently disconnected but waiting to retry.
+    This should be called when the reachability of the remote host changes, or when the
+    app is reactivated. </Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)retry</Declaration>
+			
+			
+			<Anchor>//api/name/retry</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setChangesFeedPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *changesFeedPath</Declaration>
+			
+			
+			<Anchor>//api/name/changesFeedPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDChangeTracker/changesFeedPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *changesFeedPath</Declaration>
+			
+			
+			<Anchor>//api/name/changesFeedPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/setUpstreamError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUpstreamError:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/setUpstreamError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/failedWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)failedWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/failedWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/receivedPollResponse:errorMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)receivedPollResponse:(NSData *)body errorMessage:(NSString **)errorMessage</Declaration>
+			
+			
+			<Anchor>//api/name/receivedPollResponse:errorMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDChangeTracker/stopped</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDChangeTracker.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopped</Declaration>
+			
+			
+			<Anchor>//api/name/stopped</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

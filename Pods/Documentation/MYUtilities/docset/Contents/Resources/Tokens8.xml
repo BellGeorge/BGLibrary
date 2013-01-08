@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSDictionary+MYUtils.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(MYUtils)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CollectionUtils.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(MYUtils)/my_dictionaryByUpdatingValues:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CollectionUtils.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)my_dictionaryByUpdatingValues:(id ( ^ ) ( id key , id value ))block</Declaration>
+			
+			
+			<Anchor>//api/name/my_dictionaryByUpdatingValues:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

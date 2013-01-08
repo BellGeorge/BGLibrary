@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchQuery.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchQuery</TokenIdentifier>
+			<Abstract type="html">Represents a CouchDB &apos;view&apos;, or a view-like resource like alldocuments.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setDesignDocument:</TokenIdentifier>
+			<Abstract type="html">The design document that contains this view.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchDesignDocument *designDocument</Declaration>
+			
+			
+			<Anchor>//api/name/designDocument</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/designDocument</TokenIdentifier>
+			<Abstract type="html">The design document that contains this view.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchDesignDocument *designDocument</Declaration>
+			
+			
+			<Anchor>//api/name/designDocument</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setLimit:</TokenIdentifier>
+			<Abstract type="html">The maximum number of rows to return. Default value is 0, meaning &apos;unlimited&apos;.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property NSUInteger limit</Declaration>
+			
+			
+			<Anchor>//api/name/limit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/limit</TokenIdentifier>
+			<Abstract type="html">The maximum number of rows to return. Default value is 0, meaning &apos;unlimited&apos;.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property NSUInteger limit</Declaration>
+			
+			
+			<Anchor>//api/name/limit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setSkip:</TokenIdentifier>
+			<Abstract type="html">The number of initial rows to skip. Default value is 0.
+    Should only be used with small values. For efficient paging, use startkey and limit.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property NSUInteger skip</Declaration>
+			
+			
+			<Anchor>//api/name/skip</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/skip</TokenIdentifier>
+			<Abstract type="html">The number of initial rows to skip. Default value is 0.
+    Should only be used with small values. For efficient paging, use startkey and limit.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property NSUInteger skip</Declaration>
+			
+			
+			<Anchor>//api/name/skip</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setDescending:</TokenIdentifier>
+			<Abstract type="html">Should the rows be returned in descending key order? Default value is NO.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL descending</Declaration>
+			
+			
+			<Anchor>//api/name/descending</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/descending</TokenIdentifier>
+			<Abstract type="html">Should the rows be returned in descending key order? Default value is NO.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL descending</Declaration>
+			
+			
+			<Anchor>//api/name/descending</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setStartKey:</TokenIdentifier>
+			<Abstract type="html">If non-nil, the key value to start at.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) id startKey</Declaration>
+			
+			
+			<Anchor>//api/name/startKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/startKey</TokenIdentifier>
+			<Abstract type="html">If non-nil, the key value to start at.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) id startKey</Declaration>
+			
+			
+			<Anchor>//api/name/startKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setEndKey:</TokenIdentifier>
+			<Abstract type="html">If non-nil, the key value to end after.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) id endKey</Declaration>
+			
+			
+			<Anchor>//api/name/endKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/endKey</TokenIdentifier>
+			<Abstract type="html">If non-nil, the key value to end after.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) id endKey</Declaration>
+			
+			
+			<Anchor>//api/name/endKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setStartKeyDocID:</TokenIdentifier>
+			<Abstract type="html">If non-nil, the document ID to start at.
+    (Useful if the view contains multiple identical keys, making .startKey ambiguous.) </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *startKeyDocID</Declaration>
+			
+			
+			<Anchor>//api/name/startKeyDocID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/startKeyDocID</TokenIdentifier>
+			<Abstract type="html">If non-nil, the document ID to start at.
+    (Useful if the view contains multiple identical keys, making .startKey ambiguous.) </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *startKeyDocID</Declaration>
+			
+			
+			<Anchor>//api/name/startKeyDocID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setEndKeyDocID:</TokenIdentifier>
+			<Abstract type="html">If non-nil, the document ID to end at.
+    (Useful if the view contains multiple identical keys, making .endKey ambiguous.) </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *endKeyDocID</Declaration>
+			
+			
+			<Anchor>//api/name/endKeyDocID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/endKeyDocID</TokenIdentifier>
+			<Abstract type="html">If non-nil, the document ID to end at.
+    (Useful if the view contains multiple identical keys, making .endKey ambiguous.) </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *endKeyDocID</Declaration>
+			
+			
+			<Anchor>//api/name/endKeyDocID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setStale:</TokenIdentifier>
+			<Abstract type="html">If set, allows faster results at the expense of returning possibly out-of-date data.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property CouchStaleness stale</Declaration>
+			
+			
+			<Anchor>//api/name/stale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/stale</TokenIdentifier>
+			<Abstract type="html">If set, allows faster results at the expense of returning possibly out-of-date data.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property CouchStaleness stale</Declaration>
+			
+			
+			<Anchor>//api/name/stale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setKeys:</TokenIdentifier>
+			<Abstract type="html">If non-nil, the query will fetch only the rows with the given keys.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSArray *keys</Declaration>
+			
+			
+			<Anchor>//api/name/keys</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/keys</TokenIdentifier>
+			<Abstract type="html">If non-nil, the query will fetch only the rows with the given keys.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSArray *keys</Declaration>
+			
+			
+			<Anchor>//api/name/keys</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setGroupLevel:</TokenIdentifier>
+			<Abstract type="html">If non-zero, enables grouping of results, in views that have reduce functions.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property NSUInteger groupLevel</Declaration>
+			
+			
+			<Anchor>//api/name/groupLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/groupLevel</TokenIdentifier>
+			<Abstract type="html">If non-zero, enables grouping of results, in views that have reduce functions.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property NSUInteger groupLevel</Declaration>
+			
+			
+			<Anchor>//api/name/groupLevel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setPrefetch:</TokenIdentifier>
+			<Abstract type="html">If set to YES, the results will include the entire document contents of the associated rows.
+    These can be accessed via CouchQueryRow&apos;s -documentProperties property.
+    This can be a good optimization if you know you&apos;ll need the entire contents of each document.
+    (This property is equivalent to &quot;include_docs&quot; in the CouchDB API.) </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL prefetch</Declaration>
+			
+			
+			<Anchor>//api/name/prefetch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/prefetch</TokenIdentifier>
+			<Abstract type="html">If set to YES, the results will include the entire document contents of the associated rows.
+    These can be accessed via CouchQueryRow&apos;s -documentProperties property.
+    This can be a good optimization if you know you&apos;ll need the entire contents of each document.
+    (This property is equivalent to &quot;include_docs&quot; in the CouchDB API.) </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL prefetch</Declaration>
+			
+			
+			<Anchor>//api/name/prefetch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setSequences:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL sequences</Declaration>
+			
+			
+			<Anchor>//api/name/sequences</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/sequences</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL sequences</Declaration>
+			
+			
+			<Anchor>//api/name/sequences</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setIncludeDeleted:</TokenIdentifier>
+			<Abstract type="html">If set to YES, deleted documents are included in a getAllDocuments query.
+    This has NO EFFECT in view queries, and it&apos;s only supported on TouchDB, not CouchDB. </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL includeDeleted</Declaration>
+			
+			
+			<Anchor>//api/name/includeDeleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/includeDeleted</TokenIdentifier>
+			<Abstract type="html">If set to YES, deleted documents are included in a getAllDocuments query.
+    This has NO EFFECT in view queries, and it&apos;s only supported on TouchDB, not CouchDB. </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL includeDeleted</Declaration>
+			
+			
+			<Anchor>//api/name/includeDeleted</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/setError:</TokenIdentifier>
+			<Abstract type="html">If non-nil, the error of the last execution of the query.
+    If nil, the last exexution of the query was successful </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQuery/error</TokenIdentifier>
+			<Abstract type="html">If non-nil, the error of the last execution of the query.
+    If nil, the last exexution of the query was successful </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/start</TokenIdentifier>
+			<Abstract type="html">Starts an asynchronous query of the CouchDB view.
+    When complete, the operation&apos;s resultObject will be the CouchQueryEnumerator. </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/rows</TokenIdentifier>
+			<Abstract type="html">Sends the query to the server and returns an enumerator over the result rows (Synchronous).</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>- (CouchQueryEnumerator *)rows</Declaration>
+			
+			
+			<Anchor>//api/name/rows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/rowsIfChanged</TokenIdentifier>
+			<Abstract type="html">Same as rows, except returns nil if the query results have not changed since the last time it was evaluated (Synchronous).</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>- (CouchQueryEnumerator *)rowsIfChanged</Declaration>
+			
+			
+			<Anchor>//api/name/rowsIfChanged</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQuery/asLiveQuery</TokenIdentifier>
+			<Abstract type="html">Returns a live query with the same parameters.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>- (CouchLiveQuery *)asLiveQuery</Declaration>
+			
+			
+			<Anchor>//api/name/asLiveQuery</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

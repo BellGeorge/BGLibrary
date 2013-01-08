@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchAttachment.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchAttachment</TokenIdentifier>
+			<Abstract type="html">A binary attachment to a document.
+    Actually a CouchAttachment may be a child of either a CouchDocument or a CouchRevision. The latter represents an attachment immutably as it appeared in one revision of its document. So if you PUT a change to an attachment, the updated attachment will have a new CouchAttachment object. 
+Type of block that&apos;s called when the database changes.</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchAttachment/setRevision:</TokenIdentifier>
+			<Abstract type="html">The owning document revision.</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchRevision *revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchAttachment/revision</TokenIdentifier>
+			<Abstract type="html">The owning document revision.</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchRevision *revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchAttachment/setDocument:</TokenIdentifier>
+			<Abstract type="html">The owning document.</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchDocument *document</Declaration>
+			
+			
+			<Anchor>//api/name/document</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchAttachment/document</TokenIdentifier>
+			<Abstract type="html">The owning document.</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CouchDocument *document</Declaration>
+			
+			
+			<Anchor>//api/name/document</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchAttachment/setName:</TokenIdentifier>
+			<Abstract type="html">The filename (last URL path component).</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchAttachment/name</TokenIdentifier>
+			<Abstract type="html">The filename (last URL path component).</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchAttachment/setContentType:</TokenIdentifier>
+			<Abstract type="html">The MIME type of the contents.</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchAttachment/contentType</TokenIdentifier>
+			<Abstract type="html">The MIME type of the contents.</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchAttachment/setLength:</TokenIdentifier>
+			<Abstract type="html">The length in bytes of the contents.</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) UInt64 length</Declaration>
+			
+			
+			<Anchor>//api/name/length</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchAttachment/length</TokenIdentifier>
+			<Abstract type="html">The length in bytes of the contents.</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) UInt64 length</Declaration>
+			
+			
+			<Anchor>//api/name/length</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchAttachment/setMetadata:</TokenIdentifier>
+			<Abstract type="html">The CouchDB metadata about the attachment, that lives in the document.</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *metadata</Declaration>
+			
+			
+			<Anchor>//api/name/metadata</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchAttachment/metadata</TokenIdentifier>
+			<Abstract type="html">The CouchDB metadata about the attachment, that lives in the document.</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *metadata</Declaration>
+			
+			
+			<Anchor>//api/name/metadata</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchAttachment/setBody:</TokenIdentifier>
+			<Abstract type="html">Synchronous accessors for the body data.
+    These are convenient, but have no means of error handling. </Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSData *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchAttachment/body</TokenIdentifier>
+			<Abstract type="html">Synchronous accessors for the body data.
+    These are convenient, but have no means of error handling. </Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSData *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchAttachment/setUnversionedURL:</TokenIdentifier>
+			<Abstract type="html">The attachment&apos;s URL without the revision ID.
+    This URL will always resolve to the current revision of the attachment. </Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *unversionedURL</Declaration>
+			
+			
+			<Anchor>//api/name/unversionedURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchAttachment/unversionedURL</TokenIdentifier>
+			<Abstract type="html">The attachment&apos;s URL without the revision ID.
+    This URL will always resolve to the current revision of the attachment. </Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *unversionedURL</Declaration>
+			
+			
+			<Anchor>//api/name/unversionedURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchAttachment/PUT:contentType:</TokenIdentifier>
+			<Abstract type="html">Asynchronous setter for the body. (Use inherited -GET to get it.)</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)PUT:(NSData *)body contentType:(NSString *)contentType</Declaration>
+			
+			
+			<Anchor>//api/name/PUT:contentType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchAttachment/PUT:</TokenIdentifier>
+			<Abstract type="html">Asynchronous setter for the body. (Use inherited -GET to get it.)</Abstract>
+			<DeclaredIn>CouchAttachment.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)PUT:(NSData *)body</Declaration>
+			
+			
+			<Anchor>//api/name/PUT:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchAttachment/initWithParent:name:metadata:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithParent:(CouchResource *)parent name:(NSString *)name metadata:(NSDictionary *)metadata</Declaration>
+			
+			
+			<Anchor>//api/name/initWithParent:name:metadata:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

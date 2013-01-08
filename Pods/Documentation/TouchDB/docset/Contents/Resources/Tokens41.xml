@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDRemoteJSONRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDRemoteJSONRequest</TokenIdentifier>
+			<Abstract type="html">A request that parses its response body as JSON.
+    The parsed object will be returned as the first parameter of the completion block. </Abstract>
+			<DeclaredIn>TDRemoteRequest.h</DeclaredIn>
+			
+			<NodeRef refid="41"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

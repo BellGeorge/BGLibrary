@@ -1,0 +1,719 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TDRevision Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TouchDB 1.0 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TDRevision Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/asJSON">&nbsp;&nbsp;&nbsp;&nbsp;asJSON</option>
+	
+	<option value="//api/name/body">&nbsp;&nbsp;&nbsp;&nbsp;body</option>
+	
+	<option value="//api/name/deleted">&nbsp;&nbsp;&nbsp;&nbsp;deleted</option>
+	
+	<option value="//api/name/docID">&nbsp;&nbsp;&nbsp;&nbsp;docID</option>
+	
+	<option value="//api/name/generation">&nbsp;&nbsp;&nbsp;&nbsp;generation</option>
+	
+	<option value="//api/name/missing">&nbsp;&nbsp;&nbsp;&nbsp;missing</option>
+	
+	<option value="//api/name/properties">&nbsp;&nbsp;&nbsp;&nbsp;properties</option>
+	
+	<option value="//api/name/revID">&nbsp;&nbsp;&nbsp;&nbsp;revID</option>
+	
+	<option value="//api/name/sequence">&nbsp;&nbsp;&nbsp;&nbsp;sequence</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/generationFromRevID:">&nbsp;&nbsp;&nbsp;&nbsp;+ generationFromRevID:</option>
+	
+	<option value="//api/name/parseRevID:intoGeneration:andSuffix:">&nbsp;&nbsp;&nbsp;&nbsp;+ parseRevID:intoGeneration:andSuffix:</option>
+	
+	<option value="//api/name/revisionWithProperties:">&nbsp;&nbsp;&nbsp;&nbsp;+ revisionWithProperties:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/compareSequences:">&nbsp;&nbsp;&nbsp;&nbsp;- compareSequences:</option>
+	
+	<option value="//api/name/copyWithDocID:revID:">&nbsp;&nbsp;&nbsp;&nbsp;- copyWithDocID:revID:</option>
+	
+	<option value="//api/name/initWithBody:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithBody:</option>
+	
+	<option value="//api/name/initWithDocID:revID:deleted:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDocID:revID:deleted:</option>
+	
+	<option value="//api/name/initWithProperties:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithProperties:</option>
+	
+	<option value="//api/name/objectForKeyedSubscript:">&nbsp;&nbsp;&nbsp;&nbsp;- objectForKeyedSubscript:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/asJSON">asJSON</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/body">body</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleted">deleted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/docID">docID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generation">generation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/missing">missing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/properties">properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/revID">revID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sequence">sequence</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generationFromRevID:">generationFromRevID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parseRevID:intoGeneration:andSuffix:">parseRevID:intoGeneration:andSuffix:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/revisionWithProperties:">revisionWithProperties:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/compareSequences:">compareSequences:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/copyWithDocID:revID:">copyWithDocID:revID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithBody:">initWithBody:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDocID:revID:deleted:">initWithDocID:revID:deleted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithProperties:">initWithProperties:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectForKeyedSubscript:">objectForKeyedSubscript:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TDRevision Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TDRevision Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TDRevision.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Stores information about a revision &mdash; its <a href="#//api/name/docID">docID</a>, <a href="#//api/name/revID">revID</a>, and whether it&rsquo;s <a href="#//api/name/deleted">deleted</a>. It can also store the <a href="#//api/name/sequence">sequence</a> number and document contents (they can be added after creation).</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDocID:revID:deleted:">&ndash;&nbsp;initWithDocID:revID:deleted:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithBody:">&ndash;&nbsp;initWithBody:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithProperties:">&ndash;&nbsp;initWithProperties:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/revisionWithProperties:">+&nbsp;revisionWithProperties:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/docID">&nbsp;&nbsp;docID</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/revID">&nbsp;&nbsp;revID</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleted">&nbsp;&nbsp;deleted</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/missing">&nbsp;&nbsp;missing</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/body">&nbsp;&nbsp;body</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/properties">&nbsp;&nbsp;properties</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/asJSON">&nbsp;&nbsp;asJSON</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectForKeyedSubscript:">&ndash;&nbsp;objectForKeyedSubscript:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sequence">&nbsp;&nbsp;sequence</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/compareSequences:">&ndash;&nbsp;compareSequences:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generation">&nbsp;&nbsp;generation</a></code>
+		<span class="tooltip"><p>Generation number: 1 for a new document, 2 for the 2nd revision, &hellip;</p>
+
+<pre><code>Extracted from the numeric prefix of the revID. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generationFromRevID:">+&nbsp;generationFromRevID:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parseRevID:intoGeneration:andSuffix:">+&nbsp;parseRevID:intoGeneration:andSuffix:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/copyWithDocID:revID:">&ndash;&nbsp;copyWithDocID:revID:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/asJSON" title="asJSON"></a>
+	<h3 class="subsubtitle method-title">asJSON</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSData *asJSON</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/body" title="body"></a>
+	<h3 class="subsubtitle method-title">body</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (retain) TDBody *body</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleted" title="deleted"></a>
+	<h3 class="subsubtitle method-title">deleted</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) bool deleted</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/docID" title="docID"></a>
+	<h3 class="subsubtitle method-title">docID</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *docID</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generation" title="generation"></a>
+	<h3 class="subsubtitle method-title">generation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Generation number: 1 for a new document, 2 for the 2nd revision, &hellip;</p>
+
+<pre><code>Extracted from the numeric prefix of the revID. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) unsigned generation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Generation number: 1 for a new document, 2 for the 2nd revision, &hellip;</p>
+
+<pre><code>Extracted from the numeric prefix of the revID. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/missing" title="missing"></a>
+	<h3 class="subsubtitle method-title">missing</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property bool missing</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/properties" title="properties"></a>
+	<h3 class="subsubtitle method-title">properties</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (copy) NSDictionary *properties</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/revID" title="revID"></a>
+	<h3 class="subsubtitle method-title">revID</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *revID</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sequence" title="sequence"></a>
+	<h3 class="subsubtitle method-title">sequence</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property SequenceNumber sequence</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/generationFromRevID:" title="generationFromRevID:"></a>
+	<h3 class="subsubtitle method-title">generationFromRevID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (unsigned)generationFromRevID:(NSString *)<em>revID</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/parseRevID:intoGeneration:andSuffix:" title="parseRevID:intoGeneration:andSuffix:"></a>
+	<h3 class="subsubtitle method-title">parseRevID:intoGeneration:andSuffix:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)parseRevID:(NSString *)<em>revID</em> intoGeneration:(int *)<em>outNum</em> andSuffix:(NSString **)<em>outSuffix</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/revisionWithProperties:" title="revisionWithProperties:"></a>
+	<h3 class="subsubtitle method-title">revisionWithProperties:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (TDRevision *)revisionWithProperties:(NSDictionary *)<em>properties</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/compareSequences:" title="compareSequences:"></a>
+	<h3 class="subsubtitle method-title">compareSequences:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSComparisonResult)compareSequences:(TDRevision *)<em>rev</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/copyWithDocID:revID:" title="copyWithDocID:revID:"></a>
+	<h3 class="subsubtitle method-title">copyWithDocID:revID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (TDRevision *)copyWithDocID:(NSString *)<em>docID</em> revID:(NSString *)<em>revID</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithBody:" title="initWithBody:"></a>
+	<h3 class="subsubtitle method-title">initWithBody:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithBody:(TDBody *)<em>body</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDocID:revID:deleted:" title="initWithDocID:revID:deleted:"></a>
+	<h3 class="subsubtitle method-title">initWithDocID:revID:deleted:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDocID:(NSString *)<em>docID</em> revID:(NSString *)<em>revID</em> deleted:(BOOL)<em>deleted</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithProperties:" title="initWithProperties:"></a>
+	<h3 class="subsubtitle method-title">initWithProperties:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithProperties:(NSDictionary *)<em>properties</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectForKeyedSubscript:" title="objectForKeyedSubscript:"></a>
+	<h3 class="subsubtitle method-title">objectForKeyedSubscript:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)objectForKeyedSubscript:(NSString *)<em>key</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

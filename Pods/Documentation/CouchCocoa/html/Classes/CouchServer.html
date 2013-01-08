@@ -1,0 +1,1023 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CouchServer Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CouchCocoa 0.961beta6 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CouchServer Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/activeTasks">&nbsp;&nbsp;&nbsp;&nbsp;activeTasks</option>
+	
+	<option value="//api/name/activityPollInterval">&nbsp;&nbsp;&nbsp;&nbsp;activityPollInterval</option>
+	
+	<option value="//api/name/isEmbeddedServer">&nbsp;&nbsp;&nbsp;&nbsp;isEmbeddedServer</option>
+	
+	<option value="//api/name/replications">&nbsp;&nbsp;&nbsp;&nbsp;replications</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/checkActiveTasks">&nbsp;&nbsp;&nbsp;&nbsp;- checkActiveTasks</option>
+	
+	<option value="//api/name/close">&nbsp;&nbsp;&nbsp;&nbsp;- close</option>
+	
+	<option value="//api/name/databaseNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- databaseNamed:</option>
+	
+	<option value="//api/name/generateDocumentID">&nbsp;&nbsp;&nbsp;&nbsp;- generateDocumentID</option>
+	
+	<option value="//api/name/generateUUIDs:">&nbsp;&nbsp;&nbsp;&nbsp;- generateUUIDs:</option>
+	
+	<option value="//api/name/getDatabases">&nbsp;&nbsp;&nbsp;&nbsp;- getDatabases</option>
+	
+	<option value="//api/name/getVersion:">&nbsp;&nbsp;&nbsp;&nbsp;- getVersion:</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/initWithURL:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURL:</option>
+	
+	<option value="//api/name/objectForKeyedSubscript:">&nbsp;&nbsp;&nbsp;&nbsp;- objectForKeyedSubscript:</option>
+	
+	<option value="//api/name/registerActiveTask:">&nbsp;&nbsp;&nbsp;&nbsp;- registerActiveTask:</option>
+	
+	<option value="//api/name/replicationWithSource:target:">&nbsp;&nbsp;&nbsp;&nbsp;- replicationWithSource:target:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activeTasks">activeTasks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activityPollInterval">activityPollInterval</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEmbeddedServer">isEmbeddedServer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replications">replications</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkActiveTasks">checkActiveTasks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/close">close</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/databaseNamed:">databaseNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generateDocumentID">generateDocumentID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/generateUUIDs:">generateUUIDs:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDatabases">getDatabases</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getVersion:">getVersion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURL:">initWithURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectForKeyedSubscript:">objectForKeyedSubscript:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerActiveTask:">registerActiveTask:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replicationWithSource:target:">replicationWithSource:target:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CouchServer Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CouchServer Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CouchResource.html">CouchResource</a> : <a href="../Classes/RESTResource.html">RESTResource</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CouchServer.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The top level of a CouchDB server. Contains CouchDatabases.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithURL:">&ndash;&nbsp;initWithURL:</a></code>
+		<span class="tooltip"><p>Initialize given a server URL.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		<span class="tooltip"><p>Without a URL, connects to localhost on default port 5984.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/close">&ndash;&nbsp;close</a></code>
+		<span class="tooltip"><p>Releases all resources used by the CouchServer instance.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getVersion:">&ndash;&nbsp;getVersion:</a></code>
+		<span class="tooltip"><p>Fetches the server&rsquo;s current version string. (Synchronous)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generateUUIDs:">&ndash;&nbsp;generateUUIDs:</a></code>
+		<span class="tooltip"><p>Returns an array of unique-ID strings generated by the server. (Synchronous)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/generateDocumentID">&ndash;&nbsp;generateDocumentID</a></code>
+		<span class="tooltip"><p>Returns a single new document ID generated by the server. (Synchronous)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDatabases">&ndash;&nbsp;getDatabases</a></code>
+		<span class="tooltip"><p>Returns array of <a href="../Classes/CouchDatabase.html">CouchDatabase</a> objects representing all the databases on the server. (Synchronous)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/databaseNamed:">&ndash;&nbsp;databaseNamed:</a></code>
+		<span class="tooltip"><p>Just creates a <a href="../Classes/CouchDatabase.html">CouchDatabase</a> object; makes no calls to the server.</p>
+
+<pre><code>The database doesn't need to exist (you can call -create on it afterwards to create it.)
+Multiple calls with the same name will return the same CouchDatabase instance. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectForKeyedSubscript:">&ndash;&nbsp;objectForKeyedSubscript:</a></code>
+		<span class="tooltip"><p>Same as <a href="#//api/name/databaseNamed:">databaseNamed:</a>. Enables &ldquo;[]&rdquo; access in Xcode 4.4+</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activeTasks">&nbsp;&nbsp;activeTasks</a></code>
+		<span class="tooltip"><p>The list of active server tasks, as parsed JSON (observable).</p>
+
+<pre><code>This is updated asynchronously while the activityPollInterval is nonzero. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkActiveTasks">&ndash;&nbsp;checkActiveTasks</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activityPollInterval">&nbsp;&nbsp;activityPollInterval</a></code>
+		<span class="tooltip"><p>How often to poll the server&rsquo;s list of active tasks and update .<a href="#//api/name/activeTasks">activeTasks</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replications">&nbsp;&nbsp;replications</a></code>
+		<span class="tooltip"><p>All currently defined CouchPersistentReplications (as stored in the replicator database.)</p>
+
+<pre><code>To create a replication, use the methods on CouchDatabase. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEmbeddedServer">&nbsp;&nbsp;isEmbeddedServer</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replicationWithSource:target:">&ndash;&nbsp;replicationWithSource:target:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerActiveTask:">&ndash;&nbsp;registerActiveTask:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/activeTasks" title="activeTasks"></a>
+	<h3 class="subsubtitle method-title">activeTasks</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The list of active server tasks, as parsed JSON (observable).</p>
+
+<pre><code>This is updated asynchronously while the activityPollInterval is nonzero. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, retain) NSArray *activeTasks</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The list of active server tasks, as parsed JSON (observable).</p>
+
+<pre><code>This is updated asynchronously while the activityPollInterval is nonzero. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/activityPollInterval" title="activityPollInterval"></a>
+	<h3 class="subsubtitle method-title">activityPollInterval</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>How often to poll the server&rsquo;s list of active tasks and update .<a href="#//api/name/activeTasks">activeTasks</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property NSTimeInterval activityPollInterval</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>How often to poll the server&rsquo;s list of active tasks and update .<a href="#//api/name/activeTasks">activeTasks</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEmbeddedServer" title="isEmbeddedServer"></a>
+	<h3 class="subsubtitle method-title">isEmbeddedServer</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL isEmbeddedServer</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replications" title="replications"></a>
+	<h3 class="subsubtitle method-title">replications</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>All currently defined CouchPersistentReplications (as stored in the replicator database.)</p>
+
+<pre><code>To create a replication, use the methods on CouchDatabase. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *replications</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>All currently defined CouchPersistentReplications (as stored in the replicator database.)</p>
+
+<pre><code>To create a replication, use the methods on CouchDatabase. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/checkActiveTasks" title="checkActiveTasks"></a>
+	<h3 class="subsubtitle method-title">checkActiveTasks</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)checkActiveTasks</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/close" title="close"></a>
+	<h3 class="subsubtitle method-title">close</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Releases all resources used by the CouchServer instance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)close</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Releases all resources used by the CouchServer instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/databaseNamed:" title="databaseNamed:"></a>
+	<h3 class="subsubtitle method-title">databaseNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Just creates a <a href="../Classes/CouchDatabase.html">CouchDatabase</a> object; makes no calls to the server.</p>
+
+<pre><code>The database doesn't need to exist (you can call -create on it afterwards to create it.)
+Multiple calls with the same name will return the same CouchDatabase instance. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CouchDatabase *)databaseNamed:(NSString *)<em>name</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Just creates a <a href="../Classes/CouchDatabase.html">CouchDatabase</a> object; makes no calls to the server.</p>
+
+<pre><code>The database doesn't need to exist (you can call -create on it afterwards to create it.)
+Multiple calls with the same name will return the same CouchDatabase instance. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generateDocumentID" title="generateDocumentID"></a>
+	<h3 class="subsubtitle method-title">generateDocumentID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a single new document ID generated by the server. (Synchronous)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)generateDocumentID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a single new document ID generated by the server. (Synchronous)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/generateUUIDs:" title="generateUUIDs:"></a>
+	<h3 class="subsubtitle method-title">generateUUIDs:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an array of unique-ID strings generated by the server. (Synchronous)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)generateUUIDs:(NSUInteger)<em>count</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an array of unique-ID strings generated by the server. (Synchronous)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDatabases" title="getDatabases"></a>
+	<h3 class="subsubtitle method-title">getDatabases</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns array of <a href="../Classes/CouchDatabase.html">CouchDatabase</a> objects representing all the databases on the server. (Synchronous)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)getDatabases</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns array of <a href="../Classes/CouchDatabase.html">CouchDatabase</a> objects representing all the databases on the server. (Synchronous)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getVersion:" title="getVersion:"></a>
+	<h3 class="subsubtitle method-title">getVersion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetches the server&rsquo;s current version string. (Synchronous)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)getVersion:(NSError **)<em>outError</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Fetches the server&rsquo;s current version string. (Synchronous)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Without a URL, connects to localhost on default port 5984.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Without a URL, connects to localhost on default port 5984.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithURL:" title="initWithURL:"></a>
+	<h3 class="subsubtitle method-title">initWithURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize given a server URL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initialize given a server URL.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectForKeyedSubscript:" title="objectForKeyedSubscript:"></a>
+	<h3 class="subsubtitle method-title">objectForKeyedSubscript:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Same as <a href="#//api/name/databaseNamed:">databaseNamed:</a>. Enables &ldquo;[]&rdquo; access in Xcode 4.4+</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)objectForKeyedSubscript:(NSString *)<em>key</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Same as <a href="#//api/name/databaseNamed:">databaseNamed:</a>. Enables &ldquo;[]&rdquo; access in Xcode 4.4+</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerActiveTask:" title="registerActiveTask:"></a>
+	<h3 class="subsubtitle method-title">registerActiveTask:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)registerActiveTask:(NSDictionary *)<em>activeTask</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replicationWithSource:target:" title="replicationWithSource:target:"></a>
+	<h3 class="subsubtitle method-title">replicationWithSource:target:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (CouchPersistentReplication *)replicationWithSource:(NSString *)<em>source</em> target:(NSString *)<em>target</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

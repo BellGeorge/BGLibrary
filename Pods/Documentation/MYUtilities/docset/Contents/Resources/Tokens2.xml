@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MYExceptionReportingApplication.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MYExceptionReportingApplication</TokenIdentifier>
+			<Abstract type="html">Edit your Info.plist to make this your app&apos;s principal class,
+    and most exceptions will be reported via a modal alert. 
+    This includes exceptions caught by AppKit (i.e. uncaught ones from event handlers)
+    and ones you report yourself via MYReportException and @catchAndReport. </Abstract>
+			<DeclaredIn>ExceptionUtils.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

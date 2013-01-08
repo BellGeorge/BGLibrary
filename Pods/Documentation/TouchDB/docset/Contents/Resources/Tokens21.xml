@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDBlobStoreWriter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDBlobStoreWriter</TokenIdentifier>
+			<Abstract type="html">Lets you stream a large attachment to a TDBlobStore asynchronously, e.g. from a network download.</Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStoreWriter/initWithStore:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithStore:(TDBlobStore *)store</Declaration>
+			
+			
+			<Anchor>//api/name/initWithStore:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStoreWriter/appendData:</TokenIdentifier>
+			<Abstract type="html">Appends data to the blob. Call this when new data is available.</Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>- (void)appendData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/appendData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStoreWriter/finish</TokenIdentifier>
+			<Abstract type="html">Call this after all the data has been added.</Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>- (void)finish</Declaration>
+			
+			
+			<Anchor>//api/name/finish</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStoreWriter/cancel</TokenIdentifier>
+			<Abstract type="html">Call this to cancel before finishing the data.</Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStoreWriter/install</TokenIdentifier>
+			<Abstract type="html">Installs a finished blob into the store.</Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)install</Declaration>
+			
+			
+			<Anchor>//api/name/install</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStoreWriter/setLength:</TokenIdentifier>
+			<Abstract type="html">The number of bytes in the blob.</Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) UInt64 length</Declaration>
+			
+			
+			<Anchor>//api/name/length</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBlobStoreWriter/length</TokenIdentifier>
+			<Abstract type="html">The number of bytes in the blob.</Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) UInt64 length</Declaration>
+			
+			
+			<Anchor>//api/name/length</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStoreWriter/setBlobKey:</TokenIdentifier>
+			<Abstract type="html">After finishing, this is the key for looking up the blob through the TDBlobStore.</Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDBlobKey blobKey</Declaration>
+			
+			
+			<Anchor>//api/name/blobKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBlobStoreWriter/blobKey</TokenIdentifier>
+			<Abstract type="html">After finishing, this is the key for looking up the blob through the TDBlobStore.</Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) TDBlobKey blobKey</Declaration>
+			
+			
+			<Anchor>//api/name/blobKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStoreWriter/setMD5DigestString:</TokenIdentifier>
+			<Abstract type="html">After finishing, this is the MD5 digest of the blob, in base64 with an &quot;md5-&quot; prefix.
+    (This is useful for compatibility with CouchDB, which stores MD5 digests of attachments.) </Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *MD5DigestString</Declaration>
+			
+			
+			<Anchor>//api/name/MD5DigestString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBlobStoreWriter/MD5DigestString</TokenIdentifier>
+			<Abstract type="html">After finishing, this is the MD5 digest of the blob, in base64 with an &quot;md5-&quot; prefix.
+    (This is useful for compatibility with CouchDB, which stores MD5 digests of attachments.) </Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *MD5DigestString</Declaration>
+			
+			
+			<Anchor>//api/name/MD5DigestString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStoreWriter/setSHA1DigestString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *SHA1DigestString</Declaration>
+			
+			
+			<Anchor>//api/name/SHA1DigestString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBlobStoreWriter/SHA1DigestString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *SHA1DigestString</Declaration>
+			
+			
+			<Anchor>//api/name/SHA1DigestString</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

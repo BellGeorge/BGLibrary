@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDMultiStreamWriter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDMultiStreamWriter</TokenIdentifier>
+			<Abstract type="html">A stream aggregator that reads from a concatenated sequence of other inputs.
+    Use this to combine multiple input streams (and data blobs) together into one.
+    This is useful when uploading multipart MIME bodies. </Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/addStream:length:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>- (void)addStream:(NSInputStream *)stream length:(UInt64)length</Declaration>
+			
+			
+			<Anchor>//api/name/addStream:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/addStream:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>- (void)addStream:(NSInputStream *)stream</Declaration>
+			
+			
+			<Anchor>//api/name/addStream:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/addData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>- (void)addData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/addData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/addFileURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)addFileURL:(NSURL *)fileURL</Declaration>
+			
+			
+			<Anchor>//api/name/addFileURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/addFile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)addFile:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/addFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/setLength:</TokenIdentifier>
+			<Abstract type="html">Total length of the stream.
+    This is just computed by adding the values passed to addStream:length:, and the lengths of the NSData objects and files added.
+    If addStream: has been called (the version without length:) the length is unknown and will be returned as -1.
+    (Many clients won&apos;t care about the length, but TDMultipartUploader does.) </Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) SInt64 length</Declaration>
+			
+			
+			<Anchor>//api/name/length</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultiStreamWriter/length</TokenIdentifier>
+			<Abstract type="html">Total length of the stream.
+    This is just computed by adding the values passed to addStream:length:, and the lengths of the NSData objects and files added.
+    If addStream: has been called (the version without length:) the length is unknown and will be returned as -1.
+    (Many clients won&apos;t care about the length, but TDMultipartUploader does.) </Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) SInt64 length</Declaration>
+			
+			
+			<Anchor>//api/name/length</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/openForInputStream</TokenIdentifier>
+			<Abstract type="html">Returns an input stream; reading from this will return the contents of all added streams in sequence.
+    This stream can be set as the HTTPBodyStream of an NSURLRequest.
+    It is the caller&apos;s responsibility to close the returned stream. </Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>- (NSInputStream *)openForInputStream</Declaration>
+			
+			
+			<Anchor>//api/name/openForInputStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/openForOutputTo:</TokenIdentifier>
+			<Abstract type="html">Associates an output stream; the data from all of the added streams will be written to the output, asynchronously.</Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>- (void)openForOutputTo:(NSOutputStream *)output</Declaration>
+			
+			
+			<Anchor>//api/name/openForOutputTo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/close</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>- (void)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/setIsOpen:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isOpen</Declaration>
+			
+			
+			<Anchor>//api/name/isOpen</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultiStreamWriter/isOpen</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isOpen</Declaration>
+			
+			
+			<Anchor>//api/name/isOpen</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/setError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultiStreamWriter/error</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/allOutput</TokenIdentifier>
+			<Abstract type="html">Convenience method that opens an output stream, collects all the data, and returns it.</Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)allOutput</Declaration>
+			
+			
+			<Anchor>//api/name/allOutput</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/addInput:length:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>- (void)addInput:(id)input length:(UInt64)length</Declaration>
+			
+			
+			<Anchor>//api/name/addInput:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultiStreamWriter/opened</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultiStreamWriter.h</DeclaredIn>			
+			
+			<Declaration>- (void)opened</Declaration>
+			
+			
+			<Anchor>//api/name/opened</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

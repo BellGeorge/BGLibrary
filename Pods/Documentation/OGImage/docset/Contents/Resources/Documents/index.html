@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>OGImage 0.0.1 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">OGImage 0.0.1 </a></h1>
+				<a id="developerHome" href="index.html">Art Gillespie</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">OGImage 0.0.1 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">OGImage 0.0.1 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1><a href="Classes/OGImage.html">OGImage</a></h1>
+
+<h2>Introduction</h2>
+
+<p>The idea behind <a href="Classes/OGImage.html"><code>OGImage</code></a> is to encapsulate best practices for loading images
+over HTTP in a simple, extensible interface.</p>
+
+<h3>Philosophy</h3>
+
+<ul>
+<li><p>The default use case should be <em>ridiculously</em> simple to execute. In <a href="Classes/OGImage.html">OGImage</a>,
+you can load, cache, and scale an image with the following call:</p>
+
+<p>  <code>objc
+  OGScaledImage *ogImage = [[OGScaledImage alloc] initWithURL:imageURL size:renderSize key:nil];
+  [ogImage addObserver:self forKey:@"scaledImage" options:NSKeyValueObservingOptionNew context:nil];
+  // there is no step 3!
+ </code></p></li>
+<li><p>Networking belongs in the Model. Views (and to some degree, Controllers)
+shouldn&rsquo;t know anything about where images come from: That&rsquo;s the model&rsquo;s job.
+<a href="Classes/OGImage.html">OGImage</a> is designed as a model object: Controllers and Views learn about
+changes to it (e.g., when an image has loaded) through KVO.</p></li>
+<li>Generally, more recently requested images should have higher loading
+priority. For example, if images are being loaded on demand as a user scrolls
+through a table view, the user experience is improved if they don&rsquo;t have to
+wait for all the images they&rsquo;ve scrolled past to load before the images that
+are visible are loaded. At the same time, we don&rsquo;t believe in waiting until a
+table view has finished scrolling to start loading images.  <a href="Classes/OGImage.html">OGImage</a> addresses
+these competing requirements by pushing image load requests into a LIFO
+queue.</li>
+<li>Each subsystem should have its own GCD queue.</li>
+</ul>
+
+
+<h2>Installation</h2>
+
+<p>To use <a href="Classes/OGImage.html">OGImage</a> in your projects, simply add the files in the <code>OGImage</code>
+subdirectory to your target.</p>
+
+<p>If you&rsquo;re using <code>OGScaledImage</code> and/or <code>OGImageProcessing</code>, you&rsquo;ll need to add
+<code>Accelerate.framework</code> to your target&rsquo;s &ldquo;Link Binary With Libraries&rdquo; build
+phase.</p>
+
+<h2>Usage</h2>
+
+<p><a href="Classes/OGImage.html">OGImage</a> has a simple interface; just instantiate with the image&rsquo;s URL and
+listen for KVO notifications on the <code>image</code> property. You can also specify a
+placeholder image to use until loading is complete with
+<code>initWithURL:placeholderImage</code></p>
+
+<p>```objc</p>
+
+<h1>import &ldquo;<a href="Classes/OGImage.html">OGImage</a>.h&rdquo;</h1>
+
+<p>&hellip;</p>
+
+<p><a href="Classes/OGImage.html">OGImage</a> *image = [[OGImage alloc] initWithURL:[NSURL URLWithString:@&ldquo;<a href="http://somedomain.com/someimage.jpg">http://somedomain.com/someimage.jpg</a>&rdquo;]];
+[image addObserver:self forKeyPath:@&ldquo;image&rdquo; options:NSKeyValueObservingOptionNew context:nil];</p>
+
+<p>&hellip;</p>
+
+<ul>
+<li>(void)observeValueForKeyPath:(NSString <em>)keyPath ofObject:(id)object change:(NSDictionary </em>)change context:(void *)context {
+  if ([keyPath isEqualToString:@&ldquo;image&rdquo;]) {
+      // image was loaded!
+      &hellip;
+  } else if ([keyPath isEqualToString:@&ldquo;error&rdquo;]) {
+      // error loading image
+  }
+}
+```</li>
+</ul>
+
+
+<p>There are also caching (<code>OGCachedImage</code>) and caching+scaling (<code>OGScaledImage</code>)
+subclasses that provide useful functionality and demonstrate how to go about
+bending <a href="Classes/OGImage.html">OGImage</a> to your needs via subclassing.</p>
+
+<p>```objc</p>
+
+<h1>import &ldquo;<a href="Classes/OGScaledImage.html">OGScaledImage</a>.h&rdquo;</h1>
+
+<p>/<em>
+ * The image at <code>imageURL</code> will be loaded from one of in-memory cache, disk cache or
+ * over the network and scaled to <code>scaledSize</code>. Note that if the image at <code>imageURL</code>
+ * has already been scaled to <code>scaledSize</code> in the past, <a href="Classes/OGScaledImage.html">OGScaledImage</a> will simply
+ * load the scaled image from cache.
+ </em>/
+<a href="Classes/OGScaledImage.html">OGScaledImage</a> *image = [[OGScaledImage alloc] initWithURL:imageURL size:scaledSize key:nil];</p>
+
+<p>/<em>
+ * Note that here we&rsquo;re interested in the <code>scaledImage</code> property, not the full-size <code>image</code>
+ * property.
+ </em>/
+[image addObserver:self forKeyPath:@&ldquo;scaledImage&rdquo; options:NSKeyValueObservingOptionNew context:nil];</p>
+
+<p>&hellip;</p>
+
+<ul>
+<li>(void)observeValueForKeyPath:(NSString <em>)keyPath ofObject:(id)object change:(NSDictionary </em>)change context:(void *)context {
+  if ([keyPath isEqualToString:@&ldquo;scaledImage&rdquo;]) {
+      // image was loaded and scaled!
+      &hellip;
+  } else if ([keyPath isEqualToString:@&ldquo;error&rdquo;]) {
+      // error loading image
+  }
+}
+```</li>
+</ul>
+
+
+<h2>Demo and Tests</h2>
+
+<p>This repo contains a very simple project that demonstrates the use of
+<code>OGScaledImage</code> with a stock <code>UITableView</code>.</p>
+
+<p>To run the demo and tests in the <code>OGImageDemo project</code>, you&rsquo;ll need
+<a href="http://cocoapods.org/">CocoaPods</a> If you already have cocoapods on your
+system, just run <code>pod install</code> from the terminal in the <code>OGImageDemo</code>
+directory.</p>
+
+<p>Note that you <em>do not</em> need cocoapods to use <code>OGImage</code> in your projects&mdash;there
+are no external dependencies for the library itself, only for the tests
+(GHUnit) and demo (CocoaLumberjack)</p>
+
+<h2>TODO:</h2>
+
+<ul>
+<li>Sexier demo app, maybe something <code>UICollectionView</code>-based.</li>
+<li>More image processing operations, e.g., adding rounded corners, b&amp;w, etc.</li>
+<li>More test coverage.</li>
+</ul>
+
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/OGCachedImage.html">OGCachedImage</a></li>
+							
+							<li><a href="Classes/OGImage.html">OGImage</a></li>
+							
+							<li><a href="Classes/OGImageCache.html">OGImageCache</a></li>
+							
+							<li><a href="Classes/OGImageLoader.html">OGImageLoader</a></li>
+							
+							<li><a href="Classes/OGImageProcessing.html">OGImageProcessing</a></li>
+							
+							<li><a href="Classes/OGScaledImage.html">OGScaledImage</a></li>
+							
+						</ul>
+					</div>
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Art Gillespie. All rights reserved. (Last updated: 2012-12-07)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

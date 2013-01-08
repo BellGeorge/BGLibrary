@@ -1,0 +1,730 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TDMultiStreamWriter Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TouchDB 1.0 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TDMultiStreamWriter Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/error">&nbsp;&nbsp;&nbsp;&nbsp;error</option>
+	
+	<option value="//api/name/isOpen">&nbsp;&nbsp;&nbsp;&nbsp;isOpen</option>
+	
+	<option value="//api/name/length">&nbsp;&nbsp;&nbsp;&nbsp;length</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addData:">&nbsp;&nbsp;&nbsp;&nbsp;- addData:</option>
+	
+	<option value="//api/name/addFile:">&nbsp;&nbsp;&nbsp;&nbsp;- addFile:</option>
+	
+	<option value="//api/name/addFileURL:">&nbsp;&nbsp;&nbsp;&nbsp;- addFileURL:</option>
+	
+	<option value="//api/name/addInput:length:">&nbsp;&nbsp;&nbsp;&nbsp;- addInput:length:</option>
+	
+	<option value="//api/name/addStream:">&nbsp;&nbsp;&nbsp;&nbsp;- addStream:</option>
+	
+	<option value="//api/name/addStream:length:">&nbsp;&nbsp;&nbsp;&nbsp;- addStream:length:</option>
+	
+	<option value="//api/name/allOutput">&nbsp;&nbsp;&nbsp;&nbsp;- allOutput</option>
+	
+	<option value="//api/name/close">&nbsp;&nbsp;&nbsp;&nbsp;- close</option>
+	
+	<option value="//api/name/openForInputStream">&nbsp;&nbsp;&nbsp;&nbsp;- openForInputStream</option>
+	
+	<option value="//api/name/openForOutputTo:">&nbsp;&nbsp;&nbsp;&nbsp;- openForOutputTo:</option>
+	
+	<option value="//api/name/opened">&nbsp;&nbsp;&nbsp;&nbsp;- opened</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/error">error</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isOpen">isOpen</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/length">length</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addData:">addData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addFile:">addFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addFileURL:">addFileURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addInput:length:">addInput:length:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addStream:">addStream:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addStream:length:">addStream:length:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allOutput">allOutput</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/close">close</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openForInputStream">openForInputStream</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/openForOutputTo:">openForOutputTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/opened">opened</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TDMultiStreamWriter Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TDMultiStreamWriter Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TDMultiStreamWriter.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A stream aggregator that reads from a concatenated sequence of other inputs.</p>
+
+<pre><code>Use this to combine multiple input streams (and data blobs) together into one.
+This is useful when uploading multipart MIME bodies. 
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addStream:length:">&ndash;&nbsp;addStream:length:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addStream:">&ndash;&nbsp;addStream:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addData:">&ndash;&nbsp;addData:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addFileURL:">&ndash;&nbsp;addFileURL:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addFile:">&ndash;&nbsp;addFile:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/length">&nbsp;&nbsp;length</a></code>
+		<span class="tooltip"><p>Total length of the stream.</p>
+
+<pre><code>This is just computed by adding the values passed to addStream:length:, and the lengths of the NSData objects and files added.
+If addStream: has been called (the version without length:) the length is unknown and will be returned as -1.
+(Many clients won't care about the length, but TDMultipartUploader does.) 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openForInputStream">&ndash;&nbsp;openForInputStream</a></code>
+		<span class="tooltip"><p>Returns an input stream; reading from this will return the contents of all added streams in sequence.</p>
+
+<pre><code>This stream can be set as the HTTPBodyStream of an NSURLRequest.
+It is the caller's responsibility to close the returned stream. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/openForOutputTo:">&ndash;&nbsp;openForOutputTo:</a></code>
+		<span class="tooltip"><p>Associates an output stream; the data from all of the added streams will be written to the output, asynchronously.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/close">&ndash;&nbsp;close</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isOpen">&nbsp;&nbsp;isOpen</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/error">&nbsp;&nbsp;error</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allOutput">&ndash;&nbsp;allOutput</a></code>
+		<span class="tooltip"><p>Convenience method that opens an output stream, collects all the data, and returns it.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addInput:length:">&ndash;&nbsp;addInput:length:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/opened">&ndash;&nbsp;opened</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/error" title="error"></a>
+	<h3 class="subsubtitle method-title">error</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, retain) NSError *error</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isOpen" title="isOpen"></a>
+	<h3 class="subsubtitle method-title">isOpen</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL isOpen</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/length" title="length"></a>
+	<h3 class="subsubtitle method-title">length</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Total length of the stream.</p>
+
+<pre><code>This is just computed by adding the values passed to addStream:length:, and the lengths of the NSData objects and files added.
+If addStream: has been called (the version without length:) the length is unknown and will be returned as -1.
+(Many clients won't care about the length, but TDMultipartUploader does.) 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) SInt64 length</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Total length of the stream.</p>
+
+<pre><code>This is just computed by adding the values passed to addStream:length:, and the lengths of the NSData objects and files added.
+If addStream: has been called (the version without length:) the length is unknown and will be returned as -1.
+(Many clients won't care about the length, but TDMultipartUploader does.) 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDMultiStreamWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addData:" title="addData:"></a>
+	<h3 class="subsubtitle method-title">addData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addData:(NSData *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addFile:" title="addFile:"></a>
+	<h3 class="subsubtitle method-title">addFile:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)addFile:(NSString *)<em>path</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addFileURL:" title="addFileURL:"></a>
+	<h3 class="subsubtitle method-title">addFileURL:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)addFileURL:(NSURL *)<em>fileURL</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addInput:length:" title="addInput:length:"></a>
+	<h3 class="subsubtitle method-title">addInput:length:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addInput:(id)<em>input</em> length:(UInt64)<em>length</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addStream:" title="addStream:"></a>
+	<h3 class="subsubtitle method-title">addStream:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addStream:(NSInputStream *)<em>stream</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addStream:length:" title="addStream:length:"></a>
+	<h3 class="subsubtitle method-title">addStream:length:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)addStream:(NSInputStream *)<em>stream</em> length:(UInt64)<em>length</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allOutput" title="allOutput"></a>
+	<h3 class="subsubtitle method-title">allOutput</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience method that opens an output stream, collects all the data, and returns it.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)allOutput</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Convenience method that opens an output stream, collects all the data, and returns it.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDMultiStreamWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/close" title="close"></a>
+	<h3 class="subsubtitle method-title">close</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)close</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openForInputStream" title="openForInputStream"></a>
+	<h3 class="subsubtitle method-title">openForInputStream</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an input stream; reading from this will return the contents of all added streams in sequence.</p>
+
+<pre><code>This stream can be set as the HTTPBodyStream of an NSURLRequest.
+It is the caller's responsibility to close the returned stream. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInputStream *)openForInputStream</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an input stream; reading from this will return the contents of all added streams in sequence.</p>
+
+<pre><code>This stream can be set as the HTTPBodyStream of an NSURLRequest.
+It is the caller's responsibility to close the returned stream. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDMultiStreamWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/openForOutputTo:" title="openForOutputTo:"></a>
+	<h3 class="subsubtitle method-title">openForOutputTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Associates an output stream; the data from all of the added streams will be written to the output, asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)openForOutputTo:(NSOutputStream *)<em>output</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Associates an output stream; the data from all of the added streams will be written to the output, asynchronously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TDMultiStreamWriter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/opened" title="opened"></a>
+	<h3 class="subsubtitle method-title">opened</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)opened</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

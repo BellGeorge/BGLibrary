@@ -1,0 +1,1123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CouchRevision Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CouchCocoa 0.961beta6 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CouchRevision Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/attachmentNames">&nbsp;&nbsp;&nbsp;&nbsp;attachmentNames</option>
+	
+	<option value="//api/name/document">&nbsp;&nbsp;&nbsp;&nbsp;document</option>
+	
+	<option value="//api/name/documentID">&nbsp;&nbsp;&nbsp;&nbsp;documentID</option>
+	
+	<option value="//api/name/isCurrent">&nbsp;&nbsp;&nbsp;&nbsp;isCurrent</option>
+	
+	<option value="//api/name/isDeleted">&nbsp;&nbsp;&nbsp;&nbsp;isDeleted</option>
+	
+	<option value="//api/name/properties">&nbsp;&nbsp;&nbsp;&nbsp;properties</option>
+	
+	<option value="//api/name/propertiesAreLoaded">&nbsp;&nbsp;&nbsp;&nbsp;propertiesAreLoaded</option>
+	
+	<option value="//api/name/revisionID">&nbsp;&nbsp;&nbsp;&nbsp;revisionID</option>
+	
+	<option value="//api/name/userProperties">&nbsp;&nbsp;&nbsp;&nbsp;userProperties</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/attachmentNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- attachmentNamed:</option>
+	
+	<option value="//api/name/createAttachmentWithName:type:">&nbsp;&nbsp;&nbsp;&nbsp;- createAttachmentWithName:type:</option>
+	
+	<option value="//api/name/initWithDocument:properties:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDocument:properties:</option>
+	
+	<option value="//api/name/initWithDocument:revisionID:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDocument:revisionID:</option>
+	
+	<option value="//api/name/initWithOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithOperation:</option>
+	
+	<option value="//api/name/objectForKeyedSubscript:">&nbsp;&nbsp;&nbsp;&nbsp;- objectForKeyedSubscript:</option>
+	
+	<option value="//api/name/propertyForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- propertyForKey:</option>
+	
+	<option value="//api/name/putProperties:">&nbsp;&nbsp;&nbsp;&nbsp;- putProperties:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachmentNames">attachmentNames</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/document">document</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/documentID">documentID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isCurrent">isCurrent</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isDeleted">isDeleted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/properties">properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertiesAreLoaded">propertiesAreLoaded</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/revisionID">revisionID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userProperties">userProperties</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachmentNamed:">attachmentNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createAttachmentWithName:type:">createAttachmentWithName:type:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDocument:properties:">initWithDocument:properties:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDocument:revisionID:">initWithDocument:revisionID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithOperation:">initWithOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectForKeyedSubscript:">objectForKeyedSubscript:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertyForKey:">propertyForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putProperties:">putProperties:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CouchRevision Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CouchRevision Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CouchResource.html">CouchResource</a> : <a href="../Classes/RESTResource.html">RESTResource</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CouchRevision.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A single revision of a <a href="../Classes/CouchDocument.html">CouchDocument</a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/document">&nbsp;&nbsp;document</a></code>
+		<span class="tooltip"><p>The document this is a revision of.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/documentID">&nbsp;&nbsp;documentID</a></code>
+		<span class="tooltip"><p>The document&rsquo;s ID.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/revisionID">&nbsp;&nbsp;revisionID</a></code>
+		<span class="tooltip"><p>The ID of this revision.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isCurrent">&nbsp;&nbsp;isCurrent</a></code>
+		<span class="tooltip"><p>Is this the current/latest revision of its <a href="#//api/name/document">document</a>?</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isDeleted">&nbsp;&nbsp;isDeleted</a></code>
+		<span class="tooltip"><p>Does this revision mark the deletion of its <a href="#//api/name/document">document</a>?</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/properties">&nbsp;&nbsp;properties</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/document">document</a> as returned from the server and parsed from JSON. (Synchronous)</p>
+
+<pre><code>Keys beginning with "_" are defined and reserved by CouchDB; others are app-specific.
+The properties are cached for the lifespan of this object, so subsequent calls after the first are cheap.
+(This accessor is synchronous.) 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userProperties">&nbsp;&nbsp;userProperties</a></code>
+		<span class="tooltip"><p>The user-defined <a href="#//api/name/properties">properties</a>, without the ones reserved by CouchDB.</p>
+
+<pre><code>This is based on properties, with every key whose name starts with "_" removed. 
+</code></pre></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertyForKey:">&ndash;&nbsp;propertyForKey:</a></code>
+		<span class="tooltip"><p>Shorthand for [self.<a href="#//api/name/properties">properties</a> objectForKey: key]. (Synchronous)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectForKeyedSubscript:">&ndash;&nbsp;objectForKeyedSubscript:</a></code>
+		<span class="tooltip"><p>Same as <a href="#//api/name/propertyForKey:">propertyForKey:</a>. Enables &ldquo;[]&rdquo; access in Xcode 4.4+</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertiesAreLoaded">&nbsp;&nbsp;propertiesAreLoaded</a></code>
+		<span class="tooltip"><p>Has this object fetched its contents from the server yet?</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putProperties:">&ndash;&nbsp;putProperties:</a></code>
+		<span class="tooltip"><p>Creates a new revision with the given <a href="#//api/name/properties">properties</a>.</p>
+
+<pre><code>This is asynchronous. Watch response for conflict errors!
+If successful, the new CouchRevision will be available as the operation's resultObject. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachmentNames">&nbsp;&nbsp;attachmentNames</a></code>
+		<span class="tooltip"><p>The names of all attachments (array of strings).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachmentNamed:">&ndash;&nbsp;attachmentNamed:</a></code>
+		<span class="tooltip"><p>Looks up the attachment with the given name (without fetching its contents).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createAttachmentWithName:type:">&ndash;&nbsp;createAttachmentWithName:type:</a></code>
+		<span class="tooltip"><p>Creates a new attachment object, but doesn&rsquo;t write it to the database yet.</p>
+
+<pre><code>To actually create the attachment, you'll need to call -PUT on the CouchAttachment.
+It's OK to call this with an attachment name that already exists; saving will overwrite the old attachment contents. 
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDocument:revisionID:">&ndash;&nbsp;initWithDocument:revisionID:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDocument:properties:">&ndash;&nbsp;initWithDocument:properties:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithOperation:">&ndash;&nbsp;initWithOperation:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attachmentNames" title="attachmentNames"></a>
+	<h3 class="subsubtitle method-title">attachmentNames</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The names of all attachments (array of strings).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSArray *attachmentNames</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The names of all attachments (array of strings).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/document" title="document"></a>
+	<h3 class="subsubtitle method-title">document</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The document this is a revision of.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) CouchDocument *document</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The document this is a revision of.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/documentID" title="documentID"></a>
+	<h3 class="subsubtitle method-title">documentID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The document&rsquo;s ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *documentID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The document&rsquo;s ID.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isCurrent" title="isCurrent"></a>
+	<h3 class="subsubtitle method-title">isCurrent</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Is this the current/latest revision of its <a href="#//api/name/document">document</a>?</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL isCurrent</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Is this the current/latest revision of its <a href="#//api/name/document">document</a>?</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isDeleted" title="isDeleted"></a>
+	<h3 class="subsubtitle method-title">isDeleted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Does this revision mark the deletion of its <a href="#//api/name/document">document</a>?</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL isDeleted</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Does this revision mark the deletion of its <a href="#//api/name/document">document</a>?</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/properties" title="properties"></a>
+	<h3 class="subsubtitle method-title">properties</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/document">document</a> as returned from the server and parsed from JSON. (Synchronous)</p>
+
+<pre><code>Keys beginning with "_" are defined and reserved by CouchDB; others are app-specific.
+The properties are cached for the lifespan of this object, so subsequent calls after the first are cheap.
+(This accessor is synchronous.) 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, copy) NSDictionary *properties</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="#//api/name/document">document</a> as returned from the server and parsed from JSON. (Synchronous)</p>
+
+<pre><code>Keys beginning with "_" are defined and reserved by CouchDB; others are app-specific.
+The properties are cached for the lifespan of this object, so subsequent calls after the first are cheap.
+(This accessor is synchronous.) 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertiesAreLoaded" title="propertiesAreLoaded"></a>
+	<h3 class="subsubtitle method-title">propertiesAreLoaded</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Has this object fetched its contents from the server yet?</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL propertiesAreLoaded</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Has this object fetched its contents from the server yet?</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/revisionID" title="revisionID"></a>
+	<h3 class="subsubtitle method-title">revisionID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The ID of this revision.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) NSString *revisionID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The ID of this revision.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userProperties" title="userProperties"></a>
+	<h3 class="subsubtitle method-title">userProperties</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The user-defined <a href="#//api/name/properties">properties</a>, without the ones reserved by CouchDB.</p>
+
+<pre><code>This is based on properties, with every key whose name starts with "_" removed. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, copy) NSDictionary *userProperties</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The user-defined <a href="#//api/name/properties">properties</a>, without the ones reserved by CouchDB.</p>
+
+<pre><code>This is based on properties, with every key whose name starts with "_" removed. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attachmentNamed:" title="attachmentNamed:"></a>
+	<h3 class="subsubtitle method-title">attachmentNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Looks up the attachment with the given name (without fetching its contents).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CouchAttachment *)attachmentNamed:(NSString *)<em>name</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Looks up the attachment with the given name (without fetching its contents).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createAttachmentWithName:type:" title="createAttachmentWithName:type:"></a>
+	<h3 class="subsubtitle method-title">createAttachmentWithName:type:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new attachment object, but doesn&rsquo;t write it to the database yet.</p>
+
+<pre><code>To actually create the attachment, you'll need to call -PUT on the CouchAttachment.
+It's OK to call this with an attachment name that already exists; saving will overwrite the old attachment contents. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CouchAttachment *)createAttachmentWithName:(NSString *)<em>name</em> type:(NSString *)<em>contentType</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new attachment object, but doesn&rsquo;t write it to the database yet.</p>
+
+<pre><code>To actually create the attachment, you'll need to call -PUT on the CouchAttachment.
+It's OK to call this with an attachment name that already exists; saving will overwrite the old attachment contents. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDocument:properties:" title="initWithDocument:properties:"></a>
+	<h3 class="subsubtitle method-title">initWithDocument:properties:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDocument:(CouchDocument *)<em>document</em> properties:(NSDictionary *)<em>contents</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDocument:revisionID:" title="initWithDocument:revisionID:"></a>
+	<h3 class="subsubtitle method-title">initWithDocument:revisionID:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDocument:(CouchDocument *)<em>document</em> revisionID:(NSString *)<em>revisionID</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithOperation:" title="initWithOperation:"></a>
+	<h3 class="subsubtitle method-title">initWithOperation:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithOperation:(RESTOperation *)<em>operation</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectForKeyedSubscript:" title="objectForKeyedSubscript:"></a>
+	<h3 class="subsubtitle method-title">objectForKeyedSubscript:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Same as <a href="#//api/name/propertyForKey:">propertyForKey:</a>. Enables &ldquo;[]&rdquo; access in Xcode 4.4+</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)objectForKeyedSubscript:(NSString *)<em>key</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Same as <a href="#//api/name/propertyForKey:">propertyForKey:</a>. Enables &ldquo;[]&rdquo; access in Xcode 4.4+</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertyForKey:" title="propertyForKey:"></a>
+	<h3 class="subsubtitle method-title">propertyForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shorthand for [self.<a href="#//api/name/properties">properties</a> objectForKey: key]. (Synchronous)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)propertyForKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Shorthand for [self.<a href="#//api/name/properties">properties</a> objectForKey: key]. (Synchronous)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putProperties:" title="putProperties:"></a>
+	<h3 class="subsubtitle method-title">putProperties:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new revision with the given <a href="#//api/name/properties">properties</a>.</p>
+
+<pre><code>This is asynchronous. Watch response for conflict errors!
+If successful, the new CouchRevision will be available as the operation's resultObject. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (RESTOperation *)putProperties:(NSDictionary *)<em>properties</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new revision with the given <a href="#//api/name/properties">properties</a>.</p>
+
+<pre><code>This is asynchronous. Watch response for conflict errors!
+If successful, the new CouchRevision will be available as the operation's resultObject. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchRevision.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

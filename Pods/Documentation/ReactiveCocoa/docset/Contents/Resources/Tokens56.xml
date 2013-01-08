@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RACStream.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RACStream</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>
+			
+			<NodeRef refid="56"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/empty</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)empty</Declaration>
+			
+			
+			<Anchor>//api/name/empty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/return:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)return:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/return:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/bind:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>- (instancetype)bind:(id ( ^ ) ( id value , BOOL *stop ))block</Declaration>
+			
+			
+			<Anchor>//api/name/bind:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/concat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>- (instancetype)concat:(id&lt;RACStream&gt;)stream</Declaration>
+			
+			
+			<Anchor>//api/name/concat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/flattenMap:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>- (instancetype)flattenMap:(id ( ^ ) ( id value ))block</Declaration>
+			
+			
+			<Anchor>//api/name/flattenMap:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/flatten</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>- (instancetype)flatten</Declaration>
+			
+			
+			<Anchor>//api/name/flatten</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/map:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>- (instancetype)map:(id ( ^ ) ( id value ))block</Declaration>
+			
+			
+			<Anchor>//api/name/map:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/filter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>- (instancetype)filter:(BOOL ( ^ ) ( id value ))block</Declaration>
+			
+			
+			<Anchor>//api/name/filter:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/startWith:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>- (instancetype)startWith:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/startWith:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/skip:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>- (instancetype)skip:(NSUInteger)skipCount</Declaration>
+			
+			
+			<Anchor>//api/name/skip:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/take:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>- (instancetype)take:(NSUInteger)count</Declaration>
+			
+			
+			<Anchor>//api/name/take:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RACStream/sequenceMany:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACStream.h</DeclaredIn>			
+			
+			<Declaration>- (instancetype)sequenceMany:(id ( ^ ) ( void ))block</Declaration>
+			
+			
+			<Anchor>//api/name/sequenceMany:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

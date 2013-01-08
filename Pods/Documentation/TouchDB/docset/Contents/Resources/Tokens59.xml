@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TDAuthorizer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TDAuthorizer</TokenIdentifier>
+			<Abstract type="html">Protocol for adding authorization to HTTP requests.</Abstract>
+			<DeclaredIn>TDAuthorizer.h</DeclaredIn>
+			
+			<NodeRef refid="59"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TDAuthorizer/authorizeURLRequest:forRealm:</TokenIdentifier>
+			<Abstract type="html">Should generate and return an authorization string for the given request.
+    The string, if non-nil, will be set as the value of the &quot;Authorization:&quot; HTTP header. </Abstract>
+			<DeclaredIn>TDAuthorizer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)authorizeURLRequest:(NSMutableURLRequest *)request forRealm:(NSString *)realm</Declaration>
+			
+			
+			<Anchor>//api/name/authorizeURLRequest:forRealm:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

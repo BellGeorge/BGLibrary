@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDBody.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDBody</TokenIdentifier>
+			<Abstract type="html">A request/response/document body, stored as either JSON or an NSDictionary.</Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBody/initWithProperties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithProperties:(NSDictionary *)properties</Declaration>
+			
+			
+			<Anchor>//api/name/initWithProperties:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBody/initWithArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithArray:(NSArray *)array</Declaration>
+			
+			
+			<Anchor>//api/name/initWithArray:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBody/initWithJSON:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithJSON:(NSData *)json</Declaration>
+			
+			
+			<Anchor>//api/name/initWithJSON:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDBody/bodyWithProperties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>+ (TDBody *)bodyWithProperties:(id)properties</Declaration>
+			
+			
+			<Anchor>//api/name/bodyWithProperties:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDBody/bodyWithJSON:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>+ (TDBody *)bodyWithJSON:(NSData *)json</Declaration>
+			
+			
+			<Anchor>//api/name/bodyWithJSON:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBody/setIsValidJSON:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isValidJSON</Declaration>
+			
+			
+			<Anchor>//api/name/isValidJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBody/isValidJSON</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isValidJSON</Declaration>
+			
+			
+			<Anchor>//api/name/isValidJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBody/setAsJSON:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSData *asJSON</Declaration>
+			
+			
+			<Anchor>//api/name/asJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBody/asJSON</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSData *asJSON</Declaration>
+			
+			
+			<Anchor>//api/name/asJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBody/setAsPrettyJSON:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSData *asPrettyJSON</Declaration>
+			
+			
+			<Anchor>//api/name/asPrettyJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBody/asPrettyJSON</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSData *asPrettyJSON</Declaration>
+			
+			
+			<Anchor>//api/name/asPrettyJSON</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBody/setAsJSONString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *asJSONString</Declaration>
+			
+			
+			<Anchor>//api/name/asJSONString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBody/asJSONString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *asJSONString</Declaration>
+			
+			
+			<Anchor>//api/name/asJSONString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBody/setAsObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) id asObject</Declaration>
+			
+			
+			<Anchor>//api/name/asObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBody/asObject</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) id asObject</Declaration>
+			
+			
+			<Anchor>//api/name/asObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBody/setError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBody/error</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBody/setProperties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBody/properties</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBody/objectForKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBody.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectForKeyedSubscript:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/objectForKeyedSubscript:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDSequenceMap.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDSequenceMap</TokenIdentifier>
+			<Abstract type="html">A data structure representing a type of array that allows object values to be added to the end, and removed in arbitrary order; it&apos;s used by the replicator to keep track of which revisions have been transferred and what sequences to checkpoint.</Abstract>
+			<DeclaredIn>TDSequenceMap.h</DeclaredIn>
+			
+			<NodeRef refid="49"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDSequenceMap/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDSequenceMap.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDSequenceMap/addValue:</TokenIdentifier>
+			<Abstract type="html">Adds a value to the map, assigning it a sequence number and returning it.
+    Sequence numbers start at 1 and increment from there. </Abstract>
+			<DeclaredIn>TDSequenceMap.h</DeclaredIn>			
+			
+			<Declaration>- (SequenceNumber)addValue:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/addValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDSequenceMap/removeSequence:</TokenIdentifier>
+			<Abstract type="html">Removes a sequence and its associated value.</Abstract>
+			<DeclaredIn>TDSequenceMap.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeSequence:(SequenceNumber)sequence</Declaration>
+			
+			
+			<Anchor>//api/name/removeSequence:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDSequenceMap/setIsEmpty:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDSequenceMap.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isEmpty</Declaration>
+			
+			
+			<Anchor>//api/name/isEmpty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDSequenceMap/isEmpty</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDSequenceMap.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isEmpty</Declaration>
+			
+			
+			<Anchor>//api/name/isEmpty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDSequenceMap/checkpointedSequence</TokenIdentifier>
+			<Abstract type="html">Returns the maximum consecutively-removed sequence number.
+    This is one less than the minimum remaining sequence number. </Abstract>
+			<DeclaredIn>TDSequenceMap.h</DeclaredIn>			
+			
+			<Declaration>- (SequenceNumber)checkpointedSequence</Declaration>
+			
+			
+			<Anchor>//api/name/checkpointedSequence</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDSequenceMap/checkpointedValue</TokenIdentifier>
+			<Abstract type="html">Returns the value associated with the checkpointedSequence.</Abstract>
+			<DeclaredIn>TDSequenceMap.h</DeclaredIn>			
+			
+			<Declaration>- (id)checkpointedValue</Declaration>
+			
+			
+			<Anchor>//api/name/checkpointedValue</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

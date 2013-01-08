@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/Lawrence/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.libextobjc-0.2.3.docset
+Time: 2012-11-29 22:50:41 +0000

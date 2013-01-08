@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/WebSocket.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/WebSocket</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/WebSocket/isWebSocketRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isWebSocketRequest:(HTTPMessage *)request</Declaration>
+			
+			
+			<Anchor>//api/name/isWebSocketRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WebSocket/initWithRequest:socket:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithRequest:(HTTPMessage *)request socket:(GCDAsyncSocket *)socket</Declaration>
+			
+			
+			<Anchor>//api/name/initWithRequest:socket:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WebSocket/setDelegate:</TokenIdentifier>
+			<Abstract type="html">Delegate option.</Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WebSocket/delegate</TokenIdentifier>
+			<Abstract type="html">Delegate option.</Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WebSocket/setWebsocketQueue:</TokenIdentifier>
+			<Abstract type="html">The WebSocket class is thread-safe, generally via it&apos;s GCD queue.
+All public API methods are thread-safe,
+and the subclass API methods are thread-safe as they are all invoked on the same GCD queue.</Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) dispatch_queue_t websocketQueue</Declaration>
+			
+			
+			<Anchor>//api/name/websocketQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/WebSocket/websocketQueue</TokenIdentifier>
+			<Abstract type="html">The WebSocket class is thread-safe, generally via it&apos;s GCD queue.
+All public API methods are thread-safe,
+and the subclass API methods are thread-safe as they are all invoked on the same GCD queue.</Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) dispatch_queue_t websocketQueue</Declaration>
+			
+			
+			<Anchor>//api/name/websocketQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WebSocket/start</TokenIdentifier>
+			<Abstract type="html">Public API</Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WebSocket/stop</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WebSocket/sendMessage:</TokenIdentifier>
+			<Abstract type="html">Public API</Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendMessage:(NSString *)msg</Declaration>
+			
+			
+			<Anchor>//api/name/sendMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WebSocket/didOpen</TokenIdentifier>
+			<Abstract type="html">Subclass API</Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>- (void)didOpen</Declaration>
+			
+			
+			<Anchor>//api/name/didOpen</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WebSocket/didReceiveMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>- (void)didReceiveMessage:(NSString *)msg</Declaration>
+			
+			
+			<Anchor>//api/name/didReceiveMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/WebSocket/didClose</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>WebSocket.h</DeclaredIn>			
+			
+			<Declaration>- (void)didClose</Declaration>
+			
+			
+			<Anchor>//api/name/didClose</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

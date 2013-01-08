@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDRevisionList.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDRevisionList</TokenIdentifier>
+			<Abstract type="html">An ordered list of TDRevs.</Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>
+			
+			<NodeRef refid="47"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/initWithArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithArray:(NSArray *)revs</Declaration>
+			
+			
+			<Anchor>//api/name/initWithArray:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/setCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevisionList/count</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/revWithDocID:revID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevision *)revWithDocID:(NSString *)docID revID:(NSString *)revID</Declaration>
+			
+			
+			<Anchor>//api/name/revWithDocID:revID:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/objectEnumerator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (NSEnumerator *)objectEnumerator</Declaration>
+			
+			
+			<Anchor>//api/name/objectEnumerator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/setAllRevisions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allRevisions</Declaration>
+			
+			
+			<Anchor>//api/name/allRevisions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevisionList/allRevisions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allRevisions</Declaration>
+			
+			
+			<Anchor>//api/name/allRevisions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/setAllDocIDs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allDocIDs</Declaration>
+			
+			
+			<Anchor>//api/name/allDocIDs</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevisionList/allDocIDs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allDocIDs</Declaration>
+			
+			
+			<Anchor>//api/name/allDocIDs</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/setAllRevIDs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allRevIDs</Declaration>
+			
+			
+			<Anchor>//api/name/allRevIDs</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDRevisionList/allRevIDs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allRevIDs</Declaration>
+			
+			
+			<Anchor>//api/name/allRevIDs</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/objectAtIndexedSubscript:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (TDRevision *)objectAtIndexedSubscript:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/objectAtIndexedSubscript:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/addRev:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (void)addRev:(TDRevision *)rev</Declaration>
+			
+			
+			<Anchor>//api/name/addRev:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/removeRev:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeRev:(TDRevision *)rev</Declaration>
+			
+			
+			<Anchor>//api/name/removeRev:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/limit:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (void)limit:(NSUInteger)limit</Declaration>
+			
+			
+			<Anchor>//api/name/limit:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDRevisionList/sortBySequence</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDRevision.h</DeclaredIn>			
+			
+			<Declaration>- (void)sortBySequence</Declaration>
+			
+			
+			<Anchor>//api/name/sortBySequence</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

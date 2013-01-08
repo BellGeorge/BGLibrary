@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/RESTResourceDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/RESTResourceDelegate</TokenIdentifier>
+			<Abstract type="html">An object that registers as the delegate of a RESTResource.
+    The delegate will be called by the resource it&apos;s attached to, and by all child resources. If multiple resources in the hierarchy have delegates, the child resources&apos; delegates are called before their parents&apos;. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>
+			
+			<NodeRef refid="39"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RESTResourceDelegate/resource:willSendRequest:</TokenIdentifier>
+			<Abstract type="html">Called immediately before a resource sends a request.
+    The delegate may modify the request, carefully. For example, it could add headers. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (void)resource:(RESTResource *)resource willSendRequest:(NSMutableURLRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/resource:willSendRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/RESTResourceDelegate/resource:didReceiveResponse:</TokenIdentifier>
+			<Abstract type="html">Called immediately after a response arrives, before the associated RESTOperation&apos;s onCompletion block.
+    This is called even for responses that contain HTTP errors, though not for ones that fail below the HTTP layer (i.e. unreachable host.) </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (void)resource:(RESTResource *)resource didReceiveResponse:(NSHTTPURLResponse *)response</Declaration>
+			
+			
+			<Anchor>//api/name/resource:didReceiveResponse:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

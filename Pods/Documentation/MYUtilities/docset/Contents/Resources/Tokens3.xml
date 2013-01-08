@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MYTarget.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MYTarget</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Target.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MYTarget/targetWithReceiver:action:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Target.h</DeclaredIn>			
+			
+			<Declaration>+ (MYTarget *)targetWithReceiver:(id)receiver action:(SEL)action</Declaration>
+			
+			
+			<Anchor>//api/name/targetWithReceiver:action:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MYTarget/addTarget:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Target.h</DeclaredIn>			
+			
+			<Declaration>- (void)addTarget:(MYTarget *)target</Declaration>
+			
+			
+			<Anchor>//api/name/addTarget:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MYTarget/invokeWithSender:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>Target.h</DeclaredIn>			
+			
+			<Declaration>- (id)invokeWithSender:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/invokeWithSender:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

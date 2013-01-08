@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/OASignatureProviding.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/OASignatureProviding</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OASignatureProviding.h</DeclaredIn>
+			
+			<NodeRef refid="57"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OASignatureProviding/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OASignatureProviding.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OASignatureProviding/signClearText:withSecret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OASignatureProviding.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)signClearText:(NSString *)text withSecret:(NSString *)secret</Declaration>
+			
+			
+			<Anchor>//api/name/signClearText:withSecret:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

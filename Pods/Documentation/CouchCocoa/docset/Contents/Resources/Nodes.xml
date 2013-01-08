@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>CouchCocoa 0.961beta6</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="33"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>CouchAttachment</Name>
+			<Path>Classes/CouchAttachment.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>CouchChangeTracker</Name>
+			<Path>Classes/CouchChangeTracker.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>CouchConnectionChangeTracker</Name>
+			<Path>Classes/CouchConnectionChangeTracker.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>CouchDatabase</Name>
+			<Path>Classes/CouchDatabase.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>CouchDesignDocument</Name>
+			<Path>Classes/CouchDesignDocument.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>CouchDocument</Name>
+			<Path>Classes/CouchDocument.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>CouchDynamicObject</Name>
+			<Path>Classes/CouchDynamicObject.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>CouchEmbeddedServer</Name>
+			<Path>Classes/CouchEmbeddedServer.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>CouchFunctionQuery</Name>
+			<Path>Classes/CouchFunctionQuery.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>CouchLiveQuery</Name>
+			<Path>Classes/CouchLiveQuery.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>CouchModel</Name>
+			<Path>Classes/CouchModel.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>CouchModelFactory</Name>
+			<Path>Classes/CouchModelFactory.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>CouchPersistentReplication</Name>
+			<Path>Classes/CouchPersistentReplication.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>CouchQuery</Name>
+			<Path>Classes/CouchQuery.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>CouchQueryEnumerator</Name>
+			<Path>Classes/CouchQueryEnumerator.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>CouchQueryRow</Name>
+			<Path>Classes/CouchQueryRow.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>CouchReplication</Name>
+			<Path>Classes/CouchReplication.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>CouchResource</Name>
+			<Path>Classes/CouchResource.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>CouchRevision</Name>
+			<Path>Classes/CouchRevision.html</Path>
+		</Node>
+		<Node id="20">
+			<Name>CouchServer</Name>
+			<Path>Classes/CouchServer.html</Path>
+		</Node>
+		<Node id="21">
+			<Name>CouchSocketChangeTracker</Name>
+			<Path>Classes/CouchSocketChangeTracker.html</Path>
+		</Node>
+		<Node id="22">
+			<Name>CouchTouchDBDatabase</Name>
+			<Path>Classes/CouchTouchDBDatabase.html</Path>
+		</Node>
+		<Node id="23">
+			<Name>CouchTouchDBServer</Name>
+			<Path>Classes/CouchTouchDBServer.html</Path>
+		</Node>
+		<Node id="24">
+			<Name>CouchUITableSource</Name>
+			<Path>Classes/CouchUITableSource.html</Path>
+		</Node>
+		<Node id="25">
+			<Name>CouchbaseCallbacks</Name>
+			<Path>Classes/CouchbaseCallbacks.html</Path>
+		</Node>
+		<Node id="26">
+			<Name>CouchbaseMobile</Name>
+			<Path>Classes/CouchbaseMobile.html</Path>
+		</Node>
+		<Node id="27">
+			<Name>RESTBase64</Name>
+			<Path>Classes/RESTBase64.html</Path>
+		</Node>
+		<Node id="28">
+			<Name>RESTBody</Name>
+			<Path>Classes/RESTBody.html</Path>
+		</Node>
+		<Node id="29">
+			<Name>RESTCache</Name>
+			<Path>Classes/RESTCache.html</Path>
+		</Node>
+		<Node id="30">
+			<Name>RESTMutableBody</Name>
+			<Path>Classes/RESTMutableBody.html</Path>
+		</Node>
+		<Node id="31">
+			<Name>RESTOperation</Name>
+			<Path>Classes/RESTOperation.html</Path>
+		</Node>
+		<Node id="32">
+			<Name>RESTResource</Name>
+			<Path>Classes/RESTResource.html</Path>
+		</Node>
+		
+		<Node id="33">
+			<Name>NSArray(RESTExtensions)</Name>
+			<Path>Categories/NSArray+RESTExtensions.html</Path>
+		</Node>
+		
+		<Node id="34">
+			<Name>CouchChangeTrackerClient</Name>
+			<Path>Protocols/CouchChangeTrackerClient.html</Path>
+		</Node>
+		<Node id="35">
+			<Name>CouchDocumentModel</Name>
+			<Path>Protocols/CouchDocumentModel.html</Path>
+		</Node>
+		<Node id="36">
+			<Name>CouchUITableDelegate</Name>
+			<Path>Protocols/CouchUITableDelegate.html</Path>
+		</Node>
+		<Node id="37">
+			<Name>CouchbaseDelegate</Name>
+			<Path>Protocols/CouchbaseDelegate.html</Path>
+		</Node>
+		<Node id="38">
+			<Name>CouchbaseValidationContext</Name>
+			<Path>Protocols/CouchbaseValidationContext.html</Path>
+		</Node>
+		<Node id="39">
+			<Name>RESTResourceDelegate</Name>
+			<Path>Protocols/RESTResourceDelegate.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

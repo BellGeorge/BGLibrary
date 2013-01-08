@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/HTTPMessage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/HTTPMessage</TokenIdentifier>
+			<Abstract type="html">The HTTPMessage class is a simple Objective-C wrapper around Apple&apos;s CFHTTPMessage class.</Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/initEmptyRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (id)initEmptyRequest</Declaration>
+			
+			
+			<Anchor>//api/name/initEmptyRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/initRequestWithMethod:URL:version:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (id)initRequestWithMethod:(NSString *)method URL:(NSURL *)url version:(NSString *)version</Declaration>
+			
+			
+			<Anchor>//api/name/initRequestWithMethod:URL:version:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/initResponseWithStatusCode:description:version:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (id)initResponseWithStatusCode:(NSInteger)code description:(NSString *)description version:(NSString *)version</Declaration>
+			
+			
+			<Anchor>//api/name/initResponseWithStatusCode:description:version:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/appendData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)appendData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/appendData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/isHeaderComplete</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isHeaderComplete</Declaration>
+			
+			
+			<Anchor>//api/name/isHeaderComplete</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/version</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)version</Declaration>
+			
+			
+			<Anchor>//api/name/version</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/method</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/url</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/statusCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)statusCode</Declaration>
+			
+			
+			<Anchor>//api/name/statusCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/allHeaderFields</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)allHeaderFields</Declaration>
+			
+			
+			<Anchor>//api/name/allHeaderFields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/headerField:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)headerField:(NSString *)headerField</Declaration>
+			
+			
+			<Anchor>//api/name/headerField:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/setHeaderField:value:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)setHeaderField:(NSString *)headerField value:(NSString *)headerFieldValue</Declaration>
+			
+			
+			<Anchor>//api/name/setHeaderField:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/messageData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)messageData</Declaration>
+			
+			
+			<Anchor>//api/name/messageData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/body</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/HTTPMessage/setBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>HTTPMessage.h</DeclaredIn>			
+			
+			<Declaration>- (void)setBody:(NSData *)body</Declaration>
+			
+			
+			<Anchor>//api/name/setBody:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

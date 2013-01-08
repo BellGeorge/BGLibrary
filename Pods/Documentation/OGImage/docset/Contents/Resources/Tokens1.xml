@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OGCachedImage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OGCachedImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGCachedImage.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGCachedImage/initWithURL:key:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGCachedImage.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)url key:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:key:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGCachedImage/initWithURL:key:placeholderImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGCachedImage.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)url key:(NSString *)key placeholderImage:(UIImage *)placeholderImage</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:key:placeholderImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OGCachedImage/setKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGCachedImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OGCachedImage/key</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OGCachedImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *key</Declaration>
+			
+			
+			<Anchor>//api/name/key</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>MYUtilities 0.0.1</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>ConcurrentOperation</Name>
+			<Path>Classes/ConcurrentOperation.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>MYExceptionReportingApplication</Name>
+			<Path>Classes/MYExceptionReportingApplication.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>MYTarget</Name>
+			<Path>Classes/MYTarget.html</Path>
+		</Node>
+		
+		<Node id="4">
+			<Name>NSArray(MYUtils)</Name>
+			<Path>Categories/NSArray+MYUtils.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>NSArray(PreiOS6)</Name>
+			<Path>Categories/NSArray+PreiOS6.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>NSData(GTMZLibAdditions)</Name>
+			<Path>Categories/NSData+GTMZLibAdditions.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>NSData(MYUtils)</Name>
+			<Path>Categories/NSData+MYUtils.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>NSDictionary(MYUtils)</Name>
+			<Path>Categories/NSDictionary+MYUtils.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>NSDictionary(PreiOS6)</Name>
+			<Path>Categories/NSDictionary+PreiOS6.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>NSEnumerator(MYUtils)</Name>
+			<Path>Categories/NSEnumerator+MYUtils.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>NSException(MYUtilities)</Name>
+			<Path>Categories/NSException+MYUtilities.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>NSInputStream(MYUtils)</Name>
+			<Path>Categories/NSInputStream+MYUtils.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>NSMutableArray(PreiOS6)</Name>
+			<Path>Categories/NSMutableArray+PreiOS6.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>NSMutableDictionary(PreiOS6)</Name>
+			<Path>Categories/NSMutableDictionary+PreiOS6.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>NSObject(MYUtils)</Name>
+			<Path>Categories/NSObject+MYUtils.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>NSSet(MYUtils)</Name>
+			<Path>Categories/NSSet+MYUtils.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>NSURL(MYUtilities)</Name>
+			<Path>Categories/NSURL+MYUtilities.html</Path>
+		</Node>
+		
+		<Node id="18">
+			<Name>NSAnimationDelegate</Name>
+			<Path>Protocols/NSAnimationDelegate.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>NSConnectionDelegate</Name>
+			<Path>Protocols/NSConnectionDelegate.html</Path>
+		</Node>
+		<Node id="20">
+			<Name>NSImageDelegate</Name>
+			<Path>Protocols/NSImageDelegate.html</Path>
+		</Node>
+		<Node id="21">
+			<Name>NSTabViewDelegate</Name>
+			<Path>Protocols/NSTabViewDelegate.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

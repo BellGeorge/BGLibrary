@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RESTOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RESTOperation</TokenIdentifier>
+			<Abstract type="html">Represents an HTTP request to a RESTResource, and its response.
+    Can be used either synchronously or asynchronously. Methods that return information about the
+    response, such as httpStatus or -body, will block if called before the response is available.
+    Or you can explicitly block by calling wait.
+    On the other hand, to avoid blocking you can call onCompletion: to schedule an Objective-C
+    block to run when the response is complete. (Yes, the non-blocking mode takes a block... :) </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/initWithResource:request:</TokenIdentifier>
+			<Abstract type="html">Initializes a RESTOperation, but doesn&apos;t start loading it yet.
+    Call -load, wait or any synchronous method to start it. </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithResource:(RESTResource *)resource request:(NSURLRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/initWithResource:request:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setResource:</TokenIdentifier>
+			<Abstract type="html">The RESTResource instance that created this operation.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) RESTResource *resource</Declaration>
+			
+			
+			<Anchor>//api/name/resource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/resource</TokenIdentifier>
+			<Abstract type="html">The RESTResource instance that created this operation.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) RESTResource *resource</Declaration>
+			
+			
+			<Anchor>//api/name/resource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setURL:</TokenIdentifier>
+			<Abstract type="html">The target URL of this operation.
+    (This is not necessarily the same as the URL of its resource! It&apos;s often the same, but it may have query parameters or sub-paths appended to it.) </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/URL</TokenIdentifier>
+			<Abstract type="html">The target URL of this operation.
+    (This is not necessarily the same as the URL of its resource! It&apos;s often the same, but it may have query parameters or sub-paths appended to it.) </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setName:</TokenIdentifier>
+			<Abstract type="html">The last component of the URL&apos;s path.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/name</TokenIdentifier>
+			<Abstract type="html">The last component of the URL&apos;s path.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setMethod:</TokenIdentifier>
+			<Abstract type="html">The HTTP method of the request.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/method</TokenIdentifier>
+			<Abstract type="html">The HTTP method of the request.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setRequest:</TokenIdentifier>
+			<Abstract type="html">The underlying URL request.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/request</TokenIdentifier>
+			<Abstract type="html">The underlying URL request.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setIsReadOnly:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isReadOnly</Declaration>
+			
+			
+			<Anchor>//api/name/isReadOnly</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/isReadOnly</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isReadOnly</Declaration>
+			
+			
+			<Anchor>//api/name/isReadOnly</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setIsGET:</TokenIdentifier>
+			<Abstract type="html">&lt; Is this a GET or HEAD request?</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isGET</Declaration>
+			
+			
+			<Anchor>//api/name/isGET</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/isGET</TokenIdentifier>
+			<Abstract type="html">&lt; Is this a GET or HEAD request?</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isGET</Declaration>
+			
+			
+			<Anchor>//api/name/isGET</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setIsPUT:</TokenIdentifier>
+			<Abstract type="html">&lt; Is this a GET request?</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isPUT</Declaration>
+			
+			
+			<Anchor>//api/name/isPUT</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/isPUT</TokenIdentifier>
+			<Abstract type="html">&lt; Is this a GET request?</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isPUT</Declaration>
+			
+			
+			<Anchor>//api/name/isPUT</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setIsPOST:</TokenIdentifier>
+			<Abstract type="html">&lt; Is this a PUT request?</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isPOST</Declaration>
+			
+			
+			<Anchor>//api/name/isPOST</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/isPOST</TokenIdentifier>
+			<Abstract type="html">&lt; Is this a PUT request?</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isPOST</Declaration>
+			
+			
+			<Anchor>//api/name/isPOST</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setIsDELETE:</TokenIdentifier>
+			<Abstract type="html">&lt; Is this a POST request?</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isDELETE</Declaration>
+			
+			
+			<Anchor>//api/name/isDELETE</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/isDELETE</TokenIdentifier>
+			<Abstract type="html">&lt; Is this a POST request?</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isDELETE</Declaration>
+			
+			
+			<Anchor>//api/name/isDELETE</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setValue:forHeader:</TokenIdentifier>
+			<Abstract type="html">Sets an HTTP request header. Must be called before loading begins!</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)setValue:(NSString *)value forHeader:(NSString *)headerName</Declaration>
+			
+			
+			<Anchor>//api/name/setValue:forHeader:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setRequestBody:</TokenIdentifier>
+			<Abstract type="html">The HTTP request body. Cannot be changed after the operation starts.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSData *requestBody</Declaration>
+			
+			
+			<Anchor>//api/name/requestBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/requestBody</TokenIdentifier>
+			<Abstract type="html">The HTTP request body. Cannot be changed after the operation starts.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSData *requestBody</Declaration>
+			
+			
+			<Anchor>//api/name/requestBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/start</TokenIdentifier>
+			<Abstract type="html">Sends the request, asynchronously. Subsequent calls do nothing.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)start</Declaration>
+			
+			<ReturnValue><Abstract type="html">The receiver (self), to make it easy to say &quot;return [op start];&quot;. </Abstract></ReturnValue>
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/onCompletion:</TokenIdentifier>
+			<Abstract type="html">Will call the given block when the request finishes.
+    This method may be called multiple times; blocks will be called in the order added.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)onCompletion:(OnCompleteBlock)onComplete</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>onComplete</Name>
+					<Abstract type="html">The block to be called when the request finishes.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the block has been called by the time this method returns, NO if it will be called in the future. </Abstract></ReturnValue>
+			<Anchor>//api/name/onCompletion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/wait</TokenIdentifier>
+			<Abstract type="html">Blocks till any pending network operation finishes (i.e. isComplete becomes true.)
+    start will be called if it hasn&apos;t yet been.
+    On completion, any pending onCompletion blocks are called first, before this method returns.
+    The synchronous methods below all end up calling this one.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)wait</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES on success, NO on error. </Abstract></ReturnValue>
+			<Anchor>//api/name/wait</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/wait:</TokenIdentifier>
+			<Abstract type="html">Same as -wait but also returns any resulting error in the outError parameter.
+    This is useful if the receiver is an intermediate value not accessible in a variable, for instance if you do something like
+    [[resource GET] wait: &amp;amp;error] </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)wait:(NSError **)outError</Declaration>
+			
+			
+			<Anchor>//api/name/wait:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RESTOperation/wait:</TokenIdentifier>
+			<Abstract type="html">Blocks until all of the given operations have finished.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)wait:(NSSet *)operations</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>operations</Name>
+					<Abstract type="html">A set of RESTOperations.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if all operations succeeded; NO if any of them failed. </Abstract></ReturnValue>
+			<Anchor>//api/name/wait:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/cancel</TokenIdentifier>
+			<Abstract type="html">Stops an active operation.
+    The operation will immediately complete, with error NSURLErrorCancelled in domain NSURLErrorDomain.
+    Has no effect if the operation has already completed. </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setIsComplete:</TokenIdentifier>
+			<Abstract type="html">YES if the response is complete (whether successful or unsuccessful.)</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isComplete</Declaration>
+			
+			
+			<Anchor>//api/name/isComplete</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/isComplete</TokenIdentifier>
+			<Abstract type="html">YES if the response is complete (whether successful or unsuccessful.)</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isComplete</Declaration>
+			
+			
+			<Anchor>//api/name/isComplete</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setError:</TokenIdentifier>
+			<Abstract type="html">If the request has failed, this will be set to an NSError describing what went wrong; else it&apos;s nil.
+    An HTTP response status of 300 or greater is considered an error and will cause this property to be set.
+    This method does not block, but it won&apos;t be set to a non-nil value until the operation finishes. </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/error</TokenIdentifier>
+			<Abstract type="html">If the request has failed, this will be set to an NSError describing what went wrong; else it&apos;s nil.
+    An HTTP response status of 300 or greater is considered an error and will cause this property to be set.
+    This method does not block, but it won&apos;t be set to a non-nil value until the operation finishes. </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setIsSuccessful:</TokenIdentifier>
+			<Abstract type="html">YES if there is no error and the HTTP status is &lt;= 299 (Synchronous.)</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isSuccessful</Declaration>
+			
+			
+			<Anchor>//api/name/isSuccessful</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/isSuccessful</TokenIdentifier>
+			<Abstract type="html">YES if there is no error and the HTTP status is &lt;= 299 (Synchronous.)</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL isSuccessful</Declaration>
+			
+			
+			<Anchor>//api/name/isSuccessful</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setHttpStatus:</TokenIdentifier>
+			<Abstract type="html">HTTP status code of the response (Synchronous.)
+    Until the request finishes, this is zero. It&apos;s also zero if a lower-level network error occurred (like if the host couldn&apos;t be found or the TCP connection was reset.) </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) int httpStatus</Declaration>
+			
+			
+			<Anchor>//api/name/httpStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/httpStatus</TokenIdentifier>
+			<Abstract type="html">HTTP status code of the response (Synchronous.)
+    Until the request finishes, this is zero. It&apos;s also zero if a lower-level network error occurred (like if the host couldn&apos;t be found or the TCP connection was reset.) </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) int httpStatus</Declaration>
+			
+			
+			<Anchor>//api/name/httpStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setResponseHeaders:</TokenIdentifier>
+			<Abstract type="html">Dictionary of HTTP response headers (Synchronous.)</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *responseHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/responseHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/responseHeaders</TokenIdentifier>
+			<Abstract type="html">Dictionary of HTTP response headers (Synchronous.)</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSDictionary *responseHeaders</Declaration>
+			
+			
+			<Anchor>//api/name/responseHeaders</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setResponseBody:</TokenIdentifier>
+			<Abstract type="html">The body of the response, with its entity headers (Synchronous.)</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) RESTBody *responseBody</Declaration>
+			
+			
+			<Anchor>//api/name/responseBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/responseBody</TokenIdentifier>
+			<Abstract type="html">The body of the response, with its entity headers (Synchronous.)</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) RESTBody *responseBody</Declaration>
+			
+			
+			<Anchor>//api/name/responseBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setResponse:</TokenIdentifier>
+			<Abstract type="html">The raw NSHTTPURLResponse object, in case you need it.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSHTTPURLResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/response</TokenIdentifier>
+			<Abstract type="html">The raw NSHTTPURLResponse object, in case you need it.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSHTTPURLResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setResultObject:</TokenIdentifier>
+			<Abstract type="html">Object associated with this response.
+    A client can store anything it wants here, typically a value parsed from or represented by the response body; often this property will be set by an onCompletion block. </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) id resultObject</Declaration>
+			
+			
+			<Anchor>//api/name/resultObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/resultObject</TokenIdentifier>
+			<Abstract type="html">Object associated with this response.
+    A client can store anything it wants here, typically a value parsed from or represented by the response body; often this property will be set by an onCompletion block. </Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) id resultObject</Declaration>
+			
+			
+			<Anchor>//api/name/resultObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/dump</TokenIdentifier>
+			<Abstract type="html">Debugging utility that returns a sort-of log of the HTTP request and response.</Abstract>
+			<DeclaredIn>RESTOperation.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)dump</Declaration>
+			
+			
+			<Anchor>//api/name/dump</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RESTOperation/errorWithHTTPStatus:message:URL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTInternal.h</DeclaredIn>			
+			
+			<Declaration>+ (NSError *)errorWithHTTPStatus:(int)httpStatus message:(NSString *)message URL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/errorWithHTTPStatus:message:URL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTOperation/setRetryCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UInt8 retryCount</Declaration>
+			
+			
+			<Anchor>//api/name/retryCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTOperation/retryCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UInt8 retryCount</Declaration>
+			
+			
+			<Anchor>//api/name/retryCount</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

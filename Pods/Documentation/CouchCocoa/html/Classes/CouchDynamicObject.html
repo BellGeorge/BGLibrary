@@ -1,0 +1,656 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CouchDynamicObject Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CouchCocoa 0.961beta6 </a></h1>
+				<a id="developerHome" href="../index.html">Jens Alfke</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CouchDynamicObject Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/classOfProperty:">&nbsp;&nbsp;&nbsp;&nbsp;+ classOfProperty:</option>
+	
+	<option value="//api/name/getterKey:">&nbsp;&nbsp;&nbsp;&nbsp;+ getterKey:</option>
+	
+	<option value="//api/name/impForGetterOfProperty:ofClass:">&nbsp;&nbsp;&nbsp;&nbsp;+ impForGetterOfProperty:ofClass:</option>
+	
+	<option value="//api/name/impForGetterOfProperty:ofType:">&nbsp;&nbsp;&nbsp;&nbsp;+ impForGetterOfProperty:ofType:</option>
+	
+	<option value="//api/name/impForSetterOfProperty:ofClass:">&nbsp;&nbsp;&nbsp;&nbsp;+ impForSetterOfProperty:ofClass:</option>
+	
+	<option value="//api/name/impForSetterOfProperty:ofType:">&nbsp;&nbsp;&nbsp;&nbsp;+ impForSetterOfProperty:ofType:</option>
+	
+	<option value="//api/name/propertyNames">&nbsp;&nbsp;&nbsp;&nbsp;+ propertyNames</option>
+	
+	<option value="//api/name/setterKey:">&nbsp;&nbsp;&nbsp;&nbsp;+ setterKey:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/getValueOfProperty:">&nbsp;&nbsp;&nbsp;&nbsp;- getValueOfProperty:</option>
+	
+	<option value="//api/name/setValue:ofProperty:">&nbsp;&nbsp;&nbsp;&nbsp;- setValue:ofProperty:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/classOfProperty:">classOfProperty:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getterKey:">getterKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/impForGetterOfProperty:ofClass:">impForGetterOfProperty:ofClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/impForGetterOfProperty:ofType:">impForGetterOfProperty:ofType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/impForSetterOfProperty:ofClass:">impForSetterOfProperty:ofClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/impForSetterOfProperty:ofType:">impForSetterOfProperty:ofType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertyNames">propertyNames</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setterKey:">setterKey:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getValueOfProperty:">getValueOfProperty:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValue:ofProperty:">setValue:ofProperty:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CouchDynamicObject Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CouchDynamicObject Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CouchDynamicObject.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A generic class with runtime support for dynamic properties.</p>
+
+<pre><code>You can subclass this and declare properties in the subclass without needing to implement them or make instance variables; simply note them as '@@dynamic' in the @@implementation.
+The dynamic accessors will be bridged to calls to getValueOfProperty: and setValue:ofProperty:, allowing you to easily store property values in an NSDictionary or other container. 
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertyNames">+&nbsp;propertyNames</a></code>
+		<span class="tooltip"><p>Returns the names of all properties defined in this class and superclasses up to CouchDynamicObject.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getValueOfProperty:">&ndash;&nbsp;getValueOfProperty:</a></code>
+		<span class="tooltip"><p>Returns the value of a named property.</p>
+
+<pre><code>This method will only be called for properties that have been declared in the class's @@interface using @@property.
+You must override this method -- the base implementation just raises an exception. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setValue:ofProperty:">&ndash;&nbsp;setValue:ofProperty:</a></code>
+		<span class="tooltip"><p>Sets the value of a named property.</p>
+
+<pre><code>This method will only be called for properties that have been declared in the class's @@interface using @@property, and are not declared readonly.
+You must override this method -- the base implementation just raises an exception.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/classOfProperty:">+&nbsp;classOfProperty:</a></code>
+		<span class="tooltip"><p>Given the name of an object-valued property, returns the class of the property&rsquo;s value.</p>
+
+<pre><code>Returns nil if the property doesn't exist, or if its type isn't an object pointer or is 'id'. 
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getterKey:">+&nbsp;getterKey:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setterKey:">+&nbsp;setterKey:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/impForGetterOfProperty:ofClass:">+&nbsp;impForGetterOfProperty:ofClass:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/impForSetterOfProperty:ofClass:">+&nbsp;impForSetterOfProperty:ofClass:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/impForGetterOfProperty:ofType:">+&nbsp;impForGetterOfProperty:ofType:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/impForSetterOfProperty:ofType:">+&nbsp;impForSetterOfProperty:ofType:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/classOfProperty:" title="classOfProperty:"></a>
+	<h3 class="subsubtitle method-title">classOfProperty:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Given the name of an object-valued property, returns the class of the property&rsquo;s value.</p>
+
+<pre><code>Returns nil if the property doesn't exist, or if its type isn't an object pointer or is 'id'. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (Class)classOfProperty:(NSString *)<em>propertyName</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Given the name of an object-valued property, returns the class of the property&rsquo;s value.</p>
+
+<pre><code>Returns nil if the property doesn't exist, or if its type isn't an object pointer or is 'id'. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDynamicObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getterKey:" title="getterKey:"></a>
+	<h3 class="subsubtitle method-title">getterKey:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)getterKey:(SEL)<em>sel</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/impForGetterOfProperty:ofClass:" title="impForGetterOfProperty:ofClass:"></a>
+	<h3 class="subsubtitle method-title">impForGetterOfProperty:ofClass:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (IMP)impForGetterOfProperty:(NSString *)<em>property</em> ofClass:(Class)<em>propertyClass</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/impForGetterOfProperty:ofType:" title="impForGetterOfProperty:ofType:"></a>
+	<h3 class="subsubtitle method-title">impForGetterOfProperty:ofType:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (IMP)impForGetterOfProperty:(NSString *)<em>property</em> ofType:(const char *)<em>propertyType</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/impForSetterOfProperty:ofClass:" title="impForSetterOfProperty:ofClass:"></a>
+	<h3 class="subsubtitle method-title">impForSetterOfProperty:ofClass:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (IMP)impForSetterOfProperty:(NSString *)<em>property</em> ofClass:(Class)<em>propertyClass</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/impForSetterOfProperty:ofType:" title="impForSetterOfProperty:ofType:"></a>
+	<h3 class="subsubtitle method-title">impForSetterOfProperty:ofType:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (IMP)impForSetterOfProperty:(NSString *)<em>property</em> ofType:(const char *)<em>propertyType</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertyNames" title="propertyNames"></a>
+	<h3 class="subsubtitle method-title">propertyNames</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the names of all properties defined in this class and superclasses up to CouchDynamicObject.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSSet *)propertyNames</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the names of all properties defined in this class and superclasses up to CouchDynamicObject.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDynamicObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setterKey:" title="setterKey:"></a>
+	<h3 class="subsubtitle method-title">setterKey:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)setterKey:(SEL)<em>sel</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getValueOfProperty:" title="getValueOfProperty:"></a>
+	<h3 class="subsubtitle method-title">getValueOfProperty:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the value of a named property.</p>
+
+<pre><code>This method will only be called for properties that have been declared in the class's @@interface using @@property.
+You must override this method -- the base implementation just raises an exception. 
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getValueOfProperty:(NSString *)<em>property</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the value of a named property.</p>
+
+<pre><code>This method will only be called for properties that have been declared in the class's @@interface using @@property.
+You must override this method -- the base implementation just raises an exception. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDynamicObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setValue:ofProperty:" title="setValue:ofProperty:"></a>
+	<h3 class="subsubtitle method-title">setValue:ofProperty:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the value of a named property.</p>
+
+<pre><code>This method will only be called for properties that have been declared in the class's @@interface using @@property, and are not declared readonly.
+You must override this method -- the base implementation just raises an exception.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setValue:(id)<em>value</em> ofProperty:(NSString *)<em>property</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the property was set, NO if it isn&rsquo;t settable; an exception will be raised.</p>
+
+<pre><code>Default implementation returns NO. 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the value of a named property.</p>
+
+<pre><code>This method will only be called for properties that have been declared in the class's @@interface using @@property, and are not declared readonly.
+You must override this method -- the base implementation just raises an exception.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CouchDynamicObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jens Alfke. All rights reserved. (Last updated: 2012-11-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDBlobStore.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDBlobStore</TokenIdentifier>
+			<Abstract type="html">A persistent content-addressable store for arbitrary-size data blobs.
+    Each blob is stored as a file named by its SHA-1 digest. </Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStore/initWithPath:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPath:(NSString *)dir error:(NSError **)outError</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPath:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStore/blobForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)blobForKey:(TDBlobKey)key</Declaration>
+			
+			
+			<Anchor>//api/name/blobForKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStore/blobInputStreamForKey:length:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSInputStream *)blobInputStreamForKey:(TDBlobKey)key length:(UInt64 *)outLength</Declaration>
+			
+			
+			<Anchor>//api/name/blobInputStreamForKey:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStore/storeBlob:creatingKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)storeBlob:(NSData *)blob creatingKey:(TDBlobKey *)outKey</Declaration>
+			
+			
+			<Anchor>//api/name/storeBlob:creatingKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStore/setPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBlobStore/path</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *path</Declaration>
+			
+			
+			<Anchor>//api/name/path</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStore/setCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBlobStore/count</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStore/setAllKeys:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allKeys</Declaration>
+			
+			
+			<Anchor>//api/name/allKeys</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBlobStore/allKeys</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *allKeys</Declaration>
+			
+			
+			<Anchor>//api/name/allKeys</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStore/setTotalDataSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) UInt64 totalDataSize</Declaration>
+			
+			
+			<Anchor>//api/name/totalDataSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDBlobStore/totalDataSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) UInt64 totalDataSize</Declaration>
+			
+			
+			<Anchor>//api/name/totalDataSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStore/deleteBlobsExceptWithKeys:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)deleteBlobsExceptWithKeys:(NSSet *)keysToKeep</Declaration>
+			
+			
+			<Anchor>//api/name/deleteBlobsExceptWithKeys:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDBlobStore/keyForBlob:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>+ (TDBlobKey)keyForBlob:(NSData *)blob</Declaration>
+			
+			
+			<Anchor>//api/name/keyForBlob:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDBlobStore/keyDataForBlob:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)keyDataForBlob:(NSData *)blob</Declaration>
+			
+			
+			<Anchor>//api/name/keyDataForBlob:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDBlobStore/pathForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the path of the file storing the attachment with the given key, or nil.
+    DO NOT MODIFY THIS FILE! </Abstract>
+			<DeclaredIn>TDBlobStore.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)pathForKey:(TDBlobKey)key</Declaration>
+			
+			
+			<Anchor>//api/name/pathForKey:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

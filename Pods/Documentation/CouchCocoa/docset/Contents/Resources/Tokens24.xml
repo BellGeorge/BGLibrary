@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchUITableSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchUITableSource</TokenIdentifier>
+			<Abstract type="html">A UITableView data source driven by a CouchLiveQuery.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchUITableSource/setTableView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchUITableSource/tableView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UITableView *tableView</Declaration>
+			
+			
+			<Anchor>//api/name/tableView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchUITableSource/setQuery:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) CouchLiveQuery *query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchUITableSource/query</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) CouchLiveQuery *query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchUITableSource/reloadFromQuery</TokenIdentifier>
+			<Abstract type="html">Rebuilds the table from the query&apos;s current .rows property.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadFromQuery</Declaration>
+			
+			
+			<Anchor>//api/name/reloadFromQuery</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchUITableSource/setRows:</TokenIdentifier>
+			<Abstract type="html">The current array of CouchQueryRows being used as the data source for the table.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *rows</Declaration>
+			
+			
+			<Anchor>//api/name/rows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchUITableSource/rows</TokenIdentifier>
+			<Abstract type="html">The current array of CouchQueryRows being used as the data source for the table.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *rows</Declaration>
+			
+			
+			<Anchor>//api/name/rows</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchUITableSource/rowAtIndex:</TokenIdentifier>
+			<Abstract type="html">Convenience accessor to get the row object for a given table row index.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>- (CouchQueryRow *)rowAtIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/rowAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchUITableSource/indexPathForDocument:</TokenIdentifier>
+			<Abstract type="html">Convenience accessor to find the index path of the row with a given document.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>- (NSIndexPath *)indexPathForDocument:(CouchDocument *)document</Declaration>
+			
+			
+			<Anchor>//api/name/indexPathForDocument:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchUITableSource/documentAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Convenience accessor to return the document at a given index path.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>- (CouchDocument *)documentAtIndexPath:(NSIndexPath *)path</Declaration>
+			
+			
+			<Anchor>//api/name/documentAtIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchUITableSource/setLabelProperty:</TokenIdentifier>
+			<Abstract type="html">If non-nil, specifies the property name of the query row&apos;s value that will be used for the table row&apos;s visible label.
+    If the row&apos;s value is not a dictionary, or if the property doesn&apos;t exist, the property will next be looked up in the document&apos;s properties.
+    If this doesn&apos;t meet your needs for labeling rows, you should implement -couchTableSource:willUseCell:forRow: in the table&apos;s delegate. </Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *labelProperty</Declaration>
+			
+			
+			<Anchor>//api/name/labelProperty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchUITableSource/labelProperty</TokenIdentifier>
+			<Abstract type="html">If non-nil, specifies the property name of the query row&apos;s value that will be used for the table row&apos;s visible label.
+    If the row&apos;s value is not a dictionary, or if the property doesn&apos;t exist, the property will next be looked up in the document&apos;s properties.
+    If this doesn&apos;t meet your needs for labeling rows, you should implement -couchTableSource:willUseCell:forRow: in the table&apos;s delegate. </Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *labelProperty</Declaration>
+			
+			
+			<Anchor>//api/name/labelProperty</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchUITableSource/setDeletionAllowed:</TokenIdentifier>
+			<Abstract type="html">Is the user allowed to delete rows by UI gestures? (Defaults to YES.)</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL deletionAllowed</Declaration>
+			
+			
+			<Anchor>//api/name/deletionAllowed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchUITableSource/deletionAllowed</TokenIdentifier>
+			<Abstract type="html">Is the user allowed to delete rows by UI gestures? (Defaults to YES.)</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL deletionAllowed</Declaration>
+			
+			
+			<Anchor>//api/name/deletionAllowed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchUITableSource/deleteDocumentsAtIndexes:</TokenIdentifier>
+			<Abstract type="html">Asynchronously deletes the documents at the given row indexes, animating the removal from the table.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteDocumentsAtIndexes:(NSArray *)indexPaths</Declaration>
+			
+			
+			<Anchor>//api/name/deleteDocumentsAtIndexes:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchUITableSource/deleteDocuments:</TokenIdentifier>
+			<Abstract type="html">Asynchronously deletes the given documents, animating the removal from the table.</Abstract>
+			<DeclaredIn>CouchUITableSource.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteDocuments:(NSArray *)documents</Declaration>
+			
+			
+			<Anchor>//api/name/deleteDocuments:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

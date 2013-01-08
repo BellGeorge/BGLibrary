@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RESTResource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RESTResource</TokenIdentifier>
+			<Abstract type="html">Represents an HTTP resource identified by a specific URL.
+    RESTResource instances form a hierarchy. Root instances are instantiated with an explicit URL, and children with paths relative to their parents. Children know their parents, but parents don&apos;t automatically remember their children. (Subclasses can use the RESTCache utility to enable such downward links, however.)</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>
+			
+			<NodeRef refid="32"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/initWithURL:</TokenIdentifier>
+			<Abstract type="html">Creates an instance with an absolute URL and no parent.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/initWithParent:relativePath:</TokenIdentifier>
+			<Abstract type="html">Creates an instance with a path relative to a parent.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithParent:(RESTResource *)parent relativePath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parent</Name>
+					<Abstract type="html">The parent resource. May not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The relative path from the parent. This is appended to the parent&apos;s URL, joined with a &quot;/&quot; if necessary. (In other words, the parent is assumed to be a container, so this never produces a sibling URL </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithParent:relativePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/initUntitledWithParent:</TokenIdentifier>
+			<Abstract type="html">Creates an instance that has a parent but no URL yet.
+    This resource will become real when it&apos;s first PUT, which will behind the scenes actually do a POST to the parent and assign the resource the URL returned in the Location: response header. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initUntitledWithParent:(RESTResource *)parent</Declaration>
+			
+			
+			<Anchor>//api/name/initUntitledWithParent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTResource/URL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setParent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) RESTResource *parent</Declaration>
+			
+			
+			<Anchor>//api/name/parent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTResource/parent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) RESTResource *parent</Declaration>
+			
+			
+			<Anchor>//api/name/parent</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setRelativePath:</TokenIdentifier>
+			<Abstract type="html">The relative path from the parent (as given in the initializer.)</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *relativePath</Declaration>
+			
+			
+			<Anchor>//api/name/relativePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTResource/relativePath</TokenIdentifier>
+			<Abstract type="html">The relative path from the parent (as given in the initializer.)</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *relativePath</Declaration>
+			
+			
+			<Anchor>//api/name/relativePath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id&lt;RESTResourceDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTResource/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) id&lt;RESTResourceDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setCredential:</TokenIdentifier>
+			<Abstract type="html">Sets the login credential (e.g. username/password) to be used for authentication by this resource and its children.
+    IMPORTANT: CouchDB&apos;s default configuration unfortunately doesn&apos;t support this type of programmatic auth. To make it work, you&apos;ll need to add a &quot;WWW-Authenticate&quot; property to the server&apos;s [httpd] configuration section, as described at https://groups.google.com/d/msg/mobile-couchbase/GiSnos0Hx54/q5JGepLaQBgJ. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (void)setCredential:(NSURLCredential *)credential</Declaration>
+			
+			
+			<Anchor>//api/name/setCredential:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setProtectionSpace:</TokenIdentifier>
+			<Abstract type="html">Sets a protection space for operations on this resource.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (void)setProtectionSpace:(NSURLProtectionSpace *)protectionSpace</Declaration>
+			
+			
+			<Anchor>//api/name/setProtectionSpace:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/GET</TokenIdentifier>
+			<Abstract type="html">Starts an asynchronous HTTP GET operation, with no parameters.
+    (If you need to customize headers or URL queries, call sendHTTP:parameters: </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)GET</Declaration>
+			
+			
+			<Anchor>//api/name/GET</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/POST:parameters:</TokenIdentifier>
+			<Abstract type="html">Starts an asynchronous HTTP POST operation.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)POST:(NSData *)body parameters:(NSDictionary *)parameters</Declaration>
+			
+			
+			<Anchor>//api/name/POST:parameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/PUT:parameters:</TokenIdentifier>
+			<Abstract type="html">Starts an asynchronous HTTP PUT operation.
+    However, if this resource is &quot;untitled&quot; (has no relativePath yet), the operation will instead be a POST to the parent&apos;s URL. On successful completion of the POST, createdByPOST: will be called, which will set the relativePath property based on the response&apos;s Location: header. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)PUT:(NSData *)body parameters:(NSDictionary *)parameters</Declaration>
+			
+			
+			<Anchor>//api/name/PUT:parameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/PUTJSON:parameters:</TokenIdentifier>
+			<Abstract type="html">Starts an asynchronous HTTP PUT operation, with a JSON body.
+    The &apos;body&apos; parameter will be serialized as JSON, and the Content-Type request header will be set to &quot;application/json&quot;. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)PUTJSON:(id)body parameters:(NSDictionary *)parameters</Declaration>
+			
+			
+			<Anchor>//api/name/PUTJSON:parameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/POSTJSON:parameters:</TokenIdentifier>
+			<Abstract type="html">Starts an asynchronous HTTP POST operation, with a JSON body.
+    The &apos;body&apos; parameter will be serialized as JSON, and the Content-Type request header will be set to &quot;application/json&quot;. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)POSTJSON:(id)body parameters:(NSDictionary *)parameters</Declaration>
+			
+			
+			<Anchor>//api/name/POSTJSON:parameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/DELETE</TokenIdentifier>
+			<Abstract type="html">Starts an asynchronous HTTP DELETE operation.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)DELETE</Declaration>
+			
+			
+			<Anchor>//api/name/DELETE</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/sendHTTP:parameters:</TokenIdentifier>
+			<Abstract type="html">Sends an arbitrary HTTP request.
+    All the other HTTP request methods ultimately call this one.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)sendHTTP:(NSString *)method parameters:(NSDictionary *)parameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>method</Name>
+					<Abstract type="html">The HTTP method, e.g. @&quot;GET&quot;. Remember to capitalize it.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">Customization of the request headers or URL query.
+    Parameters whose keys start with &quot;?&quot; will be added to the URL&apos;s query; others will be added to the HTTP headers. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendHTTP:parameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/requestWithMethod:parameters:</TokenIdentifier>
+			<Abstract type="html">Creates an NSURLRequest without a RESTOperation.
+    Called by sendHTTP:parameters:.
+    Clients usually won&apos;t need this, but you can call this directly if you want to customize the NSMutableURLRequest and then call sendRequest: on it. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableURLRequest *)requestWithMethod:(NSString *)method parameters:(NSDictionary *)parameters</Declaration>
+			
+			
+			<Anchor>//api/name/requestWithMethod:parameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/sendRequest:</TokenIdentifier>
+			<Abstract type="html">Bottleneck for starting a RESTOperation.
+    Clients usually won&apos;t need to call this. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)sendRequest:(NSURLRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/sendRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/cacheResponse:</TokenIdentifier>
+			<Abstract type="html">Remembers the cacheable state (eTag and Last-Modified) of a GET response.
+    If the operation is a successful GET, with a valid Etag: or Last-Modified: header, this method will set the eTag and lastModified properties appropriately. These will be then be sent in subsequent GET requests, which may then receive empty 304 (Not Modified) responses if the contents have not changed.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)cacheResponse:(RESTOperation *)operation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>operation</Name>
+					<Abstract type="html">The GET operation that representedObject was parsed from; or nil to clear the cacheable state.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the response was cacheable and the object properties have been updated. </Abstract></ReturnValue>
+			<Anchor>//api/name/cacheResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setETag:</TokenIdentifier>
+			<Abstract type="html">The HTTP ETag of the last cached response.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *eTag</Declaration>
+			
+			
+			<Anchor>//api/name/eTag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTResource/eTag</TokenIdentifier>
+			<Abstract type="html">The HTTP ETag of the last cached response.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *eTag</Declaration>
+			
+			
+			<Anchor>//api/name/eTag</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setLastModified:</TokenIdentifier>
+			<Abstract type="html">The HTTP Last-Modified timestamp of the last cached response.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *lastModified</Declaration>
+			
+			
+			<Anchor>//api/name/lastModified</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTResource/lastModified</TokenIdentifier>
+			<Abstract type="html">The HTTP Last-Modified timestamp of the last cached response.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *lastModified</Declaration>
+			
+			
+			<Anchor>//api/name/lastModified</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setCachedURL:</TokenIdentifier>
+			<Abstract type="html">The URL of the last cached response.
+    This is associated with the eTag and lastModified properties.
+    This URL might not be the same as the receiver&apos;s URL property, because &quot;?&quot;-prefixed parameters to a request are added to the URL&apos;s query. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSURL *cachedURL</Declaration>
+			
+			
+			<Anchor>//api/name/cachedURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTResource/cachedURL</TokenIdentifier>
+			<Abstract type="html">The URL of the last cached response.
+    This is associated with the eTag and lastModified properties.
+    This URL might not be the same as the receiver&apos;s URL property, because &quot;?&quot;-prefixed parameters to a request are added to the URL&apos;s query. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSURL *cachedURL</Declaration>
+			
+			
+			<Anchor>//api/name/cachedURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setTracksActiveOperations:</TokenIdentifier>
+			<Abstract type="html">If set to YES, the .activeOperations property is enabled.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL tracksActiveOperations</Declaration>
+			
+			
+			<Anchor>//api/name/tracksActiveOperations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTResource/tracksActiveOperations</TokenIdentifier>
+			<Abstract type="html">If set to YES, the .activeOperations property is enabled.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL tracksActiveOperations</Declaration>
+			
+			
+			<Anchor>//api/name/tracksActiveOperations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setActiveOperations:</TokenIdentifier>
+			<Abstract type="html">All currently active RESTOperations on this resource or its children.
+    This is not tracked (and will return nil) unless the .tracksActiveOperations property is first set to YES. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSSet *activeOperations</Declaration>
+			
+			
+			<Anchor>//api/name/activeOperations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTResource/activeOperations</TokenIdentifier>
+			<Abstract type="html">All currently active RESTOperations on this resource or its children.
+    This is not tracked (and will return nil) unless the .tracksActiveOperations property is first set to YES. </Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSSet *activeOperations</Declaration>
+			
+			
+			<Anchor>//api/name/activeOperations</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/operationDidStart:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (void)operationDidStart:(RESTOperation *)op</Declaration>
+			
+			
+			<Anchor>//api/name/operationDidStart:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/operationDidComplete:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (void)operationDidComplete:(RESTOperation *)op</Declaration>
+			
+			
+			<Anchor>//api/name/operationDidComplete:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/operation:willCompleteWithError:</TokenIdentifier>
+			<Abstract type="html">This is sent by a RESTOperation to its resource when it completes, before its state changes or any other handlers are called.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (NSError *)operation:(RESTOperation *)op willCompleteWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>op</Name>
+					<Abstract type="html">The RESTOperation, created by this object, that just completed.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error (or nil) result of the operation. This value has not yet been stored into the operation&apos;s -error property.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The error to store into the operation&apos;s -error property. You can return the input error value unchanged, or return a different (or no) error.</Abstract></ReturnValue>
+			<Anchor>//api/name/operation:willCompleteWithError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/createdByPOST:</TokenIdentifier>
+			<Abstract type="html">Called when an untitled (URL-less) resource has just been created by a successful POST: call to its parent resource&apos;s URL.
+    The base implementation sets this object&apos;s relativePath and URL properties based on the value of the response&apos;s Location: header. If you override this method, be sure to call the superclass method.</Abstract>
+			<DeclaredIn>RESTResource.h</DeclaredIn>			
+			
+			<Declaration>- (void)createdByPOST:(RESTOperation *)op</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>op</Name>
+					<Abstract type="html">The HTTP operation, which is actually a POST to the parent resource. </Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createdByPOST:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)setURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/setURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/assignedRelativePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTInternal.h</DeclaredIn>			
+			
+			<Declaration>- (void)assignedRelativePath:(NSString *)relativePath</Declaration>
+			
+			
+			<Anchor>//api/name/assignedRelativePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/setOwningCache:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, retain) RESTCache *owningCache</Declaration>
+			
+			
+			<Anchor>//api/name/owningCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/RESTResource/owningCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (readwrite, retain) RESTCache *owningCache</Declaration>
+			
+			
+			<Anchor>//api/name/owningCache</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/credentialForOperation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTInternal.h</DeclaredIn>			
+			
+			<Declaration>- (NSURLCredential *)credentialForOperation:(RESTOperation *)op</Declaration>
+			
+			
+			<Anchor>//api/name/credentialForOperation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RESTResource/protectionSpaceForOperation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RESTInternal.h</DeclaredIn>			
+			
+			<Declaration>- (NSURLProtectionSpace *)protectionSpaceForOperation:(RESTOperation *)op</Declaration>
+			
+			
+			<Anchor>//api/name/protectionSpaceForOperation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDMultipartDocumentReader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDMultipartDocumentReader</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDMultipartDocumentReader/readData:ofType:toDatabase:status:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>+ (NSDictionary *)readData:(NSData *)data ofType:(NSString *)contentType toDatabase:(TDDatabase *)database status:(TDStatus *)outStatus</Declaration>
+			
+			
+			<Anchor>//api/name/readData:ofType:toDatabase:status:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TDMultipartDocumentReader/readStream:ofType:toDatabase:then:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>+ (TDStatus)readStream:(NSInputStream *)stream ofType:(NSString *)contentType toDatabase:(TDDatabase *)database then:(TDMultipartDocumentReaderCompletionBlock)completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/readStream:ofType:toDatabase:then:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartDocumentReader/initWithDatabase:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDatabase:(TDDatabase *)database</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDatabase:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartDocumentReader/setStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) TDStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultipartDocumentReader/status</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) TDStatus status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartDocumentReader/setDocument:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSDictionary *document</Declaration>
+			
+			
+			<Anchor>//api/name/document</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultipartDocumentReader/document</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSDictionary *document</Declaration>
+			
+			
+			<Anchor>//api/name/document</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartDocumentReader/setAttachmentCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSUInteger attachmentCount</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDMultipartDocumentReader/attachmentCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) NSUInteger attachmentCount</Declaration>
+			
+			
+			<Anchor>//api/name/attachmentCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartDocumentReader/setContentType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)setContentType:(NSString *)contentType</Declaration>
+			
+			
+			<Anchor>//api/name/setContentType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartDocumentReader/appendData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)appendData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/appendData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartDocumentReader/readStream:ofType:then:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>- (TDStatus)readStream:(NSInputStream *)stream ofType:(NSString *)contentType then:(TDMultipartDocumentReaderCompletionBlock)completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/readStream:ofType:then:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDMultipartDocumentReader/finish</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDMultipartDocumentReader.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)finish</Declaration>
+			
+			
+			<Anchor>//api/name/finish</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

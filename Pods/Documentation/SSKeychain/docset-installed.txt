@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/Lawrence/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.SSKeychain-0.1.4.docset
+Time: 2012-11-19 06:14:26 +0000

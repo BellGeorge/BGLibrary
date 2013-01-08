@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchReplication.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchReplication</TokenIdentifier>
+			<Abstract type="html">Tracks a CouchDB replication. Can be used to observe its progress.</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setLocalDatabase:</TokenIdentifier>
+			<Abstract type="html">The local database being replicated to/from.</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CouchDatabase *localDatabase</Declaration>
+			
+			
+			<Anchor>//api/name/localDatabase</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/localDatabase</TokenIdentifier>
+			<Abstract type="html">The local database being replicated to/from.</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CouchDatabase *localDatabase</Declaration>
+			
+			
+			<Anchor>//api/name/localDatabase</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setRemoteURL:</TokenIdentifier>
+			<Abstract type="html">The URL of the remote database.</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *remoteURL</Declaration>
+			
+			
+			<Anchor>//api/name/remoteURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/remoteURL</TokenIdentifier>
+			<Abstract type="html">The URL of the remote database.</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *remoteURL</Declaration>
+			
+			
+			<Anchor>//api/name/remoteURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setPull:</TokenIdentifier>
+			<Abstract type="html">Does the replication pull from (as opposed to push to) the target?</Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) bool pull</Declaration>
+			
+			
+			<Anchor>//api/name/pull</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/pull</TokenIdentifier>
+			<Abstract type="html">Does the replication pull from (as opposed to push to) the target?</Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) bool pull</Declaration>
+			
+			
+			<Anchor>//api/name/pull</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setCreateTarget:</TokenIdentifier>
+			<Abstract type="html">Should the target database be created if it doesn&apos;t already exist? (Defaults to NO).</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) bool createTarget</Declaration>
+			
+			
+			<Anchor>//api/name/createTarget</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/createTarget</TokenIdentifier>
+			<Abstract type="html">Should the target database be created if it doesn&apos;t already exist? (Defaults to NO).</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) bool createTarget</Declaration>
+			
+			
+			<Anchor>//api/name/createTarget</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setContinuous:</TokenIdentifier>
+			<Abstract type="html">Should the replication operate continuously, copying changes as soon as the source database is modified? (Defaults to NO).</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) bool continuous</Declaration>
+			
+			
+			<Anchor>//api/name/continuous</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/continuous</TokenIdentifier>
+			<Abstract type="html">Should the replication operate continuously, copying changes as soon as the source database is modified? (Defaults to NO).</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) bool continuous</Declaration>
+			
+			
+			<Anchor>//api/name/continuous</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setFilter:</TokenIdentifier>
+			<Abstract type="html">Path of an optional filter function to run on the source server.
+    Only documents for which the function returns true are replicated.
+    The path looks like &quot;designdocname/filtername&quot;. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *filter</Declaration>
+			
+			
+			<Anchor>//api/name/filter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/filter</TokenIdentifier>
+			<Abstract type="html">Path of an optional filter function to run on the source server.
+    Only documents for which the function returns true are replicated.
+    The path looks like &quot;designdocname/filtername&quot;. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *filter</Declaration>
+			
+			
+			<Anchor>//api/name/filter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setFilterParams:</TokenIdentifier>
+			<Abstract type="html">Parameters to pass to the filter function.
+    Should be a JSON-compatible dictionary. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *filterParams</Declaration>
+			
+			
+			<Anchor>//api/name/filterParams</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/filterParams</TokenIdentifier>
+			<Abstract type="html">Parameters to pass to the filter function.
+    Should be a JSON-compatible dictionary. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *filterParams</Declaration>
+			
+			
+			<Anchor>//api/name/filterParams</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setHeaders:</TokenIdentifier>
+			<Abstract type="html">Extra HTTP headers to send in all requests to the remote server.
+    Should map strings (header names) to strings. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/headers</TokenIdentifier>
+			<Abstract type="html">Extra HTTP headers to send in all requests to the remote server.
+    Should map strings (header names) to strings. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *headers</Declaration>
+			
+			
+			<Anchor>//api/name/headers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setOAuth:</TokenIdentifier>
+			<Abstract type="html">OAuth parameters that the replicator should use when authenticating to the remote database.
+    Keys in the dictionary should be &quot;consumerkey&quot;, &quot;consumersecret&quot;, &quot;token&quot;, &quot;tokensecret&quot;, and optionally &quot;signaturemethod&quot;. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *OAuth</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/OAuth</TokenIdentifier>
+			<Abstract type="html">OAuth parameters that the replicator should use when authenticating to the remote database.
+    Keys in the dictionary should be &quot;consumerkey&quot;, &quot;consumersecret&quot;, &quot;token&quot;, &quot;tokensecret&quot;, and optionally &quot;signaturemethod&quot;. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *OAuth</Declaration>
+			
+			
+			<Anchor>//api/name/OAuth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setOptions:</TokenIdentifier>
+			<Abstract type="html">Other options to be provided to the replicator.
+    These will be added to the JSON body of the POST to /_replicate. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/options</TokenIdentifier>
+			<Abstract type="html">Other options to be provided to the replicator.
+    These will be added to the JSON body of the POST to /_replicate. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/start</TokenIdentifier>
+			<Abstract type="html">Starts the replication, asynchronously.</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>- (RESTOperation *)start</Declaration>
+			
+			<ReturnValue><Abstract type="html">The operation to start replication, or nil if replication is already started. </Abstract></ReturnValue>
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/stop</TokenIdentifier>
+			<Abstract type="html">Stops replication, asynchronously.</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setRunning:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL running</Declaration>
+			
+			
+			<Anchor>//api/name/running</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/running</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL running</Declaration>
+			
+			
+			<Anchor>//api/name/running</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setStatus:</TokenIdentifier>
+			<Abstract type="html">The current status string from the server, if active, else nil (observable).
+    Usually of the form &quot;Processed 123 / 123 changes&quot;. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/status</TokenIdentifier>
+			<Abstract type="html">The current status string from the server, if active, else nil (observable).
+    Usually of the form &quot;Processed 123 / 123 changes&quot;. </Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setCompleted:</TokenIdentifier>
+			<Abstract type="html">The number of completed changes processed, if the task is active, else 0 (observable).</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned completed</Declaration>
+			
+			
+			<Anchor>//api/name/completed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/completed</TokenIdentifier>
+			<Abstract type="html">The number of completed changes processed, if the task is active, else 0 (observable).</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned completed</Declaration>
+			
+			
+			<Anchor>//api/name/completed</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setTotal:</TokenIdentifier>
+			<Abstract type="html">The total number of changes to be processed, if the task is active, else 0 (observable).</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned total</Declaration>
+			
+			
+			<Anchor>//api/name/total</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/total</TokenIdentifier>
+			<Abstract type="html">The total number of changes to be processed, if the task is active, else 0 (observable).</Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) unsigned total</Declaration>
+			
+			
+			<Anchor>//api/name/total</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/error</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setMode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CouchReplicationMode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/mode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CouchReplicationMode mode</Declaration>
+			
+			
+			<Anchor>//api/name/mode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/setCurrentRequests:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *currentRequests</Declaration>
+			
+			
+			<Anchor>//api/name/currentRequests</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchReplication/currentRequests</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchReplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *currentRequests</Declaration>
+			
+			
+			<Anchor>//api/name/currentRequests</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchReplication/initWithDatabase:remote:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDatabase:(CouchDatabase *)database remote:(NSURL *)remote</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDatabase:remote:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

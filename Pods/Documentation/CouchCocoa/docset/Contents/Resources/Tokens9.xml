@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchFunctionQuery.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchFunctionQuery</TokenIdentifier>
+			<Abstract type="html">A query that allows custom map and reduce functions to be supplied at runtime.
+    Usually created by calling [CouchDatabase slowQueryWithMapFunction:]. </Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchFunctionQuery/initWithDatabase:map:reduce:language:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CouchInternal.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDatabase:(CouchDatabase *)db map:(NSString *)map reduce:(NSString *)reduce language:(NSString *)language</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDatabase:map:reduce:language:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

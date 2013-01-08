@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TDPusher.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TDPusher</TokenIdentifier>
+			<Abstract type="html">Replicator that pushes to a remote CouchDB.</Abstract>
+			<DeclaredIn>TDPusher.h</DeclaredIn>
+			
+			<NodeRef refid="39"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TDPusher/setCreateTarget:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDPusher.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL createTarget</Declaration>
+			
+			
+			<Anchor>//api/name/createTarget</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TDPusher/createTarget</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TDPusher.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL createTarget</Declaration>
+			
+			
+			<Anchor>//api/name/createTarget</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

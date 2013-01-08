@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/Lawrence/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.CocoaHTTPServer-2.2.1.docset
+Time: 2012-11-05 23:11:13 +0000

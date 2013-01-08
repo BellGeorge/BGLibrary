@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CouchQueryEnumerator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CouchQueryEnumerator</TokenIdentifier>
+			<Abstract type="html">Enumerator on a CouchQuery&apos;s result rows.
+    The objects returned are instances of CouchQueryRow. </Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQueryEnumerator/setCount:</TokenIdentifier>
+			<Abstract type="html">The number of rows returned in this enumerator</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQueryEnumerator/count</TokenIdentifier>
+			<Abstract type="html">The number of rows returned in this enumerator</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQueryEnumerator/setTotalCount:</TokenIdentifier>
+			<Abstract type="html">The total number of rows in the query (excluding options like limit, skip, etc.)</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger totalCount</Declaration>
+			
+			
+			<Anchor>//api/name/totalCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQueryEnumerator/totalCount</TokenIdentifier>
+			<Abstract type="html">The total number of rows in the query (excluding options like limit, skip, etc.)</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger totalCount</Declaration>
+			
+			
+			<Anchor>//api/name/totalCount</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQueryEnumerator/setSequenceNumber:</TokenIdentifier>
+			<Abstract type="html">The database&apos;s current sequenceNumber at the time the view was generated.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger sequenceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/sequenceNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CouchQueryEnumerator/sequenceNumber</TokenIdentifier>
+			<Abstract type="html">The database&apos;s current sequenceNumber at the time the view was generated.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUInteger sequenceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/sequenceNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQueryEnumerator/nextRow</TokenIdentifier>
+			<Abstract type="html">The next result row. This is the same as -nextObject but with a checked return type.</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>- (CouchQueryRow *)nextRow</Declaration>
+			
+			
+			<Anchor>//api/name/nextRow</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CouchQueryEnumerator/rowAtIndex:</TokenIdentifier>
+			<Abstract type="html">Random access to a row in the result</Abstract>
+			<DeclaredIn>CouchQuery.h</DeclaredIn>			
+			
+			<Declaration>- (CouchQueryRow *)rowAtIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/rowAtIndex:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

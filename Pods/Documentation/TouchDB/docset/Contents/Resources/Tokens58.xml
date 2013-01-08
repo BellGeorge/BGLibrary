@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/OATokenManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/OATokenManagerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>
+			
+			<NodeRef refid="58"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OATokenManagerDelegate/tokenManager:failedCall:withError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)tokenManager:(OATokenManager *)manager failedCall:(OACall *)call withError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/tokenManager:failedCall:withError:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OATokenManagerDelegate/tokenManager:failedCall:withProblem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)tokenManager:(OATokenManager *)manager failedCall:(OACall *)call withProblem:(OAProblem *)problem</Declaration>
+			
+			
+			<Anchor>//api/name/tokenManager:failedCall:withProblem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OATokenManagerDelegate/tokenManagerNeedsToken:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OATokenManager.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)tokenManagerNeedsToken:(OATokenManager *)manager</Declaration>
+			
+			
+			<Anchor>//api/name/tokenManagerNeedsToken:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

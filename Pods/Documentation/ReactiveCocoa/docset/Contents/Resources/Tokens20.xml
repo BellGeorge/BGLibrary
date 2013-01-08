@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/RACScheduler.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/RACScheduler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACScheduler.h</DeclaredIn>
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACScheduler/schedulerWithScheduleBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACScheduler.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)schedulerWithScheduleBlock:(void ( ^ ) ( void ( ^ block ) ( void ) ))scheduleBlock</Declaration>
+			
+			
+			<Anchor>//api/name/schedulerWithScheduleBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACScheduler/immediateScheduler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACScheduler.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)immediateScheduler</Declaration>
+			
+			
+			<Anchor>//api/name/immediateScheduler</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACScheduler/mainQueueScheduler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACScheduler.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)mainQueueScheduler</Declaration>
+			
+			
+			<Anchor>//api/name/mainQueueScheduler</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACScheduler/backgroundScheduler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACScheduler.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)backgroundScheduler</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundScheduler</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACScheduler/deferredScheduler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACScheduler.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)deferredScheduler</Declaration>
+			
+			
+			<Anchor>//api/name/deferredScheduler</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACScheduler/sharedOperationQueueScheduler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACScheduler.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)sharedOperationQueueScheduler</Declaration>
+			
+			
+			<Anchor>//api/name/sharedOperationQueueScheduler</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACScheduler/operationQueueScheduler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACScheduler.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)operationQueueScheduler</Declaration>
+			
+			
+			<Anchor>//api/name/operationQueueScheduler</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/RACScheduler/schedulerWithOperationQueue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACScheduler.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)schedulerWithOperationQueue:(NSOperationQueue *)queue</Declaration>
+			
+			
+			<Anchor>//api/name/schedulerWithOperationQueue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/RACScheduler/schedule:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>RACScheduler.h</DeclaredIn>			
+			
+			<Declaration>- (void)schedule:(void ( ^ ) ( void ))block</Declaration>
+			
+			
+			<Anchor>//api/name/schedule:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
